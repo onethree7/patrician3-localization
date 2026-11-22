@@ -30,6 +30,10 @@ struct RenderTranslations {
     exact: HashMap<Vec<u8>, CString>,
     insensitive: HashMap<Vec<u8>, CString>,
     resources: HashMap<u32, (CString, CString)>,
+    /// Exact texts that other mods draw from their own DLLs. These win over
+    /// `exact` only for callers outside the game image, so a mod's ware label
+    /// can differ from the game's identically spelled building name.
+    addon: HashMap<Vec<u8>, CString>,
 }
 
 impl RenderTranslations {
@@ -51,6 +55,7 @@ static INSTALL_RESULT: OnceLock<Result<usize, String>> = OnceLock::new();
 const LOAD_STRING_IAT_RVA: usize = 0x26A494;
 const UI_RENDER_TEXT_AT_RVA: usize = 0xBB3E0;
 const UI_RENDER_TEXT_IAT_RVA: usize = 0x2DAA08;
+const GAME_IMAGE_SIZE: usize = 0x309000;
 const TOOLTIP_MEASURE_CALL_RVA: usize = 0xB8239;
 const TOOLTIP_MEASURE_FUNCTION_RVA: usize = 0xC1B20;
 // Fragments with grammar or identifier meaning must never become global dictionary keys.
@@ -445,17 +450,58 @@ fn translate_render_text(value: &[u8]) -> Option<Cow<'static, CStr>> {
         .map(Cow::Owned)
 }
 
-unsafe extern "C" fn render_text_hook(x: i32, y: i32, text: *const c_void) {
+/// Defines a cdecl stub for a patched `jmp` target. On entry `[esp]` is the
+/// return address into whoever called the original function; the stub passes
+/// it as an extra first argument: `$target(caller, x, y, text)`.
+macro_rules! caller_forwarding_stub {
+    ($name:ident => $target:path) => {
+        #[unsafe(naked)]
+        unsafe extern "C" fn $name() {
+            std::arch::naked_asm!(
+                // Each push moves esp by 4, so [esp + 12] walks text, y, x, return address.
+                "push dword ptr [esp + 12]",
+                "push dword ptr [esp + 12]",
+                "push dword ptr [esp + 12]",
+                "push dword ptr [esp + 12]",
+                "call {target}",
+                "add esp, 16",
+                "ret",
+                target = sym $target,
+            );
+        }
+    };
+}
+
+caller_forwarding_stub!(render_text_hook => render_text);
+
+fn is_addon_caller(caller: usize, base: usize) -> bool {
+    base != 0 && !(base..base + GAME_IMAGE_SIZE).contains(&caller)
+}
+
+fn translate_addon_render_text(value: &[u8]) -> Option<Cow<'static, CStr>> {
+    RENDER_TRANSLATIONS
+        .get()
+        .and_then(|translations| translations.addon.get(value))
+        .map(|translation| Cow::Borrowed(translation.as_c_str()))
+        .or_else(|| translate_render_text(value))
+}
+
+unsafe extern "C" fn render_text(caller: usize, x: i32, y: i32, text: *const c_void) {
+    let base = GAME_BASE.load(Ordering::Acquire);
+    let translate = if is_addon_caller(caller, base) {
+        translate_addon_render_text
+    } else {
+        translate_render_text
+    };
     let original_text = if text.is_null() {
         None
     } else {
         Some(CStr::from_ptr(text.cast()).to_bytes())
     };
-    let replacement = original_text.and_then(translate_render_text);
+    let replacement = original_text.and_then(translate);
     let text = replacement
         .as_ref()
         .map_or(text, |translation| translation.as_ptr().cast());
-    let base = GAME_BASE.load(Ordering::Acquire);
     let dispatch = if base == 0 {
         0
     } else {
@@ -572,6 +618,14 @@ fn load_render_translations(entries: &[TextEntry]) -> Result<RenderTranslations,
                 ));
             }
             translations.exact.insert(source_bytes, translated);
+        } else if scope == "addon" {
+            if translations
+                .addon
+                .insert(source_bytes, translated)
+                .is_some()
+            {
+                return Err(format!("Duplicate addon translation: {source}"));
+            }
         } else {
             return Err(format!("Unknown translation scope: {scope}"));
         }

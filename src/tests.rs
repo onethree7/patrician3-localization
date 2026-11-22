@@ -429,6 +429,86 @@ mod renderer_tests {
             b"Informationen \xfcber K\xf6ln",
         );
     }
+
+    #[test]
+    fn translates_addon_ware_debug_names_and_spaced_labels() {
+        let entries = load_translations().unwrap();
+        let render = load_render_translations(&entries).unwrap();
+        for (source, target) in [
+            ("IronGoods", "Eisenwaren"),
+            ("Iron Goods", "Eisenwaren"),
+            ("iron goods", "Eisenwaren"),
+            ("WhaleOil", "Tran"),
+            ("Whale Oil", "Tran"),
+            ("PigIron", "Eisenerz"),
+            ("Pig Iron", "Eisenerz"),
+        ] {
+            assert_eq!(
+                render.get(source.as_bytes()).unwrap().as_bytes(),
+                encode_cp1252(target, "expected").unwrap(),
+                "{source}"
+            );
+        }
+    }
+
+    #[test]
+    fn addon_callers_get_ware_names_without_renaming_buildings() {
+        let entries = load_translations().unwrap();
+        RENDER_TRANSLATIONS.get_or_init(|| load_render_translations(&entries).unwrap());
+        let expected = |text| encode_cp1252(text, "expected").unwrap();
+        assert_eq!(
+            translate_render_text(b"Pottery").unwrap().to_bytes(),
+            expected("Töpferei")
+        );
+        assert_eq!(
+            translate_addon_render_text(b"Pottery").unwrap().to_bytes(),
+            b"Keramik"
+        );
+        assert_eq!(
+            translate_addon_render_text(b"IronGoods")
+                .unwrap()
+                .to_bytes(),
+            b"Eisenwaren"
+        );
+        assert_eq!(
+            translate_addon_render_text(b"Trading goods")
+                .unwrap()
+                .to_bytes(),
+            b"Warenhandel"
+        );
+        let base = 0x400000;
+        assert!(!is_addon_caller(base, base));
+        assert!(!is_addon_caller(base + UI_RENDER_TEXT_AT_RVA, base));
+        assert!(is_addon_caller(base + GAME_IMAGE_SIZE, base));
+        assert!(is_addon_caller(0x1000_0000, base));
+        assert!(!is_addon_caller(0x1000_0000, 0));
+    }
+
+    static FORWARDED: std::sync::Mutex<Option<(usize, i32, i32, usize)>> =
+        std::sync::Mutex::new(None);
+
+    unsafe extern "C" fn record_forwarded(
+        caller: usize,
+        x: i32,
+        y: i32,
+        text: *const std::ffi::c_void,
+    ) {
+        *FORWARDED.lock().unwrap() = Some((caller, x, y, text as usize));
+    }
+
+    caller_forwarding_stub!(forwarding_probe => record_forwarded);
+
+    #[test]
+    fn forwarding_stub_passes_caller_and_original_arguments() {
+        let probe: unsafe extern "C" fn(i32, i32, *const std::ffi::c_void) =
+            unsafe { std::mem::transmute(forwarding_probe as *const ()) };
+        let text = b"Pottery\0";
+        unsafe { probe(-7, 42, text.as_ptr().cast()) };
+        let (caller, x, y, forwarded_text) = FORWARDED.lock().unwrap().unwrap();
+        assert_eq!((x, y, forwarded_text), (-7, 42, text.as_ptr() as usize));
+        let test_start = forwarding_stub_passes_caller_and_original_arguments as *const () as usize;
+        assert!((test_start..test_start + 0x1000).contains(&caller));
+    }
 }
 
 mod regression_tests {
