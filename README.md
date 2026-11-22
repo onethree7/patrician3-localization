@@ -2,7 +2,7 @@
 
 Dieser Mod übersetzt Patrician III für GOG und Steam ins Deutsche. Er wird über den P3Modding-Modloader geladen und übersetzt auch ausgewählte Texte der offiziellen Mods.
 
-**Version 0.1.1** · Getestet mit GOG, Steam und P3Modding 0.1.15
+**Version 0.1.2** · Getestet mit GOG, Steam und P3Modding 0.1.15
 
 ## Installation
 
