@@ -2403,7 +2403,7 @@
 0x2B2F20	0x2B2E98	The shipyard in %s is repairing %s for you. The actual condition amounts to %i%c. You will get a bill of %i\\C for the maintenance work.	Die Werft in %s repariert für Euch %s. Der aktuelle Zustand beträgt %i%c - für die Instandsetzung werden Euch %i\\C in Rechnung gestellt.
 0x2B3048	0x2B2F28	%s %s cannot be repaired. The shipyard in %s could not find any damage and wish a pleasant journey.	%s %s kann nicht repariert werden. Die Werft in %s konnte keine Beschädigungen feststellen und wünscht eine gute Fahrt.
 0x2B304C	0x2B2F90	%s %s cannot be repaired. The shipyard management in %s has found out that you cannot  pay the agreed price of %i\\C. Please arrange the required liquidity before placing  a new order.	%s %s kann nicht repariert werden. Die Werftleitung in %s hat festgestellt, daß Ihr den vereinbarten Reparaturpreis von %i\\C nicht bezahlen könnt. Bitte sorgt für die nötige Liquidität, bevor Ihr demnächst einen neuen Auftrag erteilt.
-0x2B30D8	0x2B3050	The construction work on a building in %s was completed on %s.\n%s %s is ready for use by your trading office.	Am %s wurden die Bauarbeiten für ein Gebäude in %s abgeschlossen.\n%s %s steht zur Nutzung durch Euer Kontor bereit.
+0x2B30D8	0x2B3050	The construction work on a building in %s was completed on %s.\n%s %s is ready for use by your trading office.	Die Bauarbeiten für ein Gebäude in %s wurden am %s abgeschlossen.\n%s %s steht zur Nutzung durch Euer Kontor bereit.
 0x2B30DC	0x2B30C0	A new	Ein neues
 0x2B30E0	0x2B30C8	A new	Eine neue
 0x2B30E4	0x2B30D0	A new	Ein neuer
@@ -2475,7 +2475,7 @@
 0x2B4D2C	0x2B4C08	What a tragic lost: %s %s sank in the floods today, taking %i sailors and the captain %s %s with it.	Welch tragischer Verlust: %s %s ging heute in den Fluten unter. Sie riß %i Matrosen und den Kapitän %s %s mit in den Tod.
 0x2B4D30	0x2B4C70	What a tragic lost: %s %s sank in the floods today, taking %i sailors with it.	Welch tragischer Verlust: %s %s ging heute in den Fluten unter. Er riß %i Matrosen mit in den Tod.
 0x2B4D34	0x2B4CC0	What a tragic lost: %s %s sank in the floods today, taking %i sailors and the captain %s %s with it.	Welch tragischer Verlust: %s %s ging heute in den Fluten unter. Er riß %i Matrosen und den Kapitän %s %s mit in den Tod.
-0x2B4ED8	0x2B4D38	A successful expedition has returned in the Hanseatic area. The captain, %s %s has discovered a trading location %s on behalf of %s %s.	Eine erfolgreiche Expedition ist in den Hanseraum zurück gekehrt. Der Kapitän %s %s hat im Auftrag von %s %s den Han_dels_ort %s entdeckt.
+0x2B4ED8	0x2B4D38	A successful expedition has returned in the Hanseatic area. The captain, %s %s has discovered a trading location %s on behalf of %s %s.	Eine erfolgreiche Expedition ist in den Hanseraum zurück gekehrt. Der Kapitän %s %s hat den Han_dels_ort %s im Auftrag von %s %s entdeckt.
 0x2B4EDC	0x2B4DC0	An expedition, believed to be almost certainly lost, has returned to the known world. The captain %s %s, on behalf of %s %s has discovered a tribe of Indians in the new world.	Eine fast schon verschollen geglaubte Expedition ist in die bekannte Welt zurück gekehrt. Der Kapitän %s %s hat im Auftrag von %s %s einen Indianerstamm in der neuen Welt entdeckt.
 0x2B4EE0	0x2B4E70	 On offer there are %s and %s.	 Angeboten werden dort %s und %s.
 0x2B4EE4	0x2B4E90	 Furthermore, there is a demand for 	 Weiter besteht eine Nachfrage nach 
@@ -3076,9 +3076,9 @@
 0x2C2730	0x2C26F0	The weather conditions in %s point to a very good harvest.	Die Wetterbedingungen in %s deuten auf eine sehr gute Ernte.
 0x2C276C	0x2C2734	In %s is %s out of stock.	In %s ist %s ausgegangen.
 0x2C2770	0x2C2750	In %s are %s out of stock.	In %s sind %s ausgegangen.
-0x2C27E0	0x2C2778	There is a great shortage of %s in %s. The prices paid for these goods will be correspondingly high.	In %s herrscht großer Mangel an %s. Entsprechend werden hohe Preise für diese Ware gezahlt.
-0x2C28A8	0x2C27E8	A large quantity of %s is available in %s at the moment, and therefore, at a rather good price.	In %s ist %s derzeit in großen Mengen vorhanden und daher ziemlich günstig.
-0x2C28AC	0x2C2848	A large quantity of %s is available in %s at the moment, and therefore, at a rather good price.	In %s sind %s derzeit in großen Mengen vorhanden und daher ziemlich günstig.
+0x2C27E0	0x2C2778	There is a great shortage of %s in %s. The prices paid for these goods will be correspondingly high.	An %s herrscht in %s großer Mangel. Entsprechend werden hohe Preise für diese Ware gezahlt.
+0x2C28A8	0x2C27E8	A large quantity of %s is available in %s at the moment, and therefore, at a rather good price.	%s ist derzeit in %s in großen Mengen vorhanden und daher ziemlich günstig.
+0x2C28AC	0x2C2848	A large quantity of %s is available in %s at the moment, and therefore, at a rather good price.	%s sind derzeit in %s in großen Mengen vorhanden und daher ziemlich günstig.
 0x2C29B8	0x2C28B0	%i people currently live in %s. %i of them are beggars.	%i Leute leben zur Zeit in %s. Davon sind %i Leute Bettler.
 0x2C29BC	0x2C28E8	I am personally acquainted with Lord Mayor %s %s from %s.	Ich bin mit dem Bürgermeister %s %s von %s persönlich bekannt.
 0x2C29C0	0x2C2928	%i litres of beer are drunk in %s everyday, would you believe it! Old drunkards.	Sage und schreibe %i Liter Bier werden täglich in %s getrunken. Alte Suffgurgeln!
