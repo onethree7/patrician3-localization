@@ -160,3 +160,32 @@ render	IronGoods	Eisenwaren
 render	WhaleOil	Tran
 render	PigIron	Eisenerz
 addon	Pottery	Keramik
+# Fragments for the render-time pattern translators (scope frag, key, template)
+frag	month.Jan	Jan
+frag	month.Feb	Feb
+frag	month.Mar	Mär
+frag	month.Apr	Apr
+frag	month.May	Mai
+frag	month.Jun	Jun
+frag	month.Jul	Jul
+frag	month.Aug	Aug
+frag	month.Sep	Sep
+frag	month.Oct	Okt
+frag	month.Nov	Nov
+frag	month.Dec	Dez
+frag	report_on	am {date}
+frag	report_range	vom {start} bis zum {end}
+frag	chronicle	Chronik vom {date}
+frag	goods_supply	Warenversorgung in {town}
+frag	town_inhabitants	{n} Einwohner
+frag	town_information	Informationen über {name}
+frag	town_population	Einwohnerzahl: {n}
+frag	lord_mayor	Bürgermeister: der {name}
+frag	lady_mayoress	Bürgermeisterin: die {name}
+frag	tavern_sailors	In der Schenke sind {n} Seeleute.
+frag	pirate_capture	Das Schiff {ship} wird von den Piraten gekapert.
+frag	pirate_captain	Ein finster dreinblickender Piratenkapitän mit {n} Schergen bietet
+frag	manager_stage	Verwalter (Stufe {n})
+frag	city_prefix	Die Stadt
+frag	day_one	{n} Tag
+frag	day_many	{n} Tage

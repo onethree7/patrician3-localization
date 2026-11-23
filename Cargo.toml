@@ -1,11 +1,11 @@
 [package]
-name = "german-localization"
-version = "0.1.2"
+name = "patrician3-localization"
+version = "0.2.0"
 edition = "2021"
 
 [lib]
 crate-type = ["cdylib"]
-name = "german_localization"
+name = "patrician3_localization"
 
 [dependencies.windows]
 version = "0.48"

@@ -1,5 +1,7 @@
+mod language;
 mod patch;
 
+use language::{fill, fill_bytes, Fragments, Row};
 use std::{
     borrow::Cow,
     collections::{HashMap, HashSet},
@@ -34,6 +36,8 @@ struct RenderTranslations {
     /// `exact` only for callers outside the game image, so a mod's ware label
     /// can differ from the game's identically spelled building name.
     addon: HashMap<Vec<u8>, CString>,
+    /// Templates and month names for the render-time pattern translators.
+    fragments: Fragments,
 }
 
 impl RenderTranslations {
@@ -106,7 +110,7 @@ fn is_report_date(value: &str) -> bool {
         && parts.next().is_none()
 }
 
-fn translate_report_date(value: &[u8]) -> Option<CString> {
+fn translate_report_date(frags: &Fragments, value: &[u8]) -> Option<CString> {
     let text = std::str::from_utf8(value).ok()?;
     let translated = if let Some(date) = text.strip_prefix("on ") {
         let date = date.trim_end();
@@ -114,7 +118,11 @@ fn translate_report_date(value: &[u8]) -> Option<CString> {
             return None;
         }
         let padding = &text[3 + date.len()..];
-        format!("am {}{padding}", germanize_report_months(date)?)
+        let localized = localize_report_months(frags, date)?;
+        format!(
+            "{}{padding}",
+            fill(frags.get("report_on")?, &[("date", &localized)])
+        )
     } else {
         let range = text.strip_prefix("from ")?;
         let (start, end) = range.split_once(" to ")?;
@@ -123,10 +131,14 @@ fn translate_report_date(value: &[u8]) -> Option<CString> {
             return None;
         }
         let padding = &end[end_date.len()..];
+        let start = localize_report_months(frags, start)?;
+        let end = localize_report_months(frags, end_date)?;
         format!(
-            "vom {} bis zum {}{padding}",
-            germanize_report_months(start)?,
-            germanize_report_months(end_date)?
+            "{}{padding}",
+            fill(
+                frags.get("report_range")?,
+                &[("start", &start), ("end", &end)]
+            )
         )
     };
     cstring_cp1252(translated, "translated report date")
@@ -136,7 +148,7 @@ fn cstring_cp1252(value: String, field: &str) -> Option<CString> {
     CString::new(encode_cp1252(&value, field).ok()?).ok()
 }
 
-fn germanize_report_months(date: &str) -> Option<String> {
+fn localize_report_months(frags: &Fragments, date: &str) -> Option<String> {
     let mut parts = date.split_whitespace();
     let day = parts.next()?;
     let month = parts.next()?;
@@ -144,25 +156,11 @@ fn germanize_report_months(date: &str) -> Option<String> {
     if parts.next().is_some() {
         return None;
     }
-    let month = match month {
-        "Jan" => "Jan",
-        "Feb" => "Feb",
-        "Mar" => "Mär",
-        "Apr" => "Apr",
-        "May" => "Mai",
-        "Jun" => "Jun",
-        "Jul" => "Jul",
-        "Aug" => "Aug",
-        "Sep" => "Sep",
-        "Oct" => "Okt",
-        "Nov" => "Nov",
-        "Dec" => "Dez",
-        _ => return None,
-    };
+    let month = frags.get(&format!("month.{month}"))?;
     Some(format!("{day} {month} {year}"))
 }
 
-fn translate_bare_report_date(value: &[u8]) -> Option<CString> {
+fn translate_bare_report_date(frags: &Fragments, value: &[u8]) -> Option<CString> {
     let text = std::str::from_utf8(value).ok()?;
     let (day, rest) = text.split_once('.')?;
     let month_start = rest.bytes().position(|byte| !byte.is_ascii_whitespace())?;
@@ -180,7 +178,7 @@ fn translate_bare_report_date(value: &[u8]) -> Option<CString> {
     {
         return None;
     }
-    let localized = germanize_report_months(&format!("{day}. {month} {year}"))?;
+    let localized = localize_report_months(frags, &format!("{day}. {month} {year}"))?;
     let localized_month = localized.split_whitespace().nth(1)?;
     cstring_cp1252(
         format!("{day}.{spacing_after_day}{localized_month}{year_and_padding}"),
@@ -188,16 +186,21 @@ fn translate_bare_report_date(value: &[u8]) -> Option<CString> {
     )
 }
 
-fn translate_chronicle_header(value: &[u8]) -> Option<CString> {
-    const PREFIX: &[u8] = b"Chronik vom ";
-    let date = value.strip_prefix(PREFIX)?;
-    let localized_date = translate_bare_report_date(date)?;
-    let mut translated = PREFIX.to_vec();
+fn translate_chronicle_header(frags: &Fragments, value: &[u8]) -> Option<CString> {
+    let (head, tail) = frags.get("chronicle")?.split_once("{date}")?;
+    let head = encode_cp1252(head, "fragment").ok()?;
+    let tail = encode_cp1252(tail, "fragment").ok()?;
+    let date = value
+        .strip_prefix(head.as_slice())?
+        .strip_suffix(tail.as_slice())?;
+    let localized_date = translate_bare_report_date(frags, date)?;
+    let mut translated = head;
     translated.extend_from_slice(localized_date.as_bytes());
+    translated.extend_from_slice(&tail);
     CString::new(translated).ok()
 }
 
-fn translate_goods_supply_town(value: &[u8]) -> Option<CString> {
+fn translate_goods_supply_town(frags: &Fragments, value: &[u8]) -> Option<CString> {
     const PREFIX: &[u8] = b"Goods supply in ";
     let text_end = value.iter().rposition(|byte| !byte.is_ascii_whitespace())? + 1;
     let (text, padding) = value.split_at(text_end);
@@ -209,26 +212,24 @@ fn translate_goods_supply_town(value: &[u8]) -> Option<CString> {
     {
         return None;
     }
-    let mut translated = b"Warenversorgung in ".to_vec();
-    translated.extend_from_slice(town);
+    let mut translated = fill_bytes(frags.get("goods_supply")?, "town", town)?;
     translated.extend_from_slice(padding);
     CString::new(translated).ok()
 }
 
-fn translate_town_information(value: &[u8]) -> Option<CString> {
+fn translate_town_information(frags: &Fragments, value: &[u8]) -> Option<CString> {
     if let Some(population) = value.strip_suffix(b" inhabitants") {
         if !population.is_empty()
             && population
                 .split(|byte| *byte == b'.' || *byte == b',')
                 .all(|group| !group.is_empty() && group.iter().all(u8::is_ascii_digit))
         {
-            let mut translated = population.to_vec();
-            translated.extend_from_slice(b" Einwohner");
-            return CString::new(translated).ok();
+            let template = frags.get("town_inhabitants")?;
+            return CString::new(fill_bytes(template, "n", population)?).ok();
         }
         return None;
     }
-    let (prefix, suffix) = if let Some(name) = value.strip_prefix(b"Information about ") {
+    let translated = if let Some(name) = value.strip_prefix(b"Information about ") {
         if name.is_empty()
             || !name.iter().all(|byte| {
                 byte.is_ascii_alphabetic() || (0xc0..=0xff).contains(byte) || b" -'".contains(byte)
@@ -236,26 +237,23 @@ fn translate_town_information(value: &[u8]) -> Option<CString> {
         {
             return None;
         }
-        (&b"Informationen \xfcber "[..], name)
+        fill_bytes(frags.get("town_information")?, "name", name)?
     } else {
         let population = value.strip_prefix(b"Population: ")?;
         if population.is_empty() || !population.iter().all(u8::is_ascii_digit) {
             return None;
         }
-        (&b"Einwohnerzahl: "[..], population)
+        fill_bytes(frags.get("town_population")?, "n", population)?
     };
-    let mut translated = Vec::with_capacity(prefix.len() + suffix.len());
-    translated.extend_from_slice(prefix);
-    translated.extend_from_slice(suffix);
     CString::new(translated).ok()
 }
 
-fn translate_lord_mayor(value: &[u8]) -> Option<CString> {
-    let (prefix, name) = if let Some(name) = value.strip_prefix(b"Lord Mayor: the ") {
-        (&b"B\xfcrgermeister: der "[..], name)
+fn translate_lord_mayor(frags: &Fragments, value: &[u8]) -> Option<CString> {
+    let (key, name) = if let Some(name) = value.strip_prefix(b"Lord Mayor: the ") {
+        ("lord_mayor", name)
     } else {
         let name = value.strip_prefix(b"Lady Mayoress: the ")?;
-        (&b"B\xfcrgermeisterin: die "[..], name)
+        ("lady_mayoress", name)
     };
     if name.is_empty()
         || !name.iter().all(|byte| {
@@ -264,12 +262,10 @@ fn translate_lord_mayor(value: &[u8]) -> Option<CString> {
     {
         return None;
     }
-    let mut translated = prefix.to_vec();
-    translated.extend_from_slice(name);
-    CString::new(translated).ok()
+    CString::new(fill_bytes(frags.get(key)?, "name", name)?).ok()
 }
 
-fn translate_tavern_sailors(value: &[u8]) -> Option<CString> {
+fn translate_tavern_sailors(frags: &Fragments, value: &[u8]) -> Option<CString> {
     let text = std::str::from_utf8(value).ok()?;
     let count = text
         .strip_prefix("There are ")?
@@ -277,10 +273,13 @@ fn translate_tavern_sailors(value: &[u8]) -> Option<CString> {
     if count.is_empty() || !count.bytes().all(|byte| byte.is_ascii_digit()) {
         return None;
     }
-    CString::new(format!("In der Schenke sind {count} Seeleute.")).ok()
+    cstring_cp1252(
+        fill(frags.get("tavern_sailors")?, &[("n", count)]),
+        "tavern sailor count",
+    )
 }
 
-fn translate_pirate_capture(value: &[u8]) -> Option<CString> {
+fn translate_pirate_capture(frags: &Fragments, value: &[u8]) -> Option<CString> {
     const PREFIXES: &[&[u8]] = &[
         b"The pirates take ",
         b"Die Piraten nehmen sich ",
@@ -298,14 +297,10 @@ fn translate_pirate_capture(value: &[u8]) -> Option<CString> {
     if ship.is_empty() || ship.iter().any(|byte| *byte < b' ' || *byte == 0x7f) {
         return None;
     }
-    let mut translated = Vec::with_capacity(ship.len() + 52);
-    translated.extend_from_slice(b"Das Schiff ");
-    translated.extend_from_slice(ship);
-    translated.extend_from_slice(b" wird von den Piraten gekapert.");
-    CString::new(translated).ok()
+    CString::new(fill_bytes(frags.get("pirate_capture")?, "ship", ship)?).ok()
 }
 
-fn translate_pirate_captain_intro(value: &[u8]) -> Option<CString> {
+fn translate_pirate_captain_intro(frags: &Fragments, value: &[u8]) -> Option<CString> {
     let text = std::str::from_utf8(value).ok()?;
     let count = text
         .strip_prefix("A fierce looking pirate captain with ")?
@@ -314,22 +309,26 @@ fn translate_pirate_captain_intro(value: &[u8]) -> Option<CString> {
         return None;
     }
     cstring_cp1252(
-        format!("Ein finster dreinblickender Piratenkapitän mit {count} Schergen bietet"),
+        fill(frags.get("pirate_captain")?, &[("n", count)]),
         "pirate captain announcement",
     )
 }
 
-fn translate_manager_stage(value: &[u8]) -> Option<CString> {
+fn translate_manager_stage(frags: &Fragments, value: &[u8]) -> Option<CString> {
     let text = std::str::from_utf8(value).ok()?;
     let stage = text.strip_prefix("Manager (Stage ")?.strip_suffix(')')?;
     if stage.is_empty() || !stage.bytes().all(|byte| byte.is_ascii_digit()) {
         return None;
     }
-    CString::new(format!("Verwalter (Stufe {stage})")).ok()
+    cstring_cp1252(
+        fill(frags.get("manager_stage")?, &[("n", stage)]),
+        "manager stage",
+    )
 }
 
-fn translate_city_signature(value: &[u8]) -> Option<CString> {
-    const PREFIX: &[u8] = b"Die Stadt";
+fn translate_city_signature(frags: &Fragments, value: &[u8]) -> Option<CString> {
+    let prefix = encode_cp1252(frags.get("city_prefix")?, "fragment").ok()?;
+    let prefix = prefix.as_slice();
     const TOWNS: &[&[u8]] = &[
         b"Edinburgh",
         b"Newcastle",
@@ -372,27 +371,26 @@ fn translate_city_signature(value: &[u8]) -> Option<CString> {
         b"Ladoga",
         b"Novgorod",
     ];
-    let town = value.strip_prefix(PREFIX)?;
+    let town = value.strip_prefix(prefix)?;
     if !TOWNS.iter().any(|name| name.eq_ignore_ascii_case(town)) {
         return None;
     }
-    let mut translated = Vec::with_capacity(PREFIX.len() + 1 + town.len());
-    translated.extend_from_slice(PREFIX);
+    let mut translated = Vec::with_capacity(prefix.len() + 1 + town.len());
+    translated.extend_from_slice(prefix);
     translated.push(b' ');
     translated.extend_from_slice(town);
     CString::new(translated).ok()
 }
 
-fn translate_day_count(value: &[u8]) -> Option<CString> {
+fn translate_day_count(frags: &Fragments, value: &[u8]) -> Option<CString> {
     let count = value
         .strip_suffix(b" day")
         .or_else(|| value.strip_suffix(b" days"))?;
     if count.is_empty() || !count.iter().all(u8::is_ascii_digit) {
         return None;
     }
-    let mut translated = count.to_vec();
-    translated.extend_from_slice(if count == b"1" { b" Tag" } else { b" Tage" });
-    CString::new(translated).ok()
+    let template = frags.get(if count == b"1" { "day_one" } else { "day_many" })?;
+    CString::new(fill_bytes(template, "n", count)?).ok()
 }
 
 fn find_padded_render_translation(
@@ -419,34 +417,34 @@ fn find_padded_render_translation(
 }
 
 fn translate_render_text(value: &[u8]) -> Option<Cow<'static, CStr>> {
-    if let Some(date) = translate_bare_report_date(value) {
+    let translations = RENDER_TRANSLATIONS.get()?;
+    let frags = &translations.fragments;
+    if let Some(date) = translate_bare_report_date(frags, value) {
         return Some(Cow::Owned(date));
     }
-    if let Some(header) = translate_chronicle_header(value) {
+    if let Some(header) = translate_chronicle_header(frags, value) {
         return Some(Cow::Owned(header));
     }
-    if let Some(label) = translate_goods_supply_town(value) {
+    if let Some(label) = translate_goods_supply_town(frags, value) {
         return Some(Cow::Owned(label));
     }
-    if let Some(signature) = translate_city_signature(value) {
+    if let Some(signature) = translate_city_signature(frags, value) {
         return Some(Cow::Owned(signature));
     }
-    if let Some(translations) = RENDER_TRANSLATIONS.get() {
-        if let Some(translation) = translations.get(value) {
-            return Some(Cow::Borrowed(translation.as_c_str()));
-        }
-        if let Some(translation) = find_padded_render_translation(value, translations) {
-            return Some(Cow::Owned(translation));
-        }
+    if let Some(translation) = translations.get(value) {
+        return Some(Cow::Borrowed(translation.as_c_str()));
     }
-    translate_report_date(value)
-        .or_else(|| translate_town_information(value))
-        .or_else(|| translate_lord_mayor(value))
-        .or_else(|| translate_tavern_sailors(value))
-        .or_else(|| translate_pirate_captain_intro(value))
-        .or_else(|| translate_manager_stage(value))
-        .or_else(|| translate_day_count(value))
-        .or_else(|| translate_pirate_capture(value))
+    if let Some(translation) = find_padded_render_translation(value, translations) {
+        return Some(Cow::Owned(translation));
+    }
+    translate_report_date(frags, value)
+        .or_else(|| translate_town_information(frags, value))
+        .or_else(|| translate_lord_mayor(frags, value))
+        .or_else(|| translate_tavern_sailors(frags, value))
+        .or_else(|| translate_pirate_captain_intro(frags, value))
+        .or_else(|| translate_manager_stage(frags, value))
+        .or_else(|| translate_day_count(frags, value))
+        .or_else(|| translate_pirate_capture(frags, value))
         .map(Cow::Owned)
 }
 
@@ -538,7 +536,26 @@ unsafe extern "thiscall" fn measure_tooltip_text_hook(
     original(font, text)
 }
 
+/// Render map of the German tables (the reference language).
+#[cfg(test)]
 fn load_render_translations(entries: &[TextEntry]) -> Result<RenderTranslations, String> {
+    let rows = render_overrides()?;
+    let fragments = Fragments::from_rows(&rows)?;
+    let overrides = rows
+        .into_iter()
+        .filter(|(scope, _, _)| *scope != "frag")
+        .collect::<Vec<_>>();
+    build_render_translations(entries, &overrides, fragments, true)
+}
+
+/// `strict` (German) requires the preferred render slots to exist; other languages
+/// translate a subset of the slots and may lack them.
+fn build_render_translations(
+    entries: &[TextEntry],
+    overrides: &[Row],
+    fragments: Fragments,
+    strict: bool,
+) -> Result<RenderTranslations, String> {
     let mut exact: HashMap<Vec<u8>, CString> = HashMap::new();
     let mut ambiguous = HashSet::new();
     for entry in entries {
@@ -573,26 +590,32 @@ fn load_render_translations(entries: &[TextEntry]) -> Result<RenderTranslations,
         exact.insert(source, entry.translation.clone());
     }
     for slot_rva in RENDER_TEXT_PREFERRED_SLOT_RVAS {
-        let entry = entries
-            .iter()
-            .find(|entry| entry.slot_rva == *slot_rva)
-            .ok_or_else(|| {
-                format!("Preferred render slot 0x{slot_rva:X} is absent from the text table")
-            })?;
+        let Some(entry) = entries.iter().find(|entry| entry.slot_rva == *slot_rva) else {
+            if strict {
+                return Err(format!(
+                    "Preferred render slot 0x{slot_rva:X} is absent from the text table"
+                ));
+            }
+            continue;
+        };
         let source = entry.source.as_bytes().to_vec();
         if !ambiguous.remove(&source) {
-            return Err(format!(
-                "Preferred render slot 0x{slot_rva:X} no longer resolves an ambiguous source"
-            ));
+            if strict {
+                return Err(format!(
+                    "Preferred render slot 0x{slot_rva:X} no longer resolves an ambiguous source"
+                ));
+            }
+            continue;
         }
         exact.insert(source, entry.translation.clone());
     }
 
     let mut translations = RenderTranslations {
         exact,
+        fragments,
         ..RenderTranslations::default()
     };
-    for (scope, source, translation) in render_overrides()? {
+    for &(scope, source, translation) in overrides {
         let source_bytes = encode_cp1252(source, "render source")?;
         let translated = CString::new(encode_cp1252(translation, "render translation")?)
             .map_err(|error| error.to_string())?;
@@ -656,7 +679,7 @@ fn load_render_translations(entries: &[TextEntry]) -> Result<RenderTranslations,
         }
     }
 
-    if translations.exact.is_empty() {
+    if strict && translations.exact.is_empty() {
         return Err("Render translation map is empty".into());
     }
     Ok(translations)
@@ -782,7 +805,7 @@ unsafe fn hook_patches(base: usize) -> Result<Vec<patch::Patch>, String> {
 
 fn report_install_error(message: &str) {
     let message = message.replace('\0', "");
-    if let Ok(message) = CString::new(format!("german_localization: {message}")) {
+    if let Ok(message) = CString::new(format!("patrician3_localization: {message}")) {
         unsafe { OutputDebugStringA(PCSTR::from_raw(message.as_ptr().cast())) };
     }
 }
@@ -938,9 +961,20 @@ unsafe fn install() -> Result<usize, String> {
         return Err("Unsupported executable headers".into());
     }
 
-    let entries = load_translations()?;
-    let render_translations = load_render_translations(&entries)?;
-    for entry in &entries {
+    let language = language::configured_language()?;
+    let bundle = language::load(language.code)?;
+    let render_translations = build_render_translations(
+        &bundle.entries,
+        &bundle.overrides,
+        bundle.fragments,
+        bundle.strict,
+    )?;
+    // The reference language must match the pristine image exactly. Other languages
+    // skip slots that another mod already redirected, instead of failing to start.
+    let strict = bundle.strict;
+    let mut entries = Vec::with_capacity(bundle.entries.len());
+    let mut skipped = 0usize;
+    for entry in bundle.entries {
         let source_end = entry
             .text_rva
             .checked_add(entry.source.as_bytes_with_nul().len())
@@ -953,21 +987,35 @@ unsafe fn install() -> Result<usize, String> {
         }
         let slot = (base + entry.slot_rva) as *const u32;
         if slot.read_unaligned() as usize != base + entry.text_rva {
-            return Err(format!(
-                "Unexpected source pointer at slot 0x{:X}",
-                entry.slot_rva
-            ));
+            if strict {
+                return Err(format!(
+                    "Unexpected source pointer at slot 0x{:X}",
+                    entry.slot_rva
+                ));
+            }
+            skipped += 1;
+            continue;
         }
         let actual = std::slice::from_raw_parts(
             (base + entry.text_rva) as *const u8,
             entry.source.as_bytes_with_nul().len(),
         );
         if actual != entry.source.as_bytes_with_nul() {
-            return Err(format!(
-                "Unexpected original text at slot 0x{:X}",
-                entry.slot_rva
-            ));
+            if strict {
+                return Err(format!(
+                    "Unexpected original text at slot 0x{:X}",
+                    entry.slot_rva
+                ));
+            }
+            skipped += 1;
+            continue;
         }
+        entries.push(entry);
+    }
+    if skipped > 0 {
+        report_install_error(&format!(
+            "{skipped} text slots belong to another mod and were left untouched"
+        ));
     }
 
     let mut patches = hook_patches(base)?;
@@ -1010,12 +1058,12 @@ pub extern "C" fn start() -> u32 {
         Err(error) => {
             report_install_error(error);
             let message = format!(
-                "Die deutsche Übersetzung konnte nicht vollständig geladen werden.\n\n{error}"
+                "Die Übersetzung konnte nicht vollständig geladen werden.\nThe localization could not be loaded completely.\n\n{error}"
             )
             .encode_utf16()
             .chain(Some(0))
             .collect::<Vec<_>>();
-            let title = "Deutsche Übersetzung"
+            let title = "Patrician III Localization"
                 .encode_utf16()
                 .chain(Some(0))
                 .collect::<Vec<_>>();
