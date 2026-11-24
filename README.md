@@ -6,7 +6,7 @@ Play **Patrician III** (GOG and Steam) in your own language. This mod replaces t
 
 ## Available languages
 
-| Language | Code | Game texts (menus, goods, events, letters) | Missions, tutorial, credits, menu pictures |
+| Language | Code | Game texts (menus, goods, events, letters) | Missions, tutorial, credits, menu gfx |
 |---|---|---|---|
 | Deutsch | `de` | complete | translated (separate download, see below) |
 | Français | `fr` | complete, not proofread | English |
