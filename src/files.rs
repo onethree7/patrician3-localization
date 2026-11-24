@@ -431,6 +431,20 @@ fn classify(name: &[u8]) -> Option<Kind> {
     }
 }
 
+/// The campaign list asks for a mission whose name differs from the file in the archive
+/// (`Entfuehrung` against `Entf\u{fc}hrung`, CP1252 `0xFC`). Returns the archive's spelling.
+fn archive_alias(name: &[u8]) -> Option<Vec<u8>> {
+    const ASKED: &[u8] = b"Kampagne3_Entfuehrung.p2m";
+    const STORED: &[u8] = b"Kampagne3_Entf\xfchrung.p2m";
+    let start = name.len().checked_sub(ASKED.len())?;
+    if !name[start..].eq_ignore_ascii_case(ASKED) {
+        return None;
+    }
+    let mut alias = name[..start].to_vec();
+    alias.extend_from_slice(STORED);
+    Some(alias)
+}
+
 /// Translates a mission; rows for this very file win over the generic ones.
 fn translate_mission_for(data: &[u8], file: &str, texts: &FileTexts) -> Option<Vec<u8>> {
     let specific = texts.mission_files.get(file);
@@ -465,9 +479,21 @@ unsafe fn read_whole(handle: *mut c_void) -> Option<Vec<u8>> {
 
 unsafe extern "C" fn create_file(container: *mut c_void, name: *const c_char) -> *mut c_void {
     let original = originals();
-    let handle = (original.create_file)(container, name);
-    if handle.is_null() || name.is_null() {
+    let mut handle = (original.create_file)(container, name);
+    if name.is_null() {
         return handle;
+    }
+    if handle.is_null() {
+        // Only a missing mission is retried, under the name the archive really holds.
+        let Some(alias) = archive_alias(CStr::from_ptr(name).to_bytes())
+            .and_then(|alias| std::ffi::CString::new(alias).ok())
+        else {
+            return handle;
+        };
+        handle = (original.create_file)(container, alias.as_ptr());
+        if handle.is_null() {
+            return handle;
+        }
     }
     let (Some(kind), Some(texts)) = (classify(CStr::from_ptr(name).to_bytes()), TEXTS.get()) else {
         return handle;
@@ -690,6 +716,16 @@ mod tests {
             out,
             b"[Campaign_1]\r\nName=Das Feuer\r\nTexture=41101\r\nText=Brand\n"
         );
+    }
+
+    #[test]
+    fn misspelled_campaign_mission_name_maps_to_the_archive_file() {
+        assert_eq!(
+            archive_alias(b"missions_addon\\kampagne3_entfuehrung.P2M").unwrap(),
+            b"missions_addon\\Kampagne3_Entf\xfchrung.p2m"
+        );
+        assert!(archive_alias(b"missions_addon\\Eskorte.p2m").is_none());
+        assert!(archive_alias(b"").is_none());
     }
 
     #[test]

@@ -75,15 +75,18 @@ All 3186 text slots of the slot table are filled for fr, nl, es, it, sv, da, no 
 templates (`frag`), render and addon texts. That covers menus, labels, names, letters, event and
 chronicle texts and the composed sentence fragments. Missions (579 texts), the campaign list
 (25 texts), the tutorial (159 texts) and the credits (43 texts) are translated for all languages as well,
-see below. Not translated: name lists and images that contain text (menu pictures, map). German additionally has translated game files,
-shipped separately as `patrician3-localization-<version>-resources-de.zip` (source: `resources/de/`):
-credits, name lists, map, menu pictures and 19 mission files (the German tutorial comes from
-`data/files/de.tsv` like in the other languages; the German credits name other people than the English
-ones and stay a file). Of these, 15 have scripts
-that differ from the English ones, 3 carry title wording that the tables cannot give per position,
-and `Kampagne3_Entfuehrung.p2m` is the name the campaign list uses while the English archive holds
-the file under a name with an umlaut. All other German missions come from the tables like in any
-other language.
+see below. German is handled exactly like every other language: the game stays the English release
+(its mission scripts, name lists, map and menu pictures) and only its texts are replaced from
+`data/files/de.tsv`. Not translated: name lists (town, ship, person names stay as released) and images
+that contain text. For German only, the optional archive `patrician3-localization-<version>-resources-de.zip`
+(source: `resources/de/`) adds the German menu pictures (`images/Options`), the map `Standard24.gmf` and the
+matching `textures.ini`.
+
+The German texts of the missions were taken from the original German game and paired with the English
+scripts string by string. Where the German scripts used other format tokens than the English ones (gender
+and case tokens `%g %A %v %r`), the affected letters use the English tokens, because the English scripts
+supply those arguments. The campaign list asks for `Kampagne3_Entfuehrung.p2m` while the English archive holds
+`Kampagne3_Entführung.p2m`; the hook retries a missing mission under the archive's spelling.
 
 Limits of quality (cannot be verified by machine):
 
