@@ -20,6 +20,8 @@ Play **Patrician III** (GOG and Steam) in your own language. This mod replaces t
 
 "Not proofread" means: every text is translated, but no native speaker has reviewed it yet. Some sentences, which the game assembles from several pieces, can read a little awkwardly. Corrections are very welcome, see [docs/LANGUAGES.md](docs/LANGUAGES.md).
 
+> **Known limitation - missing font characters.** The game font has no glyphs for `å æ ø ñ ç ã õ ë ï œ`, `¡ ¿ « »` and capital accented letters, so these are replaced by plain letters in the translations (for example Swedish `Rådhus` is shown as `Radhus`, Danish/Norwegian `å` as `aa`). Proper characters need a patched game font. Details and the full substitution table: [docs/LANGUAGES.md](docs/LANGUAGES.md#character-set).
+
 ## Installation
 
 You need two things besides this mod: the game itself and the modloader.
