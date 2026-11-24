@@ -1,0 +1,45 @@
+# Town names per language. Column 1 is the name in the English map (maps/Standard24.gmf),
+# column 2 other English spellings used in texts. An empty cell keeps the English map name.
+# Rule: the form customary in the language; the game font has no å æ ø ñ ç ã õ and no
+# capital accented letters (see docs/LANGUAGES.md).
+english	aliases	de	fr	nl	es	it	pt	sv	da	no
+Edinburgh			Edimbourg		Edimburgo	Edimburgo	Edimburgo			
+Newcastle										
+Scarborough										
+Boston										
+London			Londres	Londen	Londres	Londra	Londres			
+Bruges		Brügge		Brugge	Brujas			Brygge	Brugge	Brugge
+Haarlem										
+Harlingen										
+Groningen			Groningue		Groninga	Groninga	Groninga			
+Cologne		Köln		Keulen	Colonia	Colonia	Colónia	Köln	Köln	Köln
+Bremen			Brême			Brema	Brema			
+Ripen									Ribe	Ribe
+Hamburg			Hambourg		Hamburgo	Amburgo	Hamburgo			
+Flensburg			Flensbourg							
+Luebeck	Lubeck,Lübeck	Lübeck	Lübeck	Lübeck	Lübeck	Lubecca	Lübeck	Lübeck	Lübeck	Lübeck
+Rostock										
+Bergen										
+Stavanger										
+Tönsberg	Tonsberg								Toensberg	Toensberg
+Oslo										
+Aalborg										
+Göteborg	Gothenburg				Gotemburgo		Gotemburgo			
+Naestved										
+Malmö	Malmo									
+Ahus									Aahus	Aahus
+Stockholm					Estocolmo	Stoccolma	Estocolmo			
+Visby										
+Helsinki								Helsingfors		
+Stettin										
+Rügenwald	Rugenwald									
+Gdansk	Danzig	Danzig	Dantzig			Danzica				
+Torun	Thorn	Thorn								
+Königsberg	Konigsberg									
+Memel										
+Windau										
+Riga										
+Pernau										
+Reval										
+Ladoga										
+Novgorod										
