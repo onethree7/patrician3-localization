@@ -77,6 +77,7 @@ patrician3-localization/
 ├── Cargo.toml
 ├── Cargo.lock
 ├── README.md
+├── LICENSE                 Apache License 2.0
 ├── src/                    mod code and tests
 ├── data/                   translation tables, embedded into the DLL at build time
 │   ├── german_localization.tsv
