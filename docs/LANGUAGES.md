@@ -51,21 +51,46 @@ For every embedded language, `cargo test` checks: valid slot, English original m
 placeholders, backslash markup, line breaks and edge spaces unchanged, characters representable in
 Windows-1252, templates complete, render table buildable.
 
+## Mission and campaign texts (`data/files/<code>.tsv`)
+
+Missions (`*.p2m`) and the campaign list (`scripts/missions_eng.ini`) are not part of the game image. The
+mod hooks the archive reads of `archiver.dll`, reads the English original, swaps its texts for the language
+and gives the game the result from memory (`src/files.rs`). Files that do not match the English originals,
+for example loose replacement files, reach the game unchanged. Three columns, tab-separated, `#` starts a
+comment:
+
+| Scope        | Meaning |
+|--------------|---------|
+| `p2m`        | Text of a mission script. Column 2 is the English original in the mission text codec: `\n` = line break, `\t`, `\\`, `\xHH`, `{%X:HH}` = format token `%X` with argument byte `HH`. The translation must keep the tokens. |
+| `p2m:<file>` | Like `p2m`, but only in that mission (file name without folder, any case). It wins over `p2m` rows and is meant for an English sentence that a language translates differently from mission to mission. The tokens are not compared. |
+| `ini`        | Value of a `key=value` line of the campaign list. |
+
+`data/files/source.tsv` lists every English original (579 mission texts, 25 campaign texts). A table only
+needs rows for texts that differ from English. `cargo test` checks that every row refers to an original, that
+the rows decode, and that the tokens and the font limits (see below, except for German) are kept.
+
 ## What is translated (and what is not)
 
 All 3186 text slots of the slot table are filled for fr, nl, es, it, sv, da, no and pt, plus the
 templates (`frag`), render and addon texts. That covers menus, labels, names, letters, event and
-chronicle texts and the composed sentence fragments. Not translated: mission, tutorial and ini files,
-and images that contain text. German additionally has translated game files, shipped separately as
-`patrician3-localization-<version>-resources-de.zip` (source: `resources/de/`).
+chronicle texts and the composed sentence fragments. Missions (579 texts) and the campaign list
+(25 texts) are translated for all languages as well, see below. Not translated: the tutorial script,
+credits and name lists, and images that contain text. German additionally has translated game files,
+shipped separately as `patrician3-localization-<version>-resources-de.zip` (source: `resources/de/`):
+tutorial, credits, name lists, map, menu pictures and 19 mission files. Of these, 15 have scripts
+that differ from the English ones, 3 carry title wording that the tables cannot give per position,
+and `Kampagne3_Entfuehrung.p2m` is the name the campaign list uses while the English archive holds
+the file under a name with an umlaut. All other German missions come from the tables like in any
+other language.
 
 Limits of quality (cannot be verified by machine):
 
 - Fragment chains and gender, case and genitive forms follow the slot structure of the German
   template and are approximations; some sentences read choppily in the game.
 - The order of placeholders follows English, even where the target language would order differently.
-- No review by native speakers. Loading in the game has been checked for `de`, `nl` and `sv`; the
-  other languages have not been run in the game yet.
+- No review by native speakers. Loading in the game has been checked for `de`, `nl` and `sv`. For all
+  nine languages the campaign selection and the first campaign letter have been run in the game; other
+  missions have not.
 
 ## Character set
 
@@ -129,6 +154,7 @@ language). All additional languages should be proofread by native speakers befor
 1. Create `data/lang/<code>.tsv`: one line `0x…<TAB>English<TAB>translation` per slot; take edge markup
    (`\\c`, `\\f1_`, `\n`) from the English column.
 2. Add the `frag` lines for months and pattern translators (see above).
-3. Add an entry to `LANGUAGES` in `src/language.rs` using `include_str!`.
-4. Run `cargo test`; then set `language=<code>` in `localization.ini` and check in the game.
-5. Add `docs/install/<code>.md` (copy an existing guide) and list the language in `README.md`.
+3. Create `data/files/<code>.tsv` with the mission and campaign texts (rows `p2m` and `ini`, see above).
+4. Add an entry to `LANGUAGES` in `src/language.rs` using `include_str!` for both tables.
+5. Run `cargo test`; then set `language=<code>` in `localization.ini` and check in the game.
+6. Add `docs/install/<code>.md` (copy an existing guide) and list the language in `README.md`.

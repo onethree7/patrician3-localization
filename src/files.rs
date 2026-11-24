@@ -5,6 +5,12 @@
 //! its texts for the configured language and hand the game an in-memory copy.
 //! Files the tables do not cover, or that do not match the English originals
 //! (for example loose replacement files), reach the game unchanged.
+//!
+//! Table rows with the scope `p2m` apply to every mission. Rows with the scope
+//! `p2m:<file name>` apply to that mission only and win over the generic rows;
+//! they cover English sentences that a language translates differently depending
+//! on the mission. Only the generic rows must keep the format tokens of the English
+//! text; a row for one file may use other tokens, as the shipped file does.
 
 use std::{
     collections::HashMap,
@@ -26,13 +32,26 @@ const CAMPAIGN_LIST: &str = "scripts/missions_eng.ini";
 #[derive(Debug, Default)]
 pub(crate) struct FileTexts {
     pub mission: HashMap<Vec<u8>, Vec<u8>>,
+    /// Per-mission overrides, keyed by the lowercase file name without folders.
+    pub mission_files: HashMap<String, HashMap<Vec<u8>, Vec<u8>>>,
     pub ini: HashMap<Vec<u8>, Vec<u8>>,
 }
 
 impl FileTexts {
     pub(crate) fn is_empty(&self) -> bool {
-        self.mission.is_empty() && self.ini.is_empty()
+        self.mission.is_empty() && self.mission_files.is_empty() && self.ini.is_empty()
     }
+}
+
+/// Lowercase file name without folders. Bytes map one to one to characters
+/// (Latin-1), which equals CP1252 for the letters game file names use.
+fn base_name(name: &[u8]) -> String {
+    let name: String = name.iter().map(|byte| *byte as char).collect();
+    let name = name.replace('\\', "/");
+    name.rsplit('/')
+        .next()
+        .unwrap_or_default()
+        .to_ascii_lowercase()
 }
 
 // ---------------------------------------------------------------------------
@@ -45,14 +64,19 @@ pub(crate) fn decode_mission_text(value: &str) -> Result<Vec<u8>, String> {
     let mut out = Vec::with_capacity(value.len());
     let chars: Vec<char> = value.chars().collect();
     let hex = |a: char, b: char| -> Result<u8, String> {
-        u8::from_str_radix(&format!("{a}{b}"), 16).map_err(|_| format!("Bad hex escape in: {value}"))
+        u8::from_str_radix(&format!("{a}{b}"), 16)
+            .map_err(|_| format!("Bad hex escape in: {value}"))
     };
     let mut i = 0;
     while i < chars.len() {
         let c = chars[i];
         if c == '{' {
             // {%X:HH}
-            if i + 6 < chars.len() && chars[i + 1] == '%' && chars[i + 3] == ':' && chars[i + 6] == '}' {
+            if i + 6 < chars.len()
+                && chars[i + 1] == '%'
+                && chars[i + 3] == ':'
+                && chars[i + 6] == '}'
+            {
                 out.push(b'%');
                 out.extend(super::encode_cp1252(&chars[i + 2].to_string(), "token")?);
                 out.push(hex(chars[i + 4], chars[i + 5])?);
@@ -117,13 +141,23 @@ pub(crate) fn load_file_texts(table: &str) -> Result<FileTexts, String> {
             return Err(format!("Empty file text row: {line}"));
         }
         let (map, source, translation) = match *scope {
-            "p2m" => {
+            scope if scope == "p2m" || scope.starts_with("p2m:") => {
                 let source = decode_mission_text(source)?;
                 let translation = decode_mission_text(translation)?;
-                if mission_tokens(&source) != mission_tokens(&translation) {
+                // Rows for one file are taken verbatim from a shipped mission whose script
+                // supplies the arguments, so only the generic rows must keep the tokens.
+                if scope == "p2m" && mission_tokens(&source) != mission_tokens(&translation) {
                     return Err(format!("Format tokens differ in mission text: {line}"));
                 }
-                (&mut texts.mission, source, translation)
+                let map = match scope.strip_prefix("p2m:") {
+                    None => &mut texts.mission,
+                    Some("") => return Err(format!("Missing file name in scope: {line}")),
+                    Some(file) => texts
+                        .mission_files
+                        .entry(file.to_ascii_lowercase())
+                        .or_default(),
+                };
+                (map, source, translation)
             }
             "ini" => {
                 let source = super::encode_cp1252(source, "campaign text")?;
@@ -189,7 +223,16 @@ fn split_strings(statement: &[u8], start: usize) -> Option<Vec<(usize, usize)>> 
 }
 
 /// Returns the translated mission, or `None` if it is malformed or nothing changed.
+#[cfg(test)]
 pub(crate) fn translate_mission(data: &[u8], texts: &HashMap<Vec<u8>, Vec<u8>>) -> Option<Vec<u8>> {
+    translate_mission_with(data, |original| texts.get(original))
+}
+
+/// Like `translate_mission`, with the translations supplied by `lookup`.
+fn translate_mission_with<'a>(
+    data: &[u8],
+    lookup: impl Fn(&[u8]) -> Option<&'a Vec<u8>>,
+) -> Option<Vec<u8>> {
     let count = u16::from_le_bytes(data.get(0..2)?.try_into().ok()?) as usize;
     if count == 0 {
         return None;
@@ -200,7 +243,10 @@ pub(crate) fn translate_mission(data: &[u8], texts: &HashMap<Vec<u8>, Vec<u8>>) 
     let offsets: Vec<usize> = (0..count)
         .map(|i| read_u32(data, table + 4 * i).map(|value| value as usize))
         .collect::<Option<_>>()?;
-    if offsets[0] != code || offsets.windows(2).any(|pair| pair[1] <= pair[0]) || *offsets.last()? >= data.len() {
+    if offsets[0] != code
+        || offsets.windows(2).any(|pair| pair[1] <= pair[0])
+        || *offsets.last()? >= data.len()
+    {
         return None;
     }
     let statements: Vec<&[u8]> = (0..count)
@@ -235,9 +281,12 @@ pub(crate) fn translate_mission(data: &[u8], texts: &HashMap<Vec<u8>, Vec<u8>>) 
         };
         let mut body = statement[..prefix].to_vec();
         for (begin, end) in split_strings(statement, prefix)? {
-            moved.insert((offsets[index] + begin) as u32, (position + body.len()) as u32);
+            moved.insert(
+                (offsets[index] + begin) as u32,
+                (position + body.len()) as u32,
+            );
             let original = &statement[begin..end];
-            match texts.get(original) {
+            match lookup(original) {
                 Some(translation) if !original.is_empty() => {
                     body.extend_from_slice(translation);
                     changed = true;
@@ -294,7 +343,11 @@ pub(crate) fn translate_ini(data: &[u8], texts: &HashMap<Vec<u8>, Vec<u8>>) -> O
     let mut changed = false;
     for line in data.split_inclusive(|byte| *byte == b'\n') {
         let content_end = line.len()
-            - line.iter().rev().take_while(|byte| **byte == b'\n' || **byte == b'\r').count();
+            - line
+                .iter()
+                .rev()
+                .take_while(|byte| **byte == b'\n' || **byte == b'\r')
+                .count();
         let (content, ending) = line.split_at(content_end);
         if let Some(equals) = content.iter().position(|byte| *byte == b'=') {
             if let Some(translation) = texts.get(&content[equals + 1..]) {
@@ -314,13 +367,18 @@ pub(crate) fn translate_ini(data: &[u8], texts: &HashMap<Vec<u8>, Vec<u8>>) -> O
 // Archiver import hooks
 // ---------------------------------------------------------------------------
 
+type CreateFileFn = unsafe extern "C" fn(*mut c_void, *const c_char) -> *mut c_void;
+type ReadFn = unsafe extern "C" fn(*mut c_void, *mut u8, i32) -> i32;
+type SeekFn = unsafe extern "C" fn(*mut c_void, i32) -> i32;
+type HandleFn = unsafe extern "C" fn(*mut c_void) -> i32;
+
 struct Originals {
-    create_file: unsafe extern "C" fn(*mut c_void, *const c_char) -> *mut c_void,
-    read: unsafe extern "C" fn(*mut c_void, *mut u8, i32) -> i32,
-    seek: unsafe extern "C" fn(*mut c_void, i32) -> i32,
-    get_pos: unsafe extern "C" fn(*mut c_void) -> i32,
-    file_length: unsafe extern "C" fn(*mut c_void) -> i32,
-    release_file: unsafe extern "C" fn(*mut c_void) -> i32,
+    create_file: CreateFileFn,
+    read: ReadFn,
+    seek: SeekFn,
+    get_pos: HandleFn,
+    file_length: HandleFn,
+    release_file: HandleFn,
 }
 
 struct VirtualFile {
@@ -333,7 +391,9 @@ static TEXTS: OnceLock<FileTexts> = OnceLock::new();
 static OPEN: OnceLock<Mutex<HashMap<usize, Box<VirtualFile>>>> = OnceLock::new();
 
 fn open_files() -> std::sync::MutexGuard<'static, HashMap<usize, Box<VirtualFile>>> {
-    OPEN.get_or_init(Default::default).lock().unwrap_or_else(|poison| poison.into_inner())
+    OPEN.get_or_init(Default::default)
+        .lock()
+        .unwrap_or_else(|poison| poison.into_inner())
 }
 
 fn originals() -> &'static Originals {
@@ -346,7 +406,9 @@ enum Kind {
 }
 
 fn classify(name: &[u8]) -> Option<Kind> {
-    let name = String::from_utf8_lossy(name).to_ascii_lowercase().replace('\\', "/");
+    let name = String::from_utf8_lossy(name)
+        .to_ascii_lowercase()
+        .replace('\\', "/");
     let name = name.trim_start_matches("./");
     if name.ends_with(".p2m") {
         Some(Kind::Mission)
@@ -357,16 +419,30 @@ fn classify(name: &[u8]) -> Option<Kind> {
     }
 }
 
+/// Translates a mission; rows for this very file win over the generic ones.
+fn translate_mission_for(data: &[u8], file: &str, texts: &FileTexts) -> Option<Vec<u8>> {
+    let specific = texts.mission_files.get(file);
+    translate_mission_with(data, |original| {
+        specific
+            .and_then(|rows| rows.get(original))
+            .or_else(|| texts.mission.get(original))
+    })
+}
+
 unsafe fn read_whole(handle: *mut c_void) -> Option<Vec<u8>> {
     let original = originals();
     let length = (original.file_length)(handle);
-    if length < 0 || length > 16 << 20 {
+    if !(0..=16 << 20).contains(&length) {
         return None;
     }
     let mut data = vec![0u8; length as usize];
     let mut filled = 0usize;
     while filled < data.len() {
-        let read = (original.read)(handle, data.as_mut_ptr().add(filled), (data.len() - filled) as i32);
+        let read = (original.read)(
+            handle,
+            data.as_mut_ptr().add(filled),
+            (data.len() - filled) as i32,
+        );
         if read <= 0 {
             return None;
         }
@@ -390,7 +466,9 @@ unsafe extern "C" fn create_file(container: *mut c_void, name: *const c_char) ->
         return (original.create_file)(container, name);
     };
     let translated = match kind {
-        Kind::Mission => translate_mission(&data, &texts.mission),
+        Kind::Mission => {
+            translate_mission_for(&data, &base_name(CStr::from_ptr(name).to_bytes()), texts)
+        }
         Kind::CampaignList => translate_ini(&data, &texts.ini),
     };
     (original.release_file)(handle);
@@ -461,7 +539,10 @@ unsafe extern "C" fn release_file(handle: *mut c_void) -> i32 {
 }
 
 /// IAT patches for the archiver imports; no patches if the language has no file texts.
-pub(crate) unsafe fn hook_patches(base: usize, texts: FileTexts) -> Result<Vec<crate::patch::Patch>, String> {
+pub(crate) unsafe fn hook_patches(
+    base: usize,
+    texts: FileTexts,
+) -> Result<Vec<crate::patch::Patch>, String> {
     if texts.is_empty() {
         return Ok(Vec::new());
     }
@@ -489,15 +570,17 @@ pub(crate) unsafe fn hook_patches(base: usize, texts: FileTexts) -> Result<Vec<c
     }
     ORIGINALS
         .set(Originals {
-            create_file: std::mem::transmute(current[0]),
-            read: std::mem::transmute(current[1]),
-            seek: std::mem::transmute(current[2]),
-            get_pos: std::mem::transmute(current[3]),
-            file_length: std::mem::transmute(current[4]),
-            release_file: std::mem::transmute(current[5]),
+            create_file: std::mem::transmute::<usize, CreateFileFn>(current[0]),
+            read: std::mem::transmute::<usize, ReadFn>(current[1]),
+            seek: std::mem::transmute::<usize, SeekFn>(current[2]),
+            get_pos: std::mem::transmute::<usize, HandleFn>(current[3]),
+            file_length: std::mem::transmute::<usize, HandleFn>(current[4]),
+            release_file: std::mem::transmute::<usize, HandleFn>(current[5]),
         })
         .map_err(|_| "File hooks already initialized")?;
-    TEXTS.set(texts).map_err(|_| "File texts already initialized")?;
+    TEXTS
+        .set(texts)
+        .map_err(|_| "File texts already initialized")?;
     Ok(patches)
 }
 
@@ -528,7 +611,10 @@ mod tests {
     #[test]
     fn mission_data_block_pointers_follow_their_texts() {
         let data = data_block_mission();
-        let texts = table(&[(b"Title", b"Longer title"), (b"Hi %s\x07!", b"Hallo %s\x07!")]);
+        let texts = table(&[
+            (b"Title", b"Longer title"),
+            (b"Hi %s\x07!", b"Hallo %s\x07!"),
+        ]);
         let out = translate_mission(&data, &texts).unwrap();
         let block = u32::from_le_bytes(out[8..12].try_into().unwrap()) as usize;
         assert_eq!(out[block], 0xff);
@@ -564,11 +650,34 @@ mod tests {
     }
 
     #[test]
+    fn mission_rows_for_one_file_win_over_generic_rows() {
+        let data = data_block_mission();
+        let texts = load_file_texts(
+            "p2m\tTitle\tAllgemein\np2m:Kampagne3_Entf\u{fc}hrung.p2m\tTitle\tNur hier\n",
+        )
+        .unwrap();
+        // The game passes file names as CP1252 bytes.
+        let specific = base_name(b"missions_addon\\Kampagne3_Entf\xfchrung.p2m");
+        let other = base_name(b"missions\\000010_m.p2m");
+        let specific = translate_mission_for(&data, &specific, &texts).unwrap();
+        let generic = translate_mission_for(&data, &other, &texts).unwrap();
+        assert!(specific.windows(8).any(|w| w == b"Nur hier"));
+        assert!(!specific.windows(9).any(|w| w == b"Allgemein"));
+        assert!(generic.windows(9).any(|w| w == b"Allgemein"));
+        assert_eq!(base_name(b"./Missions/ABC.P2M"), "abc.p2m");
+        assert!(load_file_texts("p2m:\tTitle\tX\n").is_err());
+        assert!(load_file_texts("p2m:a.p2m\tTitle\tX\np2m:A.p2m\tTitle\tY\n").is_err());
+    }
+
+    #[test]
     fn campaign_list_values_are_replaced_line_by_line() {
         let ini = b"[Campaign_1]\r\nName=The Fire\r\nTexture=41101\r\nText=Burn\n";
         let texts = table(&[(b"The Fire", b"Das Feuer"), (b"Burn", b"Brand")]);
         let out = translate_ini(ini, &texts).unwrap();
-        assert_eq!(out, b"[Campaign_1]\r\nName=Das Feuer\r\nTexture=41101\r\nText=Brand\n");
+        assert_eq!(
+            out,
+            b"[Campaign_1]\r\nName=Das Feuer\r\nTexture=41101\r\nText=Brand\n"
+        );
     }
 
     #[test]
@@ -592,13 +701,32 @@ mod tests {
         const FONT_EXTRA: &str = "äöüÄÖÜßáàâéèêíìîóòôúùû";
         for language in LANGUAGES {
             load_file_texts(language.files).unwrap_or_else(|e| panic!("{}: {e}", language.code));
-            for line in language.files.lines().filter(|l| !l.is_empty() && !l.starts_with('#')) {
+            for line in language
+                .files
+                .lines()
+                .filter(|l| !l.is_empty() && !l.starts_with('#'))
+            {
                 let mut fields = line.split('\t');
-                let (scope, source, translation) =
-                    (fields.next().unwrap(), fields.next().unwrap(), fields.next().unwrap());
-                assert!(english.contains(&(scope, source)), "{}: unknown source {source}", language.code);
+                let (scope, source, translation) = (
+                    fields.next().unwrap(),
+                    fields.next().unwrap(),
+                    fields.next().unwrap(),
+                );
+                let scope = if scope.starts_with("p2m:") {
+                    "p2m"
+                } else {
+                    scope
+                };
+                assert!(
+                    english.contains(&(scope, source)),
+                    "{}: unknown source {source}",
+                    language.code
+                );
                 if language.code != "de" {
-                    if let Some(c) = translation.chars().find(|c| !(c.is_ascii() || FONT_EXTRA.contains(*c))) {
+                    if let Some(c) = translation
+                        .chars()
+                        .find(|c| !(c.is_ascii() || FONT_EXTRA.contains(*c)))
+                    {
                         panic!("{}: {c:?} has no glyph in: {translation}", language.code);
                     }
                 }

@@ -6,7 +6,7 @@ Ce guide installe la traduction française de Patrician III (GOG ou Steam).
 2. Téléchargez le [chargeur de mods P3Modding](https://p3modding.github.io/modloader.html) et copiez `p3_modloader.dll` et `Patrician3_modloader.exe` dans le dossier du jeu (celui qui contient le `.exe` du jeu).
 3. Sur la [page des versions](../../../../releases), téléchargez `patrician3-localization-<version>.zip` et extrayez-le dans le dossier du jeu. Le dossier `mods` contient alors `patrician3_localization.dll` et `localization.ini`.
 4. Ouvrez `mods\localization.ini` avec le Bloc-notes et réglez `language=fr`. Sans ce fichier, le mod utilise l'allemand.
-5. Rien d'autre à installer : les missions, le tutoriel, les crédits et les images du menu restent en anglais. Ne copiez pas les ressources allemandes (`resources-de`).
+5. Rien d'autre à installer : les missions et la liste des campagnes sont traduites ; le tutoriel, les crédits et les images du menu restent en anglais. Ne copiez pas les ressources allemandes (`resources-de`).
 6. Lancez le jeu avec `Patrician3_modloader.exe`.
 
 Facultatif : d'autres mods de [`mods.zip` de P3Modding](https://github.com/P3Modding/p3-lib/releases/tag/0.1.15) vont dans le même dossier `mods`.
