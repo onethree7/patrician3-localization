@@ -26,6 +26,8 @@ pub(crate) struct LanguageInfo {
     pub name: &'static str,
     /// Embedded table; empty for German (legacy tables).
     pub table: &'static str,
+    /// Mission and campaign texts (`data/files/<code>.tsv`), see `files.rs`.
+    pub files: &'static str,
 }
 
 pub(crate) const LANGUAGES: &[LanguageInfo] = &[
@@ -33,46 +35,55 @@ pub(crate) const LANGUAGES: &[LanguageInfo] = &[
         code: "de",
         name: "Deutsch",
         table: "",
+        files: include_str!("../data/files/de.tsv"),
     },
     LanguageInfo {
         code: "fr",
         name: "Français",
         table: include_str!("../data/lang/fr.tsv"),
+        files: include_str!("../data/files/fr.tsv"),
     },
     LanguageInfo {
         code: "nl",
         name: "Nederlands",
         table: include_str!("../data/lang/nl.tsv"),
+        files: include_str!("../data/files/nl.tsv"),
     },
     LanguageInfo {
         code: "es",
         name: "Español",
         table: include_str!("../data/lang/es.tsv"),
+        files: include_str!("../data/files/es.tsv"),
     },
     LanguageInfo {
         code: "it",
         name: "Italiano",
         table: include_str!("../data/lang/it.tsv"),
+        files: include_str!("../data/files/it.tsv"),
     },
     LanguageInfo {
         code: "sv",
         name: "Svenska",
         table: include_str!("../data/lang/sv.tsv"),
+        files: include_str!("../data/files/sv.tsv"),
     },
     LanguageInfo {
         code: "da",
         name: "Dansk",
         table: include_str!("../data/lang/da.tsv"),
+        files: include_str!("../data/files/da.tsv"),
     },
     LanguageInfo {
         code: "no",
         name: "Norsk",
         table: include_str!("../data/lang/no.tsv"),
+        files: include_str!("../data/files/no.tsv"),
     },
     LanguageInfo {
         code: "pt",
         name: "Português",
         table: include_str!("../data/lang/pt.tsv"),
+        files: include_str!("../data/files/pt.tsv"),
     },
 ];
 

@@ -1,3 +1,4 @@
+mod files;
 mod language;
 mod patch;
 
@@ -1019,6 +1020,7 @@ unsafe fn install() -> Result<usize, String> {
     }
 
     let mut patches = hook_patches(base)?;
+    patches.extend(files::hook_patches(base, files::load_file_texts(language.files)?)?);
     patches.extend(entries.iter().map(|entry| {
         patch::Patch {
             address: base + entry.slot_rva,
