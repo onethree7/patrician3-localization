@@ -1,6 +1,6 @@
 //! Translated game files.
 //!
-//! Missions (`*.p2m`) and the campaign list (`scripts/missions_eng.ini`) are read
+//! Missions (`*.p2m`) and the ini files (campaign list, tutorial, credits) are read
 //! through archiver.dll. The import hooks below read the English original, swap
 //! its texts for the configured language and hand the game an in-memory copy.
 //! Files the tables do not cover, or that do not match the English originals
@@ -26,7 +26,12 @@ const IAT_RELEASE_FILE: usize = 0x26a028;
 const IAT_CREATE_FILE: usize = 0x26a02c;
 const IAT_READ: usize = 0x26a050;
 
-const CAMPAIGN_LIST: &str = "scripts/missions_eng.ini";
+/// Ini files whose `key=value` values are replaced as a whole (`ini` rows).
+const INI_FILES: [&str; 3] = [
+    "scripts/missions_eng.ini",
+    "scripts/tutorial_eng.ini",
+    "scripts/credits_eng.ini",
+];
 
 /// English text -> translation, as raw CP1252 bytes.
 #[derive(Debug, Default)]
@@ -412,7 +417,7 @@ fn classify(name: &[u8]) -> Option<Kind> {
     let name = name.trim_start_matches("./");
     if name.ends_with(".p2m") {
         Some(Kind::Mission)
-    } else if name == CAMPAIGN_LIST {
+    } else if INI_FILES.contains(&name) {
         Some(Kind::CampaignList)
     } else {
         None

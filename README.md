@@ -9,14 +9,14 @@ Play **Patrician III** (GOG and Steam) in your own language. This mod replaces t
 | Language | Code | Game texts (menus, goods, events, letters) | Missions and campaigns | Tutorial, credits, menu gfx |
 |---|---|---|---|---|
 | Deutsch | `de` | complete | translated | translated (separate download, see below) |
-| Français | `fr` | complete, not proofread | translated, not proofread | English |
-| Nederlands | `nl` | complete, not proofread | translated, not proofread | English |
-| Español | `es` | complete, not proofread | translated, not proofread | English |
-| Italiano | `it` | complete, not proofread | translated, not proofread | English |
-| Svenska | `sv` | complete, not proofread | translated, not proofread | English |
-| Dansk | `da` | complete, not proofread | translated, not proofread | English |
-| Norsk (Bokmål) | `no` | complete, not proofread | translated, not proofread | English |
-| Português | `pt` | complete, not proofread | translated, not proofread | English |
+| Français | `fr` | complete, not proofread | translated, not proofread | tutorial and credits translated, not proofread; menu gfx English |
+| Nederlands | `nl` | complete, not proofread | translated, not proofread | tutorial and credits translated, not proofread; menu gfx English |
+| Español | `es` | complete, not proofread | translated, not proofread | tutorial and credits translated, not proofread; menu gfx English |
+| Italiano | `it` | complete, not proofread | translated, not proofread | tutorial and credits translated, not proofread; menu gfx English |
+| Svenska | `sv` | complete, not proofread | translated, not proofread | tutorial and credits translated, not proofread; menu gfx English |
+| Dansk | `da` | complete, not proofread | translated, not proofread | tutorial and credits translated, not proofread; menu gfx English |
+| Norsk (Bokmål) | `no` | complete, not proofread | translated, not proofread | tutorial and credits translated, not proofread; menu gfx English |
+| Português | `pt` | complete, not proofread | translated, not proofread | tutorial and credits translated, not proofread; menu gfx English |
 
 "Not proofread" means: every text is translated, but no native speaker has reviewed it yet. Some sentences, which the game assembles from several pieces, can read a little awkwardly. Corrections are very welcome, see [docs/LANGUAGES.md](docs/LANGUAGES.md).
 

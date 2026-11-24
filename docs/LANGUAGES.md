@@ -63,9 +63,9 @@ comment:
 |--------------|---------|
 | `p2m`        | Text of a mission script. Column 2 is the English original in the mission text codec: `\n` = line break, `\t`, `\\`, `\xHH`, `{%X:HH}` = format token `%X` with argument byte `HH`. The translation must keep the tokens. |
 | `p2m:<file>` | Like `p2m`, but only in that mission (file name without folder, any case). It wins over `p2m` rows and is meant for an English sentence that a language translates differently from mission to mission. The tokens are not compared. |
-| `ini`        | Value of a `key=value` line of the campaign list. |
+| `ini`        | Value of a `key=value` line of the campaign list, the tutorial or the credits (`scripts/missions_eng.ini`, `tutorial_eng.ini`, `credits_eng.ini`). The whole value is replaced; the tutorial markup (`\\f0_`, `\\f1_`, `\n`) and the `|` layout of the credits stay as in English. |
 
-`data/files/source.tsv` lists every English original (579 mission texts, 25 campaign texts). A table only
+`data/files/source.tsv` lists every English original (579 mission texts, 25 campaign texts, 159 tutorial texts, 43 credits texts). A table only
 needs rows for texts that differ from English. `cargo test` checks that every row refers to an original, that
 the rows decode, and that the tokens and the font limits (see below, except for German) are kept.
 
@@ -73,9 +73,9 @@ the rows decode, and that the tokens and the font limits (see below, except for 
 
 All 3186 text slots of the slot table are filled for fr, nl, es, it, sv, da, no and pt, plus the
 templates (`frag`), render and addon texts. That covers menus, labels, names, letters, event and
-chronicle texts and the composed sentence fragments. Missions (579 texts) and the campaign list
-(25 texts) are translated for all languages as well, see below. Not translated: the tutorial script,
-credits and name lists, and images that contain text. German additionally has translated game files,
+chronicle texts and the composed sentence fragments. Missions (579 texts), the campaign list
+(25 texts), the tutorial (159 texts) and the credits (43 texts) are translated for all languages as well,
+see below. Not translated: name lists and images that contain text (menu pictures, map). German additionally has translated game files,
 shipped separately as `patrician3-localization-<version>-resources-de.zip` (source: `resources/de/`):
 tutorial, credits, name lists, map, menu pictures and 19 mission files. Of these, 15 have scripts
 that differ from the English ones, 3 carry title wording that the tables cannot give per position,
