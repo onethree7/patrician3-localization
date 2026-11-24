@@ -1250,7 +1250,7 @@ frag	day_many	{n} giorni
 0x299D00	\\f1_\n\nThe public convoy %s will be leaving in %u days with the destination %s.	\\f1_\n\nIl convoglio pubblico %s salperà tra %u giorni con destinazione %s.
 0x299F78	Fire! Fire!	Al fuoco! Al fuoco!
 0x299F7C	Hopefully, the sea route will be free again soon	Speriamo che la rotta marittima torni presto libera
-0x299F94	We have not had a good celebration for a long time	È da molto che non facciamo una bella festa
+0x299F94	We have not had a good celebration for a long time	E' da molto che non facciamo una bella festa
 0x29A0F4	There is a shortage of %s	Scarseggia %s
 0x29A0F8	What we need most is %s	Ciò di cui abbiamo più bisogno è %s
 0x29A0FC	If only we had more %s	Se solo avessimo più %s
@@ -1478,7 +1478,7 @@ frag	day_many	{n} giorni
 0x29DA6C	Thank you for the supply within the prescribed period.	Grazie per la fornitura entro il termine stabilito.
 0x29DA70	You receive your premium of %u	Ricevete il vostro premio di %u
 0x29DA74	by %u. %s %u.	entro il %u %s %u.
-0x29DA78	It was a pleasure for me to do business with you.	È stato un piacere fare affari con voi.
+0x29DA78	It was a pleasure for me to do business with you.	E' stato un piacere fare affari con voi.
 0x29DA7C	"I thank you for the supply,	"Vi ringrazio per la fornitura,
 0x29DA80	because we can use it well.	perché ci torna molto utile.
 0x29DA84	As agreed upon you got per	Come pattuito, avete ricevuto per ogni
@@ -1652,8 +1652,8 @@ frag	day_many	{n} giorni
 0x2A12A4	\\f1_\n\nThe ship %s cannot sail because it is taking part in a blockade.	\\f1_\n\nLa nave %s non può salpare perché partecipa a un blocco.
 0x2A12A8	The ship no longer fulfils the requirements of a convoy leader.	La nave non soddisfa più i requisiti di capoconvoglio.
 0x2A12F8	Should the ship %s leave the convoy?	La nave %s deve lasciare il convoglio?
-0x2A16C0	\\c\\f3_Sea battle\n\n\\l\\f1_%s "%s" is attacking %s "%s" %s.\n	\\c\\f3_Battaglia navale\n\n\\l\\f1_%s «%s» attacca %s «%s» %s.\n
-0x2A16C4	\\c\\f3_Sea battle\n\n\\l\\f1_%s "%s" is being attacked by %s "%s" %s.\n	\\c\\f3_Battaglia navale\n\n\\l\\f1_%s «%s» viene attaccato da %s «%s» %s.\n
+0x2A16C0	\\c\\f3_Sea battle\n\n\\l\\f1_%s "%s" is attacking %s "%s" %s.\n	\\c\\f3_Battaglia navale\n\n\\l\\f1_%s "%s" attacca %s "%s" %s.\n
+0x2A16C4	\\c\\f3_Sea battle\n\n\\l\\f1_%s "%s" is being attacked by %s "%s" %s.\n	\\c\\f3_Battaglia navale\n\n\\l\\f1_%s "%s" viene attaccato da %s "%s" %s.\n
 0x2A16CC	\\f1_\n\\c\\f3_Sea battle\n\\l\\f1_	\\f1_\n\\c\\f3_Battaglia navale\n\\l\\f1_
 0x2A16D0	\n\\f0_Own ships:\n\\f1_	\n\\f0_Navi proprie:\n\\f1_
 0x2A16D4	\n\\f0_Convoy leader:\n\\f1_	\n\\f0_Capoconvoglio:\n\\f1_
@@ -1687,12 +1687,12 @@ frag	day_many	{n} giorni
 0x2A1754	cog	cocca
 0x2A1758	hulk	holk
 0x2A175C	the snaikke	la schnigge
-0x2A176C	\\c\\f3_Sea battle\n\n\\l\\f1_Should your ship "%s" attack %s "%s" %s?\n	\\c\\f3_Battaglia navale\n\n\\l\\f1_La tua nave «%s» deve attaccare %s «%s» %s?\n
-0x2A1770	\\c\\f3_Attack on town\n\n\\l\\f1_%s "%s" attacks the town of %s.\n	\\c\\f3_Attacco alla città\n\n\\l\\f1_%s «%s» attacca la città di %s.\n
-0x2A1774	\\c\\f3_Attack on town\n\n\\l\\f1_The town of %s is under attack by %s "%s" %s.\n	\\c\\f3_Attacco alla città\n\n\\l\\f1_La città di %s è attaccata da %s «%s» %s.\n
+0x2A176C	\\c\\f3_Sea battle\n\n\\l\\f1_Should your ship "%s" attack %s "%s" %s?\n	\\c\\f3_Battaglia navale\n\n\\l\\f1_La tua nave "%s" deve attaccare %s "%s" %s?\n
+0x2A1770	\\c\\f3_Attack on town\n\n\\l\\f1_%s "%s" attacks the town of %s.\n	\\c\\f3_Attacco alla città\n\n\\l\\f1_%s "%s" attacca la città di %s.\n
+0x2A1774	\\c\\f3_Attack on town\n\n\\l\\f1_The town of %s is under attack by %s "%s" %s.\n	\\c\\f3_Attacco alla città\n\n\\l\\f1_La città di %s è attaccata da %s "%s" %s.\n
 0x2A177C	The town of %s	La città di %s
-0x2A1D78	\\c\\f3_Boarding battle\n\n\\l\\f1_The crew of the "%s" has captured %s "%s" %s.	\\c\\f3_Battaglia d'abbordaggio\n\n\\l\\f1_L'equipaggio della «%s» ha catturato %s «%s» %s.
-0x2A1D7C	\\c\\f3_Boarding battle\n\n\\l\\f1_Your ship "%s" lost the boarding fight against %s "%s" %s.	\\c\\f3_Battaglia d'abbordaggio\n\n\\l\\f1_La tua nave «%s» ha perso il combattimento d'abbordaggio contro %s «%s» %s.
+0x2A1D78	\\c\\f3_Boarding battle\n\n\\l\\f1_The crew of the "%s" has captured %s "%s" %s.	\\c\\f3_Battaglia d'abbordaggio\n\n\\l\\f1_L'equipaggio della "%s" ha catturato %s "%s" %s.
+0x2A1D7C	\\c\\f3_Boarding battle\n\n\\l\\f1_Your ship "%s" lost the boarding fight against %s "%s" %s.	\\c\\f3_Battaglia d'abbordaggio\n\n\\l\\f1_La tua nave "%s" ha perso il combattimento d'abbordaggio contro %s "%s" %s.
 0x2A1D80	\\c\\f3_Sea battle\n\n\\l\\f1_%s %s has fled.	\\c\\f3_Battaglia navale\n\n\\l\\f1_%s %s è fuggito.
 0x2A1D84	\\c\\f3_Sea battle\n\n\\l\\f1_%s has fled with %s like a cowardly dog.	\\c\\f3_Battaglia navale\n\n\\l\\f1_%s è fuggito con %s come un cane codardo.
 0x2A1D88	\\c\\f3_Sea battle\n\n\\l\\f1_You have beaten %s.	\\c\\f3_Battaglia navale\n\n\\l\\f1_Hai sconfitto %s.
@@ -1745,13 +1745,13 @@ frag	day_many	{n} giorni
 0x2A2A40	\\f1_A bath at last! After more than 3 weeks.	\\f1_Finalmente un bagno! Dopo più di 3 settimane.
 0x2A2A44	\\f1_Such a bath always makes one feel good.	\\f1_Un bagno così fa sempre bene.
 0x2A2A48	\\f1_You are not really dry from your last bath.	\\f1_Non sei ancora del tutto asciutto dal tuo ultimo bagno.
-0x2A2A4C	\\f1_"Greetings, %s %s. Is it not wonderful to have a bath again at last?"	\\f1_«Salute a voi, %s %s. Non è meraviglioso poter fare finalmente un bagno?»
-0x2A2A50	\\f1_"So we meet again, %s %s. I can very well remember how pleasant our last meeting was."	\\f1_«Dunque ci incontriamo di nuovo, %s %s. Ricordo benissimo quanto fu piacevole il nostro ultimo incontro.»
-0x2A2A54	\\f1_"Ah! You're here as well, %s %s? I have only very recently spoken to one of your competitors."	\\f1_«Ah! Siete qui anche voi, %s %s? Ho parlato solo da poco con uno dei vostri concorrenti.»
-0x2A2A58	\\f1_"Are you there again?! Let me have my bath in peace, please."	\\f1_«Ancora voi?! Lasciatemi fare il mio bagno in pace, vi prego.»
-0x2A2A5C	\\f1_"Aha, a bribe eh! But all right, I'll take your gold. We'll see what I can do for you at the appointed time."	\\f1_«Aha, una tangente, dunque! Ma sia, prendo il vostro oro. Vedremo che cosa posso fare per voi al momento stabilito.»
-0x2A2A60	\\f1_"Oh, that's a very enticing sum. You can be certain of my loyalty."	\\f1_«Oh, è una somma assai allettante. Potete contare sulla mia lealtà.»
-0x2A2A64	\\f1_"What am I supposed to do with this pittance? You ought to realise yourself, that a man in my position expects a little more from someone of your standing."	\\f1_«Che dovrei farmene di questa elemosina? Dovreste comprendere voi stesso che un uomo della mia posizione si aspetta un po' di più da uno del vostro rango.»
+0x2A2A4C	\\f1_"Greetings, %s %s. Is it not wonderful to have a bath again at last?"	\\f1_"Salute a voi, %s %s. Non è meraviglioso poter fare finalmente un bagno?"
+0x2A2A50	\\f1_"So we meet again, %s %s. I can very well remember how pleasant our last meeting was."	\\f1_"Dunque ci incontriamo di nuovo, %s %s. Ricordo benissimo quanto fu piacevole il nostro ultimo incontro."
+0x2A2A54	\\f1_"Ah! You're here as well, %s %s? I have only very recently spoken to one of your competitors."	\\f1_"Ah! Siete qui anche voi, %s %s? Ho parlato solo da poco con uno dei vostri concorrenti."
+0x2A2A58	\\f1_"Are you there again?! Let me have my bath in peace, please."	\\f1_"Ancora voi?! Lasciatemi fare il mio bagno in pace, vi prego."
+0x2A2A5C	\\f1_"Aha, a bribe eh! But all right, I'll take your gold. We'll see what I can do for you at the appointed time."	\\f1_"Aha, una tangente, dunque! Ma sia, prendo il vostro oro. Vedremo che cosa posso fare per voi al momento stabilito."
+0x2A2A60	\\f1_"Oh, that's a very enticing sum. You can be certain of my loyalty."	\\f1_"Oh, è una somma assai allettante. Potete contare sulla mia lealtà."
+0x2A2A64	\\f1_"What am I supposed to do with this pittance? You ought to realise yourself, that a man in my position expects a little more from someone of your standing."	\\f1_"Che dovrei farmene di questa elemosina? Dovreste comprendere voi stesso che un uomo della mia posizione si aspetta un po' di più da uno del vostro rango."
 0x2A2A68	Conversation with %s %s	Colloquio con %s %s
 0x2A2B34	\\f1_You must have a trading office in this town, to be able to buy weapons for your ships.	\\f1_Devi avere un fondaco in questa città per poter comprare armi per le tue navi.
 0x2A2B40	catapult	catapulta
@@ -1813,7 +1813,7 @@ frag	day_many	{n} giorni
 0x2A4394	\\f1_The %i. %s %i would be a good date to have such a rampage of jollity that would make Bacchus and Lukullus go pale.\nThe playing figures will cost you %i\\C.\n\nAre you willing to announce a celebration?	\\f1_Il %i %s %i sarebbe un buon giorno per un tale baccanale da far impallidire Bacco e Lucullo.\nI figuranti ti costeranno %i\\C.\n\nVuoi annunciare una festa?
 0x2A4398	\\f1_In order to organise a celebration, you must have a trading office in this town!	\\f1_Per organizzare una festa devi avere un fondaco in questa città!
 0x2A43A0	\\f1_%s %s %s %s %s has chosen the %i. %s %i as jubilee day in his honour.\n\nYou should announce your celebration at a later time, to have the right attention.	\\f1_%s %s %s %s %s ha scelto il %i %s %i come giorno di giubileo in suo onore.\n\nDovresti annunciare la tua festa più tardi, per ottenere la giusta attenzione.
-0x2A43A4	\\f1_Rejoice! It has been decided to have the planned celebration on %i. %s %i.\nMake sure that a few days before the event, you have enough food and drink of the most exquisite kind, as well as selected luxuries in your trading office.	\\f1_Rallegratevi! È stato deciso di tenere la festa prevista il %i %s %i.\nAssicurati di avere, alcuni giorni prima dell'evento, abbastanza cibo e bevande della qualità più squisita, nonché generi di lusso scelti nel tuo fondaco.
+0x2A43A4	\\f1_Rejoice! It has been decided to have the planned celebration on %i. %s %i.\nMake sure that a few days before the event, you have enough food and drink of the most exquisite kind, as well as selected luxuries in your trading office.	\\f1_Rallegratevi! E' stato deciso di tenere la festa prevista il %i %s %i.\nAssicurati di avere, alcuni giorni prima dell'evento, abbastanza cibo e bevande della qualità più squisita, nonché generi di lusso scelti nel tuo fondaco.
 0x2A4510	active	attivo
 0x2A4518	Automatic trade: The convoy leader %s cannot continue with the automatic trade	Commercio automatico: il capoconvoglio %s non può proseguire il commercio automatico
 0x2A451C	Automatic trade: %s is in too bad a condition	Commercio automatico: %s è in condizioni troppo cattive
@@ -1893,8 +1893,8 @@ frag	day_many	{n} giorni
 0x2A94EC	\\f1_Furthermore goods of %s and %s are requested.	\\f1_Inoltre si richiedono merci di %s e %s.
 0x2A94F0	\\f1_Furthermore goods of %s, %s and %s are requested.	\\f1_Inoltre si richiedono merci di %s, %s e %s.
 0x2A94F4	\\f1_The Prince also states his interest in entering into a supply contract for %s with you.	\\f1_Il Principe dichiara inoltre il suo interesse a stipulare con te un contratto di fornitura di %s.
-0x2A9508	\\f1_It has been requested,	\\f1_È stato richiesto
-0x2A9524	\\c\\f0_Balance from 1st %s to date	\\c\\f0_Bilancio dal 1° %s a oggi
+0x2A9508	\\f1_It has been requested,	\\f1_E' stato richiesto
+0x2A9524	\\c\\f0_Balance from 1st %s to date	\\c\\f0_Bilancio dal 1o %s a oggi
 0x2A9550	How much of your wealth would you like to donate to the town's coffers?	Quanta parte del tuo patrimonio vuoi donare alle casse della città?
 0x2A9560	%s to raise an extra tax via %d\\C.	a %s di riscuotere una tassa straordinaria di %d\\C.
 0x2A9564	%s to enlarge the town's walls.	a %s di ampliare le mura della città.
@@ -1941,7 +1941,7 @@ frag	day_many	{n} giorni
 0x2A9640	\\f1_The proposal was rejected by %d votes to %d with %d abstentions. The town walls will not be enlarged for the time being.	\\f1_La proposta è stata respinta con %d voti contro %d, con %d astensioni. Per il momento le mura della città non saranno ampliate.
 0x2A9644	\\f1_The proposal was accepted by %d votes to %d, with %d abstentions. The military will be allowed to expand by one unit.	\\f1_La proposta è stata approvata con %d voti contro %d, con %d astensioni. La milizia potrà essere ampliata di un contingente.
 0x2A9648	\\f1_The proposal was rejected by %d votes to %d with %d abstentions. The military will not be allowed to expand for the time being.	\\f1_La proposta è stata respinta con %d voti contro %d, con %d astensioni. Per il momento la milizia non potrà essere ampliata.
-0x2A964C	\\f1_The proposal was accepted by %d votes to %d, with %d abstentions. A new tax rate has been set at %d%%.	\\f1_La proposta è stata approvata con %d voti contro %d, con %d astensioni. È stata fissata una nuova aliquota del %d%%.
+0x2A964C	\\f1_The proposal was accepted by %d votes to %d, with %d abstentions. A new tax rate has been set at %d%%.	\\f1_La proposta è stata approvata con %d voti contro %d, con %d astensioni. E' stata fissata una nuova aliquota del %d%%.
 0x2A9650	\\f1_The proposal was rejected by %d votes to %d with %d abstentions. The tax rate of %d%% remains unchanged.	\\f1_La proposta è stata respinta con %d voti contro %d, con %d astensioni. L'aliquota del %d%% resta invariata.
 0x2A9654	\\f1_You can choose between the following orders, each will allow you to be put forward as candidate for Alderman:	\\f1_Puoi scegliere tra i seguenti incarichi; ciascuno ti permetterà di essere proposto come candidato a assessore:
 0x2A966C	\\f1_The Hanseatic League intends to create a new trade and production town in the %s. Negotiations with the prince have already been successfully concluded. Now they are looking for a town manager to erect the various buildings and build a town wall.	\\f1_La Lega Anseatica intende fondare una nuova città di commercio e produzione in %s. Le trattative con il principe si sono già concluse con successo. Ora si cerca un amministratore della città che erga i vari edifici e costruisca una cinta muraria.
@@ -1986,16 +1986,16 @@ frag	day_many	{n} giorni
 0x2A973C	\\f1_Subject: Raising taxes to %d%%	\\f1_Oggetto: aumento della tassa a testa al %d%%
 0x2A9740	\\f1_Subject: Decreasing taxes to %d%%	\\f1_Oggetto: riduzione della tassa a testa al %d%%
 0x2A9744	\\c\\f1_The council meeting is over.	\\c\\f1_La seduta del consiglio è conclusa.
-0x2A9748	\\f1_An extra tax of %d\\C has been levied.	\\f1_È stata riscossa una tassa straordinaria di %d\\C.
+0x2A9748	\\f1_An extra tax of %d\\C has been levied.	\\f1_E' stata riscossa una tassa straordinaria di %d\\C.
 0x2A99F4	\\l%s %s %s\n\n\\l\\dThere are great supply shortages in our country at this time. We would be very grateful if you could lend us %s for a few weeks.\nYou should deliver this order by %d %s. and your remuneration for this will be about one and a half times the value of the goods.\n\n The Prince	\\l%s %s %s\n\n\\l\\dIn questo momento nel nostro paese vi sono gravi carenze di approvvigionamento. Vi saremmo molto grati se poteste prestarci %s per alcune settimane.\nDovete consegnare questo ordine entro il %d %s e la vostra remunerazione sarà di circa una volta e mezzo il valore delle merci.\n\n Il Principe
 0x2A99F8	\\l%s %s %s\n\n\\l\\dMeet my emissary by %d. %s. at the town gate in order to hand the %s over to him. \n\n The Prince	\\l%s %s %s\n\n\\l\\dIncontrate il mio emissario entro il %d %s alla porta della città per consegnargli %s. \n\n Il Principe
 0x2A9A08	\\l%s %s %s\n\n\\l\\dYour delivery has helped me and my troops greatly. As agreed, here are your %d\\C.\n\nThe Prince	\\l%s %s %s\n\n\\l\\dLa vostra consegna ha aiutato moltissimo me e le mie truppe. Come pattuito, ecco i vostri %d\\C.\n\nIl Principe
 0x2A9A0C	\\l%s %s %s\n\n\\l\\dI'm afraid I am only able to pay you %d\\C for your goods due to an unfortunate incident in my country.\n\nThe Prince	\\l%s %s %s\n\n\\l\\dTemo di potervi pagare solo %d\\C per le vostre merci a causa di uno spiacevole incidente nel mio paese.\n\nIl Principe
-0x2AA178	\\c\\f3_Seizure\n\n\\l\\f1_The crew of the "%s" has plundered %s "%s" %s.	\\c\\f3_Saccheggio\n\n\\l\\f1_L'equipaggio della «%s» ha saccheggiato %s «%s» %s.
-0x2AA17C	\\c\\f3_Seizure\n\n\\l\\f1_Your ship "%s" was plundered by %s "%s" %s.	\\c\\f3_Saccheggio\n\n\\l\\f1_La tua nave «%s» è stata saccheggiata da %s «%s» %s.
+0x2AA178	\\c\\f3_Seizure\n\n\\l\\f1_The crew of the "%s" has plundered %s "%s" %s.	\\c\\f3_Saccheggio\n\n\\l\\f1_L'equipaggio della "%s" ha saccheggiato %s "%s" %s.
+0x2AA17C	\\c\\f3_Seizure\n\n\\l\\f1_Your ship "%s" was plundered by %s "%s" %s.	\\c\\f3_Saccheggio\n\n\\l\\f1_La tua nave "%s" è stata saccheggiata da %s "%s" %s.
 0x2AA180	%s %s: %d%%, plundered\n	%s %s: %d%%, saccheggiata\n
 0x2AA184	%s %s %s %s %s was attacked and plundered by the pirate %s %s.	%s %s %s %s %s è stato attaccato e saccheggiato dal pirata %s %s.
-0x2AA194	\\c\\f3_Pirates' Nest\n\n\\l\\f1_%s "%s" attacks the hideout of the pirate %s %s.\n	\\c\\f3_Nido di pirati\n\n\\l\\f1_%s «%s» attacca il covo del pirata %s %s.\n
+0x2AA194	\\c\\f3_Pirates' Nest\n\n\\l\\f1_%s "%s" attacks the hideout of the pirate %s %s.\n	\\c\\f3_Nido di pirati\n\n\\l\\f1_%s "%s" attacca il covo del pirata %s %s.\n
 0x2AA198	\\c\\f3_Pirates' Nest\n\n\\l\\f1_You have reduced the pirates nest to ashes and have liberated %d\\C.	\\c\\f3_Nido di pirati\n\n\\l\\f1_Hai ridotto in cenere il nido di pirati e hai liberato %d\\C.
 0x2AA19C	\\c\\f3_Pirates' Nest\n\n\\l\\f1_The Pirates were well prepared for your attack. You have failed.	\\c\\f3_Nido di pirati\n\n\\l\\f1_I pirati erano ben preparati al tuo attacco. Hai fallito.
 0x2AA1A0	\\c\\f3_Pirates' Nest\n\n\\l\\f1_The attack on the pirates hideaway has been scuppered by your flight.	\\c\\f3_Nido di pirati\n\n\\l\\f1_L'attacco al covo dei pirati è stato mandato a monte dalla tua fuga.
@@ -2084,7 +2084,7 @@ frag	day_many	{n} giorni
 0x2ABB80	The following goods were stolen:\n\\c	Sono state rubate le seguenti merci:\n\\c
 0x2ABB84	\n\\lWe should employ more guards to prevent any more fiendish attacks.	\n\\lDovremmo impiegare più guardie per impedire altri attacchi infami.
 0x2ABD0C	,\n\n\\lOur warehouses in %s were broken into last night.	,\n\n\\lLa notte scorsa dei ladri si sono introdotti nei nostri magazzini a %s.
-0x2ABD14	 It has transpired that the culprit was in the employ of your opponent, %s %s %s %s %s.	 È emerso che il colpevole era al servizio del tuo avversario, %s %s %s %s %s.
+0x2ABD14	 It has transpired that the culprit was in the employ of your opponent, %s %s %s %s %s.	 E' emerso che il colpevole era al servizio del tuo avversario, %s %s %s %s %s.
 0x2ABDB4	\n\\lOne of our warehouses has been lost in the town fire.	\n\\lUno dei nostri magazzini è andato perduto nell'incendio della città.
 0x2AC490	\\cBoycott of %s\n\n\\l	\\cBoicottaggio di %s\n\n\\l
 0x2AC498	\\cPirate fleet in %s\n\n\\l	\\cFlotta pirata a %s\n\n\\l
@@ -2112,16 +2112,16 @@ frag	day_many	{n} giorni
 0x2ADD20	The request for boycotting the town of %s was rejected by %u votes to %u.	La richiesta di boicottare la città di %s è stata respinta con %u voti contro %u.
 0x2ADD24	The motion for boycotting the town of %s was carried with %u votes. %u votes against this motion were recorded.	La proposta di boicottare la città di %s è stata approvata con %u voti. Sono stati registrati %u voti contrari a questa proposta.
 0x2ADD28	A request to impose a large fine on %s was rejected by %u votes to %u.	Una richiesta di infliggere una multa elevata a %s è stata respinta con %u voti contro %u.
-0x2ADD2C	It was decided to impose a large fine on the town of %s by %u votes. A total of %u votes were recorded rejecting this idea.	È stato deciso di infliggere una multa elevata alla città di %s con %u voti. In totale sono stati registrati %u voti contrari a questa idea.
+0x2ADD2C	It was decided to impose a large fine on the town of %s by %u votes. A total of %u votes were recorded rejecting this idea.	E' stato deciso di infliggere una multa elevata alla città di %s con %u voti. In totale sono stati registrati %u voti contrari a questa idea.
 0x2ADD30	A request for imposing a moderate fine on %s was rejected by %u votes to %u.	Una richiesta di infliggere una multa moderata a %s è stata respinta con %u voti contro %u.
-0x2ADD34	It was decided to impose a moderate fine on the town of %s with %u votes. There were %u votes objecting to this fine.	È stato deciso di infliggere una multa moderata alla città di %s con %u voti. Vi sono stati %u voti contrari a questa multa.
+0x2ADD34	It was decided to impose a moderate fine on the town of %s with %u votes. There were %u votes objecting to this fine.	E' stato deciso di infliggere una multa moderata alla città di %s con %u voti. Vi sono stati %u voti contrari a questa multa.
 0x2ADD38	The request for imposing a small fine on %s was rejected by %u votes to %u.	La richiesta di infliggere una multa lieve a %s è stata respinta con %u voti contro %u.
 0x2ADD3C	A motion was carried by %$2$u votes to impose a small fine on the town of %$1$s. There were %$3$u votes objecting to this fine.	Con %$2$u voti è stata approvata una proposta di infliggere una multa lieve alla città di %$1$s. Vi sono stati %$3$u voti contrari a questa multa.
 0x2ADD44	\\cProvide a ship for the blockade\n\\l\n	\\cMettere a disposizione una nave per il blocco\n\\l\n
 0x2ADD4C	You were requested to provide one of your ships to help with the blockade of the port of %s. As you did not comply with this request, the Hanseatic League was unable to carry out its threat against %s in the agreed way.\nYou will probably have realised by now that such blatant disregard of a decision reached on a Hanse Day will have damaged your reputation in the whole of the Hanseatic region.\n\nThe Hanseatic League Council	Ti era stato chiesto di mettere a disposizione una delle tue navi per il blocco del porto di %s. Poiché non hai dato seguito a questa richiesta, la Lega Anseatica non ha potuto attuare la sua minaccia contro %s nel modo stabilito.\nProbabilmente avrai ormai compreso che un così palese disprezzo di una decisione presa in una Dieta anseatica avrà danneggiato la tua reputazione in tutta la regione anseatica.\n\nIl Consiglio della Lega Anseatica
 0x2ADD54	has imposed an import tax on some goods	ha gravato alcune merci con un dazio di esportazione
 0x2ADD58	has imposed an extra tax on Hanseatic League businesses.	ha imposto una tassa straordinaria alle attività della Lega Anseatica.
-0x2ADD74	\n\\l\nAn extraordinary Hanse Day has been declared in %s on %d. %s %d	\n\\l\nÈ stata indetta una Dieta anseatica straordinaria a %s il %d %s %d
+0x2ADD74	\n\\l\nAn extraordinary Hanse Day has been declared in %s on %d. %s %d	\n\\l\nE' stata indetta una Dieta anseatica straordinaria a %s il %d %s %d
 0x2ADD78	\nThe subject for discussion is %s%s as %s\n\n	\nOggetto della discussione è %s%s, poiché %s\n\n
 0x2ADD7C	\\lThe %s Alderman\n%s %s	\\lL'assessore di %s\n%s %s
 0x2ADD80	\\lThe %s Alderman\n%s %s	\\lL'assessore di %s\n%s %s
@@ -2146,7 +2146,7 @@ frag	day_many	{n} giorni
 0x2ADDCC	My trading office in %s was robbed last night. I am positive that this monstrous action was planned at the highest level and puts not just my own, but the safety of all the local traders in %s in jeapody. I feel there must be no hesitation by the Hanseatic League in taking urgent action against %s.	Il mio fondaco a %s è stato svaligiato la notte scorsa. Sono convinto che questa mostruosa azione sia stata pianificata ai massimi livelli e metta in pericolo non solo la mia sicurezza, ma quella di tutti i mercanti di %s. Ritengo che la Lega Anseatica non debba esitare ad agire con urgenza contro %s.
 0x2ADDD0	\n\\r\n%s %s	\n\\r\n%s %s
 0x2ADDD4	\\cDemand for a Hanse Day \n\\l\n10 days ago saw an event the consequences of which must be discussed by the members of the Hanseatic League. Yet you have still not called for a Hanse Day! This must be remedied most urgently, as only swift and determined action can protect the interests of the Hanseatic League! Please proceed apace to your office in the Town Hall of %s.\n\\r\nThe Hanseatic League Council	\\cRichiesta di una Dieta anseatica \n\\l\n10 giorni fa è accaduto un fatto le cui conseguenze devono essere discusse dai membri della Lega Anseatica. Eppure non avete ancora convocato una Dieta anseatica! Occorre rimediare con la massima urgenza, poiché solo un'azione rapida e risoluta può tutelare gli interessi della Lega Anseatica! Recatevi senza indugio nel vostro ufficio nel municipio di %s.\n\\r\nIl Consiglio della Lega Anseatica
-0x2ADDD8	\\cHanse Day was not called\n\\l\nIt is your duty as the Hanseatic League's Alderman to call a Hanse Day in the wake of any important event. It has come to our attention that recently you failed in this duty, despite a reminder from the council. Such behaviour reduces the faith the Lord Mayors have in you and not least damages your reputation throughout the Hanseatic League\n\\r\nThe Hanseatic League Council	\\cDieta anseatica non convocata\n\\l\nÈ vostro dovere, in quanto assessore della Lega Anseatica, convocare una Dieta anseatica in seguito a ogni evento importante. Ci è giunto all'orecchio che di recente avete mancato a tale dovere, nonostante un sollecito del consiglio. Un simile comportamento riduce la fiducia che i borgomastri ripongono in voi e danneggia, non da ultimo, la vostra reputazione in tutta la Lega Anseatica\n\\r\nIl Consiglio della Lega Anseatica
+0x2ADDD8	\\cHanse Day was not called\n\\l\nIt is your duty as the Hanseatic League's Alderman to call a Hanse Day in the wake of any important event. It has come to our attention that recently you failed in this duty, despite a reminder from the council. Such behaviour reduces the faith the Lord Mayors have in you and not least damages your reputation throughout the Hanseatic League\n\\r\nThe Hanseatic League Council	\\cDieta anseatica non convocata\n\\l\nE' vostro dovere, in quanto assessore della Lega Anseatica, convocare una Dieta anseatica in seguito a ogni evento importante. Ci è giunto all'orecchio che di recente avete mancato a tale dovere, nonostante un sollecito del consiglio. Un simile comportamento riduce la fiducia che i borgomastri ripongono in voi e danneggia, non da ultimo, la vostra reputazione in tutta la Lega Anseatica\n\\r\nIl Consiglio della Lega Anseatica
 0x2ADDDC	\nHanse Day in %s\n\\l\n\\d %s was debating the formation of a pirate fleet today.\n	\nDieta anseatica a %s\n\\l\n\\d %s ha discusso oggi la formazione di una flotta di pirati.\n
 0x2AE5C8	\\dYou stand accused of taking part in a punishable offence, undermining the good of the Hanseatic League.	\\dSei accusato di aver preso parte a un reato punibile che mina il bene della Lega Anseatica.
 0x2AE608	%s have sworn that they recognised your ship %s	%s, diversi testimoni hanno giurato di aver riconosciuto la tua nave %s
@@ -2157,7 +2157,7 @@ frag	day_many	{n} giorni
 0x2AE640	%u%s %s has been confiscated from your hometown's trading office.	%u%s %s sono stati confiscati dal fondaco della tua città natale.
 0x2AE644	You will not be permitted to run into the port of %s for the next %u weeks.	Non ti sarà consentito entrare nel porto di %s per le prossime %u settimane.
 0x2AE648	\n\n\\dIt was decided today that there is no proof that you have committed a punishable act undermining the good of the Hanseatic League.	\n\n\\dOggi è stato deciso che non vi sono prove che tu abbia commesso un atto punibile che mina il bene della Lega Anseatica.
-0x2AE928	We have managed to sell your building (%$2$s) at the %$1$s Guild's auction. It was sold at a price of %d00\\C to %s %s. The money has already been transferred to your account. We hope you don't object to us having withheld the small sum of %d0\\C in recompense for our services.	Siamo riusciti a vendere il tuo edificio (%$2$s) all'asta della gilda di %$1$s. È stato venduto al prezzo di %d00\\C a %s %s. Il denaro è già stato accreditato sul tuo conto. Speriamo che tu non abbia nulla in contrario al fatto che abbiamo trattenuto la modesta somma di %d0\\C a compenso dei nostri servigi.
+0x2AE928	We have managed to sell your building (%$2$s) at the %$1$s Guild's auction. It was sold at a price of %d00\\C to %s %s. The money has already been transferred to your account. We hope you don't object to us having withheld the small sum of %d0\\C in recompense for our services.	Siamo riusciti a vendere il tuo edificio (%$2$s) all'asta della gilda di %$1$s. E' stato venduto al prezzo di %d00\\C a %s %s. Il denaro è già stato accreditato sul tuo conto. Speriamo che tu non abbia nulla in contrario al fatto che abbiamo trattenuto la modesta somma di %d0\\C a compenso dei nostri servigi.
 0x2AE92C	We were unfortunately unable to sell your building (%s) at todays auction at the %s Guild.	Purtroppo non siamo riusciti a vendere il tuo edificio (%s) all'asta di oggi presso la gilda di %s.
 0x2AE930	You have aquired your own building (%$2$s) at todays auction in %$1$s at a cost of %d00\\C. Trader's mood swings might be variable, but one thing that remains certain is our fee of %d0\\C.	Hai acquistato il tuo edificio (%$2$s) all'asta di oggi a %$1$s al prezzo di %d00\\C. L'umore dei mercanti può essere variabile, ma una cosa resta certa: la nostra commissione di %d0\\C.
 0x2AE934	You have aquired a building (%$2$s) at the %$1$s Guild's auction today for the sum of %d00\\C bought from %s %s.	Hai acquistato oggi un edificio (%$2$s) all'asta della gilda di %$1$s per la somma di %d00\\C, comprato da %s %s.
@@ -2324,7 +2324,7 @@ frag	day_many	{n} giorni
 0x2B28E0	The %s is attacking.	La %s attacca.
 0x2B28E4	%s %s has discovered a new world.	%s %s ha scoperto un nuovo mondo.
 0x2B28EC	%s %s takes over the chair of the Hanseatic League.	%s %s assume la presidenza della Lega Anseatica.
-0x2B28F0	A message has been received.	È stato ricevuto un messaggio.
+0x2B28F0	A message has been received.	E' stato ricevuto un messaggio.
 0x2B28F4	Plague has broken out in %s	La peste è scoppiata a %s
 0x2B28F8	Fire has broken out in %s	Un incendio è scoppiato a %s
 0x2B28FC	Some of your goods have been impounded in %s.	Parte delle tue merci è stata pignorata a %s.
@@ -2381,7 +2381,7 @@ frag	day_many	{n} giorni
 0x2B394C	You received rental income of %u\\C for your houses last week.	La settimana scorsa hai ricevuto %u\\C di affitti per le tue case.
 0x2B3950	Rent of %u\\C for additionally rented warehouses has to be paid.\n	Per i magazzini presi in affitto in aggiunta si devono pagare %u\\C di affitto.\n
 0x2B39F0	Taxes for your trading offices and workshops last week amounted to %u\\C.\n	Le tasse per i tuoi fondachi e le tue botteghe ammontavano la settimana scorsa a %u\\C.\n
-0x2B39F4	You received rent of %u for your houses. Property tax of %u\\C was paid.	Hai ricevuto %u di affitti per le tue case. È stata pagata un'imposta sugli immobili di %u\\C.
+0x2B39F4	You received rent of %u for your houses. Property tax of %u\\C was paid.	Hai ricevuto %u di affitti per le tue case. E' stata pagata un'imposta sugli immobili di %u\\C.
 0x2B3AA0	A loan of %i\\C that you took out on %u-%u-%u is due in %s	Un prestito di %i\\C che hai contratto il %u-%u-%u scade oggi a %s
 0x2B3D70	Because you have not repaid your debt in %s, Your wealth %u\\C will be seized.\nYour lender informed you, dutifully and early enough, about the threatening situation, the seizure is therefore legal and final.	Poiché non hai rimborsato il tuo debito a %s, il tuo patrimonio di %u\\C sarà pignorato.\nIl tuo prestatore ti ha informato della situazione minacciosa con diligenza e con largo anticipo; il pignoramento è dunque legale e definitivo.
 0x2B3D74	Because you are in arrears with your payments, goods in %s to the value of %u\\C will be seized.\nYour lender informed you, dutifully and early enough, about the threatening situation. The seizure is therefore legal and final.	Poiché sei in ritardo con i pagamenti, a %s saranno pignorate merci per un valore di %u\\C.\nIl tuo prestatore ti ha informato della situazione minacciosa con diligenza e con largo anticipo. Il pignoramento è dunque legale e definitivo.
@@ -2617,8 +2617,8 @@ frag	day_many	{n} giorni
 0x2C2AA4	Choose a destination on the chart and then click the destination.	Scegli una destinazione sulla carta e poi fai clic sulla destinazione.
 0x2C2B08	One expedition ship is in a poor condition.	Una nave della spedizione è in cattivo stato.
 0x2C2B0C	Several expedition ships are in a poor condition!	Diverse navi della spedizione sono in cattivo stato!
-0x2C2B40	1. target	1ª meta
-0x2C2B44	2. target	2ª meta
+0x2C2B40	1. target	1a meta
+0x2C2B44	2. target	2a meta
 0x2C2B84	How much gold is the expedition to take with it?	Quanto oro deve portare con sé la spedizione?
 0x2C2C60	The following auctions will	Le seguenti aste si terranno
 0x2C2C64	take place in the near future:	nel prossimo futuro:
@@ -2631,7 +2631,7 @@ frag	day_many	{n} giorni
 0x2C2E20	with a loading capacity of %u	con una capacità di carico di %u
 0x2C2E24	and in %u%% condition	e in condizioni del %u%%
 0x2C2E28	The estimated value of the ship is %u	Il valore stimato della nave è di %u
-0x2C2E2C	It's property of %s %s.	È proprietà di %s %s.
+0x2C2E2C	It's property of %s %s.	E' proprietà di %s %s.
 0x2C2E30	The current bid of %u	L'offerta attuale di %u
 0x2C2E34	comes from %s %s.	proviene da %s %s.
 0x2C2E64	The cost of joining the guild	L'ingresso nella gilda
@@ -3052,7 +3052,7 @@ frag	day_many	{n} giorni
 0x2ABA94	You received a contract 	Hai ricevuto l'incarico di 
 0x2ABB78	,\n\n\\lLast night our warehouses in 	,\n\n\\lNella notte scorsa i nostri magazzini di 
 0x2ABB7C	 were the target of thieves.\n	 sono stati visitati dai ladri.\n
-0x2ABD10	 However the ever vigilant guards were able to capture the culprit. He was immediately handed over to the townguard.	 Grazie alla vigilanza attenta delle guardie, il colpevole è stato però catturato. È stato subito consegnato alla guardia cittadina.
+0x2ABD10	 However the ever vigilant guards were able to capture the culprit. He was immediately handed over to the townguard.	 Grazie alla vigilanza attenta delle guardie, il colpevole è stato però catturato. E' stato subito consegnato alla guardia cittadina.
 0x2ABD18	 A charge has already been brought against this trader.	 Contro questo mercante è già stata presentata denuncia.
 0x2ABD1C	 The vigilant town guard managed to capture the culprit.	 La vigile guardia cittadina è però riuscita a catturare il colpevole.
 0x2ABDB8	 The following goods were engulfed by flames:\n\\c	 Le seguenti merci sono state distrutte dalle fiamme:\n\\c
@@ -3199,7 +3199,7 @@ frag	day_many	{n} giorni
 0x2B7CE4	 cannot be sufficiently proved.	 non può essere provata a sufficienza.
 0x2B8080	\n\n\\dThe accusation, that you were in 	\n\n\\dL'accusa secondo cui saresti stato a 
 0x2B8084	\n\n\\dYou were today found guilty, that you have broken the boycott to 	\n\n\\dOggi sei stato dichiarato colpevole di aver infranto il boicottaggio di 
-0x2B808C	\n\n\\dIt has turned out be true that you the devious burglary at 	\n\n\\dÈ risultato vero che hai commesso un subdolo furto con scasso presso 
+0x2B808C	\n\n\\dIt has turned out be true that you the devious burglary at 	\n\n\\dE' risultato vero che hai commesso un subdolo furto con scasso presso 
 0x2B80A0	 in the town of 	 nella città di 
 0x2B80A4	 and that you had contact with law-breakers, was confirmed today.	 e che sei entrato in contatto con fuorilegge, è stato confermato oggi.
 0x2B80B0	 have hardened today and we see the case against as proven.	 si sono inasprite oggi e consideriamo provata la tua colpa.

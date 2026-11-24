@@ -254,7 +254,7 @@
 0x29D908	How many do you want to hire?	Hoeveel wilt u er aanmonsteren?
 0x29D920	Which ship will you offer him for piracy?	Welk schip wilt u hem voor de piraterij aanbieden?
 0x29D938	Type of weapon	Wapensoort
-0x29D9EC	"You should improve your finances first!"	"U moet eerst uw financiën op orde brengen!"
+0x29D9EC	"You should improve your finances first!"	"U moet eerst uw financien op orde brengen!"
 0x29DA0C	Where should the goods be delivered?	Waarheen moeten de waren worden geleverd?
 0x29DA94	Next person	Volgende persoon
 0x29DB2C	Hand over supplies	Levering overdragen
@@ -473,7 +473,7 @@
 0x2A53C8	Letter	Brief
 0x2A53CC	Info	Info
 0x2A53D4	Pirate Hunt	Piratenjacht
-0x2A53D8	Hunt ended	Jacht beëindigd
+0x2A53D8	Hunt ended	Jacht beeindigd
 0x2A53DC	Plunder	Plundering
 0x2A53E8	Map	Kaart
 0x2A53EC	Elections	Verkiezingen
@@ -496,7 +496,7 @@
 0x2A5434	Fire	Brand
 0x2A5438	Fulfilled	Vervuld
 0x2A543C	Dishonoured	Woordbreuk
-0x2A5440	Boycott ended	Boycot beëindigd
+0x2A5440	Boycott ended	Boycot beeindigd
 0x2A5450	Office ready	Kantoor gereed
 0x2A5454	Trading Office upgrade	Kantoorverbouwing
 0x2A5458	Dividend	Dividend
@@ -621,7 +621,7 @@
 0x2A7054	Prince's army	Leger van de vorst
 0x2A706C	\\f1_The town gate is already open	\\f1_De stadspoort is al open
 0x2A7084	\\f1_How much do you want to sell per delivery?	\\f1_Welke hoeveelheid wilt u per levering verkopen?
-0x2A70A0	\\f1_The Prince is interested in the following:	\\f1_De vorst is geïnteresseerd in het volgende:
+0x2A70A0	\\f1_The Prince is interested in the following:	\\f1_De vorst is geinteresseerd in het volgende:
 0x2A70B8	Good delivered	Waren overgedragen
 0x2A70DC	\\f1_\\cGoods	\\f1_\\cWaren
 0x2A70E0	\\f1_\\cStock	\\f1_\\cVoorraad
@@ -845,7 +845,7 @@
 0x2B2D3C	Hanse population	Hanzebevolking
 0x2B2D4C	World map	Wereldkaart
 0x2B2DD8	Public news	Openbaar nieuws
-0x2B2DDC	Official letters	Officiële geschriften
+0x2B2DDC	Official letters	Officiele geschriften
 0x2B2DE0	Personal letters	Persoonlijke brieven
 0x2B2DE4	Trade information	Handelsinformatie
 0x2B5028	Accept offer	Aanbod aannemen
@@ -927,7 +927,7 @@
 0x2C0DC8	November	november
 0x2C0DCC	December	december
 0x2C0F34	Configuration of letters	Indeling van de briefarchivering
-0x2C0FB8	official writings	officiële geschriften
+0x2C0FB8	official writings	officiele geschriften
 0x2C0FBC	personal information	persoonlijke berichten
 0x2C0FC0	trade information	handelsinformatie
 0x2C0FC4	When news arrive...	Bij het binnenkomen van een bericht...
@@ -1149,7 +1149,7 @@ render	Weapon smith	Wapensmederij
 render	News	Nieuws
 render	Construction menu	Bouwmenu
 render	Demolish building	Gebouw afbreken
-render	End turn	Beurt beëindigen
+render	End turn	Beurt beeindigen
 render	Personal settings	Persoonlijke instellingen
 render	Public notices	Openbare mededelingen
 render	Delete letters	Brief verwijderen
@@ -1241,7 +1241,7 @@ frag	day_many	{n} dagen
 0x299BAC	Join convoy %s	Convooi %s vervoegen
 0x299BC0	Citizens in %s	Burgers in %s
 0x299BE8	There are %u beggars in the town.	Er zijn %u bedelaars in de stad.
-0x299C34	annoyed	geërgerd
+0x299C34	annoyed	geergerd
 0x299C38	dissatisfied	ontevreden
 0x299C3C	satisfied	tevreden
 0x299C40	very satisfied	zeer tevreden
@@ -1271,7 +1271,7 @@ frag	day_many	{n} dagen
 0x29A578	Initialising of the SGL window failed.	Het initialiseren van het SGL-venster is mislukt.
 0x29A580	Error loading standard settings.	Fout bij het laden van de standaardinstellingen.
 0x29A584	Error initialising sound card.	Fout bij het initialiseren van de geluidskaart.
-0x29A588	The resolution (800x600x16) could not be initialised. Please install the latest driver for your video card and then start the "P2Setup.exe" program.	De resolutie (800x600x16) kon niet worden geïnitialiseerd. Installeer de nieuwste driver voor uw videokaart en start daarna het programma "P2Setup.exe".
+0x29A588	The resolution (800x600x16) could not be initialised. Please install the latest driver for your video card and then start the "P2Setup.exe" program.	De resolutie (800x600x16) kon niet worden geinitialiseerd. Installeer de nieuwste driver voor uw videokaart en start daarna het programma "P2Setup.exe".
 0x29A58C	Please run "P2Setup.exe" to test your video card prior to starting the game.	Start "P2Setup.exe" om uw videokaart te testen voordat u het spel start.
 0x29A590	The original Patrician III CD was not found.	De originele Patrician III-cd is niet gevonden.
 0x29A714	easy	makkelijk
@@ -1343,7 +1343,7 @@ frag	day_many	{n} dagen
 0x29C08C	You now own	U bezit nu
 0x29C090	all	alle
 0x29C094	shares	aandelen
-0x29C098	I would be interested in the following shares	Ik zou geïnteresseerd zijn in de volgende aandelen
+0x29C098	I would be interested in the following shares	Ik zou geinteresseerd zijn in de volgende aandelen
 0x29C09C	in your possession	die u in bezit hebt
 0x29C0A0	"Unfortunately, I cannot offer you a loan because	"Helaas kan ik u geen lening aanbieden vanwege
 0x29C0A4	of your bad payment history."	uw slechte betalingsverleden."
@@ -1365,8 +1365,8 @@ frag	day_many	{n} dagen
 0x29C10C	before asking for a new one."	voordat u om een nieuwe vraagt."
 0x29C11C	\\f0_You have granted the following loans.	\\f0_U hebt de volgende leningen verstrekt.
 0x29C120	\\f1_To %s %s %s %s from %s at the sum of %i\\C to be payed off by %i. %s %i.\n	\\f1_Aan %s %s %s %s uit %s ter waarde van %i\\C, af te lossen op %i %s %i.\n
-0x29C128	\\f1_Nobody is interested in buying shares of your company at the moment.	\\f1_Op dit moment is niemand geïnteresseerd in aandelen van uw bedrijf.
-0x29C12C	\\f1_Nobody is interested in buying shares of the company of %s %s at the moment.	\\f1_Op dit moment is niemand geïnteresseerd in aandelen van het bedrijf van %s %s.
+0x29C128	\\f1_Nobody is interested in buying shares of your company at the moment.	\\f1_Op dit moment is niemand geinteresseerd in aandelen van uw bedrijf.
+0x29C12C	\\f1_Nobody is interested in buying shares of the company of %s %s at the moment.	\\f1_Op dit moment is niemand geinteresseerd in aandelen van het bedrijf van %s %s.
 0x29C7C8	Auction at %s on %i. %s %i	Veiling in %s op %i %s %i
 0x29C7E0	snaikkas	snikken
 0x29C7E4	crayers	kraiers
@@ -1426,7 +1426,7 @@ frag	day_many	{n} dagen
 0x29D924	You have the captain	U hebt de kapitein
 0x29D928	You are not offering us this old seller of souls, are you?	U wilt ons toch niet dit oude wrak aansmeren?
 0x29D92C	"Greetings!	"Gegroet!
-0x29D930	Would you be interested in a few	Zou u geïnteresseerd zijn in een paar
+0x29D930	Would you be interested in a few	Zou u geinteresseerd zijn in een paar
 0x29D934	weapon deals?"	wapenhandeltjes?"
 0x29D93C	I have some information there for you.	Ik heb daar wat informatie voor u.
 0x29D944	\\f1_"I cannot give you the information for nothing, can I? You should have a bit more cash!"	\\f1_"Ik kan u de informatie toch niet gratis geven? U zou wat meer geld moeten hebben!"
@@ -1450,9 +1450,9 @@ frag	day_many	{n} dagen
 0x29D9B4	\\f1"I need your help, %s %s %s.\nI have an important package which I have to take to %s. If you can drop me off there by %i. %s %i, I will pay you %i\\C."	\\f1"Ik heb uw hulp nodig, %s %s %s.\nIk heb een belangrijk pakket dat ik naar %s moet brengen. Als u mij er voor %i %s %i kunt afzetten, betaal ik u %i\\C."
 0x29D9C4	The traveller boards	De reiziger gaat aan boord van
 0x29D9C8	\\f1_"Good day, %s %s %s.\n	\\f1_"Goedendag, %s %s %s.\n
-0x29D9CC	\\f1_Perhaps you are interested in the following offer:\nI offer you %i\\B %s at %i\\C.\nDo you accept?"	\\f1_Misschien bent u geïnteresseerd in het volgende aanbod:\nIk bied u %i\\B %s aan voor %i\\C.\nGaat u akkoord?"
+0x29D9CC	\\f1_Perhaps you are interested in the following offer:\nI offer you %i\\B %s at %i\\C.\nDo you accept?"	\\f1_Misschien bent u geinteresseerd in het volgende aanbod:\nIk bied u %i\\B %s aan voor %i\\C.\nGaat u akkoord?"
 0x29D9E0	\\f1_"Greetings to you,\n%s %s %s.	\\f1_"Gegroet,\n%s %s %s.
-0x29D9E4	\\f1_Are you interested in %i\\L %s at %i\\C?"	\\f1_Bent u geïnteresseerd in %i\\L %s voor %i\\C?"
+0x29D9E4	\\f1_Are you interested in %i\\L %s at %i\\C?"	\\f1_Bent u geinteresseerd in %i\\L %s voor %i\\C?"
 0x29D9F0	"The goods were delivered	"De waren zijn geleverd
 0x29D9FC	to the convoy	aan het convooi
 0x29DA00	to your trading office	aan uw kantoor
@@ -1721,7 +1721,7 @@ frag	day_many	{n} dagen
 0x2A2268	\n\\f0_Enemy ships:\n\\f1_	\n\\f0_Vijandelijke schepen:\n\\f1_
 0x2A226C	%s %s: %d%%\n	%s %s: %d%%\n
 0x2A2270	%s %s: sunk\n	%s %s: gezonken\n
-0x2A2274	%s %s: %d%%, captured\n	%s %s: %d%%, geënterd\n
+0x2A2274	%s %s: %d%%, captured\n	%s %s: %d%%, geenterd\n
 0x2A2278	%s %s: %d%%, fled\n	%s %s: %d%%, gevlucht\n
 0x2A227C	\\l\\f1_You have protected the town of %s by putting the attackers to flight.\n	\\l\\f1_U hebt de stad %s beschermd door de aanvallers op de vlucht te drijven.\n
 0x2A2280	\\l\\f1_You have beaten the attackers and saved the town of %s from plunder.\n	\\l\\f1_U hebt de aanvallers verslagen en de stad %s van plundering gered.\n
@@ -1741,7 +1741,7 @@ frag	day_many	{n} dagen
 0x2A268C	\\f1_\n\nShould convoy %s set sail on the morning of %i-%i-%i for destination %s?	\\f1_\n\nMoet konvooi %s op de ochtend van %i-%i-%i uitvaren met bestemming %s?
 0x2A2694	\\f1_\n\nOnly towns can be given as a destination for the convoy.	\\f1_\n\nAlleen steden kunnen als bestemming van het konvooi worden opgegeven.
 0x2A2698	\\f1_\n\nThe convoy %s will set sail on %i. %s %i for destination %s.	\\f1_\n\nHet konvooi %s vaart uit op %i %s %i met bestemming %s.
-0x2A269C	\\f1_\n\nOfficial convoys can only sail directly to towns.	\\f1_\n\nOfficiële konvooien kunnen alleen rechtstreeks naar steden varen.
+0x2A269C	\\f1_\n\nOfficial convoys can only sail directly to towns.	\\f1_\n\nOfficiele konvooien kunnen alleen rechtstreeks naar steden varen.
 0x2A2A40	\\f1_A bath at last! After more than 3 weeks.	\\f1_Eindelijk een bad! Na meer dan 3 weken.
 0x2A2A44	\\f1_Such a bath always makes one feel good.	\\f1_Zo'n bad doet een mens altijd goed.
 0x2A2A48	\\f1_You are not really dry from your last bath.	\\f1_U bent van uw laatste bad nog niet echt droog.
@@ -1774,7 +1774,7 @@ frag	day_many	{n} dagen
 0x2A33E0	\\c\\f1_The army of the landlord is in position before the town gates.	\\c\\f1_Het leger van de landheer staat opgesteld voor de stadspoorten.
 0x2A33F0	\\c\\f1_Congratulations! You have been elected as the new Lady Mayoress by the citizens of %s.	\\c\\f1_Gefeliciteerd! De burgers van %s hebben u tot nieuwe burgemeester gekozen.
 0x2A33F8	\\c\\f1_Today, under the sad eyes of his mother, you wed the full figured %s %s in a solemn ceremony.	\\c\\f1_Vandaag huwt u, onder de bedroefde blik van zijn moeder, de welgevormde %s %s in een plechtige ceremonie.
-0x2A3400	quit	spel beëindigen
+0x2A3400	quit	spel beeindigen
 0x2A3404	continue playing	verder spelen
 0x2A3408	\\c\\f1_Ships of the Hanseatic League are blockading the harbour of %s.	\\c\\f1_Schepen van de Hanze blokkeren de haven van %s.
 0x2A340C	\\c\\f1_%s %s %s %s %s from %s has found new trading possibilities in the new world.	\\c\\f1_%s %s %s %s %s uit %s heeft nieuwe handelsmogelijkheden gevonden in de Nieuwe Wereld.
@@ -1801,11 +1801,11 @@ frag	day_many	{n} dagen
 0x2A3D30	\\f1_Population: %i	\\f1_Inwonertal: %i
 0x2A3D34	\\f1_Lord Mayor: %s %s %s %s	\\f1_Burgemeester: %s %s %s %s
 0x2A3F68	\\f1_This hospital is a donation of %s %s %s %s %s.	\\f1_Dit hospitaal is een schenking van %s %s %s %s %s.
-0x2A3F6C	\\f1_\nThere are %i hospitals in this town and %i%% of the streets and paths have been extended.\nEpidemic precautions provided by hospitals and wells are %s.	\\f1_\nIn deze stad zijn %i hospitalen en %i%% van de straten en paden is uitgebreid.\nDe bescherming tegen epidemieën door hospitalen en putten is %s.
+0x2A3F6C	\\f1_\nThere are %i hospitals in this town and %i%% of the streets and paths have been extended.\nEpidemic precautions provided by hospitals and wells are %s.	\\f1_\nIn deze stad zijn %i hospitalen en %i%% van de straten en paden is uitgebreid.\nDe bescherming tegen epidemieen door hospitalen en putten is %s.
 0x2A3F70	very bad	zeer slecht
 0x2A3F78	satisfactory	toereikend
 0x2A3F7C	very good	zeer goed
-0x2A3F84	\\f1_\nThere is one hospital in this town and %i%% of the streets and paths have been extended.\nEpidemic precautions provided by hospitals and wells in this town are %s.	\\f1_\nIn deze stad is één hospitaal en %i%% van de straten en paden is uitgebreid.\nDe bescherming tegen epidemieën door hospitalen en putten in deze stad is %s.
+0x2A3F84	\\f1_\nThere is one hospital in this town and %i%% of the streets and paths have been extended.\nEpidemic precautions provided by hospitals and wells in this town are %s.	\\f1_\nIn deze stad is één hospitaal en %i%% van de straten en paden is uitgebreid.\nDe bescherming tegen epidemieen door hospitalen en putten in deze stad is %s.
 0x2A3F94	Travelling Merchant	Koopman op verre reis
 0x2A4090	\\f1_This well is a donation of %s %s %s %s %s.	\\f1_Deze put is een schenking van %s %s %s %s %s.
 0x2A4094	\\f1_\nThere are %i wells in this town.\nThe water supply by wells in this town is %s.	\\f1_\nIn deze stad zijn %i putten.\nDe watervoorziening door putten in deze stad is %s.
@@ -1869,11 +1869,11 @@ frag	day_many	{n} dagen
 0x2A7090	\\f1_The Prince is cross about your current attitude to delivery.	\\f1_De Vorst is boos over uw huidige houding ten aanzien van de leveringen.
 0x2A7094	\\f1_Outstanding deliveries of %s at %d%s: %d	\\f1_Nog openstaande leveringen van %s à %d%s per stuk: %d
 0x2A7098	\\f1_The next delivery must be available in your trading office on %d. %s.	\\f1_De volgende levering moet op %d %s in uw kantoor beschikbaar zijn.
-0x2A709C	\\f1_The Prince is interested in the following goods:	\\f1_De Vorst is geïnteresseerd in de volgende goederen:
+0x2A709C	\\f1_The Prince is interested in the following goods:	\\f1_De Vorst is geinteresseerd in de volgende goederen:
 0x2A70A4	\\f1_Our kingdom is currently suffering huge supply problems. We would be very pleased if you could lend us %s for a couple of weeks.	\\f1_In ons vorstendom bestaat momenteel een groot tekort aan voorraden. Wij zouden dan ook zeer verheugd zijn als u ons voor enkele weken %s zou kunnen lenen.
 0x2A70A8	\\f1_The delivery must be made by %d. %s. and the repayment value will be about one and a half times the value of the goods supplied.	\\f1_De levering moet voor %d %s plaatsvinden en de terugbetalingswaarde bedraagt ongeveer anderhalf maal de waarde van de geleverde goederen.
 0x2A70AC	\\f1_You have not yet deposited all the required goods into your trading office.	\\f1_U hebt nog niet alle benodigde goederen in uw kantoor gedeponeerd.
-0x2A70BC	\\f1_The Prince is not currently interested in a supply contract.	\\f1_De Vorst is momenteel niet geïnteresseerd in een leveringscontract.
+0x2A70BC	\\f1_The Prince is not currently interested in a supply contract.	\\f1_De Vorst is momenteel niet geinteresseerd in een leveringscontract.
 0x2A70C0	\\f1_You have not currently given a loan to the Prince.	\\f1_U hebt de Vorst momenteel geen lening verstrekt.
 0x2A70C4	\\f1_You have offered the following loans to the Prince:	\\f1_U hebt de Vorst de volgende leningen aangeboden:
 0x2A70C8	\\f1_Loan for %s.	\\f1_Lening voor %s.
@@ -2177,9 +2177,9 @@ frag	day_many	{n} dagen
 0x2AF20C	Invalid	is ongeldig.
 0x2AF210	The server connection	De verbinding met de server
 0x2AF214	has been interrupted.	is onderbroken.
-0x2AF21C	end the game?	het spel beëindigen?
+0x2AF21C	end the game?	het spel beeindigen?
 0x2AF220	The server has terminated	De server heeft het spel
-0x2AF224	the game.	beëindigd.
+0x2AF224	the game.	beeindigd.
 0x2AF22C	and then choose your hometown.	en kies dan uw thuisstad.
 0x2AF230	The password you entered has not been recognised!	Het ingevoerde wachtwoord werd niet herkend!
 0x2AF238	No more free places	Er zijn geen vrije plaatsen
@@ -2372,8 +2372,8 @@ frag	day_many	{n} dagen
 0x2B3604	Harvest in %s returning to normal.	De oogst in %s keert terug naar normaal.
 0x2B3608	Bad harvest in %s shows signs of improvement.	De slechte oogst in %s toont tekenen van verbetering.
 0x2B3678	Today %s %s %s %s %s was registered in the guild as a new member in the exalted society in the town %s.	Vandaag is %s %s %s %s %s in het gilde ingeschreven als nieuw lid van de hoogwaardige kringen in de stad %s.
-0x2B37C0	The %s %s %s %s opened a new trading office in %s today, marking the occasion with an official ceremony.  He now has %i trading offices throughout the Hanse.	%s %s %s %s heeft vandaag een nieuw kantoor geopend in %s en de gelegenheid met een officiële plechtigheid gevierd. Hij heeft nu %i kantoren verspreid over de Hanze.
-0x2B37C4	The %s %s %s %s opened a new trading office in %s today, marking the occasion with an official ceremony.  She now has %i trading offices throughout the Hanse.	%s %s %s %s heeft vandaag een nieuw kantoor geopend in %s en de gelegenheid met een officiële plechtigheid gevierd. Zij heeft nu %i kantoren verspreid over de Hanze.
+0x2B37C0	The %s %s %s %s opened a new trading office in %s today, marking the occasion with an official ceremony.  He now has %i trading offices throughout the Hanse.	%s %s %s %s heeft vandaag een nieuw kantoor geopend in %s en de gelegenheid met een officiele plechtigheid gevierd. Hij heeft nu %i kantoren verspreid over de Hanze.
+0x2B37C4	The %s %s %s %s opened a new trading office in %s today, marking the occasion with an official ceremony.  She now has %i trading offices throughout the Hanse.	%s %s %s %s heeft vandaag een nieuw kantoor geopend in %s en de gelegenheid met een officiele plechtigheid gevierd. Zij heeft nu %i kantoren verspreid over de Hanze.
 0x2B3848	The %s %s %s %s is leaving his hometown %s and moving to %s.	%s %s %s %s verlaat zijn thuisstad %s en verhuist naar %s.
 0x2B384C	The %s %s %s %s is leaving her hometown %s and moving to %s.	%s %s %s %s verlaat haar thuisstad %s en verhuist naar %s.
 0x2B38BC	The wage for your sailors amounted to %u\\C.\n	Het loon van uw matrozen bedroeg %u\\C.\n
@@ -2465,7 +2465,7 @@ frag	day_many	{n} dagen
 0x2B65E8	Honourable lady %s %s	Eerzame vrouwe %s %s
 0x2B65F0	%u\\C.\n\n\x0D\n The town %s	%u\\C.\n\n\x0D\nDe stad %s
 0x2B6C30	\\cThe siege army has plundered %s\n\\l\nThe enemy armies have broken through the town wall after %u days continuous siege and plundered %s. They captured %u\\C.	\\cHet belegeringsleger heeft %s geplunderd\n\\l\nDe vijandelijke legers hebben na %u dagen onafgebroken beleg de stadsmuur doorbroken en %s geplunderd. Zij hebben %u\\C buitgemaakt.
-0x2B6C34	\\cThe siege of %s has ended.\n\\l\nThe enemy was beaten back after the %u days continuous siege of the town. This was entirely due to the defence strength and high morale of the troops.	\\cHet beleg van %s is beëindigd.\n\\l\nDe vijand is na %u dagen onafgebroken beleg van de stad teruggeslagen. Dit is geheel te danken aan de verdedigingskracht en het hoge moreel van de troepen.
+0x2B6C34	\\cThe siege of %s has ended.\n\\l\nThe enemy was beaten back after the %u days continuous siege of the town. This was entirely due to the defence strength and high morale of the troops.	\\cHet beleg van %s is beeindigd.\n\\l\nDe vijand is na %u dagen onafgebroken beleg van de stad teruggeslagen. Dit is geheel te danken aan de verdedigingskracht en het hoge moreel van de troepen.
 0x2B6C38	The enemy armies were beaten back after the %u days continuous siege of the town %s. This was entirely due to the defence strength and high morale of the troops. One building outside the town wall was destroyed.	De vijandelijke legers zijn na %u dagen onafgebroken beleg van de stad %s teruggeslagen. Dit is geheel te danken aan de verdedigingskracht en het hoge moreel van de troepen. Eén gebouw buiten de stadsmuur is vernield.
 0x2B6C3C	The enemy armies were beaten back after the %u days continuous siege of %s. This was entirely due to the defence strength and the high morale of the troops. %u buildings outside the town wall were destroyed.	De vijandelijke legers zijn na %u dagen onafgebroken beleg van %s teruggeslagen. Dit is geheel te danken aan de verdedigingskracht en het hoge moreel van de troepen. %u gebouwen buiten de stadsmuur zijn vernield.
 0x2B6C40	Enemy armies have broken through the defences of %s after %u days continuous siege and plundered the town's bank. Thereby %i\\C was captured and %i buildings destroyed.	Vijandelijke legers hebben de verdediging van %s na %u dagen onafgebroken beleg doorbroken en de stadsbank geplunderd. Daarbij is %i\\C buitgemaakt en zijn %i gebouwen vernield.
@@ -2532,15 +2532,15 @@ frag	day_many	{n} dagen
 0x2B8D5C	\\C has already been paid to you.\n	\\C is u reeds uitbetaald.\n
 0x2B8FB8	Honourable %s %s	Eerzame %s %s
 0x2B8FBC	Honourable %s %s	Eerzame %s %s
-0x2B8FC0	\n\nThe boycott against %s was successfully concluded today.	\n\nDe boycot tegen %s is vandaag met succes beëindigd.
-0x2B8FC4	\n\n\\dThe Blockade of %s has ended today, as the Town could see its dependancy on the Hanse.	\n\n\\dDe blokkade van %s is vandaag beëindigd, omdat de stad haar afhankelijkheid van de Hanze heeft ingezien.
+0x2B8FC0	\n\nThe boycott against %s was successfully concluded today.	\n\nDe boycot tegen %s is vandaag met succes beeindigd.
+0x2B8FC4	\n\n\\dThe Blockade of %s has ended today, as the Town could see its dependancy on the Hanse.	\n\n\\dDe blokkade van %s is vandaag beeindigd, omdat de stad haar afhankelijkheid van de Hanze heeft ingezien.
 0x2B900C	 you have auctioned for %u\\C %s %s from %s %s.	 u hebt voor %u\\C %s %s van %s %s geveild.
 0x2B9168	\nThis is to inform you that your trading office in %s is now ready for use.\n\nThe Board of Works	\nHierbij delen wij u mee dat uw kantoor in %s nu gebruiksklaar is.\n\nDe Dienst Openbare Werken
 0x2B916C	\nThis is to inform you that the capacity of your trading office in %s has been extended to %u\\L.\n\nThe Board of Works	\nHierbij delen wij u mee dat de capaciteit van uw kantoor in %s is uitgebreid tot %u\\L.\n\nDe Dienst Openbare Werken
 0x2B9600	%u\\%c %s sold at %u\\C (total: %u\\C)\n	%u\\%c %s verkocht voor %u\\C (totaal: %u\\C)\n
 0x2B9604	%u\\%c %s bought at %u\\C (total: %u\\C)\n	%u\\%c %s gekocht voor %u\\C (totaal: %u\\C)\n
-0x2B962C	an Indian village could be discovered that is interested in commercial transactions.\n	is een Indiaans dorp ontdekt dat geïnteresseerd is in handelstransacties.\n
-0x2B9630	two Indian villages could be discovered that are interested in commercial transactions.\n	zijn twee Indiaanse dorpen ontdekt die geïnteresseerd zijn in handelstransacties.\n
+0x2B962C	an Indian village could be discovered that is interested in commercial transactions.\n	is een Indiaans dorp ontdekt dat geinteresseerd is in handelstransacties.\n
+0x2B9630	two Indian villages could be discovered that are interested in commercial transactions.\n	zijn twee Indiaanse dorpen ontdekt die geinteresseerd zijn in handelstransacties.\n
 0x2C0924	Lisbon	Lissabon
 0x2C0938	Genoa	Genua
 0x2C0940	Rome	Rome
@@ -2664,7 +2664,7 @@ frag	day_many	{n} dagen
 0x2C354C	%s has disobeyed the orders of the Hanseatic League.	%s heeft de bevelen van de Hanze genegeerd.
 0x2C3594	On an expedition one of your ships has sunk.	Tijdens een expeditie is een van uw schepen gezonken.
 0x2C35E4	%s %s %s from %s has left the game.	%s %s %s uit %s heeft het spel verlaten.
-0x2C35E8	The server (%s %s) has ended the game.	De server (%s %s) heeft het spel beëindigd.
+0x2C35E8	The server (%s %s) has ended the game.	De server (%s %s) heeft het spel beeindigd.
 0x2C3628	A network error occurred. Please save the game and restart!	Er is een netwerkfout opgetreden. Sla het spel op en start opnieuw!
 0x2998E4	Trader	Handelaar
 0x299920	days	dagen
@@ -2683,7 +2683,7 @@ frag	day_many	{n} dagen
 0x29A994	Trader	Handelaar
 0x29A998	Merchant	Koopman
 0x29A99C	Councillor	Raadsheer
-0x29A9A0	Patrician	Patriciër
+0x29A9A0	Patrician	Patricier
 0x29AA14	Councillor	Raadsheer
 0x29AA18	Lord Mayor	Burgemeester
 0x29AA1C	Alderman	Ouderman
@@ -2710,11 +2710,11 @@ frag	day_many	{n} dagen
 0x29AF6C	ready	gereed
 0x29AF70	(loaded)	(geladen)
 0x29AF74	The network could	Het netwerk kon
-0x29AF78	not be initialised!	niet worden geïnitialiseerd!
+0x29AF78	not be initialised!	niet worden geinitialiseerd!
 0x29AF7C	There is no TCP/IP-	Er is geen TCP/IP-
-0x29AF80	protocol installed!	protocol geïnstalleerd!
+0x29AF80	protocol installed!	protocol geinstalleerd!
 0x29AF84	There is no network	Er is geen netwerk
-0x29AF88	installed!	geïnstalleerd!
+0x29AF88	installed!	geinstalleerd!
 0x29AF8C	Error allocating	Fout bij het reserveren
 0x29AF90	memory!	van geheugen!
 0x29AF94	Please insert the	Plaats de Patrician III
@@ -2848,7 +2848,7 @@ frag	day_many	{n} dagen
 0x2A0630	merchant	koopman
 0x2A0634	travelling merchant	reizende koopman
 0x2A0638	Councillor	Raadsheer
-0x2A063C	Patrician	Patriciër
+0x2A063C	Patrician	Patricier
 0x2A0640	Lord Mayor	Burgemeester
 0x2A0644	Alderman	Ouderman
 0x2A0718	shopkeeper	kraamster
@@ -2862,7 +2862,7 @@ frag	day_many	{n} dagen
 0x2A0740	merchant	koopman
 0x2A0744	travelling merchant	reizende koopman
 0x2A0748	Councillor	raadsheer
-0x2A074C	Patrician	patriciër
+0x2A074C	Patrician	patricier
 0x2A0750	Lord Mayor	burgemeester
 0x2A0754	Alderman	ouderman
 0x2A0808	Stock	Voorraad
@@ -2957,7 +2957,7 @@ frag	day_many	{n} dagen
 0x2A3808	\\c\\f4_Trader	\\c\\f4_Handelaar
 0x2A380C	\\c\\f4_Merchant	\\c\\f4_Koopman
 0x2A3810	\\c\\f4_Travelling Merchant	\\c\\f4_Reizend koopman
-0x2A3814	\\c\\f4_Rank of Patrician	\\c\\f4_Rang van patriciër
+0x2A3814	\\c\\f4_Rank of Patrician	\\c\\f4_Rang van patricier
 0x2A3818	\\c\\f4_Appointed councillor	\\c\\f4_Benoemd tot raadsheer
 0x2A3820	\\c\\f4_You are Alderman	\\c\\f4_U bent ouderman
 0x2A386C	\\c\\f4_Trader	\\c\\f4_Handelaarster
@@ -2969,7 +2969,7 @@ frag	day_many	{n} dagen
 0x2A3BD0	You are Trader	U bent handelaar
 0x2A3BD4	You are Merchant	U bent koopman
 0x2A3BD8	You are Travelling Merchant	U bent reizend koopman
-0x2A3BDC	You are Patrician	U bent patriciër
+0x2A3BDC	You are Patrician	U bent patricier
 0x2A3BE0	You are councillor	U bent raadsheer
 0x2A3BE8	You are Alderman	U bent ouderman
 0x2A3C34	You are Trader	U bent handelaarster
@@ -2983,12 +2983,12 @@ frag	day_many	{n} dagen
 0x2A3F8C	Trader	Handelaar
 0x2A3F90	Merchant	Koopman
 0x2A3F98	Councillor	raadsheer
-0x2A3F9C	Patrician	patriciër
+0x2A3F9C	Patrician	patricier
 0x2A3FA0	Lord Mayor	burgemeester
 0x2A3FA4	Alderman	ouderman
 0x2A4390	Announce celebration	Feest aankondigen
 0x2A439C	Announce celebration	Feest aangekondigd
-0x2A4674	\n\\c\\f0_Network failure\n\n\\l\\f1_A synchronizing error has occured.\nIt is recommended to stop the current game and to start a new network game by loading the savegame "network". This savegame has been created automatically when the error occured.	\n\\c\\f0_Netwerkfout\n\n\\l\\f1_Er is een synchronisatiefout opgetreden.\nAanbevolen wordt het huidige spel te beëindigen en een nieuw netwerkspel te starten door het spelbestand "network" te laden. Dit spelbestand is automatisch aangemaakt toen de fout optrad.
+0x2A4674	\n\\c\\f0_Network failure\n\n\\l\\f1_A synchronizing error has occured.\nIt is recommended to stop the current game and to start a new network game by loading the savegame "network". This savegame has been created automatically when the error occured.	\n\\c\\f0_Netwerkfout\n\n\\l\\f1_Er is een synchronisatiefout opgetreden.\nAanbevolen wordt het huidige spel te beeindigen en een nieuw netwerkspel te starten door het spelbestand "network" te laden. Dit spelbestand is automatisch aangemaakt toen de fout optrad.
 0x2A4D70	days	dagen
 0x2A534C	Offer	Aanbod
 0x2A5380	Auctioned	Geveild
@@ -3037,7 +3037,7 @@ frag	day_many	{n} dagen
 0x2AB238	Today the council reached a decision that 	Vandaag heeft de raad besloten dat 
 0x2AB32C	The extra tax levied by 	Vandaag is de extra belasting die door de stad 
 0x2AB330	 the town was collected today by 	 ter hoogte van 
-0x2AB334	\\C. Your contribution amounts to 	\\C is geïnd. Uw aandeel in deze belasting bedroeg 
+0x2AB334	\\C. Your contribution amounts to 	\\C is geind. Uw aandeel in deze belasting bedroeg 
 0x2AB630	Honourable 	Eerzame 
 0x2AB634	 Lord Mayor 	 burgemeester 
 0x2AB638	Honourable 	Eerzame 
@@ -3117,7 +3117,7 @@ frag	day_many	{n} dagen
 0x2B1368	 (Seized)\n	 (Gekaapt)\n
 0x2B1750	 where new and lucrative trade opportunities have been discovered.\n	 waar nieuwe en lucratieve handelsmogelijkheden zijn ontdekt.\n
 0x2B1754	were found in the new world 	werden in de nieuwe wereld gevonden 
-0x2B1758	 where indian villages interested in trading have been discovered.\n	 waar Indiaanse dorpen zijn ontdekt die in handel geïnteresseerd zijn.\n
+0x2B1758	 where indian villages interested in trading have been discovered.\n	 waar Indiaanse dorpen zijn ontdekt die in handel geinteresseerd zijn.\n
 0x2B175C	 three	 drie
 0x2B1760	 four	 vier
 0x2B1794	 The quantity required by the contract was therefore met.\n	 De in het contract vastgelegde hoeveelheid is daarmee bereikt.\n
@@ -3190,7 +3190,7 @@ frag	day_many	{n} dagen
 0x2B760C	Many thanks for your help. It seems as if the pirates have been stopped and the town  has learnt its lesson.\nThe generous reward of 	Hartelijk dank voor uw hulp. Het lijkt erop dat de piraten een halt is toegeroepen en dat de stad haar les heeft geleerd.\nDe royale beloning van 
 0x2B7610	 was transferred to you.\n\\r\nThe town 	 is aan u overgemaakt.\n\\r\nDe stad 
 0x2B77D8	, your share of the costs for town guards last month came to 	, uw aandeel in de kosten voor de stadswacht bedroeg vorige maand 
-0x2B77DC	\\C. The amount has already been collected.\n\n\\rThe town 	\\C. Het bedrag is reeds geïnd.\n\n\\rDe stad 
+0x2B77DC	\\C. The amount has already been collected.\n\n\\rThe town 	\\C. Het bedrag is reeds geind.\n\n\\rDe stad 
 0x2B7CBC	\n\n\\dIt was decided today, that the accusation, you were in	\n\n\\dVandaag is besloten dat de beschuldigingen dat u in
 0x2B7CC0	\n\n\\dIt was established today, that someone accused you of disregarding the boycott to	\n\n\\dVandaag is vastgesteld dat men u het negeren van de boycot van
 0x2B7CC8	\n\n\\dIt was decided today, that the accusation, against you because of the burglary at 	\n\n\\dVandaag is besloten dat de beschuldigingen tegen u wegens de inbraak bij 

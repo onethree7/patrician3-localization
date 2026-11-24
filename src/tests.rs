@@ -817,6 +817,24 @@ mod language_tests {
         }
     }
 
+    /// The game font only has glyphs for ASCII, `äöüÄÖÜß` and the lowercase accents below
+    /// (checked in game); any other character renders as a blank gap.
+    #[test]
+    fn language_tables_only_use_characters_the_game_font_can_draw() {
+        const FONT_EXTRA: &str = "äöüÄÖÜßáàâéèêíìîóòôúùû";
+        for language in LANGUAGES.iter().filter(|language| language.code != "de") {
+            for (scope, _, translation) in language::scoped_rows(language.table).unwrap() {
+                let text = decode_table_text(&translation);
+                if let Some(c) = text
+                    .chars()
+                    .find(|c| !(c.is_ascii() || FONT_EXTRA.contains(*c)))
+                {
+                    panic!("{}: {c:?} has no glyph at {scope}: {text}", language.code);
+                }
+            }
+        }
+    }
+
     #[test]
     fn language_fragments_are_complete_and_well_formed() {
         for language in LANGUAGES {

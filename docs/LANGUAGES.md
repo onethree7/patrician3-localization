@@ -64,15 +64,28 @@ Limits of quality (cannot be verified by machine):
 - Fragment chains and gender, case and genitive forms follow the slot structure of the German
   template and are approximations; some sentences read choppily in the game.
 - The order of placeholders follows English, even where the target language would order differently.
-- No review by native speakers. Accent glyphs in the game have only been seen for `fr`; loading in
-  the game has not been tested for `nl`, `es`, `it`, `sv`, `da`, `no` and `pt`.
+- No review by native speakers. Loading in the game has been checked for `de`, `nl` and `sv`; the
+  other languages have not been run in the game yet.
 
 ## Character set
 
-The game fonts are Windows-1252. Possible, among others: French, Dutch, Spanish, Italian, Portuguese,
-Swedish, Danish, Norwegian, Finnish, Icelandic, Catalan. Not possible without new font files: Polish,
-Czech, Hungarian (partly), Baltic languages, Cyrillic, Greek. The glyphs for accents and umlauts exist
-in the game fonts; ligatures such as `œ` are avoided.
+The game font is a bitmap font that only contains ASCII, `ä ö ü Ä Ö Ü ß` and the lowercase accents
+`á à â é è ê í ì î ó ò ô ú ù û` (checked glyph by glyph in the game). Every other character is drawn as
+an empty gap, so the translations use these substitutions (a unit test enforces the allowed set):
+
+| Language | Substitution |
+|---|---|
+| sv | `å` -> `a` |
+| da, no | `å` -> `aa`, `æ` -> `ae`, `ø` -> `oe` (accepted digraph spelling) |
+| es | `ñ` -> `ni`, `¡` `¿` dropped |
+| pt | `ã` -> `a`, `õ` -> `o`, `ç` -> `c` |
+| fr | `ç` -> `c`, `ï` -> `i`, `œ` -> `oe`, `« »` -> `"` |
+| nl | `ë` -> `e`, `ï` -> `i` |
+| it | `È` -> `E'` |
+| all | capital accented letters lose the accent (`É` -> `E`), `º ª °` -> `o a o`, typographic quotes and dashes -> ASCII |
+
+New fonts (or a font patch) would be needed for real `å æ ø ñ ç ã õ` glyphs. Not possible without
+that: Polish, Czech, Hungarian (partly), Baltic languages, Cyrillic, Greek.
 
 ## Style: the Hanseatic Middle Ages
 

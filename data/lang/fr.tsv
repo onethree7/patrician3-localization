@@ -7,7 +7,7 @@
 0x2998A0	Sell	Vendre
 0x2998AC	Ship	Navire
 0x2998B8	Loading	Chargement
-0x2998CC	Ship overview	Aperçu des navires
+0x2998CC	Ship overview	Apercu des navires
 0x2998D8	Name	Nom
 0x2998F0	Type	Type
 0x2998FC	Status	Statut
@@ -64,7 +64,7 @@
 0x29A34C	The rich citizens	Les riches bourgeois
 0x29A568	No errors.	Aucune erreur.
 0x29A570	Error initialising SGL.	Erreur à l'initialisation de la SGL.
-0x29A57C	Error loading font.	Échec du chargement des polices.
+0x29A57C	Error loading font.	Echec du chargement des polices.
 0x29A5A0	Tutorial	Tutoriel
 0x29A5B0	Campaign	Campagne
 0x29A5C4	Single Player	Partie solo
@@ -208,7 +208,7 @@
 0x29C088	Shares of your own company	Parts de votre propre entreprise
 0x29C0B4	Praise God for a debt free life	Dieu soit loué, nous voilà sans dettes
 0x29C0C4	"You do not enough cash to pay off the loan."	"Vous n'avez pas assez d'argent pour rembourser le prêt."
-0x29C110	"You have received the loan."	"Vous avez reçu le prêt."
+0x29C110	"You have received the loan."	"Vous avez recu le prêt."
 0x29C114	"At present, I cannot offer you a loan."	"Je ne puis vous accorder de prêt pour l'instant."
 0x29C118	Loans granted	Prêts accordés
 0x29C124	You have granted no loan.	Vous n'avez accordé aucun prêt.
@@ -247,7 +247,7 @@
 0x29D8BC	Talk to weapons dealer	Parler au marchand d'armes
 0x29D8C0	Talk to burglar	Parler au cambrioleur
 0x29D8C4	Talk to pirate	Parler au pirate
-0x29D8CC	Age:	Âge :
+0x29D8CC	Age:	Age :
 0x29D8D8	Chosen ship	Navire choisi
 0x29D8DC	You have no ship in port	Vous n'avez aucun navire au port
 0x29D8E0	Chosen ship:	Navire choisi :
@@ -287,7 +287,7 @@
 0x29EEC0	Post outrigger	Poster un navire de blocus
 0x29EECC	Post new outrigger	Poster un nouveau navire de blocus
 0x29EED0	\\f1_Today's subject:	\\f1_Sujet du jour :
-0x29EED4	Election of Alderman	Élection de l'alderman
+0x29EED4	Election of Alderman	Election de l'alderman
 0x29EEDC	Trade embargo against	Embargo commercial contre
 0x29EEFC	Accept order	Accepter la commande
 0x29EF08	\\c\\f1_Order accepted	\\c\\f1_Commande acceptée
@@ -305,7 +305,7 @@
 0x29FEAC	Feeding the poor	Soupe populaire
 0x29FEB0	Donation	Don
 0x29FEB4	Extension	Agrandissement
-0x29FEB8	Church	Église
+0x29FEB8	Church	Eglise
 0x2A0464	Good	Marchandise
 0x2A046C	Donation	Don
 0x2A0470	Deliver donation	Remettre le don
@@ -367,7 +367,7 @@
 0x2A2560	\\c\\f1_Production stopped	\\c\\f1_Production arrêtée
 0x2A2690	Confirm destination	Confirmer la destination
 0x2A26B8	Have a bath	Prendre un bain
-0x2A26BC	Bath house	Étuves
+0x2A26BC	Bath house	Etuves
 0x2A2A3C	Have a bath	Prendre un bain
 0x2A2A6C	Bribe	Soudoyer
 0x2A2B2C	Weapons smith	Forge d'armes
@@ -430,7 +430,7 @@
 0x2A530C	Dump	Immondices
 0x2A5310	Dump	Immondices
 0x2A5314	Tax Bill	Avis d'imposition
-0x2A5318	Maturity	Échéance
+0x2A5318	Maturity	Echéance
 0x2A531C	Impound	Saisie
 0x2A5320	Annulment	Annulation
 0x2A5324	Burglary	Cambriolage
@@ -469,14 +469,14 @@
 0x2A53B4	Pirates	Pirates
 0x2A53B8	Pirates	Pirates
 0x2A53C0	Message	Message
-0x2A53C4	Writing	Écrit
+0x2A53C4	Writing	Ecrit
 0x2A53C8	Letter	Lettre
 0x2A53CC	Info	Info
 0x2A53D4	Pirate Hunt	Chasse aux pirates
 0x2A53D8	Hunt ended	Chasse terminée
 0x2A53DC	Plunder	Pillage
 0x2A53E8	Map	Carte
-0x2A53EC	Elections	Élections
+0x2A53EC	Elections	Elections
 0x2A53F0	Boycott	Boycott
 0x2A53F4	Town Guard	Garde de la ville
 0x2A53F8	Acquitted	Acquittement
@@ -511,7 +511,7 @@
 0x2A547C	Council Meeting	Séance du conseil
 0x2A5480	Extra Tax	Impôt exceptionnel
 0x2A5488	Pirate hideaway	Repaire de pirates
-0x2A5490	Unsuccessful	Échec
+0x2A5490	Unsuccessful	Echec
 0x2A549C	Theft	Vol
 0x2A54A4	Fire	Incendie
 0x2A54A8	Auctioned off	Vendu aux enchères
@@ -540,11 +540,11 @@
 0x2A57E4	Workshop	Atelier
 0x2A57E8	Apiary	Rucher
 0x2A57EC	Grain farm	Ferme céréalière
-0x2A57F0	Cattle farm	Élevage de bovins
+0x2A57F0	Cattle farm	Elevage de bovins
 0x2A57F4	Sawmill	Scierie
 0x2A57F8	Weaving mill	Tissage
 0x2A5800	Iron smelter	Fonderie de fer
-0x2A5804	Sheep farm	Élevage de moutons
+0x2A5804	Sheep farm	Elevage de moutons
 0x2A5808	Vineyard	Vignoble
 0x2A580C	Pottery	Poterie
 0x2A5814	Pitchmaker	Poissier
@@ -558,14 +558,14 @@
 0x2A5834	Half-timbered House	Maison à colombages
 0x2A5838	Half-timbered House	Maison à colombages
 0x2A583C	Half-timbered House	Maison à colombages
-0x2A5844	Church	Église
+0x2A5844	Church	Eglise
 0x2A5848	Town Hall	Hôtel de ville
 0x2A584C	Armoury	Arsenal
 0x2A5850	Guild Hall	Maison de la guilde
 0x2A5854	Market Hall	Halle du marché
 0x2A5858	Tavern	Taverne
 0x2A585C	Lender's House	Maison du prêteur
-0x2A5860	Public Bath	Étuves publiques
+0x2A5860	Public Bath	Etuves publiques
 0x2A5864	Overland Trade Office	Comptoir du commerce terrestre
 0x2A5868	Well	Puits
 0x2A586C	Hospital	Hospice
@@ -599,7 +599,7 @@
 0x2A5CC0	Change name	Changer le nom
 0x2A5CC8	Raw material requirement	Matières premières requises
 0x2A5CD4	Costs	Coûts
-0x2A5CE8	Date	Échéance
+0x2A5CE8	Date	Echéance
 0x2A5CF0	Type	Type
 0x2A5CF4	New name	Nouveau nom
 0x2A5D00	Convoy	Convoi
@@ -679,7 +679,7 @@
 0x2AA4C0	\\c\\f4_Hanse Day	\\c\\f4_Diète hanséatique
 0x2AAB68	Contract not completed	Mission non remplie
 0x2AAB6C	Contract not completed	Mission non remplie
-0x2AAB70	Town established	Établissement fondé
+0x2AAB70	Town established	Etablissement fondé
 0x2AAB74	Trade route established	Voie terrestre établie
 0x2AAB78	Pirate destroyed	Pirate anéanti
 0x2AAB7C	Pirate hideout destroyed	Repaire de pirates détruit
@@ -728,11 +728,11 @@
 0x2AFD9C	Workshops	Ateliers
 0x2AFDA0	Apicultures	Ruchers
 0x2AFDA4	Cereal farms	Fermes céréalières
-0x2AFDA8	Cattle farms	Élevages de bovins
+0x2AFDA8	Cattle farms	Elevages de bovins
 0x2AFDAC	Sawmills	Scieries
 0x2AFDB0	Weaving Mills	Tissages
 0x2AFDB8	Iron smelters	Fonderies de fer
-0x2AFDBC	Sheep farms	Élevages de moutons
+0x2AFDBC	Sheep farms	Elevages de moutons
 0x2AFDC0	Vineyards	Vignobles
 0x2AFDC4	Potteries	Poteries
 0x2AFDCC	Pitchmakers	Poissiers
@@ -747,19 +747,19 @@
 0x2AFDF0	Half-timbered Houses	Maisons à colombages
 0x2AFDF4	Half-timbered Houses	Maisons à colombages
 0x2AFDF8	Warehouses	Entrepôts
-0x2AFDFC	Churches	Églises
+0x2AFDFC	Churches	Eglises
 0x2AFE00	Town Halls	Hôtels de ville
 0x2AFE04	Armouries	Arsenaux
 0x2AFE08	Guild Halls	Maisons de guilde
 0x2AFE0C	Market Halls	Halles du marché
 0x2AFE10	Pubs	Tavernes
 0x2AFE14	Lender's Houses	Maisons de prêteurs
-0x2AFE18	Public Baths	Étuves publiques
+0x2AFE18	Public Baths	Etuves publiques
 0x2AFE1C	Overland Trade Offices	Comptoirs du commerce terrestre
 0x2AFE20	Wells	Puits
 0x2AFE24	Hospitals	Hospices
 0x2AFE28	Mints	Hôtels des monnaies
-0x2AFE2C	Schools	Écoles
+0x2AFE2C	Schools	Ecoles
 0x2AFE30	Chapels	Chapelles
 0x2AFE34	Monuments	Monuments
 0x2AFE38	Shipyards	Chantiers navals
@@ -804,7 +804,7 @@
 0x2B0E6C	New World	Nouveau Monde
 0x2B0E70	No Goals	Aucun objectif
 0x2B0E74	Delete Goal	Supprimer l'objectif
-0x2B1348	Flop	Échec
+0x2B1348	Flop	Echec
 0x2B134C	Victory	Victoire
 0x2B1350	Success	Succès
 0x2B1354	Abject Failure	Défaite totale
@@ -829,7 +829,7 @@
 0x2B2AA4	Sort by:	Trier par :
 0x2B2AC0	We need more chapels	Il nous faut davantage de chapelles
 0x2B2B08	Town characteristics	Particularités de la ville
-0x2B2B28	\\f0_Hanseatic settlement	\\f0_Établissement hanséatique
+0x2B2B28	\\f0_Hanseatic settlement	\\f0_Etablissement hanséatique
 0x2B2B48	\\c\\f4_Contract completed	\\c\\f4_Mission accomplie
 0x2B2B7C	\\c\\f4_Hanseatic League withdraws its contract	\\c\\f4_La Hanse retire sa mission
 0x2B2BC0	Steer manually	Piloter manuellement
@@ -845,7 +845,7 @@
 0x2B2D3C	Hanse population	Population de la Hanse
 0x2B2D4C	World map	Carte du monde
 0x2B2DD8	Public news	Nouvelles publiques
-0x2B2DDC	Official letters	Écrits officiels
+0x2B2DDC	Official letters	Ecrits officiels
 0x2B2DE0	Personal letters	Lettres personnelles
 0x2B2DE4	Trade information	Informations commerciales
 0x2B5028	Accept offer	Accepter l'offre
@@ -857,7 +857,7 @@
 0x2C0848	indian tribe	tribu indienne
 0x2C0A90	soldiers	soldats
 0x2C0A94	shipyard worker	ouvrier de chantier naval
-0x2C0A98	bricklayer	maçon
+0x2C0A98	bricklayer	macon
 0x2C0A9C	smithy	forgeron
 0x2C0AA0	skin hunter	chasseur de peaux
 0x2C0AA4	fisherman	pêcheur
@@ -930,7 +930,7 @@
 0x2C0FB8	official writings	écrits officiels
 0x2C0FBC	personal information	informations personnelles
 0x2C0FC0	trade information	informations commerciales
-0x2C0FC4	When news arrive...	À l'arrivée d'une nouvelle...
+0x2C0FC4	When news arrive...	A l'arrivée d'une nouvelle...
 0x2C0FC8	show notice	afficher un avis
 0x2C0FCC	play sound	jouer un son
 0x2C0FD0	event sound	son d'événement
@@ -957,7 +957,7 @@
 0x2C11D0	chronicle of %u. %s %u	chronique du %u. %s %u
 0x2C151C	town data	données de la ville
 0x2C1520	town comparison	comparaison des villes
-0x2C1524	company overview	aperçu de l'entreprise
+0x2C1524	company overview	apercu de l'entreprise
 0x2C1528	competition	concurrence
 0x2C18C8	population	habitants
 0x2C18D0	covering requirement	couverture des besoins
@@ -970,7 +970,7 @@
 0x2C1908	movement of ship's	mouvements des navires
 0x2C190C	incoming ships	navires arrivés
 0x2C1910	production	production
-0x2C1920	overview	aperçu
+0x2C1920	overview	apercu
 0x2C1924	balance	bilan
 0x2C1928	wealth	fortune
 0x2C192C	company value	valeur de l'entreprise
@@ -984,7 +984,7 @@
 0x2C1950	popularity	popularité
 0x2C1954	popularity of traders	popularité des marchands
 0x2C1958	consumption	consommation
-0x2C1960	overview of goods	aperçu des marchandises
+0x2C1960	overview of goods	apercu des marchandises
 0x2C1968	consumption	consommation
 0x2C197C	number of sailors	nombre de matelots
 0x2C1980	ships	navires
@@ -1181,12 +1181,12 @@ render	Quantity, to remain unsold	Quantité à conserver invendue
 render	Coalmine	Mine de charbon
 render	Coining	Monnayage
 render	Raw materials	Matières premières
-render	Condition	État
+render	Condition	Etat
 render	Create convoy	Créer un convoi
 render	Leave town	Quitter la ville
 render	Own buildings	Bâtiments personnels
 render	City buildings	Bâtiments de la ville
-render	Crew	Équipage
+render	Crew	Equipage
 render	pro load	par last
 render	1.000 load	1 000 lasts
 render	2.000 load	2 000 lasts
@@ -1254,11 +1254,11 @@ frag	day_many	{n} jours
 0x29A0F4	There is a shortage of %s	%s vient à manquer
 0x29A0F8	What we need most is %s	Ce qu'il nous faut avant tout, c'est %s
 0x29A0FC	If only we had more %s	Si seulement nous avions plus de %s
-0x29A294	Hardly anyone of %s knows you	À peine quelqu'un à %s vous connaît
+0x29A294	Hardly anyone of %s knows you	A peine quelqu'un à %s vous connaît
 0x29A298	A few of %s know you	Quelques habitants de %s vous connaissent
 0x29A29C	Many of %s know you	Beaucoup d'habitants de %s vous connaissent
 0x29A2A0	Many of %s are grateful to you	Beaucoup d'habitants de %s vous sont reconnaissants
-0x29A2A4	At %s, you are well thought of	À %s, on vous tient en bonne estime
+0x29A2A4	At %s, you are well thought of	A %s, on vous tient en bonne estime
 0x29A2A8	%s see you as the Lord Mayor	%s vous voient comme leur bourgmestre
 0x29A2AC	%s are convinced about you	%s ont confiance en vous
 0x29A2B0	%s have doubts about you	%s ont des doutes à votre sujet
@@ -1271,8 +1271,8 @@ frag	day_many	{n} jours
 0x29A578	Initialising of the SGL window failed.	L'initialisation de la fenêtre SGL a échoué.
 0x29A580	Error loading standard settings.	Erreur lors du chargement des réglages standard.
 0x29A584	Error initialising sound card.	Erreur lors de l'initialisation de la carte son.
-0x29A588	The resolution (800x600x16) could not be initialised. Please install the latest driver for your video card and then start the "P2Setup.exe" program.	La résolution (800x600x16) n'a pas pu être initialisée. Veuillez installer le dernier pilote de votre carte vidéo, puis lancer le programme « P2Setup.exe ».
-0x29A58C	Please run "P2Setup.exe" to test your video card prior to starting the game.	Veuillez lancer « P2Setup.exe » pour tester votre carte vidéo avant de démarrer le jeu.
+0x29A588	The resolution (800x600x16) could not be initialised. Please install the latest driver for your video card and then start the "P2Setup.exe" program.	La résolution (800x600x16) n'a pas pu être initialisée. Veuillez installer le dernier pilote de votre carte vidéo, puis lancer le programme "P2Setup.exe".
+0x29A58C	Please run "P2Setup.exe" to test your video card prior to starting the game.	Veuillez lancer "P2Setup.exe" pour tester votre carte vidéo avant de démarrer le jeu.
 0x29A590	The original Patrician III CD was not found.	Le CD original de Patrician III est introuvable.
 0x29A714	easy	facile
 0x29A71C	hard	difficile
@@ -1311,7 +1311,7 @@ frag	day_many	{n} jours
 0x29AE50	to quit the game?	quitter le jeu ?
 0x29B164	delete this savegame?	supprimer cette sauvegarde ?
 0x29B168	Do you really want to overwrite	Voulez-vous vraiment écraser
-0x29B16C	the savegame '%s'?	la sauvegarde « %s » ?
+0x29B16C	the savegame '%s'?	la sauvegarde "%s" ?
 0x29B214	%s %s has achieved the game objective.	%s %s a atteint l'objectif de la partie.
 0x29B218	The game objective was not achieved.	L'objectif de la partie n'a pas été atteint.
 0x29B238	Game   ends	Fin   de partie
@@ -1359,12 +1359,12 @@ frag	day_many	{n} jours
 0x29C0E8	(owns %i%%)	(détient %i%%)
 0x29C0EC	very low	très bas
 0x29C0FC	very high	très élevé
-0x29C100	With that, you have taken a %i. loan.	Vous avez ainsi contracté votre prêt n° %i.
+0x29C100	With that, you have taken a %i. loan.	Vous avez ainsi contracté votre prêt no %i.
 0x29C104	I cannot offer you anymore.	Je ne puis plus vous en offrir.
 0x29C108	"You should pay off a loan first	"Vous devriez d'abord rembourser un prêt
 0x29C10C	before asking for a new one."	avant d'en demander un nouveau."
 0x29C11C	\\f0_You have granted the following loans.	\\f0_Vous avez accordé les prêts suivants.
-0x29C120	\\f1_To %s %s %s %s from %s at the sum of %i\\C to be payed off by %i. %s %i.\n	\\f1_À %s %s %s %s de la ville de %s pour la somme de %i\\C, à rembourser pour le %i %s %i.\n
+0x29C120	\\f1_To %s %s %s %s from %s at the sum of %i\\C to be payed off by %i. %s %i.\n	\\f1_A %s %s %s %s de la ville de %s pour la somme de %i\\C, à rembourser pour le %i %s %i.\n
 0x29C128	\\f1_Nobody is interested in buying shares of your company at the moment.	\\f1_Personne ne souhaite actuellement acheter de parts de votre entreprise.
 0x29C12C	\\f1_Nobody is interested in buying shares of the company of %s %s at the moment.	\\f1_Personne ne souhaite actuellement acheter de parts de l'entreprise de %s %s.
 0x29C7C8	Auction at %s on %i. %s %i	Vente aux enchères à %s le %i %s %i
@@ -1391,7 +1391,7 @@ frag	day_many	{n} jours
 0x29C860	\\f1_The ship was auctioned for %i\\C by %s %s %s.	\\f1_Le navire a été vendu aux enchères pour %i\\C par %s %s %s.
 0x29C864	\\f1_The %i-load %s "%s" went for %i\\C to %s %s %s.	\\f1_Le %i last %s "%s" a été adjugé pour %i\\C à %s %s %s.
 0x29C86C	\\f1_%s %s %s %s %s from %s opened %s first trading office on %i. %s %i in %s.	\\f1_%s %s %s %s %s de la ville de %s ouvrit %s premier comptoir le %i %s %i à %s.
-0x29C878	\\f1_Age: %i years	\\f1_Âge : %i ans
+0x29C878	\\f1_Age: %i years	\\f1_Age : %i ans
 0x29C87C	\\f1_Married to %s	\\f1_Marié(e) à %s
 0x29C880	, %i children	, %i enfants
 0x29C884	\\f1_She	\\f1_Elle
@@ -1438,7 +1438,7 @@ frag	day_many	{n} jours
 0x29D964	\\f1_This burglary will cost you %i\\C.	\\f1_Ce cambriolage vous coûtera %i\\C.
 0x29D968	\\f1_"The burglary at %s %s will take place shortly."	\\f1_"Le cambriolage chez %s %s aura lieu sous peu."
 0x29D96C	\\f1_"I have already named my price. So how come you are trying to rip me off?"	\\f1_"J'ai déjà dit mon prix. Pourquoi essayez-vous donc de me rouler ?"
-0x29D970	\\f1_"What is that supposed to be? Perhaps you should get yourself some more gold first!	\\f1_"Qu'est-ce que c'est que ça ? Procurez-vous donc d'abord un peu plus d'or !
+0x29D970	\\f1_"What is that supposed to be? Perhaps you should get yourself some more gold first!	\\f1_"Qu'est-ce que c'est que ca ? Procurez-vous donc d'abord un peu plus d'or !
 0x29D974	\\f1_"Get some more gold and then we will talk again!"	\\f1_"Rapportez plus d'or, puis nous reparlerons !"
 0x29D978	\\f1_"Get lost! Get some gold first!"	\\f1_"Dehors ! Revenez avec de l'or !"
 0x29D97C	\\f1_"What! Is that all! I want more gold!"	\\f1_"Quoi ! C'est tout ! Je veux plus d'or !"
@@ -1481,15 +1481,15 @@ frag	day_many	{n} jours
 0x29DA78	It was a pleasure for me to do business with you.	Ce fut un plaisir de faire affaire avec vous.
 0x29DA7C	"I thank you for the supply,	"Je vous remercie pour la livraison,
 0x29DA80	because we can use it well.	car nous en avons bon usage.
-0x29DA84	As agreed upon you got per	Comme convenu, vous avez reçu, par
+0x29DA84	As agreed upon you got per	Comme convenu, vous avez recu, par
 0x29DA88	the fixed price of %u	le prix fixe de %u
 0x29DA90	Good-bye."	Au revoir."
 0x29DD1C	\\f1_You have to be Lord Mayor in order to carry out activities in the arsenal.	\\f1_Vous devez être bourgmestre pour mener des activités à l'arsenal.
 0x29DD20	\\f1_The weapons needed by this unit are not available at the weapons dealer.	\\f1_Les armes nécessaires à cette unité ne sont pas disponibles chez le marchand d'armes.
 0x29DD24	\\f1_You cannot train this unit because there are not enough beggars in the town.	\\f1_Vous ne pouvez pas former cette unité : il n'y a pas assez de mendiants en ville.
 0x29DD48	\\f1_Total cost per month: %i\\C	\\f1_Coût total par mois : %i\\C
-0x29EE38	\\f1_Lord Mayor of %s is %s %s %s %s.	\\f1_À %s, le bourgmestre est %s %s %s %s.
-0x29EE3C	\\f1_Lady Mayoress of %s is %s %s %s %s.	\\f1_À %s, la bourgmestre est %s %s %s %s.
+0x29EE38	\\f1_Lord Mayor of %s is %s %s %s %s.	\\f1_A %s, le bourgmestre est %s %s %s %s.
+0x29EE3C	\\f1_Lady Mayoress of %s is %s %s %s %s.	\\f1_A %s, la bourgmestre est %s %s %s %s.
 0x29EE8C	\\f1_The next Lord Mayor's election takes place on %d. %s %d. The following citizens from %s have been nominated to date:	\\f1_La prochaine élection du bourgmestre a lieu le %d %s %d. Les citoyens suivants de la ville de %s ont été proposés à ce jour :
 0x29EE90	\\f1_Alderman of the Hanseatic League is %s %s %s %s from %s.	\\f1_L'alderman de la Hanse est %s %s %s %s, de la ville de %s.
 0x29EE94	\\f1_Alderman of the Hanseatic League is %s %s %s %s from %s.	\\f1_L'alderman de la Hanse est %s %s %s %s, de la ville de %s.
@@ -1507,20 +1507,20 @@ frag	day_many	{n} jours
 0x29EEE0	\\f1_It has been requested on the grounds of %s %s%s, to blockade the harbour of %s and to prevent trading with the Hanseatic League.	\\f1_Il a été demandé, en raison de %s %s%s, de bloquer le port de la ville de %s et d'empêcher tout commerce avec la Hanse.
 0x29EEE8	the shortly enacted taxes for all	la taxe spéciale récemment instaurée pour tous les
 0x29EEEC	\\f1_You have the following suitable ships at anchor in port:	\\f1_Vous avez les navires appropriés suivants à l'ancre dans le port :
-0x29EEF4	\\f1_The town of %s already has an outrigger.	\\f1_À %s, il y a déjà un navire de garde.
+0x29EEF4	\\f1_The town of %s already has an outrigger.	\\f1_A %s, il y a déjà un navire de garde.
 0x29EEF8	\\f1_The weekly pay for the %s is %d\\C.	\\f1_La solde hebdomadaire du %s est de %d\\C.
 0x29EF00	\\c\\f1_Price guarantee for %s in %s	\\c\\f1_Prix garanti pour %s à %s
 0x29EF04	\\f1_The town %s herewith announces that a price guarantee will be granted for %s at %d\\C per %s. This guarantee is valid for a delivery of %d%s. The goods must be delivered by %d. %s.	\\f1_La ville %s annonce par la présente qu'un prix garanti sera accordé pour %s à %d\\C par %s. Cette garantie est valable pour une livraison de %d%s. Les marchandises doivent être livrées avant le %d %s.
-0x29EF0C	\\f1_Meet %s %s in the %s in %s by %u. %s %u, in order to deliver %d%s %s.	\\f1_Retrouvez %s %s – lieu : %s, à %s – avant le %u %s %u afin de livrer %d%s %s.
+0x29EF0C	\\f1_Meet %s %s in the %s in %s by %u. %s %u, in order to deliver %d%s %s.	\\f1_Retrouvez %s %s - lieu : %s, à %s - avant le %u %s %u afin de livrer %d%s %s.
 0x29EF14	\\f1_You are held to be not reliable enough to get this order.	\\f1_On ne vous juge pas assez fiable pour recevoir cette commande.
 0x29EF68	\\c\\f1_Choose a candidate and cast your vote.	\\c\\f1_Choisissez un candidat et votez.
 0x29EF6C	\\f1_Choose one of the following voting possibilities:	\\f1_Choisissez l'une des possibilités de vote suivantes :
 0x29EF7C	%s %s %s %s from %s was elected Alderman of the Hanseatic League by %d votes.	%s %s %s %s de la ville de %s a été élu alderman de la Hanse par %d voix.
-0x29EF80	\\f1_The motion was accepted by %d to %d votes, with %d abstentions. The trade embargo against %s will be carried out shortly.	\\f1_La motion a été adoptée par %d voix contre %d, avec %d abstentions. L'embargo commercial contre %s sera mis en œuvre sous peu.
+0x29EF80	\\f1_The motion was accepted by %d to %d votes, with %d abstentions. The trade embargo against %s will be carried out shortly.	\\f1_La motion a été adoptée par %d voix contre %d, avec %d abstentions. L'embargo commercial contre %s sera mis en oeuvre sous peu.
 0x29EF84	\\f1_The motion was rejected by %d to %d votes, with %d abstentions. There will be no boycott against %s.	\\f1_La motion a été rejetée par %d voix contre %d, avec %d abstentions. Il n'y aura pas de boycott contre %s.
 0x29EF8C	%s %s %s %s from %s	%s %s %s %s de %s
 0x29EF90	\\f1_You do not have a better ship at anchor in port.	\\f1_Vous n'avez pas de meilleur navire à l'ancre dans le port.
-0x29EF94	\\f1_The cart is creaking under the burden of your belongings and the bulls are panting under the brutal whip of the coach driver. The previous business activities of your hometown %s have reduced since the hangers-on have been on the road.\nThe fresh morning air signals your departure to %s - your new hometown.	\\f1_La charrette gémit sous le poids de vos biens et les bœufs halètent sous le fouet brutal du charretier. Les affaires de votre ancienne ville natale, %s, ont diminué depuis que les gens de votre suite ont pris la route.\nL'air frais du matin annonce votre départ pour %s, votre nouvelle ville natale.
+0x29EF94	\\f1_The cart is creaking under the burden of your belongings and the bulls are panting under the brutal whip of the coach driver. The previous business activities of your hometown %s have reduced since the hangers-on have been on the road.\nThe fresh morning air signals your departure to %s - your new hometown.	\\f1_La charrette gémit sous le poids de vos biens et les boeufs halètent sous le fouet brutal du charretier. Les affaires de votre ancienne ville natale, %s, ont diminué depuis que les gens de votre suite ont pris la route.\nL'air frais du matin annonce votre départ pour %s, votre nouvelle ville natale.
 0x29EF98	\\f1_The high demand for %s is not covered in our town. We are therefore offering the trader who can supply us by %d-%d with %d%s, a fixed price of %d\\C (equals %d\\C per \\%c).	\\f1_La forte demande en %s n'est pas couverte dans notre ville. Nous offrons donc au marchand qui pourra nous livrer d'ici le %d-%d %d%s un prix fixe de %d\\C (soit %d\\C par \\%c).
 0x29EFA0	\\f1_You will get the bonus after supplying all the goods demanded.	\\f1_Vous recevrez la prime une fois toutes les marchandises demandées livrées.
 0x29EFA8	an export tax for %s was imposed without reason.	un droit d'exportation sur %s a été imposé sans motif.
@@ -1528,7 +1528,7 @@ frag	day_many	{n} jours
 0x29EFB0	\\c\\f1_Bonus for %s in %s	\\c\\f1_Prime pour %s à %s
 0x29FD70	\\c\\f3_Especially recommended today in the town hall cellar	\\c\\f3_Tout spécialement recommandé aujourd'hui à la cave de l'hôtel de ville
 0x29FD74	\\c\\f3_River pike soup	\\c\\f3_Soupe de brochet de rivière
-0x29FD78	\\c\\f1_Spicy river-pike soup with herbs and vegetables, white wine, cream and egg	\\c\\f1_Soupe épicée de brochet de rivière aux herbes et légumes, vin blanc, crème et œuf
+0x29FD78	\\c\\f1_Spicy river-pike soup with herbs and vegetables, white wine, cream and egg	\\c\\f1_Soupe épicée de brochet de rivière aux herbes et légumes, vin blanc, crème et oeuf
 0x29FD7C	\\c\\f3_A good lentil stew	\\c\\f3_Un bon potage de lentilles
 0x29FD80	\\c\\f1_Lentil stew with garlic and onions	\\c\\f1_Potée de lentilles à l'ail et aux oignons
 0x29FD84	\\c\\f3_Boiled meat with spicy herbs	\\c\\f3_Viande bouillie aux herbes aromatiques
@@ -1540,7 +1540,7 @@ frag	day_many	{n} jours
 0x29FD9C	\\c\\f3_Char from royal court master cook	\\c\\f3_Omble chevalier du maître queux de la cour royale
 0x29FDA0	\\c\\f1_Tasty char according to the recipe of a royal court master cook, with white wine and mushrooms	\\c\\f1_Savoureux omble chevalier selon la recette d'un maître queux de la cour royale, au vin blanc et aux champignons
 0x29FDA4	\\c\\f3_Pastry rolls filled with crab flesh	\\c\\f3_Rouleaux de pâte farcis de chair de crabe
-0x29FDA8	\\c\\f1_Baked pastry rolls, stuffed with crab flesh and a filling consisting of eggs, cheese and gingerbread	\\c\\f1_Rouleaux de pâte cuits au four, farcis de chair de crabe et d'une farce d'œufs, de fromage et de pain d'épices
+0x29FDA8	\\c\\f1_Baked pastry rolls, stuffed with crab flesh and a filling consisting of eggs, cheese and gingerbread	\\c\\f1_Rouleaux de pâte cuits au four, farcis de chair de crabe et d'une farce d'oeufs, de fromage et de pain d'épices
 0x29FDAC	\\c\\f3_Saddle of venison roasted on a spit	\\c\\f3_Selle de chevreuil rôtie à la broche
 0x29FDB0	\\c\\f1_Saddle of venison brushed with a herb butter of thyme, rosemary, sage and marjoram, and roasted on a spit	\\c\\f1_Selle de chevreuil badigeonnée d'un beurre aux herbes (thym, romarin, sauge et marjolaine) et rôtie à la broche
 0x29FDB4	\\c\\f3_A good piece of rabbit	\\c\\f3_Un bon plat de lapin
@@ -1549,8 +1549,8 @@ frag	day_many	{n} jours
 0x29FDC0	\\c\\f1_Rabbit pate made from young rabbits, strips of bacon and venison's liver	\\c\\f1_Pâté de jeunes lapins, de lard en lanières et de foie de gibier
 0x29FDC4	\\c\\f3_Leg of lamb	\\c\\f3_Gigot d'agneau
 0x29FDC8	\\c\\f1_Leg of lamb with bacon and diced parsley	\\c\\f1_Gigot d'agneau au lard et au persil haché
-0x29FDCC	\\c\\f3_Filled quail, served with egg pastry	\\c\\f3_Caille farcie, servie avec des pâtes aux œufs
-0x29FDD0	\\c\\f1_Stuffed quail in brandy-sauce, served on egg pastry strips	\\c\\f1_Caille farcie en sauce à l'eau-de-vie, servie sur des lanières de pâte aux œufs
+0x29FDCC	\\c\\f3_Filled quail, served with egg pastry	\\c\\f3_Caille farcie, servie avec des pâtes aux oeufs
+0x29FDD0	\\c\\f1_Stuffed quail in brandy-sauce, served on egg pastry strips	\\c\\f1_Caille farcie en sauce à l'eau-de-vie, servie sur des lanières de pâte aux oeufs
 0x29FDD4	\\c\\f3_Partridge with wine leaves	\\c\\f3_Perdrix aux feuilles de vigne
 0x29FDD8	\\c\\f1_Partridge stuffed with grapes in juniper berry and vine leaves	\\c\\f1_Perdrix farcie de raisins, aux baies de genièvre et feuilles de vigne
 0x29FDDC	\\c\\f3_Chicken in red wine sauce	\\c\\f3_Poulet en sauce au vin rouge
@@ -1561,14 +1561,14 @@ frag	day_many	{n} jours
 0x29FDF0	\\c\\f1_Stuffed goose with honey crackling served, served with red cabbage and apple puree	\\c\\f1_Oie farcie à la croûte de miel, servie avec du chou rouge et de la purée de pommes
 0x29FDF4	\\c\\f3_Filled breast of veal	\\c\\f3_Poitrine de veau farcie
 0x29FDF8	\\c\\f1_Breast of veal stuffed with mince and nutmeg	\\c\\f1_Poitrine de veau farcie de viande hachée et de noix muscade
-0x29FDFC	\\c\\f3_Beef ribs, served with egg pastry	\\c\\f3_Côtes de bœuf, servies avec des pâtes aux œufs
-0x29FE00	\\c\\f1_Spicy beef ribs crisply roasted and served on egg pastry strips	\\c\\f1_Côtes de bœuf épicées, rôties jusqu'à être croustillantes et servies sur des lanières de pâte aux œufs
-0x29FE04	\\c\\f3_Pagan cake	\\c\\f3_Gâteau païen
-0x29FE08	\\c\\f1_A beef and apple pate with fresh herbs and garlic	\\c\\f1_Un pâté de bœuf et de pommes aux herbes fraîches et à l'ail
-0x29FE0C	\\c\\f3_A fine ox tongue pate	\\c\\f3_Un fin pâté de langue de bœuf
-0x29FE10	\\c\\f1_Pate made from slices of ox tongue, served with a generous amount of nutmeg and clove	\\c\\f1_Pâté de tranches de langue de bœuf, servi avec force noix muscade et clous de girofle
+0x29FDFC	\\c\\f3_Beef ribs, served with egg pastry	\\c\\f3_Côtes de boeuf, servies avec des pâtes aux oeufs
+0x29FE00	\\c\\f1_Spicy beef ribs crisply roasted and served on egg pastry strips	\\c\\f1_Côtes de boeuf épicées, rôties jusqu'à être croustillantes et servies sur des lanières de pâte aux oeufs
+0x29FE04	\\c\\f3_Pagan cake	\\c\\f3_Gâteau paien
+0x29FE08	\\c\\f1_A beef and apple pate with fresh herbs and garlic	\\c\\f1_Un pâté de boeuf et de pommes aux herbes fraîches et à l'ail
+0x29FE0C	\\c\\f3_A fine ox tongue pate	\\c\\f3_Un fin pâté de langue de boeuf
+0x29FE10	\\c\\f1_Pate made from slices of ox tongue, served with a generous amount of nutmeg and clove	\\c\\f1_Pâté de tranches de langue de boeuf, servi avec force noix muscade et clous de girofle
 0x29FE14	\\c\\f3_Lamb roasted on a spit	\\c\\f3_Agneau rôti à la broche
-0x29FE18	\\c\\f1_Saddle of lamb roasted on a spit, served with liver and heart, with orange juice poured over	\\c\\f1_Selle d'agneau rôtie à la broche, servie avec le foie et le cœur, arrosée de jus d'orange
+0x29FE18	\\c\\f1_Saddle of lamb roasted on a spit, served with liver and heart, with orange juice poured over	\\c\\f1_Selle d'agneau rôtie à la broche, servie avec le foie et le coeur, arrosée de jus d'orange
 0x29FE1C	\\c\\f3_Roasted mutton in pastry	\\c\\f3_Rôti de mouton en croûte
 0x29FE20	\\c\\f1_Roasted mutton with a mint-chevil-lard crust	\\c\\f1_Rôti de mouton sous une croûte de menthe, de cerfeuil et de saindoux
 0x29FE24	\\c\\f3_Roasted suckling pig with a breadcrumb cake	\\c\\f3_Cochon de lait rôti avec un gâteau de mie de pain
@@ -1577,12 +1577,12 @@ frag	day_many	{n} jours
 0x29FE30	\\c\\f1_A splendid dish of both red and liver sausages, made from freshly slaughtered pigs, around a knuckle of pork and served with pickled cabbage	\\c\\f1_Un splendide plat de boudins et de saucisses au foie, faits de porcs fraîchement abattus, autour d'un jarret de porc et servi avec du chou fermenté
 0x29FE34	\\c\\f3_Roast pork served with pickled cabbage	\\c\\f3_Rôti de porc servi avec du chou fermenté
 0x29FE38	\\c\\f1_Grilled salt meat, smoked in pine twigs	\\c\\f1_Viande salée grillée, fumée aux brindilles de sapin
-0x29FE3C	\\c\\f3_A royal meal of eggs	\\c\\f3_Un mets royal d'œufs
-0x29FE40	\\c\\f1_Egg pastry rolls filled with spicy game	\\c\\f1_Chaussons de pâte aux œufs farcis de gibier épicé
+0x29FE3C	\\c\\f3_A royal meal of eggs	\\c\\f3_Un mets royal d'oeufs
+0x29FE40	\\c\\f1_Egg pastry rolls filled with spicy game	\\c\\f1_Chaussons de pâte aux oeufs farcis de gibier épicé
 0x29FE44	\\c\\f3_Pancake with cranberry filling	\\c\\f3_Crêpe fourrée aux airelles
 0x29FE48	\\c\\f1_Poultry in calvados in a coat of fine pancake pastry, served with cranberry sauce	\\c\\f1_Volaille au calvados enrobée d'une fine pâte à crêpes, servie avec une sauce aux airelles
-0x29FE4C	\\c\\f3_Egg ragoue	\\c\\f3_Ragoût d'œufs
-0x29FE50	\\c\\f1_Egg ragoue a slight hint of mustard note, served on toast	\\c\\f1_Ragoût d'œufs relevé d'une pointe de moutarde, servi sur du pain grillé
+0x29FE4C	\\c\\f3_Egg ragoue	\\c\\f3_Ragoût d'oeufs
+0x29FE50	\\c\\f1_Egg ragoue a slight hint of mustard note, served on toast	\\c\\f1_Ragoût d'oeufs relevé d'une pointe de moutarde, servi sur du pain grillé
 0x29FE54	\\c\\f3_Mangolds and leeks	\\c\\f3_Bettes et poireaux
 0x29FE58	\\c\\f1_Mangolds and leeks braised in onion and lard dripping and seasoned with basil	\\c\\f1_Bettes et poireaux braisés dans du saindoux à l'oignon et assaisonnés de basilic
 0x29FE5C	\\c\\f3_White cabbage with bacon	\\c\\f3_Chou blanc au lard
@@ -1601,7 +1601,7 @@ frag	day_many	{n} jours
 0x2A0494	more beautiful. How much gold would you like to donate?	d'être plus belle. Combien d'or souhaitez-vous donner ?
 0x2A0498	We are planning to extend our church, so that it will	Nous projetons d'agrandir notre église, afin qu'elle
 0x2A04A4	extension can start.	l'agrandissement puisse commencer.
-0x2A04A8	We have already received a lot of donations.	Nous avons déjà reçu beaucoup de dons.
+0x2A04A8	We have already received a lot of donations.	Nous avons déjà recu beaucoup de dons.
 0x2A04B0	the required donations together.	les dons nécessaires.
 0x2A04B8	will begin the extension shortly.	commencera bientôt l'agrandissement.
 0x2A04BC	We are not currently planning any further extensions.	Nous ne prévoyons actuellement aucun autre agrandissement.
@@ -1615,13 +1615,13 @@ frag	day_many	{n} jours
 0x2A04E8	with the extension of our church.	l'agrandissement de notre église.
 0x2A082C	\\c\\f0_Only city businesses taken into consideration.	\\c\\f0_Seuls les établissements de la ville sont pris en compte.
 0x2A0B5C	Administrator (stage %d)	Administrateur (degré %d)
-0x2A0B64	The trading office administrator receives	L'administrateur du comptoir reçoit
+0x2A0B64	The trading office administrator receives	L'administrateur du comptoir recoit
 0x2A0B68	per day.	par jour.
 0x2A0B70	No trading office administrator employed.	Aucun administrateur de comptoir employé.
 0x2A0B78	was placed on order.	a été commandé.
 0x2A0B80	This trading office has the greatest possible extension stage	Ce comptoir possède le plus haut degré d'extension possible
 0x2A0B94	additionally rented	loué en supplément
-0x2A0BB8	A few businesses did not get all the required	Quelques établissements n'ont pas reçu la semaine dernière toutes les
+0x2A0BB8	A few businesses did not get all the required	Quelques établissements n'ont pas recu la semaine dernière toutes les
 0x2A0BBC	raw materials last week.	matières premières requises.
 0x2A0BC0	Social status in this town: %s	Rang social dans cette ville : %s
 0x2A0C9C	on %i. %s %i in %s	le %i %s %i à %s
@@ -1652,8 +1652,8 @@ frag	day_many	{n} jours
 0x2A12A4	\\f1_\n\nThe ship %s cannot sail because it is taking part in a blockade.	\\f1_\n\nLe navire %s ne peut appareiller, car il participe à un blocus.
 0x2A12A8	The ship no longer fulfils the requirements of a convoy leader.	Le navire ne remplit plus les conditions requises d'un chef de convoi.
 0x2A12F8	Should the ship %s leave the convoy?	Le navire %s doit-il quitter le convoi ?
-0x2A16C0	\\c\\f3_Sea battle\n\n\\l\\f1_%s "%s" is attacking %s "%s" %s.\n	\\c\\f3_Bataille navale\n\n\\l\\f1_%s « %s » attaque %s « %s » %s.\n
-0x2A16C4	\\c\\f3_Sea battle\n\n\\l\\f1_%s "%s" is being attacked by %s "%s" %s.\n	\\c\\f3_Bataille navale\n\n\\l\\f1_%s « %s » est attaqué par %s « %s » %s.\n
+0x2A16C0	\\c\\f3_Sea battle\n\n\\l\\f1_%s "%s" is attacking %s "%s" %s.\n	\\c\\f3_Bataille navale\n\n\\l\\f1_%s "%s" attaque %s "%s" %s.\n
+0x2A16C4	\\c\\f3_Sea battle\n\n\\l\\f1_%s "%s" is being attacked by %s "%s" %s.\n	\\c\\f3_Bataille navale\n\n\\l\\f1_%s "%s" est attaqué par %s "%s" %s.\n
 0x2A16CC	\\f1_\n\\c\\f3_Sea battle\n\\l\\f1_	\\f1_\n\\c\\f3_Bataille navale\n\\l\\f1_
 0x2A16D0	\n\\f0_Own ships:\n\\f1_	\n\\f0_Navires propres :\n\\f1_
 0x2A16D4	\n\\f0_Convoy leader:\n\\f1_	\n\\f0_Chef de convoi :\n\\f1_
@@ -1687,12 +1687,12 @@ frag	day_many	{n} jours
 0x2A1754	cog	cogue
 0x2A1758	hulk	hourque
 0x2A175C	the snaikke	la schnigge
-0x2A176C	\\c\\f3_Sea battle\n\n\\l\\f1_Should your ship "%s" attack %s "%s" %s?\n	\\c\\f3_Bataille navale\n\n\\l\\f1_Votre navire « %s » doit-il attaquer %s « %s » %s ?\n
-0x2A1770	\\c\\f3_Attack on town\n\n\\l\\f1_%s "%s" attacks the town of %s.\n	\\c\\f3_Attaque sur la ville\n\n\\l\\f1_%s « %s » attaque la ville de %s.\n
-0x2A1774	\\c\\f3_Attack on town\n\n\\l\\f1_The town of %s is under attack by %s "%s" %s.\n	\\c\\f3_Attaque sur la ville\n\n\\l\\f1_La ville de %s est attaquée par %s « %s » %s.\n
+0x2A176C	\\c\\f3_Sea battle\n\n\\l\\f1_Should your ship "%s" attack %s "%s" %s?\n	\\c\\f3_Bataille navale\n\n\\l\\f1_Votre navire "%s" doit-il attaquer %s "%s" %s ?\n
+0x2A1770	\\c\\f3_Attack on town\n\n\\l\\f1_%s "%s" attacks the town of %s.\n	\\c\\f3_Attaque sur la ville\n\n\\l\\f1_%s "%s" attaque la ville de %s.\n
+0x2A1774	\\c\\f3_Attack on town\n\n\\l\\f1_The town of %s is under attack by %s "%s" %s.\n	\\c\\f3_Attaque sur la ville\n\n\\l\\f1_La ville de %s est attaquée par %s "%s" %s.\n
 0x2A177C	The town of %s	La ville de %s
-0x2A1D78	\\c\\f3_Boarding battle\n\n\\l\\f1_The crew of the "%s" has captured %s "%s" %s.	\\c\\f3_Combat d'abordage\n\n\\l\\f1_L'équipage du « %s » s'est emparé de %s « %s » %s.
-0x2A1D7C	\\c\\f3_Boarding battle\n\n\\l\\f1_Your ship "%s" lost the boarding fight against %s "%s" %s.	\\c\\f3_Combat d'abordage\n\n\\l\\f1_Votre navire « %s » a perdu le combat d'abordage contre %s « %s » %s.
+0x2A1D78	\\c\\f3_Boarding battle\n\n\\l\\f1_The crew of the "%s" has captured %s "%s" %s.	\\c\\f3_Combat d'abordage\n\n\\l\\f1_L'équipage du "%s" s'est emparé de %s "%s" %s.
+0x2A1D7C	\\c\\f3_Boarding battle\n\n\\l\\f1_Your ship "%s" lost the boarding fight against %s "%s" %s.	\\c\\f3_Combat d'abordage\n\n\\l\\f1_Votre navire "%s" a perdu le combat d'abordage contre %s "%s" %s.
 0x2A1D80	\\c\\f3_Sea battle\n\n\\l\\f1_%s %s has fled.	\\c\\f3_Bataille navale\n\n\\l\\f1_%s %s a pris la fuite.
 0x2A1D84	\\c\\f3_Sea battle\n\n\\l\\f1_%s has fled with %s like a cowardly dog.	\\c\\f3_Bataille navale\n\n\\l\\f1_%s s'est enfui avec %s comme un chien lâche.
 0x2A1D88	\\c\\f3_Sea battle\n\n\\l\\f1_You have beaten %s.	\\c\\f3_Bataille navale\n\n\\l\\f1_Vous avez vaincu %s.
@@ -1706,7 +1706,7 @@ frag	day_many	{n} jours
 0x2A1DA8	\\c\\f3_Attack on town\n\n\\l\\f1_You have broken through the town's defence and relieved the city's bank of %d\\C.	\\c\\f3_Attaque sur la ville\n\n\\l\\f1_Vous avez percé les défenses de la ville et délesté la caisse de la ville de %d\\C.
 0x2A1DAC	\\c\\f3_Attack on town\n\n\\l\\f1_The town is not being defended and you can plunder the city's bank without much ado. Your booty amounts to %d\\C.	\\c\\f3_Attaque sur la ville\n\n\\l\\f1_La ville n'est pas défendue et vous pouvez piller sa caisse sans grande peine. Votre butin s'élève à %d\\C.
 0x2A1DB0	\\c\\f3_Attack on town\n\n\\l\\f1_The town's defence was too well prepared for your attack. You failed miserably.	\\c\\f3_Attaque sur la ville\n\n\\l\\f1_La défense de la ville était trop bien préparée pour votre attaque. Vous avez lamentablement échoué.
-0x2A1DB4	\\c\\f3_Attack on town\n\n\\l\\f1_Due to your flight, the attack on the town has failed.	\\c\\f3_Attaque sur la ville\n\n\\l\\f1_À cause de votre fuite, l'attaque sur la ville a échoué.
+0x2A1DB4	\\c\\f3_Attack on town\n\n\\l\\f1_Due to your flight, the attack on the town has failed.	\\c\\f3_Attaque sur la ville\n\n\\l\\f1_A cause de votre fuite, l'attaque sur la ville a échoué.
 0x2A1DB8	\\c\\f3_Attack on town\n\n\\l\\f1_The captain refuses to attack a town without suitable armament.	\\c\\f3_Attaque sur la ville\n\n\\l\\f1_Le capitaine refuse d'attaquer une ville sans armement approprié.
 0x2A2240	\\l\\f1_You have put the attackers to flight!\n	\\l\\f1_Vous avez mis les assaillants en fuite !\n
 0x2A2244	\\l\\f1_You have defeated the enemy!\n	\\l\\f1_Vous avez vaincu l'ennemi !\n
@@ -1736,7 +1736,7 @@ frag	day_many	{n} jours
 0x2A2470	\\c\\f1_Remaining building time: %i day	\\c\\f1_Temps de construction restant : %i jour
 0x2A2474	\\c\\f1_Remaining building time: %i days	\\c\\f1_Temps de construction restant : %i jours
 0x2A2480	\\f1_Basic tax per week: %i\\C	\\f1_Impôt foncier par semaine : %i\\C
-0x2A2544	\\c\\f1_Businesses of this type: %i	\\c\\f1_Établissements de ce type : %i
+0x2A2544	\\c\\f1_Businesses of this type: %i	\\c\\f1_Etablissements de ce type : %i
 0x2A2554	\\f1_Total cost per week: %i\\C	\\f1_Coûts totaux par semaine : %i\\C
 0x2A268C	\\f1_\n\nShould convoy %s set sail on the morning of %i-%i-%i for destination %s?	\\f1_\n\nLe convoi %s doit-il appareiller au matin du %i-%i-%i à destination de %s ?
 0x2A2694	\\f1_\n\nOnly towns can be given as a destination for the convoy.	\\f1_\n\nSeules des villes peuvent être indiquées comme destination du convoi.
@@ -1745,13 +1745,13 @@ frag	day_many	{n} jours
 0x2A2A40	\\f1_A bath at last! After more than 3 weeks.	\\f1_Un bain, enfin ! Après plus de 3 semaines.
 0x2A2A44	\\f1_Such a bath always makes one feel good.	\\f1_Un tel bain fait toujours du bien.
 0x2A2A48	\\f1_You are not really dry from your last bath.	\\f1_Vous n'êtes pas vraiment sec de votre dernier bain.
-0x2A2A4C	\\f1_"Greetings, %s %s. Is it not wonderful to have a bath again at last?"	\\f1_« Salutations, %s %s. N'est-il pas merveilleux de prendre enfin un bain ? »
-0x2A2A50	\\f1_"So we meet again, %s %s. I can very well remember how pleasant our last meeting was."	\\f1_« Nous nous retrouvons donc, %s %s. Je me souviens fort bien de l'agrément de notre dernière rencontre. »
-0x2A2A54	\\f1_"Ah! You're here as well, %s %s? I have only very recently spoken to one of your competitors."	\\f1_« Ah ! Vous voilà aussi, %s %s ? Je n'ai parlé que très récemment à l'un de vos concurrents. »
-0x2A2A58	\\f1_"Are you there again?! Let me have my bath in peace, please."	\\f1_« Encore vous ?! Laissez-moi prendre mon bain en paix, je vous prie. »
-0x2A2A5C	\\f1_"Aha, a bribe eh! But all right, I'll take your gold. We'll see what I can do for you at the appointed time."	\\f1_« Aha, un pot-de-vin, à ce que je vois ! Mais soit, je prends votre or. Nous verrons ce que je puis faire pour vous au moment convenu. »
-0x2A2A60	\\f1_"Oh, that's a very enticing sum. You can be certain of my loyalty."	\\f1_« Oh, voilà une somme fort alléchante. Vous pouvez compter sur ma loyauté. »
-0x2A2A64	\\f1_"What am I supposed to do with this pittance? You ought to realise yourself, that a man in my position expects a little more from someone of your standing."	\\f1_« Que voulez-vous que je fasse de cette obole ? Vous devriez comprendre vous-même qu'un homme de ma position attend un peu plus d'une personne de votre rang. »
+0x2A2A4C	\\f1_"Greetings, %s %s. Is it not wonderful to have a bath again at last?"	\\f1_"Salutations, %s %s. N'est-il pas merveilleux de prendre enfin un bain ?"
+0x2A2A50	\\f1_"So we meet again, %s %s. I can very well remember how pleasant our last meeting was."	\\f1_"Nous nous retrouvons donc, %s %s. Je me souviens fort bien de l'agrément de notre dernière rencontre."
+0x2A2A54	\\f1_"Ah! You're here as well, %s %s? I have only very recently spoken to one of your competitors."	\\f1_"Ah ! Vous voilà aussi, %s %s ? Je n'ai parlé que très récemment à l'un de vos concurrents."
+0x2A2A58	\\f1_"Are you there again?! Let me have my bath in peace, please."	\\f1_"Encore vous ?! Laissez-moi prendre mon bain en paix, je vous prie."
+0x2A2A5C	\\f1_"Aha, a bribe eh! But all right, I'll take your gold. We'll see what I can do for you at the appointed time."	\\f1_"Aha, un pot-de-vin, à ce que je vois ! Mais soit, je prends votre or. Nous verrons ce que je puis faire pour vous au moment convenu."
+0x2A2A60	\\f1_"Oh, that's a very enticing sum. You can be certain of my loyalty."	\\f1_"Oh, voilà une somme fort alléchante. Vous pouvez compter sur ma loyauté."
+0x2A2A64	\\f1_"What am I supposed to do with this pittance? You ought to realise yourself, that a man in my position expects a little more from someone of your standing."	\\f1_"Que voulez-vous que je fasse de cette obole ? Vous devriez comprendre vous-même qu'un homme de ma position attend un peu plus d'une personne de votre rang."
 0x2A2A68	Conversation with %s %s	Entretien avec %s %s
 0x2A2B34	\\f1_You must have a trading office in this town, to be able to buy weapons for your ships.	\\f1_Vous devez avoir un comptoir dans cette ville pour pouvoir acheter des armes pour vos navires.
 0x2A2B40	catapult	catapulte
@@ -1820,24 +1820,24 @@ frag	day_many	{n} jours
 0x2A4520	Automatic trade: %s can no longer sail to any destination	Commerce automatique : %s ne peut plus faire voile vers aucune destination
 0x2A4524	Automatic trade: Convoy %s has a new ship in formation	Commerce automatique : le convoi %s a accueilli un nouveau navire
 0x2A4528	Automatic trade: Convoy %s can no longer sail to any destination	Commerce automatique : le convoi %s ne peut plus faire voile vers aucune destination
-0x2A4570	Official writing: %s	Écrit officiel : %s
+0x2A4570	Official writing: %s	Ecrit officiel : %s
 0x2A4574	Personal letter: %s	Lettre personnelle : %s
 0x2A4578	Trading information: %s	Information commerciale : %s
 0x2A5CC4	For repairs at this shipyard	Pour une réparation dans ce chantier naval
 0x2A5CCC	in stock	en stock
 0x2A5CD0	buy	acheter
 0x2A5CD8	\\f0_Total cost amounts to %i\\C.	\\f0_Le coût total s'élève à %i\\C.
-0x2A5CF8	\n\n\\f0Note\n\n\\f1The raw materials and 10% of wage costs will be retained!\nDo you really want to cancel this order?	\n\n\\f0Remarque\n\n\\f1Les matières premières et 10 % opérés sur les frais de main-d'œuvre seront retenus !\nVoulez-vous vraiment annuler cette commande ?
+0x2A5CF8	\n\n\\f0Note\n\n\\f1The raw materials and 10% of wage costs will be retained!\nDo you really want to cancel this order?	\n\n\\f0Remarque\n\n\\f1Les matières premières et 10 % opérés sur les frais de main-d'oeuvre seront retenus !\nVoulez-vous vraiment annuler cette commande ?
 0x2A5CFC	\n\nNote\n\nWork is already being done on this ship.	\n\nRemarque\n\nOn travaille déjà sur ce navire.
 0x2A5D04	\\c\\f1_The cost of repairs amounts to %i\\C.	\\c\\f1_Le coût des réparations s'élève à %i\\C.
 0x2A5D08	For an upgrade at this shipyard	Pour une amélioration dans ce chantier naval
 0x2A5D0C	are no further ships available.	aucun autre navire n'est disponible.
 0x2A5D10	No ships were commissioned at this shipyard.	Aucun navire n'a été commandé à ce chantier naval.
-0x2A5D20	No orders have been received to repair ships.	Aucun ordre de réparation de navires n'a été reçu.
+0x2A5D20	No orders have been received to repair ships.	Aucun ordre de réparation de navires n'a été recu.
 0x2A6FF0	\\f1_The Prince is most displeased with this town's reserved stance. Nothing is going to change his mind.	\\f1_Le Prince est fort mécontent de l'attitude réservée de cette ville. Rien ne le fera changer d'avis.
 0x2A6FF4	\\f1_The Prince is very unhappy with this town, as his demands have been completely ignored for a while now. If this doesn't change soon, the good citizens of this town will need to prepare themselves for the worst.	\\f1_Le Prince est très mécontent de cette ville, car ses exigences sont totalement ignorées depuis un certain temps. Si cela ne change pas bientôt, les braves citoyens de cette ville devront s'attendre au pire.
 0x2A6FF8	\\f1_Whilst the Prince is not ecstatic about this town's attitude, his anger is still held in check.	\\f1_Si le Prince n'est guère enchanté de l'attitude de cette ville, sa colère reste encore contenue.
-0x2A6FFC	\\f1_The Prince is happy with the deliveries he is getting from this town.	\\f1_Le Prince est satisfait des livraisons qu'il reçoit de cette ville.
+0x2A6FFC	\\f1_The Prince is happy with the deliveries he is getting from this town.	\\f1_Le Prince est satisfait des livraisons qu'il recoit de cette ville.
 0x2A7000	\\f1_The Prince is completely happy with this town and its good citizens.	\\f1_Le Prince est entièrement satisfait de cette ville et de ses braves citoyens.
 0x2A7004	\\f1_How about organising a little present to cheer the Prince up?	\\f1_Et si l'on organisait un petit présent pour réjouir le Prince ?
 0x2A7008	\\f1_I'm sure there wouldn't be any objection to a little present.	\\f1_Je suis certain qu'on ne trouverait rien à redire à un petit présent.
@@ -1845,7 +1845,7 @@ frag	day_many	{n} jours
 0x2A7010	\\f1_You must be a councillor before I, emissary of the Prince will deign to talk with you.	\\f1_Il faut que vous soyez conseiller pour que moi, émissaire du Prince, daigne m'entretenir avec vous.
 0x2A7014	\\f1_So you want to save your soul with a sack of gold? How much is it worth then?	\\f1_Ainsi vous voulez sauver votre âme avec un sac d'or ? Combien cela vaut-il donc ?
 0x2A7018	\\f1_You are just as mean as all the other skinflints. Well, we'll just fetch our gold without your help then.	\\f1_Vous êtes aussi mesquin que tous les autres grippe-sous. Eh bien, nous irons chercher notre or sans votre aide.
-0x2A701C	\\f1_You don't appear to care very much for the town's welfare. Perhaps you'd like to try again.	\\f1_Le bien de la ville ne semble guère vous tenir à cœur. Peut-être voudrez-vous essayer encore.
+0x2A701C	\\f1_You don't appear to care very much for the town's welfare. Perhaps you'd like to try again.	\\f1_Le bien de la ville ne semble guère vous tenir à coeur. Peut-être voudrez-vous essayer encore.
 0x2A7020	\\f1_Well what have we here! That's a pretty sight. Perhaps there is much more to your town than meets the eye, we do want to stay friends, don't we?	\\f1_Voyez-vous cela ! Voilà une belle vue. Peut-être votre ville recèle-t-elle bien plus qu'il n'y paraît ; nous tenons à rester amis, n'est-ce pas ?
 0x2A7024	\\f1_The officer in charge of the prince's army will only talk to the Lord Mayor of this town!	\\f1_L'officier commandant l'armée du prince ne parlera qu'au bourgmestre de cette ville !
 0x2A7028	\\f1_How much would you like to give to the Prince?	\\f1_Combien souhaitez-vous donner au Prince ?
@@ -1952,7 +1952,7 @@ frag	day_many	{n} jours
 0x2A9680	\\f1_It is probably best if you don't take on any more new contracts after your last disaster.	\\f1_Il vaut sans doute mieux ne plus prendre de nouvelles missions après votre dernier désastre.
 0x2A9684	\\f1_Many thanks for taking on this important task.\nThe town will be called %s. The port has already been constructed. Take building materials to %s and start building the market hall so that you can store goods for further development.\nYour task is to attract at least 1000 citizens by %d. %s %d.\n and construct the town wall.	\\f1_Grand merci d'avoir accepté cette importante tâche.\nLa ville s'appellera %s. Le port est déjà construit. Portez des matériaux de construction à %s et commencez à bâtir la halle du marché afin de pouvoir entreposer des marchandises pour la suite du développement.\nVotre tâche est d'attirer au moins 1000 citoyens avant le %d %s %d.\n et de construire le rempart.
 0x2A9688	\\f1_Many thanks for accepting the order to construct an overland trade route between %s and %s.\nTake the building materials to both towns. Supply them to the traders by the town gates.\nThe overland route must be open by %d. %s %d.	\\f1_Grand merci d'avoir accepté la mission de construire une route commerciale terrestre entre %s et %s.\nPortez les matériaux de construction dans les deux villes. Livrez-les aux marchands près des portes de la ville.\nLa route terrestre doit être ouverte avant le %d %s %d.
-0x2A968C	\\f1_Many thanks for offering to go after the notorious pirate %s %s.\nIt is up to you to decide whether you wish to sink his ship or take him prisoner once you have found him.\nYou have got to have located and stopped the pirate by %d. %s %d.	\\f1_Grand merci de vous être proposé pour traquer le pirate notoire %s %s.\nÀ vous de décider si vous voulez couler son navire ou le faire prisonnier une fois que vous l'aurez trouvé.\nVous devez avoir repéré et arrêté le pirate avant le %d %s %d.
+0x2A968C	\\f1_Many thanks for offering to go after the notorious pirate %s %s.\nIt is up to you to decide whether you wish to sink his ship or take him prisoner once you have found him.\nYou have got to have located and stopped the pirate by %d. %s %d.	\\f1_Grand merci de vous être proposé pour traquer le pirate notoire %s %s.\nA vous de décider si vous voulez couler son navire ou le faire prisonnier une fois que vous l'aurez trouvé.\nVous devez avoir repéré et arrêté le pirate avant le %d %s %d.
 0x2A9690	\\f1_Many thanks for offering to find the pirates' nest.\nYou have been given a map showing the approximate position of the hideout.\nYou have got until %d. %s. %d to destroy the pirates hideaway.	\\f1_Grand merci de vous être proposé pour trouver le nid de pirates.\nOn vous a remis une carte montrant la position approximative du repaire.\nVous avez jusqu'au %d %s %d pour détruire le repaire des pirates.
 0x2A9694	\\f1_Many thanks for offering to bring the town of %s back to prosperity.\nSupply the town and build businesses and housing so that the population increases.\nYour aim is to increase the population there to at least %$5$d people by %$2$d. %$3$s %$4$d.	\\f1_Grand merci de vous être proposé pour ramener la ville de %s à la prospérité.\nApprovisionnez la ville et construisez des établissements et des logements afin que la population augmente.\nVotre but est d'y porter la population à au moins %$5$d personnes avant le %$2$d %$3$s %$4$d.
 0x2A9698	\\f1_The Hanseatic League has no contracts on offer right now so that you can be put forward for the Alderman elections.	\\f1_La Hanse n'a actuellement aucune mission à offrir qui vous permettrait d'être proposé aux élections d'échevin.
@@ -1991,11 +1991,11 @@ frag	day_many	{n} jours
 0x2A99F8	\\l%s %s %s\n\n\\l\\dMeet my emissary by %d. %s. at the town gate in order to hand the %s over to him. \n\n The Prince	\\l%s %s %s\n\n\\l\\dRejoignez mon émissaire avant le %d %s à la porte de la ville afin de lui remettre les %s. \n\n Le Prince
 0x2A9A08	\\l%s %s %s\n\n\\l\\dYour delivery has helped me and my troops greatly. As agreed, here are your %d\\C.\n\nThe Prince	\\l%s %s %s\n\n\\l\\dVotre livraison m'a été d'un grand secours, à moi et à mes troupes. Comme convenu, voici vos %d\\C.\n\nLe Prince
 0x2A9A0C	\\l%s %s %s\n\n\\l\\dI'm afraid I am only able to pay you %d\\C for your goods due to an unfortunate incident in my country.\n\nThe Prince	\\l%s %s %s\n\n\\l\\dJe crains de ne pouvoir vous payer que %d\\C pour vos marchandises, en raison d'un fâcheux incident dans mon pays.\n\nLe Prince
-0x2AA178	\\c\\f3_Seizure\n\n\\l\\f1_The crew of the "%s" has plundered %s "%s" %s.	\\c\\f3_Pillage\n\n\\l\\f1_L'équipage du « %s » a pillé %s « %s » %s.
-0x2AA17C	\\c\\f3_Seizure\n\n\\l\\f1_Your ship "%s" was plundered by %s "%s" %s.	\\c\\f3_Pillage\n\n\\l\\f1_Votre navire « %s » a été pillé par %s « %s » %s.
+0x2AA178	\\c\\f3_Seizure\n\n\\l\\f1_The crew of the "%s" has plundered %s "%s" %s.	\\c\\f3_Pillage\n\n\\l\\f1_L'équipage du "%s" a pillé %s "%s" %s.
+0x2AA17C	\\c\\f3_Seizure\n\n\\l\\f1_Your ship "%s" was plundered by %s "%s" %s.	\\c\\f3_Pillage\n\n\\l\\f1_Votre navire "%s" a été pillé par %s "%s" %s.
 0x2AA180	%s %s: %d%%, plundered\n	%s %s : %d%%, pillé\n
 0x2AA184	%s %s %s %s %s was attacked and plundered by the pirate %s %s.	%s %s %s %s %s a été attaqué et pillé par le pirate %s %s.
-0x2AA194	\\c\\f3_Pirates' Nest\n\n\\l\\f1_%s "%s" attacks the hideout of the pirate %s %s.\n	\\c\\f3_Nid de pirates\n\n\\l\\f1_%s « %s » attaque le repaire du pirate %s %s.\n
+0x2AA194	\\c\\f3_Pirates' Nest\n\n\\l\\f1_%s "%s" attacks the hideout of the pirate %s %s.\n	\\c\\f3_Nid de pirates\n\n\\l\\f1_%s "%s" attaque le repaire du pirate %s %s.\n
 0x2AA198	\\c\\f3_Pirates' Nest\n\n\\l\\f1_You have reduced the pirates nest to ashes and have liberated %d\\C.	\\c\\f3_Nid de pirates\n\n\\l\\f1_Vous avez réduit le nid de pirates en cendres et libéré %d\\C.
 0x2AA19C	\\c\\f3_Pirates' Nest\n\n\\l\\f1_The Pirates were well prepared for your attack. You have failed.	\\c\\f3_Nid de pirates\n\n\\l\\f1_Les pirates étaient bien préparés à votre attaque. Vous avez échoué.
 0x2AA1A0	\\c\\f3_Pirates' Nest\n\n\\l\\f1_The attack on the pirates hideaway has been scuppered by your flight.	\\c\\f3_Nid de pirates\n\n\\l\\f1_L'attaque contre le repaire des pirates a été ruinée par votre fuite.
@@ -2138,7 +2138,7 @@ frag	day_many	{n} jours
 0x2ADDAC	\nIf an extraordinary Hanse Day is called to address this question, then each individual member of the Hanseatic League will be informed via a special letter.	\nSi une Diète hanséatique extraordinaire est convoquée pour traiter cette question, chaque membre de la Hanse en sera informé par une lettre spéciale.
 0x2ADDB0	\nThe Alderman is currently investigating whether an extraordinary Hanse Day should be called because of this situation.	\nL'échevin examine actuellement s'il y a lieu de convoquer une Diète hanséatique extraordinaire en raison de cette situation.
 0x2ADDB4	\nThe Alderman is currently investigating whether an extraordinary Hanse Day should be called because of this unbelievable situation.	\nL'échevin examine actuellement s'il y a lieu de convoquer une Diète hanséatique extraordinaire en raison de cette situation incroyable.
-0x2ADDB8	\nIn connection with this, the Alderman is just investigating whether or not to call an extraordinary Hanse Day.	\nÀ ce propos, l'échevin examine précisément s'il faut ou non convoquer une Diète hanséatique extraordinaire.
+0x2ADDB8	\nIn connection with this, the Alderman is just investigating whether or not to call an extraordinary Hanse Day.	\nA ce propos, l'échevin examine précisément s'il faut ou non convoquer une Diète hanséatique extraordinaire.
 0x2ADDBC	\n\\r\nHanseatic League Council	\n\\r\nLe Conseil de la Hanse
 0x2ADDC0	Honourable Alderman %s %s,\n\n	Honorable échevin %s %s,\n\n
 0x2ADDC4	Honourable Alderman %s %s,\n\n	Honorable échevin %s %s,\n\n
@@ -2166,7 +2166,7 @@ frag	day_many	{n} jours
 0x2AEC04	the %s %s of %s can not repay the %u\\C that he borrowed from you.\n	le %s %s de %s ne peut rembourser les %u\\C qu'il vous a empruntés.\n
 0x2AEC0C	that unreliable %s %s from %s is not able to repay his debt of %u\\C to you.	ce %s %s de %s, peu fiable, n'est pas en mesure de vous rembourser sa dette de %u\\C.
 0x2AED88	Diary Entry\n\nRejoice! Sing and shout from the rooftops! Today our darling daughter %s was born.  When the light of day first gleamed in her eyes, we knew that she would become the light of our lives!	Journal intime\n\nRéjouissons-nous ! Chantons et clamons-le sur les toits ! Aujourd'hui est née notre chère fille %s. Lorsque la lumière du jour a lui pour la première fois dans ses yeux, nous avons su qu'elle deviendrait la lumière de nos vies !
-0x2AED8C	Diary Entry\n\nDelight and pride filled our hearts as a baby boy was born to us today. In honour of our proud family he will forthwith be known by the worthy name of %s!	Journal intime\n\nLa joie et la fierté ont rempli nos cœurs lorsqu'un petit garçon nous est né aujourd'hui. En l'honneur de notre fière famille, il portera désormais le digne nom de %s !
+0x2AED8C	Diary Entry\n\nDelight and pride filled our hearts as a baby boy was born to us today. In honour of our proud family he will forthwith be known by the worthy name of %s!	Journal intime\n\nLa joie et la fierté ont rempli nos coeurs lorsqu'un petit garcon nous est né aujourd'hui. En l'honneur de notre fière famille, il portera désormais le digne nom de %s !
 0x2AEE40	effective	effectif
 0x2AEF24	random	aléatoire
 0x2AEF34	This is the standard map provided with the game.	Ceci est la carte standard fournie avec le jeu.
@@ -2246,17 +2246,17 @@ frag	day_many	{n} jours
 0x2B0CB4	\\f1_\nThere are %i hospitals and %i chapels as well as %i%% of the roads and paths receiving improvement.\nVia provision of hospitals, chapels and road drainage this town's plague prevention measures are deemed %s.	\\f1_\nIl y a %i hôpitaux et %i chapelles, et %i%% des routes et chemins sont aménagés.\nGrâce à des hôpitaux, des chapelles et au drainage des routes, les mesures de prévention de la peste de cette ville sont jugées %s.
 0x2B0D28	\\f1_Donation from %s %s %s %s %s.	\\f1_Don de %s %s %s %s %s.
 0x2B0D2C	\\f1_This will lead to an increase in rich people in this town.	\\f1_Cela entraînera une augmentation du nombre de riches dans cette ville.
-0x2B1338	Flop\n\n\\l\\dThe pirate %s %s was not tracked down despite a 30 day long hunt. He was probably warned of the Hanseatic League's intentions by a spy.\n	Échec\n\n\\l\\dLe pirate %s %s n'a pas été retrouvé malgré une chasse de 30 jours. Il aura sans doute été averti des intentions de la Hanse par un espion.\n
+0x2B1338	Flop\n\n\\l\\dThe pirate %s %s was not tracked down despite a 30 day long hunt. He was probably warned of the Hanseatic League's intentions by a spy.\n	Echec\n\n\\l\\dLe pirate %s %s n'a pas été retrouvé malgré une chasse de 30 jours. Il aura sans doute été averti des intentions de la Hanse par un espion.\n
 0x2B133C	Successful Pirate Hunt\n\n\\l\\dThe hunt for the pirate %s %s was successful. The proud ships of the Hanse were able to prove once again that the League doesn't just have economic clout.\n	Chasse aux pirates réussie\n\n\\l\\dLa chasse au pirate %s %s a réussi. Les fiers navires de la Hanse ont pu prouver une fois de plus que la Ligue n'a pas que le poids de l'économie.\n
-0x2B1340	Pirate Fled\n\n\\l\\dDespite the fact that the pirate %s %s was tracked down, he was not vanquished in battle, as he fled like some yellow-livered cur. However it is hoped that this will be a lesson to him and will disuade him from further attacks in the Hanseatic Leagues region.\n	Pirate en fuite\n\n\\l\\dBien que le pirate %s %s ait été retrouvé, il n'a pas été vaincu au combat, car il a pris la fuite comme un chien peureux. On espère cependant que cela lui servira de leçon et le dissuadera de nouvelles attaques dans la région de la Hanse.\n
-0x2B1344	Abject Failure\n\n\\l\\dThe pirate %s %s was able to defeat our fleet.\n	Échec cuisant\n\n\\l\\dLe pirate %s %s a pu vaincre notre flotte.\n
+0x2B1340	Pirate Fled\n\n\\l\\dDespite the fact that the pirate %s %s was tracked down, he was not vanquished in battle, as he fled like some yellow-livered cur. However it is hoped that this will be a lesson to him and will disuade him from further attacks in the Hanseatic Leagues region.\n	Pirate en fuite\n\n\\l\\dBien que le pirate %s %s ait été retrouvé, il n'a pas été vaincu au combat, car il a pris la fuite comme un chien peureux. On espère cependant que cela lui servira de lecon et le dissuadera de nouvelles attaques dans la région de la Hanse.\n
+0x2B1344	Abject Failure\n\n\\l\\dThe pirate %s %s was able to defeat our fleet.\n	Echec cuisant\n\n\\l\\dLe pirate %s %s a pu vaincre notre flotte.\n
 0x2B1358	The ships will shortly be returning home to the port of %s and will be handed back to their owners.\n\n\\rThe Hanseatic League Council	Les navires rentreront bientôt au port de %s et seront rendus à leurs propriétaires.\n\n\\rLe Conseil de la Hanse
 0x2B135C	The following ships of yours did not see the end of the hunt:\n	Les navires suivants vous appartenant n'ont pas vu la fin de la chasse :\n
 0x2B1360	The %s was seized by crew in your service.\n	Le %s a été capturé par un équipage à votre service.\n
 0x2B136C	Your ship %s fought bravely, but did in the end sink to the bottom of the stormy ocean.\n	Votre navire %s s'est battu vaillamment, mais a fini par sombrer au fond de l'océan déchaîné.\n
 0x2B1370	Your ship %s was returning in good condition, however unfortunately it was seized.\n	Votre navire %s rentrait en bon état, mais a malheureusement été capturé.\n
 0x2B1374	Your ship %s sank in heavy weather.\n	Votre navire %s a sombré par gros temps.\n
-0x2B1460	The pirate %$2$s %$3$s was sighted today in the vicinity of %$1$s.	Le pirate %$2$s %$3$s a été aperçu aujourd'hui aux abords de %$1$s.
+0x2B1460	The pirate %$2$s %$3$s was sighted today in the vicinity of %$1$s.	Le pirate %$2$s %$3$s a été apercu aujourd'hui aux abords de %$1$s.
 0x2B1464	The pirate %s %s is doing his worst in the waters of %s.	Le pirate %s %s sème la terreur dans les eaux de %s.
 0x2B1468	It is rumoured that the pirate %s %s is to be found in the vicinity of %s.	La rumeur dit que le pirate %s %s se trouverait aux abords de %s.
 0x2B146C	all the Hanse	toute la Hanse
@@ -2316,7 +2316,7 @@ frag	day_many	{n} jours
 0x2B28C0	Launch in %s	Mise à l'eau à %s
 0x2B28C4	Repairs completed in %s	Réparation achevée à %s
 0x2B28C8	The %s has reached its destination.	Le %s a atteint sa destination.
-0x2B28CC	It's your Birthday today! Many Happy Returns!	C'est votre anniversaire aujourd'hui ! Meilleurs vœux !
+0x2B28CC	It's your Birthday today! Many Happy Returns!	C'est votre anniversaire aujourd'hui ! Meilleurs voeux !
 0x2B28D0	Ship improvements completed in %s.	Améliorations du navire achevées à %s.
 0x2B28D4	The %s is being attacked.	Le %s est attaqué.
 0x2B28D8	The predetermined playing time has elapsed.	Le temps de jeu fixé est écoulé.
@@ -2324,7 +2324,7 @@ frag	day_many	{n} jours
 0x2B28E0	The %s is attacking.	Le %s attaque.
 0x2B28E4	%s %s has discovered a new world.	%s %s a découvert un nouveau monde.
 0x2B28EC	%s %s takes over the chair of the Hanseatic League.	%s %s prend la présidence de la Hanse.
-0x2B28F0	A message has been received.	Un message a été reçu.
+0x2B28F0	A message has been received.	Un message a été recu.
 0x2B28F4	Plague has broken out in %s	La peste s'est déclarée à %s
 0x2B28F8	Fire has broken out in %s	Un incendie s'est déclaré à %s
 0x2B28FC	Some of your goods have been impounded in %s.	Une partie de vos marchandises a été saisie à %s.
@@ -2356,8 +2356,8 @@ frag	day_many	{n} jours
 0x2B30D8	The construction work on a building in %s was completed on %s.\n%s %s is ready for use by your trading office.	Les travaux de construction d'un bâtiment à %s ont été achevés le %s.\n%s %s est prêt à être utilisé par votre comptoir.
 0x2B317C	Captain %s %s has just completed formalities with the Harbour Master in %s and taken up his duties on %s.\nHe is waiting for orders for the ship.	Le capitaine %s %s vient d'accomplir les formalités auprès du maître de port de %s et a pris ses fonctions sur le %s.\nIl attend les ordres pour le navire.
 0x2B31E0	The captain %s %s has hired a crew today. He is leaving in %s the %s, on which he last served.	Le capitaine %s %s a engagé un équipage aujourd'hui. Il part à %s sur le %s, sur lequel il a servi en dernier.
-0x2B3274	%s %s %s %s has received the new title of  %s in her hometown %s	%s %s %s %s a reçu le nouveau titre de %s dans sa ville natale, %s.
-0x2B3278	%s %s %s %s has received the new title of  %s in his hometown %s	%s %s %s %s a reçu le nouveau titre de %s dans sa ville natale, %s.
+0x2B3274	%s %s %s %s has received the new title of  %s in her hometown %s	%s %s %s %s a recu le nouveau titre de %s dans sa ville natale, %s.
+0x2B3278	%s %s %s %s has received the new title of  %s in his hometown %s	%s %s %s %s a recu le nouveau titre de %s dans sa ville natale, %s.
 0x2B339C	The %s has anchored in the harbour of %s today.\n	Le %s a jeté l'ancre aujourd'hui dans le port de %s.\n
 0x2B33A0	Your convoy under the leadership of %s went to anchor today in the harbour of %s.\n	Votre convoi sous la conduite de %s a jeté l'ancre aujourd'hui dans le port de %s.\n
 0x2B33A4	The profit from the recent journeys amounted to %i\\C.	Le bénéfice des derniers voyages s'élève à %i\\C.
@@ -2378,13 +2378,13 @@ frag	day_many	{n} jours
 0x2B384C	The %s %s %s %s is leaving her hometown %s and moving to %s.	%s %s %s %s quitte sa ville natale, %s, et s'installe à %s.
 0x2B38BC	The wage for your sailors amounted to %u\\C.\n	Le salaire de vos marins s'est élevé à %u\\C.\n
 0x2B38C0	Wages cost of %u\\C have arisen in your trading offices.\n	Des salaires de %u\\C ont été versés dans vos comptoirs.\n
-0x2B394C	You received rental income of %u\\C for your houses last week.	La semaine dernière, vous avez perçu %u\\C de loyers pour vos maisons.
+0x2B394C	You received rental income of %u\\C for your houses last week.	La semaine dernière, vous avez percu %u\\C de loyers pour vos maisons.
 0x2B3950	Rent of %u\\C for additionally rented warehouses has to be paid.\n	Un loyer de %u\\C est à payer pour les entrepôts loués en supplément.\n
 0x2B39F0	Taxes for your trading offices and workshops last week amounted to %u\\C.\n	Les impôts de vos comptoirs et ateliers se sont élevés la semaine dernière à %u\\C.\n
-0x2B39F4	You received rent of %u for your houses. Property tax of %u\\C was paid.	Vous avez perçu %u de loyers pour vos maisons. L'impôt foncier de %u\\C a été payé.
+0x2B39F4	You received rent of %u for your houses. Property tax of %u\\C was paid.	Vous avez percu %u de loyers pour vos maisons. L'impôt foncier de %u\\C a été payé.
 0x2B3AA0	A loan of %i\\C that you took out on %u-%u-%u is due in %s	Un prêt de %i\\C contracté le %u-%u-%u arrive à échéance aujourd'hui à %s
-0x2B3D70	Because you have not repaid your debt in %s, Your wealth %u\\C will be seized.\nYour lender informed you, dutifully and early enough, about the threatening situation, the seizure is therefore legal and final.	Faute d'avoir remboursé votre dette à %s, votre fortune de %u\\C sera saisie.\nVotre prêteur vous a informé de la situation menaçante avec diligence et en temps utile ; la saisie est donc légale et définitive.
-0x2B3D74	Because you are in arrears with your payments, goods in %s to the value of %u\\C will be seized.\nYour lender informed you, dutifully and early enough, about the threatening situation. The seizure is therefore legal and final.	Vos paiements étant en retard, des marchandises à %s d'une valeur de %u\\C seront saisies.\nVotre prêteur vous a informé de la situation menaçante avec diligence et en temps utile. La saisie est donc légale et définitive.
+0x2B3D70	Because you have not repaid your debt in %s, Your wealth %u\\C will be seized.\nYour lender informed you, dutifully and early enough, about the threatening situation, the seizure is therefore legal and final.	Faute d'avoir remboursé votre dette à %s, votre fortune de %u\\C sera saisie.\nVotre prêteur vous a informé de la situation menacante avec diligence et en temps utile ; la saisie est donc légale et définitive.
+0x2B3D74	Because you are in arrears with your payments, goods in %s to the value of %u\\C will be seized.\nYour lender informed you, dutifully and early enough, about the threatening situation. The seizure is therefore legal and final.	Vos paiements étant en retard, des marchandises à %s d'une valeur de %u\\C seront saisies.\nVotre prêteur vous a informé de la situation menacante avec diligence et en temps utile. La saisie est donc légale et définitive.
 0x2B3D78	Because you have not repaid your debt, in %s goods on your ship %s to the value of %u\\C have been seized.\nYour lender informed you, dutifully and early enough, about these measures, the seizure is therefore legal and final.	Faute d'avoir remboursé votre dette, des marchandises à %s sur votre navire %s d'une valeur de %u\\C ont été saisies.\nVotre prêteur vous a informé de ces mesures avec diligence et en temps utile ; la saisie est donc légale et définitive.
 0x2B3D7C	\n\nHowever, your debt could not be repaid by it.	\n\nVotre dette n'a cependant pas pu être remboursée par ce moyen.
 0x2B3E94	Your order of %i. %s %i for %s in %s was cancelled.\nAfter subtraction of a small fee, %i\\C was repaid to you. Unfortunately, the now not needed raw materials cannot be returned.	Votre commande du %i. %s %i pour %s à %s a été annulée.\nAprès déduction d'un faible droit, %i\\C vous ont été remboursés. Les matières premières devenues inutiles ne peuvent hélas pas être reprises.
@@ -2397,7 +2397,7 @@ frag	day_many	{n} jours
 0x2B41F8	Traveller from %s\n\n\\dTake me with your ship %s at the latest by %i. %s to %s. I will pay you %i\\C for doing so.	Voyageur de %s\n\n\\dPrenez-moi sur votre navire %s au plus tard le %i. %s pour %s. Je vous paierai %i\\C pour cela.
 0x2B43D0	Traveller from %s\n\n\\dMany thanks for the quick and safe transportation. I am most obliged.\nHere is the payment of %i\\C, as promised.	Voyageur de %s\n\n\\dMille mercis pour le transport rapide et sûr. Je vous suis fort obligé.\nVoici le paiement de %i\\C, comme promis.
 0x2B43D4	Traveller from %s\n\n\\dThank you for the safe transportation. Unfortunately, I have arrived too late.\nInstead of the agreed sum, I can only pay you %i\\C.	Voyageur de %s\n\n\\dMerci pour le transport sûr. Hélas, je suis arrivé trop tard.\nAu lieu de la somme convenue, je ne puis vous payer que %i\\C.
-0x2B43D8	Traveller from %s\n\n\\dBecause of your slowness, I have missed an important appointment. I told you I was in hurry, didn't I? I should never have relied on you.\n\nFare thee well!	Voyageur de %s\n\n\\dÀ cause de votre lenteur, j'ai manqué un rendez-vous important. Je vous avais dit que j'étais pressé, n'est-ce pas ? Je n'aurais jamais dû compter sur vous.\n\nAdieu !
+0x2B43D8	Traveller from %s\n\n\\dBecause of your slowness, I have missed an important appointment. I told you I was in hurry, didn't I? I should never have relied on you.\n\nFare thee well!	Voyageur de %s\n\n\\dA cause de votre lenteur, j'ai manqué un rendez-vous important. Je vous avais dit que j'étais pressé, n'est-ce pas ? Je n'aurais jamais dû compter sur vous.\n\nAdieu !
 0x2B48BC	%s in the town of %s with lawless elements,	%s de la ville de %s avec des hors-la-loi,
 0x2B48E0	%s today, as he was breaking into the trading office of %s %s	%s aujourd'hui un vaurien à gages, alors qu'il cambriolait le comptoir de %s %s
 0x2B48E4	in pursuit of his criminal activities. Under careful questioning, he admitted the deed, and said, that you had paid him, to carry out this treacherous burglary.	dans l'exercice de ses activités criminelles. Soumis à un interrogatoire serré, il a avoué le forfait et déclaré que vous l'aviez payé pour commettre ce perfide cambriolage.
@@ -2405,7 +2405,7 @@ frag	day_many	{n} jours
 0x2B48F4	\nWe will investigate this atrocious charge. Expect a message in the near future, which will inform you of the results of our investigations.	\nNous allons enquêter sur cette accusation atroce. Attendez prochainement un message qui vous informera des résultats de notre enquête.
 0x2B4A18	\n\nToday, you have been charged for the following reason:\n	\n\nAujourd'hui, vous avez été accusé pour le motif suivant :\n
 0x2B4A1C	\nWe will thoroughly examine this charge and inform you of the outcome of investigations as soon as possible.	\nNous examinerons soigneusement cette accusation et vous informerons du résultat de l'enquête dans les meilleurs délais.
-0x2B4A20	You have been seen behaving indecently.	On vous a vu vous conduire de façon indécente.
+0x2B4A20	You have been seen behaving indecently.	On vous a vu vous conduire de facon indécente.
 0x2B4A24	You are accused of heresy.	Vous êtes accusé d'hérésie.
 0x2B4A28	You have stated that the world is round.	Vous avez affirmé que la terre est ronde.
 0x2B4BB0	\\dMany thanks for taking care of this small transport order for me.\nMeet at the latest by %u-%u-%u with %s %s in the %s in %s. Deliver %u\\B %s there and you will then get agreed payment.	\\dMille mercis de vous charger pour moi de ce petit ordre de transport.\nRetrouvez-vous au plus tard le %u-%u-%u avec %s %s sur le %s à %s. Livrez-y %u\\B de %s et vous recevrez alors le paiement convenu.
@@ -2425,8 +2425,8 @@ frag	day_many	{n} jours
 0x2B50C8	\\f1_The trading office of %s has been broken into.	\\f1_Le comptoir de %s a été cambriolé.
 0x2B50CC	The burglar stole %u\\C.	Le cambrioleur a volé %u\\C.
 0x2B50D0	The following goods were destroyed in the burglary %u\\B.	Les marchandises suivantes ont été détruites lors du cambriolage : %u\\B.
-0x2B5298	Dear Mr. %s,\n\nare you interested in getting married? For the small sum of %i\\C, I could arrange a meeting with an extremely good-looking young lady of excellent standing. Are you interested?	Cher Monsieur %s,\n\nsouhaitez-vous vous marier ? Pour la modique somme de %i\\C, je pourrais organiser une rencontre avec une jeune dame fort belle et d'excellente famille. Êtes-vous intéressé ?
-0x2B529C	Dear Miss %s %s,\n\nare you interested in marriage? For the small sum of %i\\C, I could arrange for you to meet an extremely handsome gentleman of good standing. Are you interested?	Chère Mademoiselle %s %s,\n\nsouhaitez-vous vous marier ? Pour la modique somme de %i\\C, je pourrais organiser une rencontre avec un gentilhomme fort beau et de bonne famille. Êtes-vous intéressée ?
+0x2B5298	Dear Mr. %s,\n\nare you interested in getting married? For the small sum of %i\\C, I could arrange a meeting with an extremely good-looking young lady of excellent standing. Are you interested?	Cher Monsieur %s,\n\nsouhaitez-vous vous marier ? Pour la modique somme de %i\\C, je pourrais organiser une rencontre avec une jeune dame fort belle et d'excellente famille. Etes-vous intéressé ?
+0x2B529C	Dear Miss %s %s,\n\nare you interested in marriage? For the small sum of %i\\C, I could arrange for you to meet an extremely handsome gentleman of good standing. Are you interested?	Chère Mademoiselle %s %s,\n\nsouhaitez-vous vous marier ? Pour la modique somme de %i\\C, je pourrais organiser une rencontre avec un gentilhomme fort beau et de bonne famille. Etes-vous intéressée ?
 0x2B52A4	\n\nPlease let me know in the next 14 days.\n\n\\cYours\n\\r%s %s	\n\nVeuillez me répondre dans les 14 jours.\n\n\\cVotre dévoué\n\\r%s %s
 0x2B5420	Dear Mr %s,\n\nthe lady in question is the lovely %s %s from %s. In case of a marriage, her father would give her a very large dowry.\n\\c\\t%u_\nYou have time until the 	Cher Monsieur %s,\n\nla dame en question est la charmante %s %s de %s. En cas de mariage, son père lui donnerait une très riche dot.\n\\c\\t%u_\nVous avez jusqu'au 
 0x2B5424	Dear Miss %s %s,\n\nthe gentleman in question is the handsome %s %s from %s. In case of a marriage, you will receive a very large dowry.\n\\c\\t%u_\nYou have time until the 	Chère Mademoiselle %s %s,\n\nle gentilhomme en question est le beau %s %s de %s. En cas de mariage, vous recevrez une très riche dot.\n\\c\\t%u_\nVous avez jusqu'au 
@@ -2447,7 +2447,7 @@ frag	day_many	{n} jours
 0x2B5A8C	The value of the company of %s %s has fallen by %u\\C.	La valeur de la société de %s %s a baissé de %u\\C.
 0x2B5A90	 Therefore, you will not get any dividend for your %u shares.	 Vous ne recevrez donc aucun dividende pour vos %u parts.
 0x2B5B10	Your company could not pay out a dividend of %u\\C today. Repay the remaining debt of %u\\C within 20 days to the lender.	Votre société n'a pas pu verser aujourd'hui de dividende de %u\\C. Remboursez la dette restante de %u\\C au prêteur dans les 20 jours.
-0x2B5BAC	Unfortunately, I got your message too late, so I cannot do anything for you at the moment. Thank you for confidence and the %i\\C.\n\n\\rYours\n\\r%s %s	Hélas, j'ai reçu votre message trop tard et ne puis donc rien faire pour vous pour le moment. Merci de votre confiance et des %i\\C.\n\n\\rVotre dévoué\n\\r%s %s
+0x2B5BAC	Unfortunately, I got your message too late, so I cannot do anything for you at the moment. Thank you for confidence and the %i\\C.\n\n\\rYours\n\\r%s %s	Hélas, j'ai recu votre message trop tard et ne puis donc rien faire pour vous pour le moment. Merci de votre confiance et des %i\\C.\n\n\\rVotre dévoué\n\\r%s %s
 0x2B5EA0	\\C for our services.	\\C pour nos services.
 0x2B6064	\\cExtend the town wall\n\\l\n	\\cMurailles de la ville agrandies\n\\l\n
 0x2B6068	Honourable %s %s\n\n	Honorable %s %s\n\n
@@ -2500,8 +2500,8 @@ frag	day_many	{n} jours
 0x2B77D0	\\dHonourable Lord Mayor	\\dHonorable bourgmestre
 0x2B77D4	\\dHonourable Lord Mayoress	\\dHonorable bourgmestresse
 0x2B7CC4	\n\n\\dWe have today agreed, that due to a lack of evidence, the facts of the case of piracy cannot be upheld against you.	\n\n\\dNous avons décidé aujourd'hui que, faute de preuves, les faits de piraterie ne peuvent être retenus contre vous.
-0x2B7CCC	\n\n\\dThe charge on the basis of the suspicion, that you had hired a pirate to attack your competitor, has turned out to be without substance.	\n\n\\dL'accusation fondée sur le soupçon que vous aviez engagé un pirate pour attaquer votre concurrent s'est révélée sans fondement.
-0x2B7CD0	\n\n\\dIt was decided today, that the accusation, you had behaved indecently	\n\n\\dIl a été décidé aujourd'hui que les accusations selon lesquelles vous vous seriez conduit de façon indécente,
+0x2B7CCC	\n\n\\dThe charge on the basis of the suspicion, that you had hired a pirate to attack your competitor, has turned out to be without substance.	\n\n\\dL'accusation fondée sur le soupcon que vous aviez engagé un pirate pour attaquer votre concurrent s'est révélée sans fondement.
+0x2B7CD0	\n\n\\dIt was decided today, that the accusation, you had behaved indecently	\n\n\\dIl a été décidé aujourd'hui que les accusations selon lesquelles vous vous seriez conduit de facon indécente,
 0x2B7CD4	\n\n\\dIt was decided today, that the accusation, you had carried out heresy	\n\n\\dIl a été décidé aujourd'hui que les accusations selon lesquelles vous auriez pratiqué l'hérésie,
 0x2B7CD8	\n\n\\dIt was decided today, that the accusation, you had said that the world was round	\n\n\\dIl a été décidé aujourd'hui que les accusations selon lesquelles vous auriez affirmé que la terre est ronde,
 0x2B7CE8	which were raised in the town, are not tenable. For some inexplicable reason, all evidence has disappeared.	portées dans la ville, sont insoutenables. Pour une raison inexplicable, toutes les preuves ont disparu.
@@ -2509,7 +2509,7 @@ frag	day_many	{n} jours
 0x2B7CF0	not tenable. The charge was therefore dropped and your good reputation restored.	insoutenables. L'accusation a donc été abandonnée et votre bonne réputation rétablie.
 0x2B8088	\n\n\\dThe evidence in case of piracy have hardened today and we see the case against you as proven.	\n\n\\dLes preuves dans l'affaire de piraterie se sont durcies aujourd'hui et nous tenons l'accusation contre vous pour prouvée.
 0x2B8090	\n\n\\dThe monstrous accusation against you, that you hired a pirate to attack one of your competitors, has hardened and has been proven.	\n\n\\dL'accusation monstrueuse portée contre vous, selon laquelle vous auriez engagé un pirate pour attaquer l'un de vos concurrents, s'est durcie et a été prouvée.
-0x2B8094	\n\nThe accusation that you behaved indecently	\n\nL'accusation selon laquelle vous vous seriez conduit de façon indécente
+0x2B8094	\n\nThe accusation that you behaved indecently	\n\nL'accusation selon laquelle vous vous seriez conduit de facon indécente
 0x2B8098	\n\nThe accusation that you committed heresy	\n\nL'accusation selon laquelle vous auriez commis une hérésie
 0x2B809C	\n\nThe accusation, that you said that the world was round	\n\nL'accusation selon laquelle vous auriez affirmé que la terre est ronde
 0x2B80AC	have incited.	ont suscité.
@@ -2517,7 +2517,7 @@ frag	day_many	{n} jours
 0x2B81A0	%u\\C. He has gained so much experience that he sees no problem in justifying the new wage demand.	%u\\C. Il a acquis tant d'expérience qu'il ne voit aucune difficulté à justifier sa nouvelle exigence de salaire.
 0x2B828C	\n\n\\dThank you for your generous offer \n, however, I am very satisfied here at the moment, so that I'm not currently interested in changing over to your service.\n\n\\cGreetings!\n\\r	\n\n\\dMerci pour votre généreuse offre \n, mais je suis très satisfait ici pour le moment et ne souhaite donc pas entrer à votre service.\n\n\\cSalutations !\n\\r
 0x2B8328	\n\nyou should get enough money together the next time, before you try to woo a captain of my rank and name.\n\n\\cWithout greetings\n\x0D	\n\nvous devriez réunir assez d'argent la prochaine fois, avant d'essayer de courtiser un capitaine de mon rang et de mon nom.\n\n\\cSans salutations\n\x0D
-0x2B8758	\n\nthe weight of age lies heavily upon my shoulders. It is with deep regrets that announce today, that I would like to retire as soon as possible.\nI am leaving the ship on arrival at the next port.\nI wish you and your company continued success.\n\n\\cThank you and best wishes\n\\r	\n\nle poids de l'âge pèse lourdement sur mes épaules. C'est avec un profond regret que j'annonce aujourd'hui vouloir prendre ma retraite au plus tôt.\nJe quitterai le navire à son arrivée au prochain port.\nJe vous souhaite, à vous et à votre compagnie, un succès durable.\n\n\\cMerci et meilleurs vœux\n\\r
+0x2B8758	\n\nthe weight of age lies heavily upon my shoulders. It is with deep regrets that announce today, that I would like to retire as soon as possible.\nI am leaving the ship on arrival at the next port.\nI wish you and your company continued success.\n\n\\cThank you and best wishes\n\\r	\n\nle poids de l'âge pèse lourdement sur mes épaules. C'est avec un profond regret que j'annonce aujourd'hui vouloir prendre ma retraite au plus tôt.\nJe quitterai le navire à son arrivée au prochain port.\nJe vous souhaite, à vous et à votre compagnie, un succès durable.\n\n\\cMerci et meilleurs voeux\n\\r
 0x2B875C	%s %s,\nCaptain of the %s	%s %s,\nCapitaine du %s
 0x2B8860	The town %s has been under siege by %i mercenaries since daybreak. As a result, the town is cut off from the surrounding countryside.	La ville de %s est assiégée depuis l'aube par %i mercenaires. La ville est ainsi coupée de la campagne environnante.
 0x2B8864	Mercenaries are moving forward and surrounding %s.\nThe town calls on all traders to provision the town from the sea.	Des mercenaires avancent et encerclent %s.\nLa ville appelle tous les marchands à la ravitailler par la mer.
@@ -2603,8 +2603,8 @@ frag	day_many	{n} jours
 0x2C26C4	The fire in %s was extinguished.	L'incendie de %s a été éteint.
 0x2C272C	I expect a bad harvest in %s this year.	Je m'attends à une mauvaise récolte à %s cette année.
 0x2C2730	The weather conditions in %s point to a very good harvest.	Les conditions météorologiques à %s annoncent une très bonne récolte.
-0x2C276C	In %s is %s out of stock.	À %s, il n'y a plus de %s en stock.
-0x2C2770	In %s are %s out of stock.	À %s, il n'y a plus de %s en stock.
+0x2C276C	In %s is %s out of stock.	A %s, il n'y a plus de %s en stock.
+0x2C2770	In %s are %s out of stock.	A %s, il n'y a plus de %s en stock.
 0x2C27E0	There is a great shortage of %s in %s. The prices paid for these goods will be correspondingly high.	Il y a une grande pénurie de %s à %s. Les prix payés pour ces marchandises seront en conséquence très élevés.
 0x2C28A8	A large quantity of %s is available in %s at the moment, and therefore, at a rather good price.	Une grande quantité de %s est actuellement disponible à %s, et donc à un assez bon prix.
 0x2C28AC	A large quantity of %s is available in %s at the moment, and therefore, at a rather good price.	Une grande quantité de %s est actuellement disponible à %s, et donc à un assez bon prix.
@@ -2686,12 +2686,12 @@ frag	day_many	{n} jours
 0x29A9A0	Patrician	Patricien
 0x29AA14	Councillor	Conseiller
 0x29AA18	Lord Mayor	Bourgmestre
-0x29AA1C	Alderman	Échevin
+0x29AA1C	Alderman	Echevin
 0x29AA28	Wealth	Population de la Hanse
 0x29AA30	of	de
 0x29ADFC	low	Faible
 0x29AE00	normal	Normal
-0x29AE04	high	Élevé
+0x29AE04	high	Elevé
 0x29AE20	on	Activé
 0x29AE24	off	Désactivé
 0x29AE2C	Save game	Sauvegarder la partie
@@ -2829,7 +2829,7 @@ frag	day_many	{n} jours
 0x2A04B4	We have got the required sum and	Nous avons réuni la somme nécessaire et
 0x2A0510	Send offer	Envoyer l'offre
 0x2A051C	Buildings	Bâtiments
-0x2A0520	To	À
+0x2A0520	To	A
 0x2A0524	the	le
 0x2A0528	I would like to offer you the following:	Je voudrais vous proposer ceci :
 0x2A052C	For which I expect from you:	En échange, j'attends de vous :
@@ -2842,7 +2842,7 @@ frag	day_many	{n} jours
 0x2A0614	travelling merchant	marchande au long cours
 0x2A0618	Councillor	Conseillère
 0x2A061C	Patrician	Patricienne
-0x2A0624	Alderman	Échevine
+0x2A0624	Alderman	Echevine
 0x2A0628	shopkeeper	boutiquier
 0x2A062C	trader	négociant
 0x2A0630	merchant	marchand
@@ -2850,7 +2850,7 @@ frag	day_many	{n} jours
 0x2A0638	Councillor	Conseiller
 0x2A063C	Patrician	Patricien
 0x2A0640	Lord Mayor	Bourgmestre
-0x2A0644	Alderman	Échevin
+0x2A0644	Alderman	Echevin
 0x2A0718	shopkeeper	boutiquière
 0x2A071C	trader	négociante
 0x2A0720	merchant	marchande
@@ -2918,7 +2918,7 @@ frag	day_many	{n} jours
 0x2A0C88	ruthless	brutal
 0x2A0C8C	dangerous	dangereux
 0x2A0C90	to	jusqu'à
-0x2A0C94	Age	Âge
+0x2A0C94	Age	Age
 0x2A0C98	You have to employ a trading office administator in order to make automatic purchases possible.	Vous devez engager un administrateur de comptoir pour rendre possibles les achats automatiques.
 0x2A0CA0	other goods	autres marchandises
 0x2A0CA8	Sum	Somme
@@ -2937,8 +2937,8 @@ frag	day_many	{n} jours
 0x2A1798	the convoy	le convoi
 0x2A179C	the convoy	le convoi
 0x2A17A0	the convoy	le convoi
-0x2A2440	Half-timbered 	À colombages : 
-0x2A2444	Gabled 	À pignon : 
+0x2A2440	Half-timbered 	A colombages : 
+0x2A2444	Gabled 	A pignon : 
 0x2A2448	Merchants' 	De marchands : 
 0x2A2450	houses	maisons
 0x2A2B38	small	petite
@@ -2997,13 +2997,13 @@ frag	day_many	{n} jours
 0x2A5424	Lord Mayor	Bourgmestre
 0x2A5444	Auctioned	Acquis aux enchères
 0x2A5448	Reputation	Réputation
-0x2A5484	Alderman	Échevin
+0x2A5484	Alderman	Echevin
 0x2A548C	Reputation	Estime
 0x2A54A0	Broken in	Cambriolé
 0x2A57FC	Saltworks	Saline
 0x2A5810	Brickworks	Briqueterie
 0x2A5840	Warehouse	Entrepôt
-0x2A5874	School	École
+0x2A5874	School	Ecole
 0x2A5880	Shipyard	Chantier naval
 0x2A59D0	Shipyard	Chantier naval
 0x2A59D8	The shipyard will be free on	Le chantier naval sera libre le
@@ -3037,7 +3037,7 @@ frag	day_many	{n} jours
 0x2AB238	Today the council reached a decision that 	Aujourd'hui, le conseil a décidé que 
 0x2AB32C	The extra tax levied by 	Aujourd'hui, l'impôt spécial levé par la ville de 
 0x2AB330	 the town was collected today by 	 d'un montant de 
-0x2AB334	\\C. Your contribution amounts to 	\\C a été perçu. La part que vous deviez payer s'élevait à 
+0x2AB334	\\C. Your contribution amounts to 	\\C a été percu. La part que vous deviez payer s'élevait à 
 0x2AB630	Honourable 	Honorable 
 0x2AB634	 Lord Mayor 	 bourgmestre 
 0x2AB638	Honourable 	Honorable 
@@ -3049,7 +3049,7 @@ frag	day_many	{n} jours
 0x2AB650	the 	la 
 0x2AB654	 Alderman\n	 échevine\n
 0x2AB744	 has eliminated a pirate hideout.	 a éliminé un repaire de pirates.
-0x2ABA94	You received a contract 	Vous aviez reçu la mission de 
+0x2ABA94	You received a contract 	Vous aviez recu la mission de 
 0x2ABB78	,\n\n\\lLast night our warehouses in 	,\n\n\\lLa nuit dernière, nos entrepôts de 
 0x2ABB7C	 were the target of thieves.\n	 ont été visités par des voleurs.\n
 0x2ABD10	 However the ever vigilant guards were able to capture the culprit. He was immediately handed over to the townguard.	 Les gardes, toujours vigilants, ont toutefois pu capturer le coupable. Il a aussitôt été remis à la garde de la ville.
@@ -3082,7 +3082,7 @@ frag	day_many	{n} jours
 0x2AE610	\\dSeveral witnesses to a recent pirate attack on 	\\dPlusieurs témoins de la récente attaque de pirates contre 
 0x2AE618	 displaying a pirate flag run up the mast and firing on the town's defences.	 arborant le pavillon pirate hissé au mât et tirant sur les défenses de la ville.
 0x2AE61C	\\dSeveral witnesses to a recent pirate attack on 	\\dPlusieurs témoins de la récente attaque de pirates contre 
-0x2AE624	 displaying a pirate flag run up the mast, breaching the town's defences and plundering the town's coffers.	 arborant le pavillon pirate hissé au mât, perçant les défenses de la ville et pillant les caisses de la ville.
+0x2AE624	 displaying a pirate flag run up the mast, breaching the town's defences and plundering the town's coffers.	 arborant le pavillon pirate hissé au mât, percant les défenses de la ville et pillant les caisses de la ville.
 0x2AE63C	\nWe therefore sentence you to humble penitence.\nAs expression of this penitence 	\nVous êtes donc condamné à une humble pénitence.\nEn signe de cette pénitence, 
 0x2AEC08	You should be lenient and release him from this debt, it would do your reputation much good.\nShould you however decide to insist on repayment, then I can instigate impounding. You may then recoup one or two of the pieces of gold. Consider carefully, however the bad effect this will have on your reputation.	Vous devriez faire preuve de clémence et lui remettre cette dette ; cela ne pourrait que servir votre réputation.\nSi vous décidez toutefois d'exiger le remboursement, je puis engager une saisie. Vous récupéreriez alors une ou deux pièces d'or. Mesurez cependant le tort que cela causera à votre réputation.
 0x2AEC10	 Your reputation aside, we should bite the bullet and instigate impounding so that we recoup as much of the gold as possible.	 Réputation mise à part, nous devrions accepter la perte et engager une saisie afin de récupérer le plus d'or possible.
@@ -3112,7 +3112,7 @@ frag	day_many	{n} jours
 0x2B0384	Name	Nommer
 0x2B0500	Save	Sauvegarder
 0x2B0540	...Trading Office transfer	...Transfert de comptoir
-0x2B061C	School	École élémentaire
+0x2B061C	School	Ecole élémentaire
 0x2B1364	 (Sunk)\n	 (Coulé)\n
 0x2B1368	 (Seized)\n	 (Capturé)\n
 0x2B1750	 where new and lucrative trade opportunities have been discovered.\n	 où de nouvelles et lucratives possibilités de commerce ont été découvertes.\n
@@ -3123,7 +3123,7 @@ frag	day_many	{n} jours
 0x2B1794	 The quantity required by the contract was therefore met.\n	 La quantité fixée par le contrat a ainsi été atteinte.\n
 0x2B19F8	 Because of this you have been granted the right to create businesses in our town.\nWishing you continued success in your trading,\n\n\\rThe Town 	 Vous obtenez ainsi le droit de fonder des entreprises dans notre ville.\nNous vous souhaitons un commerce toujours fructueux,\n\n\\rLa ville de 
 0x2B1C64	This building can not be built inside of	Ce bâtiment ne peut pas être construit à l'intérieur de
-0x2B20A4	\\cYou are not yet able to build a trading office as your reputation is not high enough yet. Trade with this town to ensure your reputation rises.	\\cVous ne pouvez pas encore construire de comptoir, car votre réputation n'est pas encore assez haute. Commerçez avec cette ville pour faire monter votre réputation.
+0x2B20A4	\\cYou are not yet able to build a trading office as your reputation is not high enough yet. Trade with this town to ensure your reputation rises.	\\cVous ne pouvez pas encore construire de comptoir, car votre réputation n'est pas encore assez haute. Commercez avec cette ville pour faire monter votre réputation.
 0x2B23A4	\nBring building materials to the town's traders in front of the town gates. Part deliveries are also acceptable.\n\n	\nApportez les matériaux de construction aux marchands devant les portes de la ville. Les livraisons partielles sont également possibles.\n\n
 0x2B2A88	She	Elle
 0x2B2A8C	He	Il
@@ -3165,7 +3165,7 @@ frag	day_many	{n} jours
 0x2B613C	. Your share of the load, gold and ship is 	. Votre part de la cargaison, de l'or et du navire s'élève à 
 0x2B61E8	\\dThe convoy, escorted by your orlogship 	\\dLe convoi, escorté par votre vaisseau de ligne 
 0x2B61EC	, has arrived at it's port of destination 	, est arrivé à son port de destination 
-0x2B61F0	 in god shape.\nYou have received a bonus of 	 en bon état.\nVous avez reçu une prime de 
+0x2B61F0	 in god shape.\nYou have received a bonus of 	 en bon état.\nVous avez recu une prime de 
 0x2B62A4	\\dThe convoy of 	\\dAujourd'hui, le convoi de 
 0x2B62A8	 anchored at it's port of destination at 	 a jeté l'ancre à son port de destination, 
 0x2B62AC	 today.\nThe sum of 	 aujourd'hui.\nLa somme de 
@@ -3175,7 +3175,7 @@ frag	day_many	{n} jours
 0x2B6754	 has to raise a special tax against all resident traders in the town.\nYour share amounts to 	 doit lever un impôt spécial auprès de tous les marchands résidant dans la ville.\nVotre part s'élève à 
 0x2B6758	\\C.\nPay the amount to the lender within the usual period of 20 days.\n\n\\l The town 	\\C.\nVersez le montant au prêteur dans le délai habituel de 20 jours.\n\n\\l La ville de 
 0x2B70F0	been sent out bands of pirates against Hanseatic ships	des bandes de pirates ont été envoyées contre des navires hanséatiques
-0x2B72DC	\\cLord Mayor's election in 	\\cÉlections du bourgmestre à 
+0x2B72DC	\\cLord Mayor's election in 	\\cElections du bourgmestre à 
 0x2B72E0	\n\\l\nThe votes cast are divided as follows among the councillors standing for election:\n\n	\n\\l\nLes voix exprimées se répartissent comme suit entre les conseillers candidats :\n\n
 0x2B72E8	\\l\nTherefore, 	\\l\nPar conséquent, 
 0x2B72EC	 has been elected as Lord Mayor.	 a été élu bourgmestre.
@@ -3187,7 +3187,7 @@ frag	day_many	{n} jours
 0x2B74FC	 near 	 près de 
 0x2B7500	 was nothing more than an attempt to intimidate the Hanseatic traders. We have heard that the town 	 n'était rien d'autre qu'une tentative d'intimider les marchands de la Hanse. Nous avons en effet entendu dire que la ville de 
 0x2B7504	 sent the pirate. It is therefore assumed that more pirates are on their way.\nThe members of the Hanseatic League herewith authorise you to put an end to this threat. For every pirate ship that you sink, you will get a bonus of 1000\\C.\n\\r\nThe town 	 a envoyé le pirate. On suppose donc que d'autres pirates sont en route.\nLes membres de la Hanse vous autorisent par la présente à mettre fin à cette menace. Pour chaque navire pirate que vous coulerez, vous recevrez une prime de 1000\\C.\n\\r\nLa ville de 
-0x2B760C	Many thanks for your help. It seems as if the pirates have been stopped and the town  has learnt its lesson.\nThe generous reward of 	Grand merci pour votre aide. Il semble que les pirates aient été arrêtés et que la ville ait retenu la leçon.\nLa généreuse récompense de 
+0x2B760C	Many thanks for your help. It seems as if the pirates have been stopped and the town  has learnt its lesson.\nThe generous reward of 	Grand merci pour votre aide. Il semble que les pirates aient été arrêtés et que la ville ait retenu la lecon.\nLa généreuse récompense de 
 0x2B7610	 was transferred to you.\n\\r\nThe town 	 vous a été transférée.\n\\r\nLa ville de 
 0x2B77D8	, your share of the costs for town guards last month came to 	, votre part des frais de la garde de la ville le mois dernier s'élevait à 
 0x2B77DC	\\C. The amount has already been collected.\n\n\\rThe town 	\\C. Le montant a déjà été prélevé.\n\n\\rLa ville de 
@@ -3220,14 +3220,14 @@ frag	day_many	{n} jours
 0x2B8754	 has reached the next port, I'll be leaving the ship in order to sign off.\nI wish you an exciting future and continued success for your company.\n\n\\cRespectfully yours\n\\r	 aura atteint le prochain port, je quitterai le navire pour être débarqué.\nJe vous souhaite un avenir passionnant et un succès continu pour votre compagnie.\n\n\\cRespectueusement\n\\r
 0x2B8D48	Dear Sir 	Cher Monsieur 
 0x2B8D4C	Dear Madam 	Chère Madame 
-0x2B8D50	\n\nYou have not disappointed the trust placed in you by delivering the supplies of 	\n\nVous n'avez pas déçu la confiance placée en vous en livrant les provisions de 
+0x2B8D50	\n\nYou have not disappointed the trust placed in you by delivering the supplies of 	\n\nVous n'avez pas décu la confiance placée en vous en livrant les provisions de 
 0x2B8D54	 at the agreed time. We would like to take this opportunity to thank you once again and hope that we can also rely on you in the future.\n	 à la date convenue. Nous saisissons cette occasion pour vous remercier encore une fois et espérons pouvoir aussi compter sur vous à l'avenir.\n
 0x2B8D58	The agreed bonus of 	La prime convenue de 
 0x2B8D60	\nYours faithfully\n\nThe Town Council of 	\nRespectueusement\n\nLe conseil de la ville de 
 0x2B8E58	Dear 	Cher 
 0x2B8E5C	Dear 	Chère 
 0x2B8E60	\n\nWe had relied on your word of honour in respect of the supplies of 	\n\nNous nous étions fiés à votre parole d'honneur pour la livraison de 
-0x2B8E64	. Unfortunately, we were very disappointed and will have to think twice about giving you such an important order in the future.\n\nThe Town Council of 	. Malheureusement, nous avons été très déçus et réfléchirons à deux fois avant de vous confier une commande aussi importante à l'avenir.\n\nLe conseil de la ville de 
+0x2B8E64	. Unfortunately, we were very disappointed and will have to think twice about giving you such an important order in the future.\n\nThe Town Council of 	. Malheureusement, nous avons été très décus et réfléchirons à deux fois avant de vous confier une commande aussi importante à l'avenir.\n\nLe conseil de la ville de 
 0x2B8FC8	 Thank you for placing your ship for guarding the harbour at our disposal. We return it herewith unscathed into your care.\n\nThe Hanse	 Merci d'avoir mis votre navire à notre disposition pour la garde du port. Nous vous le rendons par la présente intact.\n\nLa Hanse
 0x2B9008	Today in 	Aujourd'hui, à 
 0x2B9088	\nYour respect in 	\nVotre réputation à 
@@ -3237,20 +3237,20 @@ frag	day_many	{n} jours
 0x2B922C	, the 	, le 
 0x2B9230	, the 	, la 
 0x2B9234	The lender, who owns 	Le prêteur, qui possède 
-0x2B9238	 shares of your busi_ness, thus re_ceives 	 parts de votre entreprise, reçoit donc 
+0x2B9238	 shares of your busi_ness, thus re_ceives 	 parts de votre entreprise, recoit donc 
 0x2B923C	\\C as a dividend.	\\C de dividende.
 0x2B95E0	\n\\lThe convoy led by the 	\n\\lLe convoi conduit par le 
 0x2B95E4	 has success_fully returned from an expe_dition and is now heading for 	 est revenu avec succès d'une expédition et fait maintenant route vers 
 0x2B95EC	 The disco_very of 	 La découverte de 
 0x2B95F0	 has brought about new and profi_table possi_bili_ties of trade.	 a ouvert de nouvelles et profitables possibilités de commerce.
-0x2B95F4	\nIn 	\nÀ 
+0x2B95F4	\nIn 	\nA 
 0x2B95F8	 the following transaction was made:\n	 la transaction suivante a été conclue :\n
 0x2B95FC	 the following transaction took place:\n	 la transaction suivante a eu lieu :\n
 0x2B9608	\nYou have given your captain 	\nVous avez donné à votre capitaine 
 0x2B960C	 to take with him on his voyage. He returns with 	 à emporter pour son voyage. Il revient avec 
 0x2B9614	\nWith the Indian tribe	\nAvec la tribu indienne
 0x2B9618	\nNo new trading centres could be made accessible.	\nAucun nouveau centre commercial n'a pu être rendu accessible.
-0x2B961C	\nYou owe to the trained eyes of your lookout and to your captain's nose that two new, profitable trading possibilities, namely 	\nC'est à l'œil exercé de votre vigie et au flair de votre capitaine que vous devez que deux nouvelles possibilités de commerce profitables, à savoir 
+0x2B961C	\nYou owe to the trained eyes of your lookout and to your captain's nose that two new, profitable trading possibilities, namely 	\nC'est à l'oeil exercé de votre vigie et au flair de votre capitaine que vous devez que deux nouvelles possibilités de commerce profitables, à savoir 
 0x2B9620	 and 	 et 
 0x2B9624	, could be discovered.\n	, aient pu être découvertes.\n
 0x2B9628	\nAfter the strains of a long journey to the new world 	\nAprès les fatigues d'un long voyage vers le Nouveau Monde 
@@ -3284,7 +3284,7 @@ frag	day_many	{n} jours
 0x2C191C	stock of 	stock de 
 0x2C1940	value of company	valeur de l'entreprise
 0x2C195C	goods consumed in 	marchandises consommées à 
-0x2C1964	overview of goods for 	aperçu des marchandises pour 
+0x2C1964	overview of goods for 	apercu des marchandises pour 
 0x2C196C	consumption of goods 	consommation de marchandises 
 0x2C1970	number of workers	nombre d'ouvriers
 0x2C1974	number of workers	nombre d'ouvriers
