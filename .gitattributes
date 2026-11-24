@@ -1,2 +1,2 @@
-resources/** -text
+# Tables and pictures are embedded or shipped byte for byte.
 data/** -text

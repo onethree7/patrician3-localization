@@ -92,13 +92,21 @@ chronicle texts and the composed sentence fragments. Missions (579 texts), the c
 as are town names (map), guild, tavern and ship names. Person names (`NamenMaenner`, `NamenFrauen`,
 `NamenFamilien`) are historical names and stay as released in every language. German is handled exactly
 like every other language: the game stays the English release and only its texts are replaced from
-`data/files/de.tsv`; town, guild, tavern and ship names come from the German game. For German only, the
-optional archive `patrician3-localization-<version>-resources-de.zip` (source: `resources/de/`) adds the
-German menu pictures (`images/Options`) and the matching `textures.ini`.
+`data/files/de.tsv`; town, guild, tavern and ship names come from the German game.
+
+The main menu, whose eight entries are painted into its pictures, has its own pictures per language,
+German included: `data/gfx/<code>/` holds `Hauptmenu.jpg` (background), `p_hmenu01.bmp` (highlighted
+entries, magenta is transparent), `hmenu_colormap.bmp` (click areas, palette index 0-7 per entry) and
+`textures.tsv` (the rectangles of the highlighted entries for `scripts/textures.ini`). The release puts them
+into `mods\localization\<code>\`; the hook hands them to the game in place of the English pictures. They
+are made by `tools/gfx/gen.py` from the English pictures in the archive: the English words are taken out,
+the page is rebuilt from the surrounding paper and the words of `WORDS` in `gen.py` are set in Goudy Old
+Style Bold along the measured lines of the book, the initials into one clean box (`tools/gfx/box.png`). The
+font is not part of the repository; it comes with Windows as `GOUDOSB.TTF`.
 
 Not translated:
 
-- Images that contain text (menu pictures).
+- Other pictures with text.
 - Texts stored in the start savegames of the tutorial and the scenarios (`missav/*.pat`): a few dozen
   tavern offers and letters per file, which the English release ships in German. The savegame format with
   its length fields has not been analysed yet; changing it blindly would corrupt the saves.

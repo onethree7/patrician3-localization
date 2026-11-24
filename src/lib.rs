@@ -1020,10 +1020,18 @@ unsafe fn install() -> Result<usize, String> {
     }
 
     let mut patches = hook_patches(base)?;
-    patches.extend(files::hook_patches(
-        base,
-        files::load_file_texts(language.files)?,
-    )?);
+    // Game files and pictures are an addition: if they cannot be served, the game keeps
+    // its English files and every other translation still applies.
+    let mut file_texts = files::load_file_texts(language.files)?;
+    if let Some(folder) = language::pictures_folder(language.code) {
+        if let Err(error) = file_texts.load_pictures(&folder) {
+            report_install_error(&format!("Main menu pictures stay English: {error}"));
+        }
+    }
+    match files::hook_patches(file_texts) {
+        Ok(file_patches) => patches.extend(file_patches),
+        Err(error) => report_install_error(&format!("Game files stay English: {error}")),
+    }
     patches.extend(entries.iter().map(|entry| {
         patch::Patch {
             address: base + entry.slot_rva,

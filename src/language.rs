@@ -208,6 +208,12 @@ pub(crate) fn parse_language_setting(text: &str) -> Option<String> {
         })
 }
 
+/// Folder of the language's pictures: `mods\\localization\\<code>` next to the game.
+pub(crate) fn pictures_folder(code: &str) -> Option<std::path::PathBuf> {
+    let exe = std::env::current_exe().ok()?;
+    Some(exe.parent()?.join("mods").join("localization").join(code))
+}
+
 /// Language chosen by `localization.ini` next to the game (in `mods\` or the game folder).
 pub(crate) fn configured_language() -> Result<&'static LanguageInfo, String> {
     let setting = std::env::current_exe()

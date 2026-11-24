@@ -1,6 +1,8 @@
-//! Plain text files: ini files (`key=value`) and name lists (one entry per line).
+//! Plain text files: ini files (`key=value`), name lists (one entry per line) and the
+//! sprite rectangles of `textures.ini`.
 
 use super::Lookup;
+use std::collections::HashMap;
 
 /// Splits off the line ending (any trailing CR and LF bytes).
 fn split_ending(line: &[u8]) -> (&[u8], &[u8]) {
@@ -50,9 +52,86 @@ pub(super) fn translate_lines<'t>(data: &[u8], lookup: &Lookup<'t>) -> Option<Ve
     changed.then_some(out)
 }
 
+/// `textures.ini` with the sprite rectangles of every section whose `TextureFile` is a
+/// key of `sprites`: `Count` and the active `OffsetNSize<n>` lines are replaced,
+/// comments and every other line stay. `None` if no section matches.
+pub(super) fn translate_textures(
+    data: &[u8],
+    sprites: &HashMap<String, Vec<String>>,
+) -> Option<Vec<u8>> {
+    let text: String = data.iter().map(|byte| *byte as char).collect();
+    let newline = if text.contains("\r\n") { "\r\n" } else { "\n" };
+    let lines: Vec<&str> = text.split(newline).collect();
+    let mut out: Vec<String> = Vec::with_capacity(lines.len());
+    let mut changed = false;
+    let mut start = 0;
+    while start < lines.len() {
+        let end = (start + 1..lines.len())
+            .find(|&index| lines[index].trim_start().starts_with('['))
+            .unwrap_or(lines.len());
+        let section = &lines[start..end];
+        let rects = section.iter().find_map(|line| {
+            let (key, value) = line.split_once('=')?;
+            (key.trim().eq_ignore_ascii_case("TextureFile"))
+                .then(|| sprites.get(&super::normalize(value.trim().as_bytes())))
+                .flatten()
+        });
+        let Some(rects) = rects else {
+            out.extend(section.iter().map(|line| line.to_string()));
+            start = end;
+            continue;
+        };
+        changed = true;
+        let key = |line: &str| {
+            line.split_once('=')
+                .map(|(key, _)| key.trim().to_ascii_lowercase())
+                .unwrap_or_default()
+        };
+        for line in section {
+            let name = key(line);
+            if name.starts_with("offsetnsize") {
+                continue;
+            }
+            if name == "count" {
+                out.push(format!("Count={}", rects.len()));
+                out.extend(
+                    rects
+                        .iter()
+                        .enumerate()
+                        .map(|(index, rect)| format!("OffsetNSize{index}={rect}")),
+                );
+                continue;
+            }
+            out.push(line.to_string());
+        }
+        start = end;
+    }
+    changed.then(|| out.join(newline).chars().map(|c| c as u8).collect())
+}
+
 #[cfg(test)]
 mod tests {
     use super::*;
+
+    #[test]
+    fn sprite_rectangles_replace_only_their_section() {
+        let ini = b"[TEX13]\r\nTextureFile=images/x.bmp\r\nCount=1\r\nOffsetNSize0=0 0 1 1\r\n\r\n\
+[TEX14]\r\nTextureFile=images/options/p_hmenu01.bmp\r\nUseAlpha=false\r\nCount=8\r\n\
+; Deutsch\r\n;OffsetNSize0=0 0 155 54\r\n OffsetNSize0=0 0 157 55\r\n OffsetNSize1=0 55 191 68\r\n\r\n[TEX15]\r\n";
+        let sprites = super::super::load_sprites(
+            "images/options/p_hmenu01.bmp\t0 0 10 20\nimages/options/p_hmenu01.bmp\t0 20 30 40\n",
+        )
+        .unwrap();
+        let out = String::from_utf8(translate_textures(ini, &sprites).unwrap()).unwrap();
+        assert_eq!(
+            out,
+            "[TEX13]\r\nTextureFile=images/x.bmp\r\nCount=1\r\nOffsetNSize0=0 0 1 1\r\n\r\n\
+[TEX14]\r\nTextureFile=images/options/p_hmenu01.bmp\r\nUseAlpha=false\r\nCount=2\r\n\
+OffsetNSize0=0 0 10 20\r\nOffsetNSize1=0 20 30 40\r\n; Deutsch\r\n;OffsetNSize0=0 0 155 54\r\n\r\n[TEX15]\r\n"
+        );
+        assert!(translate_textures(b"[TEX1]\nTextureFile=a.bmp\n", &sprites).is_none());
+        assert!(super::super::load_sprites("a.bmp\t1 2 3\n").is_err());
+    }
 
     fn lookup<'t>(rows: &'t [(&'t [u8], &'t [u8])]) -> impl Fn(&[u8]) -> Option<&'t [u8]> {
         move |text| rows.iter().find(|(a, _)| *a == text).map(|(_, b)| *b)

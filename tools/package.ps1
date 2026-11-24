@@ -1,6 +1,6 @@
-# Builds the two release archives into dist\.
-#   patrician3-localization-<version>.zip               DLL + localization.ini (all languages)
-#   patrician3-localization-<version>-resources-de.zip  German menu images and textures.ini
+# Builds the release archive into dist\.
+#   patrician3-localization-<version>.zip   DLL, localization.ini and the main menu
+#                                           pictures of every language (mods\localization\<code>\)
 # Run from the repository root:  powershell -File tools\package.ps1
 $ErrorActionPreference = 'Stop'
 $root = Split-Path -Parent $PSScriptRoot
@@ -32,14 +32,11 @@ $core = @{
     'mods/patrician3_localization.dll' = $dll
     'mods/localization.ini'            = Join-Path $root 'tools\localization.ini'
 }
-New-Zip (Join-Path $dist "patrician3-localization-$version.zip") $core
-
-$res = @{}
-$resRoot = Join-Path $root 'resources\de'
-Get-ChildItem -Path $resRoot -Recurse -File | ForEach-Object {
-    $rel = $_.FullName.Substring($resRoot.Length + 1).Replace('\', '/')
-    $res[$rel] = $_.FullName
+$gfx = Join-Path $root 'data\gfx'
+Get-ChildItem -Path $gfx -Recurse -File | ForEach-Object {
+    $rel = $_.FullName.Substring($gfx.Length + 1).Replace('\', '/')
+    $core["mods/localization/$rel"] = $_.FullName
 }
-New-Zip (Join-Path $dist "patrician3-localization-$version-resources-de.zip") $res
+New-Zip (Join-Path $dist "patrician3-localization-$version.zip") $core
 
 Get-ChildItem $dist -Filter *.zip | Select-Object Name, Length

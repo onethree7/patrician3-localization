@@ -1,22 +1,22 @@
 # Patrician III Localization
 
-Play **Patrician III** (GOG and Steam) in your own language. This mod replaces the English game texts with translations: menus, trade goods, letters, chronicle and event messages, guild and Hanseatic League dialogues, missions, the campaign list, the tutorial, the credits and the names of towns, guilds, taverns and ships. It is loaded by the [P3Modding modloader](https://p3modding.github.io/modloader.html) and also translates selected texts of the official mods.
+Play **Patrician III** (GOG and Steam) in your own language. This mod replaces the English game texts with translations: menus, trade goods, letters, chronicle and event messages, guild and Hanseatic League dialogues, missions, the campaign list, the tutorial, the credits, the names of towns, guilds, taverns and ships, and the pictures of the main menu. It is loaded by the [P3Modding modloader](https://p3modding.github.io/modloader.html) and also translates selected texts of the official mods.
 
-**Version 0.4.0** · Tested with GOG, Steam and P3Modding 0.1.15
+**Version 0.5.0** · Tested with GOG, Steam and P3Modding 0.1.15
 
 ## Available languages
 
-| Language | Code | Game texts (menus, goods, events, letters) | Missions and campaigns | Tutorial, credits, names | Menu gfx |
+| Language | Code | Game texts (menus, goods, events, letters) | Missions and campaigns | Tutorial, credits, names | Main menu |
 |---|---|---|---|---|---|
-| Deutsch | `de` | complete | translated | translated | separate download, see below |
-| Français | `fr` | complete, not proofread | translated, not proofread | translated, not proofread | English |
-| Nederlands | `nl` | complete, not proofread | translated, not proofread | translated, not proofread | English |
-| Español | `es` | complete, not proofread | translated, not proofread | translated, not proofread | English |
-| Italiano | `it` | complete, not proofread | translated, not proofread | translated, not proofread | English |
-| Svenska | `sv` | complete, not proofread | translated, not proofread | translated, not proofread | English |
-| Dansk | `da` | complete, not proofread | translated, not proofread | translated, not proofread | English |
-| Norsk (Bokmål) | `no` | complete, not proofread | translated, not proofread | translated, not proofread | English |
-| Português | `pt` | complete, not proofread | translated, not proofread | translated, not proofread | English |
+| Deutsch | `de` | complete | translated | translated | translated |
+| Français | `fr` | complete, not proofread | translated, not proofread | translated, not proofread | translated |
+| Nederlands | `nl` | complete, not proofread | translated, not proofread | translated, not proofread | translated |
+| Español | `es` | complete, not proofread | translated, not proofread | translated, not proofread | translated |
+| Italiano | `it` | complete, not proofread | translated, not proofread | translated, not proofread | translated |
+| Svenska | `sv` | complete, not proofread | translated, not proofread | translated, not proofread | translated |
+| Dansk | `da` | complete, not proofread | translated, not proofread | translated, not proofread | translated |
+| Norsk (Bokmål) | `no` | complete, not proofread | translated, not proofread | translated, not proofread | translated |
+| Português | `pt` | complete, not proofread | translated, not proofread | translated, not proofread | translated |
 
 "Not proofread" means: every text is translated, but no native speaker has reviewed it yet. Some sentences, which the game assembles from several pieces, can read a little awkwardly. Corrections are very welcome, see [docs/LANGUAGES.md](docs/LANGUAGES.md).
 
@@ -30,7 +30,7 @@ You need two things besides this mod: the game itself and the modloader.
 2. Download the [P3Modding modloader](https://p3modding.github.io/modloader.html) and copy `p3_modloader.dll` and `Patrician3_modloader.exe` into the game folder (the folder that contains the game's `.exe`).
 3. From the [Releases](../../releases) page, download **`patrician3-localization-<version>.zip`** and extract it into the game folder. This creates two files in the `mods` folder: `patrician3_localization.dll` and `localization.ini`.
 4. Open `mods\localization.ini` with Notepad and set your language code, for example `language=fr` for French. Without this file the mod uses German.
-5. **Only for German:** also download **`patrician3-localization-<version>-resources-de.zip`** and extract it into the game folder. It adds the German menu pictures. All texts, including tutorial, credits, town and ship names, are translated by the mod itself.
+5. Nothing else to download: the zip also holds the main menu pictures of every language (`mods\localization\<code>\`), and the mod shows those of the language set in `localization.ini`.
 6. Start the game with `Patrician3_modloader.exe`.
 
 Optional: further mods from [P3Moddings `mods.zip`](https://github.com/P3Modding/p3-lib/releases/tag/0.1.15) go into the same `mods` folder. Their texts are translated as well, as far as the mod knows them.
@@ -47,17 +47,19 @@ Earlier versions were called "Deutschmod" and shipped as `german_localization.dl
 
 - **The game is still English.** Check that `localization.ini` is in the `mods` folder and that you started the game with `Patrician3_modloader.exe`.
 - **An error message appears at start and lists the available languages.** The language code in `localization.ini` is misspelled. Use one of: `de`, `fr`, `nl`, `es`, `it`, `sv`, `da`, `no`, `pt`.
-- **French (or another language) game, but German menu pictures.** You extracted the German resources. They are meant for German only. Delete the files they added (the `images` and `scripts` folders from the zip) or reinstall the game files.
+- **The main menu shows another language, or its highlight is cut up.** Loose files from the German resources zip of earlier versions override the mod. Delete `images\Options\Hauptmenu.jpg`, `p_hmenu01.bmp`, `hmenu_colormap.bmp` and `scripts\textures.ini` in the game folder (and `maps\Standard24.gmf`, `missions` and `missions_addon` if an older zip added them), or reinstall the game files.
 
 ## Screenshots
 
 ![Main menu, game settings and market hall in German](docs/screenshots/uebersicht.jpg)
 
+![The main menu in all nine languages](docs/screenshots/hauptmenues.jpg)
+
 ## How it works
 
 The English game executable was analysed with REA and Ghidra to find texts, text pointers and how they are used. For German wording, the original texts of **Patrizier II Gold** served as one reference. The assignments were checked in their context; individual texts were adapted.
 
-At startup the mod checks that the expected text addresses in the game match, then replaces the text pointers in memory. This keeps different translations of the same English word in their respective places. One text hook translates composed texts and labels of other mods. Guild and event messages are built from translated sentence parts such as articles, adjectives and ranks. A second hook takes the longer text of some languages into account for tooltips. A third hook reads the game files that carry texts (missions, map, campaign list, tutorial, credits, name lists) while the game loads them from its archive: it takes the English original, swaps its texts for the configured language and hands the game the result; files that do not match the English originals stay untouched. All translation tables are embedded into the DLL.
+At startup the mod checks that the expected text addresses in the game match, then replaces the text pointers in memory. This keeps different translations of the same English word in their respective places. One text hook translates composed texts and labels of other mods. Guild and event messages are built from translated sentence parts such as articles, adjectives and ranks. A second hook takes the longer text of some languages into account for tooltips. A third hook sits in `archiver.dll`, through which the game and its renderer read every file of the archive: game files with texts (missions, map, campaign list, tutorial, credits, name lists) get the texts of the configured language, the main menu pictures are replaced by those of the language and `textures.ini` gets the matching sprite rectangles; files that do not match the English originals stay untouched. The hook checks the first bytes of every function it diverts and leaves the archive alone if they differ. All translation tables are embedded into the DLL.
 
 ## For developers
 
@@ -70,7 +72,7 @@ cargo build --locked --release --target i686-pc-windows-msvc
 
 The DLL is created at `target/i686-pc-windows-msvc/release/patrician3_localization.dll` and belongs in the game at `mods/patrician3_localization.dll`.
 
-`powershell -File tools\package.ps1` builds both release archives into `dist\`.
+`powershell -File tools\package.ps1` builds the release archive into `dist\`.
 
 ```text
 patrician3-localization/
@@ -85,11 +87,10 @@ patrician3-localization/
 │   ├── extra_slots.tsv
 │   ├── files/              texts of the game files, one table per language, source.tsv = English
 │   ├── glossary/           town names per language
-│   └── lang/               one table per additional language
-├── resources/
-│   └── de/                 German graphics (menu pictures, `textures.ini`);
-│                           the folders match the paths in the game folder
-├── tools/                  packaging script, sample localization.ini, textkit/ (extraction, glossary)
+│   ├── lang/               one table per additional language
+│   └── gfx/                main menu pictures per language (not embedded; mods\localization\<code>\)
+├── tools/                  packaging script, sample localization.ini, textkit/ (extraction, glossary),
+│                           gfx/ (main menu picture generator)
 └── docs/                   language documentation, install guides, screenshots
 ```
 
@@ -103,7 +104,7 @@ cargo test --locked --target i686-pc-windows-msvc
 
 ## License
 
-The mod code and our own contributions to the translation tables are licensed under the [Apache License 2.0](LICENSE). Game texts and the files under `resources/` are not covered by it; rights of third parties remain unaffected.
+The mod code and our own contributions to the translation tables are licensed under the [Apache License 2.0](LICENSE). Game texts and the pictures under `data/gfx/` (made from the game's own pictures) are not covered by it; rights of third parties remain unaffected.
 
 ## Credits and origin
 

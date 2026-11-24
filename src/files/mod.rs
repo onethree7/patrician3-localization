@@ -1,9 +1,14 @@
 //! Translated game files.
 //!
-//! The game reads its data files through archiver.dll. The hooks in `hooks` serve
-//! every file listed in [`FILES`] with its texts replaced; every other file, and
-//! every file whose texts do not match the English originals (for example loose
-//! replacement files), reaches the game unchanged.
+//! The game and its renderer read their data files through archiver.dll. The hooks
+//! in `hooks` serve every file listed in [`FILES`] with its texts replaced; every
+//! other file, and every file whose texts do not match the English originals, reaches
+//! the game unchanged.
+//!
+//! Pictures with text (the main menu) are not tables but whole files per language,
+//! in `mods\localization\<code>\` next to the DLL (`data/gfx/<code>/` in the
+//! repository, made by `tools/gfx/gen.py`), with `textures.tsv` giving the sprite
+//! rectangles of their sheets in `scripts/textures.ini`.
 //!
 //! The tables (`data/files/<code>.tsv`) have one model for all files:
 //! `scope<TAB>English<TAB>translation`. The scope is a pattern of [`FILES`]
@@ -37,6 +42,17 @@ pub(crate) enum Format {
     /// One name per line, read by the name generator (0x5128D0), which ends a name at
     /// every byte below `A` except space and `.`; translations must avoid them.
     Names,
+    /// Picture replaced as a whole by the language's file of the same name.
+    Image,
+    /// `scripts/textures.ini`: the `OffsetNSize` rectangles of a replaced sprite sheet.
+    Textures,
+}
+
+impl Format {
+    /// Formats whose texts the tables list.
+    fn has_texts(self) -> bool {
+        !matches!(self, Format::Image | Format::Textures)
+    }
 }
 
 /// Every game file with texts. Paths are lowercase, with `/` and without `./`.
@@ -52,7 +68,14 @@ pub(crate) const FILES: &[(&str, Format)] = &[
     ("scripts/namenmaenner.txt", Format::Names),
     ("scripts/namenfrauen.txt", Format::Names),
     ("scripts/namenfamilien.txt", Format::Names),
+    ("images/options/hauptmenu.jpg", Format::Image),
+    ("images/options/p_hmenu01.bmp", Format::Image),
+    ("images/options/hmenu_colormap.bmp", Format::Image),
+    ("scripts/textures.ini", Format::Textures),
 ];
+
+/// Sprite rectangles of the replaced sheets, `data/gfx/<code>/textures.tsv`.
+pub(crate) const TEXTURES_FILE: &str = "textures.tsv";
 
 /// Translation that keeps the English text.
 const KEEP: &str = "=";
@@ -68,12 +91,77 @@ pub(super) type Lookup<'t> = dyn Fn(&[u8]) -> Option<&'t [u8]> + 't;
 #[derive(Debug, Default)]
 pub(crate) struct FileTexts {
     scopes: HashMap<String, Table>,
+    /// [`Format::Image`] path -> the language's picture.
+    images: HashMap<String, Vec<u8>>,
+    /// Texture file (as in `TextureFile=`, normalized) -> `x y width height` per sprite.
+    sprites: HashMap<String, Vec<String>>,
 }
 
 impl FileTexts {
     pub(crate) fn is_empty(&self) -> bool {
-        self.scopes.values().all(HashMap::is_empty)
+        self.scopes.values().all(HashMap::is_empty) && self.images.is_empty()
     }
+
+    /// Adds the pictures of a language folder, all or none. A missing folder leaves the
+    /// English pictures; a folder with pictures but without their rectangles is an error.
+    pub(crate) fn load_pictures(&mut self, folder: &std::path::Path) -> Result<(), String> {
+        let Ok(entries) = std::fs::read_dir(folder) else {
+            return Ok(());
+        };
+        let names: HashMap<String, std::path::PathBuf> = entries
+            .filter_map(Result::ok)
+            .map(|entry| {
+                (
+                    entry.file_name().to_string_lossy().to_lowercase(),
+                    entry.path(),
+                )
+            })
+            .collect();
+        let mut images = HashMap::new();
+        for (pattern, format) in FILES {
+            if *format != Format::Image {
+                continue;
+            }
+            if let Some(path) = names.get(base_name(pattern)) {
+                let data =
+                    std::fs::read(path).map_err(|error| format!("{}: {error}", path.display()))?;
+                images.insert(pattern.to_string(), data);
+            }
+        }
+        if images.is_empty() {
+            return Ok(());
+        }
+        let path = names
+            .get(TEXTURES_FILE)
+            .ok_or_else(|| format!("{}: {TEXTURES_FILE} is missing", folder.display()))?;
+        let table = std::fs::read_to_string(path)
+            .map_err(|error| format!("{}: {error}", path.display()))?;
+        self.sprites = load_sprites(&table)?;
+        self.images = images;
+        Ok(())
+    }
+}
+
+/// Parses `texture file<TAB>x y width height` rows; the row order is the sprite index.
+pub(crate) fn load_sprites(table: &str) -> Result<HashMap<String, Vec<String>>, String> {
+    let mut sprites: HashMap<String, Vec<String>> = HashMap::new();
+    for line in table.lines() {
+        if line.trim().is_empty() || line.starts_with('#') {
+            continue;
+        }
+        let (file, rect) = line
+            .split_once('\t')
+            .ok_or_else(|| format!("Malformed sprite row: {line}"))?;
+        let numbers: Vec<&str> = rect.split_whitespace().collect();
+        if numbers.len() != 4 || numbers.iter().any(|n| n.parse::<u32>().is_err()) {
+            return Err(format!("Malformed sprite rectangle: {line}"));
+        }
+        sprites
+            .entry(normalize(file.as_bytes()))
+            .or_default()
+            .push(numbers.join(" "));
+    }
+    Ok(sprites)
 }
 
 /// Game file name as a lowercase path. Bytes map one to one to characters
@@ -148,6 +236,9 @@ pub(crate) fn load_file_texts(table: &str) -> Result<FileTexts, String> {
         }
         let (pattern, format) =
             scope_format(scope).ok_or_else(|| format!("Unknown file text scope '{scope}'"))?;
+        if !format.has_texts() {
+            return Err(format!("{scope} has no texts: {line}"));
+        }
         if *source == ALL {
             if *translation != KEEP {
                 return Err(format!("A '{ALL}' row can only keep texts: {line}"));
@@ -183,6 +274,11 @@ pub(crate) fn load_file_texts(table: &str) -> Result<FileTexts, String> {
 fn translate_file(name: &[u8], data: &[u8], texts: &FileTexts) -> Option<Vec<u8>> {
     let path = normalize(name);
     let (pattern, format) = classify(&path)?;
+    match format {
+        Format::Image => return texts.images.get(pattern).cloned(),
+        Format::Textures => return text::translate_textures(data, &texts.sprites),
+        _ => {}
+    }
     let tables: Vec<&Table> = [path.as_str(), base_name(&path), pattern]
         .iter()
         .filter_map(|scope| texts.scopes.get(*scope))
@@ -201,6 +297,7 @@ fn translate_file(name: &[u8], data: &[u8], texts: &FileTexts) -> Option<Vec<u8>
         Format::Map => map::translate(data, &lookup),
         Format::Ini => text::translate_ini(data, &lookup),
         Format::Lines | Format::Names => text::translate_lines(data, &lookup),
+        Format::Image | Format::Textures => None,
     }
 }
 
@@ -287,7 +384,10 @@ mod tests {
     #[test]
     fn source_lists_every_file() {
         let source = source();
-        for (pattern, _) in FILES {
+        for (pattern, format) in FILES {
+            if !format.has_texts() {
+                continue;
+            }
             assert!(
                 source.contains_key(pattern),
                 "no source texts for {pattern}"
