@@ -26,7 +26,7 @@ pub(crate) struct LanguageInfo {
     pub name: &'static str,
     /// Embedded table; empty for German (legacy tables).
     pub table: &'static str,
-    /// Mission and campaign texts (`data/files/<code>.tsv`), see `files.rs`.
+    /// Mission, campaign, tutorial and credits texts (`data/files/<code>.tsv`), see `files.rs`.
     pub files: &'static str,
 }
 

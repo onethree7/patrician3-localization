@@ -6,7 +6,7 @@ Den här guiden installerar den svenska översättningen av Patrician III (GOG e
 2. Ladda ner [P3Modding-modloadern](https://p3modding.github.io/modloader.html) och kopiera `p3_modloader.dll` och `Patrician3_modloader.exe` till spelmappen (mappen som innehåller spelets `.exe`).
 3. Ladda ner `patrician3-localization-<version>.zip` från [releasesidan](../../../../releases) och packa upp den i spelmappen. I mappen `mods` finns sedan `patrician3_localization.dll` och `localization.ini`.
 4. Öppna `mods\localization.ini` i Anteckningar och ställ in `language=sv`. Utan filen använder modden tyska.
-5. Mer behövs inte: uppdrag och kampanjlistan är översatta; handledning, eftertexter och menybilder förblir engelska. Packa inte upp de tyska resurserna (`resources-de`).
+5. Mer behövs inte: uppdrag, kampanjlistan, handledningen och eftertexterna är översatta; bara menybilderna förblir engelska. Packa inte upp de tyska resurserna (`resources-de`).
 6. Starta spelet med `Patrician3_modloader.exe`.
 
 Valfritt: fler moddar från [P3Moddings `mods.zip`](https://github.com/P3Modding/p3-lib/releases/tag/0.1.15) läggs i samma `mods`-mapp.

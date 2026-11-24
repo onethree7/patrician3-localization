@@ -77,7 +77,9 @@ chronicle texts and the composed sentence fragments. Missions (579 texts), the c
 (25 texts), the tutorial (159 texts) and the credits (43 texts) are translated for all languages as well,
 see below. Not translated: name lists and images that contain text (menu pictures, map). German additionally has translated game files,
 shipped separately as `patrician3-localization-<version>-resources-de.zip` (source: `resources/de/`):
-tutorial, credits, name lists, map, menu pictures and 19 mission files. Of these, 15 have scripts
+credits, name lists, map, menu pictures and 19 mission files (the German tutorial comes from
+`data/files/de.tsv` like in the other languages; the German credits name other people than the English
+ones and stay a file). Of these, 15 have scripts
 that differ from the English ones, 3 carry title wording that the tables cannot give per position,
 and `Kampagne3_Entfuehrung.p2m` is the name the campaign list uses while the English archive holds
 the file under a name with an umlaut. All other German missions come from the tables like in any
@@ -90,7 +92,8 @@ Limits of quality (cannot be verified by machine):
 - The order of placeholders follows English, even where the target language would order differently.
 - No review by native speakers. Loading in the game has been checked for `de`, `nl` and `sv`. For all
   nine languages the campaign selection and the first campaign letter have been run in the game; other
-  missions have not.
+  missions have not. The tutorial has been opened in the game for `de`, `fr`, `sv` and `es`, the credits
+  for `fr`, `da` and `no`; the other languages are checked by `cargo test` only.
 
 ## Character set
 

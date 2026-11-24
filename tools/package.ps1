@@ -1,6 +1,6 @@
 # Builds the two release archives into dist\.
 #   patrician3-localization-<version>.zip               DLL + localization.ini (all languages)
-#   patrician3-localization-<version>-resources-de.zip  German tutorial, credits, names, map, menu images and the
+#   patrician3-localization-<version>-resources-de.zip  German credits, names, map, menu images and the
 #                                                       missions the text tables cannot reproduce
 # Run from the repository root:  powershell -File tools\package.ps1
 $ErrorActionPreference = 'Stop'

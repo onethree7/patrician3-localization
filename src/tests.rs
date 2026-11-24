@@ -698,7 +698,7 @@ mod language_tests {
                 continue;
             }
             let mut conversion = String::from("%");
-            while let Some(next) = chars.next() {
+            for next in chars.by_ref() {
                 conversion.push(next);
                 if next.is_ascii_alphabetic() || next == '%' {
                     break;
@@ -824,7 +824,7 @@ mod language_tests {
         const FONT_EXTRA: &str = "äöüÄÖÜßáàâéèêíìîóòôúùû";
         for language in LANGUAGES.iter().filter(|language| language.code != "de") {
             for (scope, _, translation) in language::scoped_rows(language.table).unwrap() {
-                let text = decode_table_text(&translation);
+                let text = decode_table_text(translation);
                 if let Some(c) = text
                     .chars()
                     .find(|c| !(c.is_ascii() || FONT_EXTRA.contains(*c)))

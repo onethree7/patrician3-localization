@@ -6,7 +6,7 @@ Deze handleiding installeert de Nederlandse vertaling van Patrician III (GOG of 
 2. Download de [P3Modding-modloader](https://p3modding.github.io/modloader.html) en kopieer `p3_modloader.dll` en `Patrician3_modloader.exe` naar de spelmap (de map met het `.exe`-bestand van het spel).
 3. Download op de [releasepagina](../../../../releases) het bestand `patrician3-localization-<versie>.zip` en pak het uit in de spelmap. In de map `mods` staan daarna `patrician3_localization.dll` en `localization.ini`.
 4. Open `mods\localization.ini` met Kladblok en zet `language=nl`. Zonder dit bestand gebruikt de mod Duits.
-5. Verder hoeft u niets te installeren: missies en de campagnelijst zijn vertaald; tutorial, aftiteling en menuafbeeldingen blijven Engels. Pak de Duitse bronnen (`resources-de`) niet uit.
+5. Verder hoeft u niets te installeren: missies, de campagnelijst, de tutorial en de aftiteling zijn vertaald; alleen de menuafbeeldingen blijven Engels. Pak de Duitse bronnen (`resources-de`) niet uit.
 6. Start het spel met `Patrician3_modloader.exe`.
 
 Optioneel: meer mods uit [`mods.zip` van P3Modding](https://github.com/P3Modding/p3-lib/releases/tag/0.1.15) gaan in dezelfde map `mods`.

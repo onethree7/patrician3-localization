@@ -18,12 +18,19 @@ use std::{
     sync::{Mutex, OnceLock},
 };
 
-// Archiver imports of Patrician3.exe (RVAs of the IAT slots).
+// Archiver.dll imports of Patrician3.exe: RVAs of the IAT slots, named after the
+// import table. All are cdecl; a file handle is an opaque pointer.
+/// `arc_Seek(handle, position) -> position`, absolute position.
 const IAT_SEEK: usize = 0x26a018;
+/// `arc_FileLength(handle) -> length`.
 const IAT_FILE_LENGTH: usize = 0x26a01c;
+/// `arc_GetPos(handle) -> position`.
 const IAT_GET_POS: usize = 0x26a020;
+/// `arc_ReleaseFile(handle)`.
 const IAT_RELEASE_FILE: usize = 0x26a028;
+/// `arc_CreateFile(container, name) -> handle`, null if the file is missing.
 const IAT_CREATE_FILE: usize = 0x26a02c;
+/// `arc_Read(handle, buffer, length) -> bytes read`.
 const IAT_READ: usize = 0x26a050;
 
 /// Ini files whose `key=value` values are replaced as a whole (`ini` rows).
@@ -165,10 +172,10 @@ pub(crate) fn load_file_texts(table: &str) -> Result<FileTexts, String> {
                 (map, source, translation)
             }
             "ini" => {
-                let source = super::encode_cp1252(source, "campaign text")?;
-                let translation = super::encode_cp1252(translation, "campaign text")?;
+                let source = super::encode_cp1252(source, "ini text")?;
+                let translation = super::encode_cp1252(translation, "ini text")?;
                 if source.contains(&0) || translation.contains(&0) {
-                    return Err(format!("NUL byte in campaign text row: {line}"));
+                    return Err(format!("NUL byte in ini text row: {line}"));
                 }
                 (&mut texts.ini, source, translation)
             }
@@ -339,7 +346,7 @@ fn translate_mission_with<'a>(
 }
 
 // ---------------------------------------------------------------------------
-// Campaign list (ini)
+// Ini files (campaign list, tutorial, credits)
 // ---------------------------------------------------------------------------
 
 /// Replaces `key=value` values found in `texts`; `None` if nothing changed.
@@ -407,7 +414,7 @@ fn originals() -> &'static Originals {
 
 enum Kind {
     Mission,
-    CampaignList,
+    Ini,
 }
 
 fn classify(name: &[u8]) -> Option<Kind> {
@@ -418,7 +425,7 @@ fn classify(name: &[u8]) -> Option<Kind> {
     if name.ends_with(".p2m") {
         Some(Kind::Mission)
     } else if INI_FILES.contains(&name) {
-        Some(Kind::CampaignList)
+        Some(Kind::Ini)
     } else {
         None
     }
@@ -474,7 +481,7 @@ unsafe extern "C" fn create_file(container: *mut c_void, name: *const c_char) ->
         Kind::Mission => {
             translate_mission_for(&data, &base_name(CStr::from_ptr(name).to_bytes()), texts)
         }
-        Kind::CampaignList => translate_ini(&data, &texts.ini),
+        Kind::Ini => translate_ini(&data, &texts.ini),
     };
     (original.release_file)(handle);
     let file = Box::new(VirtualFile {
@@ -675,7 +682,7 @@ mod tests {
     }
 
     #[test]
-    fn campaign_list_values_are_replaced_line_by_line() {
+    fn ini_values_are_replaced_line_by_line() {
         let ini = b"[Campaign_1]\r\nName=The Fire\r\nTexture=41101\r\nText=Burn\n";
         let texts = table(&[(b"The Fire", b"Das Feuer"), (b"Burn", b"Brand")]);
         let out = translate_ini(ini, &texts).unwrap();
