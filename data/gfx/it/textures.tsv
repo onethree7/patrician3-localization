@@ -1,9 +1,9 @@
 # Sprite rectangles of p_hmenu01.bmp (tools/gfx/gen.py): texture file<TAB>x y width height
-images/options/p_hmenu01.bmp	0 0 152 52
-images/options/p_hmenu01.bmp	0 52 187 63
-images/options/p_hmenu01.bmp	0 115 241 79
-images/options/p_hmenu01.bmp	0 194 260 90
-images/options/p_hmenu01.bmp	0 284 135 62
-images/options/p_hmenu01.bmp	0 346 168 76
-images/options/p_hmenu01.bmp	0 422 157 78
-images/options/p_hmenu01.bmp	0 500 109 64
+images/options/p_hmenu01.bmp	0 0 151 52
+images/options/p_hmenu01.bmp	0 52 187 64
+images/options/p_hmenu01.bmp	0 116 241 80
+images/options/p_hmenu01.bmp	0 196 260 91
+images/options/p_hmenu01.bmp	0 287 135 61
+images/options/p_hmenu01.bmp	0 348 168 75
+images/options/p_hmenu01.bmp	0 423 157 77
+images/options/p_hmenu01.bmp	0 500 108 64

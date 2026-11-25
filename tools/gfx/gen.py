@@ -171,6 +171,45 @@ def fit_global(cov, regions, cns):
         steps /= 2
     return p, best
 
+
+def line_adjust(M, dy, th):
+    """M turned by th degrees about the start of the word and moved dy pixels down."""
+    p = M @ np.array([OX, OY, 1.0])
+    c, s = np.cos(np.radians(th)), np.sin(np.radians(th))
+    R = np.array([[c, -s], [s, c]])
+    return np.hstack([R @ M[:, :2], (R @ (M[:, 2] - p) + p + np.array([0.0, dy]))[:, None]]).astype(np.float32)
+
+
+def fit_lines(cov, regions, cns, gp):
+    """Per line height and turn of the English word against the shared fit (the page bends)."""
+    out = []
+    for k in range(8):
+        t = render(EN[k][1:])
+        tg = cv2.GaussianBlur(cov * cv2.dilate(regions[k], np.ones((5, 5), np.uint8)), (0, 0), 1.0)
+        M0 = line_matrix(cns[k], *gp)
+        def score(q):
+            M = line_adjust(M0, q[1], q[2])
+            M[:, 2] += np.float32([q[0], 0])
+            wv = cv2.GaussianBlur(cv2.warpAffine(t, M, (800, 600), flags=cv2.INTER_AREA), (0, 0), 1.0)
+            n = np.linalg.norm(wv) * np.linalg.norm(tg)
+            return (wv * tg).sum() / n if n else 0
+        q, best, st = np.zeros(3), score(np.zeros(3)), np.ones(3)
+        for _ in range(10):
+            imp = True
+            while imp:
+                imp = False
+                for i in range(3):
+                    for sg in (1, -1):
+                        r = q.copy(); r[i] += sg * st[i]; v = score(r)
+                        if v > best + 1e-6:
+                            best, q, imp = v, r, True
+            st /= 2
+        out.append([q[1], q[2]])    # dx belongs to the English gap, not kept
+    # one smooth bend over the page, not a correction per word
+    k, out = np.arange(8), np.array(out)
+    return [[float(np.polyval(np.polyfit(k, out[:, j], 2), i)) for j in range(2)] for i in k]
+
+
 Q, MG = 56, 10         # canonical box: red square Q x Q, margin for the gold frame
 
 
@@ -322,10 +361,16 @@ def build(lang, out):
             json.dump([[float(v) for v in gp], float(sc)], f)
             f.write('\n')
     gp, sc = json.load(open(fit))
+    lfit = os.path.join(HERE, 'lines.json')
+    if not os.path.exists(lfit):
+        with open(lfit, 'w', newline='\n') as f:
+            json.dump(fit_lines(cov, regions, cns, gp), f)
+            f.write('\n')
+    adj = json.load(open(lfit))
     gp = [GAP] + list(gp[1:])
     covmaps = []
     for k in range(8):
-        Wk = line_matrix(cns[k], *gp)
+        Wk = line_adjust(line_matrix(cns[k], *gp), *adj[k])
         # same stroke weight on screen in every line: the extra weight shrinks as the line scale grows
         sk = np.sqrt(abs(np.linalg.det(line_matrix(cns[k], *gp)[:, :2])))
         s0 = np.sqrt(abs(np.linalg.det(line_matrix(cns[0], *gp)[:, :2])))
