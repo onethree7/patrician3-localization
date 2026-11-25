@@ -2,7 +2,7 @@
 
 Play **Patrician III** (GOG and Steam) in your own language. This mod replaces the English game texts with translations: menus, trade goods, letters, chronicle and event messages, guild and Hanseatic League dialogues, missions, the campaign list, the tutorial, the credits, the names of towns, guilds, taverns and ships, and the pictures of the main menu. It is loaded by the [P3Modding modloader](https://p3modding.github.io/modloader.html) and also translates selected texts of the official mods.
 
-**Version 0.5.0** · Tested with GOG, Steam and P3Modding 0.1.15
+**Version 0.5.1** · Tested with GOG, Steam and P3Modding 0.1.15
 
 ## Available languages
 

@@ -76,6 +76,7 @@ const DIRECT_ONLY_SLOT_RANGES: &[std::ops::RangeInclusive<usize>] = &[
     0x2A0BD0..=0x2A0CA8, // Family labels and inflected adjective tables.
     0x2A177C..=0x2A17A0,
     0x2AF3C0..=0x2AF3D8, // Guard-post settings use context-specific casing.
+    0x2C0D04..=0x2C0D30, // Abbreviated months; "May" or "Mar" must not become global keys.
 ];
 const BUILDING_NAME_RVA_RANGE: std::ops::RangeInclusive<usize> = 0x2A54E8..=0x2A5798;
 const RENDER_TEXT_PREFERRED_SLOT_RVAS: &[usize] = &[0x2A4390, 0x2AEF1C];

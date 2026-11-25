@@ -83,9 +83,25 @@ Town names follow the form customary in the language (`Londres`, `Keulen`, `Dant
 `Danzig`, `Thorn` as in the German game). `tools/textkit/glossary.py <code>` applies the glossary to a table
 and writes its map and town-list rows; `tools/textkit/glyphs.py` replaces characters the font cannot draw.
 
+## German and the original Patrizier 2 Gold
+
+Patrician III is the English release of Patrizier II Gold, so the German tables follow the German original
+wherever the English release did not change the text. `tools/textkit/p2ref.py <Patrician3.exe> <Patrizier 2.exe>`
+aligns the text slots of both executables and reads their string resources by ID; it writes `slots.tsv`
+(table row next to the original), `missing.tsv` (slots without a German row whose original differs from
+English) and `resources.tsv` to `target/p2ref/`, outside the repository. Deviations from the original are
+deliberate where Patrician III passes other or reordered arguments or composes a sentence differently.
+
+Tooltips and button labels are Windows string resources. German translates them by resource ID
+(`resource:N` rows in `data/render_translations.tsv`, text as in the original), so a building tooltip such
+as `Pottery` (Töpferei) never renames the ware `pottery` (Keramik) or another text of the same spelling.
+
+The abbreviated month names (`Jan` … `Dec`, slots `0x2C0D04`-`0x2C0D30`) are slots in every language. They are
+never global render keys, so `May` or `Mar` elsewhere stay untouched.
+
 ## What is translated (and what is not)
 
-All 3186 text slots of the slot table are filled for fr, nl, es, it, sv, da, no and pt, plus the
+All text slots of the slot table are filled for fr, nl, es, it, sv, da, no and pt, plus the
 templates (`frag`), render and addon texts. That covers menus, labels, names, letters, event and
 chronicle texts and the composed sentence fragments. Missions (579 texts), the campaign list
 (25 texts), the tutorial (159 texts) and the credits (43 texts) are translated for all languages as well,

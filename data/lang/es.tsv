@@ -116,6 +116,8 @@
 0x29ACAC	200 load	200 lasts
 0x29ACB0	300 load	300 lasts
 0x29ACB4	500 load	500 lasts
+0x29ACB8	1.000 load	1.000 lasts
+0x29ACBC	2.000 load	2.000 lasts
 0x29ADE8	Game resolution	Resolución del juego
 0x29ADEC	Color depth	Profundidad de color
 0x29ADF8	Detail level	Nivel de detalle
@@ -686,6 +688,8 @@
 0x2AAB80	Town rebuilt	Ciudad reconstruida
 0x2ABB88	No goods were stolen.	No se robó ninguna mercancía.
 0x2ADD70	\\cExtraordinary Hanse Day	\\cDieta hanseática extraordinaria
+0x2AE920	Honourable %s %s,\n\n	Honorable %s %s,\n\n
+0x2AE924	Honourable %s %s,\n\n	Honorable dama %s %s,\n\n
 0x2AEF18	Choose Map	Elegir mapa
 0x2AEF28	Standard Map	Mapa estándar
 0x2AEF2C	Random Map	Mapa aleatorio
@@ -833,15 +837,20 @@
 0x2B2B48	\\c\\f4_Contract completed	\\c\\f4_Encargo cumplido
 0x2B2B7C	\\c\\f4_Hanseatic League withdraws its contract	\\c\\f4_La Hansa retira su encargo
 0x2B2BC0	Steer manually	Gobernar manualmente
-0x2B2BD4	Costs of loan	Costes del préstamo
+0x2B2BD4	Costs of loan	Costes salariales
 0x2B2BE4	Land taxes	Impuesto territorial
+0x2B2C10	Manager (Stage %d)	Administrador (grado %d)
 0x2B2C1C	Other	Varios
+0x2B2C64	on %i. %s %i in %s, age %i	el %i de %s de %i en %s, de %i anios
 0x2B2C70	Total	Total
 0x2B2C80	Next person	Siguiente persona
 0x2B2C90	Traveller	Viajero
 0x2B2CA0	Side room	Sala contigua
 0x2B2CAC	Total	Total
 0x2B2CDC	Details	Detalles
+0x2B2D1C	70.000 inhabitants	70.000 habitantes
+0x2B2D20	100.000 inhabitants	100.000 habitantes
+0x2B2D24	200.000 inhabitants	200.000 habitantes
 0x2B2D3C	Hanse population	Población de la Hansa
 0x2B2D4C	World map	Mapa del mundo
 0x2B2DD8	Public news	Noticias públicas
@@ -852,6 +861,11 @@
 0x2B502C	Reject offer	Rechazar la oferta
 0x2B503C	Take back	Retirar
 0x2B52A0	Accept offer	Aceptar la oferta
+0x2B65E0	\\cTown wall extended\n\\l\n	\\cMuralla ampliada\n\\l\n
+0x2B674C	\\cRaise special taxes\n\n\\l	\\cSe recauda un impuesto extraordinario\n\n\\l
+0x2B7604	Honourable %s %s	Honorable %s %s
+0x2B7608	Honourable %s %s	Honorable dama %s %s
+0x2B8468	\n\n\\cWith nautical regads.\n\\r	\n\n\\cCon saludos marineros,\n\\r
 0x2C0840	harbour town	ciudad portuaria
 0x2C0844	trading post	puesto comercial
 0x2C0848	indian tribe	tribu india
@@ -914,6 +928,18 @@
 0x2C0CC8	Crayer	Kraier
 0x2C0CCC	Cog	Coca
 0x2C0CD0	Hulk	Holk
+0x2C0D04	Jan	ene
+0x2C0D08	Feb	feb
+0x2C0D0C	Mar	mar
+0x2C0D10	Apr	abr
+0x2C0D14	May	may
+0x2C0D18	Jun	jun
+0x2C0D1C	Jul	jul
+0x2C0D20	Aug	ago
+0x2C0D24	Sep	sep
+0x2C0D28	Oct	oct
+0x2C0D2C	Nov	nov
+0x2C0D30	Dec	dic
 0x2C0DA0	January	enero
 0x2C0DA4	February	febrero
 0x2C0DA8	March	marzo
@@ -1073,6 +1099,8 @@
 0x2C2210	Total (income - expenditure)	Total [ ingresos - gastos ]
 0x2C2250	imp.	imp.
 0x2C225C	exp.	exp.
+0x2C2268	max.	máx
+0x2C2274	min.	mín
 0x2C2280	back	atrás
 0x2C2298	build piece of wall	construir tramo de muralla
 0x2C22AC	build street	construir calle
@@ -3127,9 +3155,9 @@ frag	day_many	{n} días
 0x2B23A4	\nBring building materials to the town's traders in front of the town gates. Part deliveries are also acceptable.\n\n	\nLleva los materiales de construcción a los mercaderes ante las puertas de la ciudad. También se admiten entregas parciales.\n\n
 0x2B2A88	She	Ella
 0x2B2A8C	He	El
-0x2B2BF8	Trading Office	Comercio de la factoría
+0x2B2BF8	Trading Office	Comercio del Kontor
 0x2B2CBC	Warehouse	Almacén
-0x2B2CD0	Trading Office	Factoría
+0x2B2CD0	Trading Office	Comercio del Kontor
 0x2B2DF0	 and 	 y 
 0x2B30DC	A new	Un nuevo
 0x2B30E0	A new	Una nueva

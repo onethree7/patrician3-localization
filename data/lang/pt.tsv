@@ -116,6 +116,8 @@
 0x29ACAC	200 load	200 lasts
 0x29ACB0	300 load	300 lasts
 0x29ACB4	500 load	500 lasts
+0x29ACB8	1.000 load	1 000 lasts
+0x29ACBC	2.000 load	2 000 lasts
 0x29ADE8	Game resolution	Resolucao do jogo
 0x29ADEC	Color depth	Profundidade de cor
 0x29ADF8	Detail level	Nível de detalhe
@@ -686,6 +688,8 @@
 0x2AAB80	Town rebuilt	Cidade reconstruída
 0x2ABB88	No goods were stolen.	Nenhuma mercadoria foi roubada.
 0x2ADD70	\\cExtraordinary Hanse Day	\\cDia extraordinário da Hansa
+0x2AE920	Honourable %s %s,\n\n	Honrado %s %s,\n\n
+0x2AE924	Honourable %s %s,\n\n	Honrada senhora %s %s,\n\n
 0x2AEF18	Choose Map	Escolher mapa
 0x2AEF28	Standard Map	Mapa padrao
 0x2AEF2C	Random Map	Mapa aleatório
@@ -833,15 +837,20 @@
 0x2B2B48	\\c\\f4_Contract completed	\\c\\f4_Contrato cumprido
 0x2B2B7C	\\c\\f4_Hanseatic League withdraws its contract	\\c\\f4_A Hansa retira o seu contrato
 0x2B2BC0	Steer manually	Governar à mao
-0x2B2BD4	Costs of loan	Custos do empréstimo
+0x2B2BD4	Costs of loan	Custo dos salários
 0x2B2BE4	Land taxes	Imposto sobre terras
+0x2B2C10	Manager (Stage %d)	Administrador (nível %d)
 0x2B2C1C	Other	Diversos
+0x2B2C64	on %i. %s %i in %s, age %i	a %i de %s de %i em %s, com %i anos
 0x2B2C70	Total	Total
 0x2B2C80	Next person	Pessoa seguinte
 0x2B2C90	Traveller	Viajante
 0x2B2CA0	Side room	Sala lateral
 0x2B2CAC	Total	Total
 0x2B2CDC	Details	Detalhes
+0x2B2D1C	70.000 inhabitants	70 000 habitantes
+0x2B2D20	100.000 inhabitants	100 000 habitantes
+0x2B2D24	200.000 inhabitants	200 000 habitantes
 0x2B2D3C	Hanse population	Populacao da Hansa
 0x2B2D4C	World map	Mapa-múndi
 0x2B2DD8	Public news	Notícias públicas
@@ -852,6 +861,11 @@
 0x2B502C	Reject offer	Rejeitar oferta
 0x2B503C	Take back	Retirar
 0x2B52A0	Accept offer	Aceitar oferta
+0x2B65E0	\\cTown wall extended\n\\l\n	\\cMuralha ampliada\n\\l\n
+0x2B674C	\\cRaise special taxes\n\n\\l	\\cLancamento de imposto extra\n\n\\l
+0x2B7604	Honourable %s %s	Honrado %s %s
+0x2B7608	Honourable %s %s	Honrada senhora %s %s
+0x2B8468	\n\n\\cWith nautical regads.\n\\r	\n\n\\cCom saudacoes de marinheiro,\n\\r
 0x2C0840	harbour town	cidade portuária
 0x2C0844	trading post	entreposto comercial
 0x2C0848	indian tribe	tribo indígena
@@ -914,6 +928,18 @@
 0x2C0CC8	Crayer	Kraier
 0x2C0CCC	Cog	Cogue
 0x2C0CD0	Hulk	Hulque
+0x2C0D04	Jan	jan
+0x2C0D08	Feb	fev
+0x2C0D0C	Mar	mar
+0x2C0D10	Apr	abr
+0x2C0D14	May	mai
+0x2C0D18	Jun	jun
+0x2C0D1C	Jul	jul
+0x2C0D20	Aug	ago
+0x2C0D24	Sep	set
+0x2C0D28	Oct	out
+0x2C0D2C	Nov	nov
+0x2C0D30	Dec	dez
 0x2C0DA0	January	janeiro
 0x2C0DA4	February	fevereiro
 0x2C0DA8	March	marco
@@ -1073,6 +1099,8 @@
 0x2C2210	Total (income - expenditure)	Total (receitas - despesas)
 0x2C2250	imp.	imp.
 0x2C225C	exp.	exp.
+0x2C2268	max.	máx
+0x2C2274	min.	mín
 0x2C2280	back	voltar
 0x2C2298	build piece of wall	construir troco de muralha
 0x2C22AC	build street	construir rua
@@ -3001,7 +3029,7 @@ frag	day_many	{n} dias
 0x2A548C	Reputation	Reconhecimento
 0x2A54A0	Broken in	Arrombado
 0x2A57FC	Saltworks	Salinas
-0x2A5810	Brickworks	Olaria
+0x2A5810	Brickworks	Telheiro
 0x2A5840	Warehouse	Armazém
 0x2A5874	School	Escola
 0x2A5880	Shipyard	Estaleiro
@@ -3106,7 +3134,7 @@ frag	day_many	{n} dias
 0x2AF9F4	\\f1_A convoy of this value should at the very least be accorded with a low level of protection.	\\f1_Para um transporte deste valor deves escolher, pelo menos, a escolta baixa.
 0x2AF9F8	\\f1_A convoy of this value should at the very least be accorded with a medium level of protection.	\\f1_Para um transporte deste valor deves escolher, pelo menos, a escolta média.
 0x2AFDB4	Saltworks	Salinas
-0x2AFDC8	Brickworks	Olarias
+0x2AFDC8	Brickworks	Telheiros
 0x2B01B4	, a child	, um filho
 0x2B0258	off	desligado
 0x2B0384	Name	Batizar
@@ -3129,7 +3157,7 @@ frag	day_many	{n} dias
 0x2B2A8C	He	Ele
 0x2B2BF8	Trading Office	Comércio do escritório
 0x2B2CBC	Warehouse	Armazém
-0x2B2CD0	Trading Office	Escritório
+0x2B2CD0	Trading Office	Comércio do escritório
 0x2B2DF0	 and 	 e 
 0x2B30DC	A new	Um novo
 0x2B30E0	A new	Uma nova

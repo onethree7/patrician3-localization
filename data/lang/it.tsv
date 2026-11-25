@@ -116,6 +116,8 @@
 0x29ACAC	200 load	200 last
 0x29ACB0	300 load	300 last
 0x29ACB4	500 load	500 last
+0x29ACB8	1.000 load	1.000 last
+0x29ACBC	2.000 load	2.000 last
 0x29ADE8	Game resolution	Risoluzione di gioco
 0x29ADEC	Color depth	Profondità di colore
 0x29ADF8	Detail level	Livello di dettaglio
@@ -330,7 +332,7 @@
 0x2A0B44	Requirements	Fabbisogno
 0x2A0B48	Balance	Bilancio
 0x2A0B4C	Rental income	Entrate da affitti
-0x2A0B50	Wages cost	Costi del personale
+0x2A0B50	Wages cost	Spese per le paghe
 0x2A0B54	Basic tax	Imposta fondiaria
 0x2A0B58	Trading office trade	Commercio del fondaco
 0x2A0B60	Miscellaneous	Varie
@@ -546,7 +548,7 @@
 0x2A5800	Iron smelter	Fonderia di ferro
 0x2A5804	Sheep farm	Allevamento di pecore
 0x2A5808	Vineyard	Vigneto
-0x2A580C	Pottery	Fabbrica di ceramiche
+0x2A580C	Pottery	Bottega del vasaio
 0x2A5814	Pitchmaker	Produttore di pece
 0x2A5818	Hemp farm	Coltivazione di canapa
 0x2A581C	Merchant's House	Casa del mercante
@@ -686,6 +688,8 @@
 0x2AAB80	Town rebuilt	Città ricostruita
 0x2ABB88	No goods were stolen.	Non è stata rubata alcuna merce.
 0x2ADD70	\\cExtraordinary Hanse Day	\\cDieta anseatica straordinaria
+0x2AE920	Honourable %s %s,\n\n	Onorevole %s %s,\n\n
+0x2AE924	Honourable %s %s,\n\n	Onorevole dama %s %s,\n\n
 0x2AEF18	Choose Map	Scegli la mappa
 0x2AEF28	Standard Map	Mappa standard
 0x2AEF2C	Random Map	Mappa casuale
@@ -734,7 +738,7 @@
 0x2AFDB8	Iron smelters	Fonderie di ferro
 0x2AFDBC	Sheep farms	Allevamenti di pecore
 0x2AFDC0	Vineyards	Vigneti
-0x2AFDC4	Potteries	Fabbriche di ceramiche
+0x2AFDC4	Potteries	Botteghe del vasaio
 0x2AFDCC	Pitchmakers	Produttori di pece
 0x2AFDD0	Hemp farms	Coltivazioni di canapa
 0x2AFDD4	Merchant's Houses	Case dei mercanti
@@ -833,15 +837,20 @@
 0x2B2B48	\\c\\f4_Contract completed	\\c\\f4_Incarico adempiuto
 0x2B2B7C	\\c\\f4_Hanseatic League withdraws its contract	\\c\\f4_La Lega anseatica ritira il suo incarico
 0x2B2BC0	Steer manually	Governare manualmente
-0x2B2BD4	Costs of loan	Costi del prestito
+0x2B2BD4	Costs of loan	Spese per le paghe
 0x2B2BE4	Land taxes	Imposta fondiaria
+0x2B2C10	Manager (Stage %d)	Amministratore (grado %d)
 0x2B2C1C	Other	Varie
+0x2B2C64	on %i. %s %i in %s, age %i	il %i %s %i a %s, di %i anni
 0x2B2C70	Total	Totale
 0x2B2C80	Next person	Persona successiva
 0x2B2C90	Traveller	Viaggiatore
 0x2B2CA0	Side room	Stanza laterale
 0x2B2CAC	Total	Totale
 0x2B2CDC	Details	Dettagli
+0x2B2D1C	70.000 inhabitants	70.000 abitanti
+0x2B2D20	100.000 inhabitants	100.000 abitanti
+0x2B2D24	200.000 inhabitants	200.000 abitanti
 0x2B2D3C	Hanse population	Popolazione anseatica
 0x2B2D4C	World map	Mappa del mondo
 0x2B2DD8	Public news	Notizie pubbliche
@@ -852,6 +861,11 @@
 0x2B502C	Reject offer	Rifiutare l'offerta
 0x2B503C	Take back	Riprendere
 0x2B52A0	Accept offer	Accettare l'offerta
+0x2B65E0	\\cTown wall extended\n\\l\n	\\cMura ampliate\n\\l\n
+0x2B674C	\\cRaise special taxes\n\n\\l	\\cSi riscuote un'imposta straordinaria\n\n\\l
+0x2B7604	Honourable %s %s	Onorevole %s %s
+0x2B7608	Honourable %s %s	Onorevole dama %s %s
+0x2B8468	\n\n\\cWith nautical regads.\n\\r	\n\n\\cCon saluti marinareschi,\n\\r
 0x2C0840	harbour town	città portuale
 0x2C0844	trading post	stazione commerciale
 0x2C0848	indian tribe	tribù indiana
@@ -914,6 +928,18 @@
 0x2C0CC8	Crayer	Kraier
 0x2C0CCC	Cog	Cocca
 0x2C0CD0	Hulk	Holk
+0x2C0D04	Jan	gen
+0x2C0D08	Feb	feb
+0x2C0D0C	Mar	mar
+0x2C0D10	Apr	apr
+0x2C0D14	May	mag
+0x2C0D18	Jun	giu
+0x2C0D1C	Jul	lug
+0x2C0D20	Aug	ago
+0x2C0D24	Sep	set
+0x2C0D28	Oct	ott
+0x2C0D2C	Nov	nov
+0x2C0D30	Dec	dic
 0x2C0DA0	January	gennaio
 0x2C0DA4	February	febbraio
 0x2C0DA8	March	marzo
@@ -1073,6 +1099,8 @@
 0x2C2210	Total (income - expenditure)	Totale [ entrate - uscite ]
 0x2C2250	imp.	imp.
 0x2C225C	exp.	esp.
+0x2C2268	max.	max
+0x2C2274	min.	min
 0x2C2280	back	indietro
 0x2C2298	build piece of wall	costruire un tratto di mura
 0x2C22AC	build street	costruire una strada
@@ -3129,7 +3157,7 @@ frag	day_many	{n} giorni
 0x2B2A8C	He	Lui
 0x2B2BF8	Trading Office	Commercio del fondaco
 0x2B2CBC	Warehouse	Magazzino
-0x2B2CD0	Trading Office	Fondaco
+0x2B2CD0	Trading Office	Commercio del fondaco
 0x2B2DF0	 and 	 e 
 0x2B30DC	A new	Un nuovo
 0x2B30E0	A new	Una nuova

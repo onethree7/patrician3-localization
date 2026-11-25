@@ -317,7 +317,7 @@ mod translation_tests {
         );
         assert_eq!(
             translations.get(b"city buildings").unwrap().as_bytes(),
-            encode_cp1252("Stadtgebäude", "test").unwrap()
+            encode_cp1252("Städtische Gebäude", "test").unwrap()
         );
         assert_eq!(translations.get(b"crew").unwrap().as_bytes(), b"Besatzung");
         assert_eq!(
@@ -609,6 +609,73 @@ mod regression_tests {
             contextual,
             HashSet::from([b"Kapitulation".as_slice(), b"Kapitulieren".as_slice()])
         );
+    }
+
+    #[test]
+    fn tooltip_resources_use_the_german_original_by_id() {
+        let entries = load_translations().unwrap();
+        let render = load_render_translations(&entries).unwrap();
+        // Hover labels reported against the German original (Patrizier 2 Gold).
+        for (id, source, translation) in [
+            (20019, "Trading office", "Kontor"),
+            (30044, "Trading office", "Kontor"),
+            (30005, "Money lender", "Darlehensgeber"),
+            (30001, "Shipyard", "Werft"),
+            (30027, "Repair dock", "Reparaturdock"),
+            (30022, "Trade", "Handeln"),
+            (30006, "Market", "Marktstand"),
+            (30094, "Salt maker", "Salzsiede"),
+            (30010, "Town information", "Stadtinformation"),
+            (30099, "Pottery", "Töpferei"),
+        ] {
+            let (expected_source, expected_translation) = &render.resources[&id];
+            assert_eq!(
+                expected_source.as_bytes(),
+                source.as_bytes(),
+                "resource {id}"
+            );
+            assert_eq!(
+                expected_translation.as_bytes(),
+                encode_cp1252(translation, "test").unwrap(),
+                "resource {id}"
+            );
+        }
+        // The building label must not rename the ware of the same English name.
+        assert_eq!(render.get(b"pottery").unwrap().as_bytes(), b"Keramik");
+        assert_eq!(render.addon[b"Pottery".as_slice()].as_bytes(), b"Keramik");
+    }
+
+    #[test]
+    fn abbreviated_months_are_slots_but_not_global_render_keys() {
+        let entries = load_translations().unwrap();
+        let render = load_render_translations(&entries).unwrap();
+        for (slot, source, translation) in [
+            (0x2C0D0C, "Mar", "Mär"),
+            (0x2C0D14, "May", "Mai"),
+            (0x2C0D28, "Oct", "Okt"),
+            (0x2C0D30, "Dec", "Dez"),
+        ] {
+            let entry = entries.iter().find(|entry| entry.slot_rva == slot).unwrap();
+            assert_eq!(entry.source.as_bytes(), source.as_bytes());
+            assert_eq!(
+                entry.translation.as_bytes(),
+                encode_cp1252(translation, "test").unwrap()
+            );
+        }
+        for month in [b"Mar".as_slice(), b"May", b"Oct", b"Dec", b"may"] {
+            assert!(render.get(month).is_none());
+        }
+        for language in crate::language::LANGUAGES {
+            let bundle = crate::language::load(language.code).unwrap();
+            for slot in (0x2C0D04..=0x2C0D30).step_by(4) {
+                assert!(
+                    language.code == "de"
+                        || bundle.entries.iter().any(|entry| entry.slot_rva == slot),
+                    "{} lacks month slot 0x{slot:X}",
+                    language.code
+                );
+            }
+        }
     }
 
     #[test]

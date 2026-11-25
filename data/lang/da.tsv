@@ -116,6 +116,8 @@
 0x29ACAC	200 load	200 laester
 0x29ACB0	300 load	300 laester
 0x29ACB4	500 load	500 laester
+0x29ACB8	1.000 load	1.000 laester
+0x29ACBC	2.000 load	2.000 laester
 0x29ADE8	Game resolution	Spiloploesning
 0x29ADEC	Color depth	Farvedybde
 0x29ADF8	Detail level	Detaljeniveau
@@ -686,6 +688,8 @@
 0x2AAB80	Town rebuilt	By genopbygget
 0x2ABB88	No goods were stolen.	Der er ikke stjaalet nogen varer.
 0x2ADD70	\\cExtraordinary Hanse Day	\\cEkstra hansedag
+0x2AE920	Honourable %s %s,\n\n	Aerede %s %s,\n\n
+0x2AE924	Honourable %s %s,\n\n	Aerede frue %s %s,\n\n
 0x2AEF18	Choose Map	Vaelg kort
 0x2AEF28	Standard Map	Standardkort
 0x2AEF2C	Random Map	Tilfaeldigt kort
@@ -833,15 +837,20 @@
 0x2B2B48	\\c\\f4_Contract completed	\\c\\f4_Opgave opfyldt
 0x2B2B7C	\\c\\f4_Hanseatic League withdraws its contract	\\c\\f4_Hansen traekker sin opgave tilbage
 0x2B2BC0	Steer manually	Styr i haanden
-0x2B2BD4	Costs of loan	Laanomkostninger
+0x2B2BD4	Costs of loan	Loenomkostninger
 0x2B2BE4	Land taxes	Grundskat
+0x2B2C10	Manager (Stage %d)	Forvalter (trin %d)
 0x2B2C1C	Other	Diverse
+0x2B2C64	on %i. %s %i in %s, age %i	den %i. %s %i i %s, %i aar gammel
 0x2B2C70	Total	Sum
 0x2B2C80	Next person	Naeste person
 0x2B2C90	Traveller	Rejsende
 0x2B2CA0	Side room	Sidevaerelse
 0x2B2CAC	Total	Sum
 0x2B2CDC	Details	Detaljer
+0x2B2D1C	70.000 inhabitants	70.000 indbyggere
+0x2B2D20	100.000 inhabitants	100.000 indbyggere
+0x2B2D24	200.000 inhabitants	200.000 indbyggere
 0x2B2D3C	Hanse population	Hansens befolkning
 0x2B2D4C	World map	Verdenskort
 0x2B2DD8	Public news	Offentlige nyheder
@@ -852,6 +861,11 @@
 0x2B502C	Reject offer	Afslaa tilbuddet
 0x2B503C	Take back	Genoptag
 0x2B52A0	Accept offer	Antag tilbuddet
+0x2B65E0	\\cTown wall extended\n\\l\n	\\cBymuren udvidet\n\\l\n
+0x2B674C	\\cRaise special taxes\n\n\\l	\\cEkstraskat opkraeves\n\n\\l
+0x2B7604	Honourable %s %s	Aerede %s %s
+0x2B7608	Honourable %s %s	Aerede frue %s %s
+0x2B8468	\n\n\\cWith nautical regads.\n\\r	\n\n\\cMed soemandshilsen,\n\\r
 0x2C0840	harbour town	havneby
 0x2C0844	trading post	handelsfaktori
 0x2C0848	indian tribe	indianerstamme
@@ -914,6 +928,18 @@
 0x2C0CC8	Crayer	Kraier
 0x2C0CCC	Cog	Kogge
 0x2C0CD0	Hulk	Holk
+0x2C0D04	Jan	jan
+0x2C0D08	Feb	feb
+0x2C0D0C	Mar	mar
+0x2C0D10	Apr	apr
+0x2C0D14	May	maj
+0x2C0D18	Jun	jun
+0x2C0D1C	Jul	jul
+0x2C0D20	Aug	aug
+0x2C0D24	Sep	sep
+0x2C0D28	Oct	okt
+0x2C0D2C	Nov	nov
+0x2C0D30	Dec	dec
 0x2C0DA0	January	januar
 0x2C0DA4	February	februar
 0x2C0DA8	March	marts
@@ -1073,6 +1099,8 @@
 0x2C2210	Total (income - expenditure)	Sum [ indtaegter - udgifter ]
 0x2C2250	imp.	imp.
 0x2C225C	exp.	eksp.
+0x2C2268	max.	maks
+0x2C2274	min.	min
 0x2C2280	back	tilbage
 0x2C2298	build piece of wall	byg et murstykke
 0x2C22AC	build street	byg en gade
@@ -3129,7 +3157,7 @@ frag	day_many	{n} dage
 0x2B2A8C	He	Han
 0x2B2BF8	Trading Office	Kontorhandel
 0x2B2CBC	Warehouse	Pakhus
-0x2B2CD0	Trading Office	Kontor
+0x2B2CD0	Trading Office	Kontorhandel
 0x2B2DF0	 and 	 og 
 0x2B30DC	A new	Et nyt
 0x2B30E0	A new	En ny

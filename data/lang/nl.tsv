@@ -116,6 +116,8 @@
 0x29ACAC	200 load	200 lasten
 0x29ACB0	300 load	300 lasten
 0x29ACB4	500 load	500 lasten
+0x29ACB8	1.000 load	1.000 lasten
+0x29ACBC	2.000 load	2.000 lasten
 0x29ADE8	Game resolution	Spelresolutie
 0x29ADEC	Color depth	Kleurdiepte
 0x29ADF8	Detail level	Detailniveau
@@ -531,7 +533,7 @@
 0x2A54E0	Order	Opdracht
 0x2A54E4	Prince	Landsheer
 0x2A57C8	Armoury	Arsenaal
-0x2A57CC	Repair Dock	Scheepswerf
+0x2A57CC	Repair Dock	Herstelwerf
 0x2A57D0	Road	Weg
 0x2A57D4	Weaponsmith	Wapensmederij
 0x2A57D8	Hunting Lodge	Jachthut
@@ -686,6 +688,8 @@
 0x2AAB80	Town rebuilt	Stad herbouwd
 0x2ABB88	No goods were stolen.	Er zijn geen waren gestolen.
 0x2ADD70	\\cExtraordinary Hanse Day	\\cBuitengewone Hanzedag
+0x2AE920	Honourable %s %s,\n\n	Eerzame %s %s,\n\n
+0x2AE924	Honourable %s %s,\n\n	Eerzame vrouwe %s %s,\n\n
 0x2AEF18	Choose Map	Kaart kiezen
 0x2AEF28	Standard Map	Standaardkaart
 0x2AEF2C	Random Map	Willekeurige kaart
@@ -833,15 +837,20 @@
 0x2B2B48	\\c\\f4_Contract completed	\\c\\f4_Opdracht volbracht
 0x2B2B7C	\\c\\f4_Hanseatic League withdraws its contract	\\c\\f4_De Hanze trekt haar opdracht in
 0x2B2BC0	Steer manually	Handmatig sturen
-0x2B2BD4	Costs of loan	Kosten van de lening
+0x2B2BD4	Costs of loan	Loonkosten
 0x2B2BE4	Land taxes	Grondbelasting
+0x2B2C10	Manager (Stage %d)	Beheerder (rang %d)
 0x2B2C1C	Other	Diversen
+0x2B2C64	on %i. %s %i in %s, age %i	op %i %s %i te %s, %i jaar oud
 0x2B2C70	Total	Totaal
 0x2B2C80	Next person	Volgende persoon
 0x2B2C90	Traveller	Reiziger
 0x2B2CA0	Side room	Zijkamer
 0x2B2CAC	Total	Totaal
 0x2B2CDC	Details	Details
+0x2B2D1C	70.000 inhabitants	70.000 inwoners
+0x2B2D20	100.000 inhabitants	100.000 inwoners
+0x2B2D24	200.000 inhabitants	200.000 inwoners
 0x2B2D3C	Hanse population	Hanzebevolking
 0x2B2D4C	World map	Wereldkaart
 0x2B2DD8	Public news	Openbaar nieuws
@@ -852,6 +861,11 @@
 0x2B502C	Reject offer	Aanbod afwijzen
 0x2B503C	Take back	Terugnemen
 0x2B52A0	Accept offer	Aanbod aannemen
+0x2B65E0	\\cTown wall extended\n\\l\n	\\cStadsmuur uitgebreid\n\\l\n
+0x2B674C	\\cRaise special taxes\n\n\\l	\\cBijzondere belasting wordt geheven\n\n\\l
+0x2B7604	Honourable %s %s	Eerzame %s %s
+0x2B7608	Honourable %s %s	Eerzame vrouwe %s %s
+0x2B8468	\n\n\\cWith nautical regads.\n\\r	\n\n\\cMet zeemansgroet,\n\\r
 0x2C0840	harbour town	havenstad
 0x2C0844	trading post	steunpunt
 0x2C0848	indian tribe	indianenstam
@@ -914,6 +928,18 @@
 0x2C0CC8	Crayer	Kraier
 0x2C0CCC	Cog	Kogge
 0x2C0CD0	Hulk	Hulk
+0x2C0D04	Jan	jan
+0x2C0D08	Feb	feb
+0x2C0D0C	Mar	mrt
+0x2C0D10	Apr	apr
+0x2C0D14	May	mei
+0x2C0D18	Jun	jun
+0x2C0D1C	Jul	jul
+0x2C0D20	Aug	aug
+0x2C0D24	Sep	sep
+0x2C0D28	Oct	okt
+0x2C0D2C	Nov	nov
+0x2C0D30	Dec	dec
 0x2C0DA0	January	januari
 0x2C0DA4	February	februari
 0x2C0DA8	March	maart
@@ -1073,6 +1099,8 @@
 0x2C2210	Total (income - expenditure)	Totaal [ inkomsten - uitgaven ]
 0x2C2250	imp.	inv.
 0x2C225C	exp.	uitv.
+0x2C2268	max.	max
+0x2C2274	min.	min
 0x2C2280	back	terug
 0x2C2298	build piece of wall	muurstuk bouwen
 0x2C22AC	build street	straat bouwen
@@ -3129,7 +3157,7 @@ frag	day_many	{n} dagen
 0x2B2A8C	He	Hij
 0x2B2BF8	Trading Office	Kantoorhandel
 0x2B2CBC	Warehouse	Pakhuis
-0x2B2CD0	Trading Office	Kantoor
+0x2B2CD0	Trading Office	Kantoorhandel
 0x2B2DF0	 and 	 en 
 0x2B30DC	A new	Een nieuw
 0x2B30E0	A new	Een nieuwe

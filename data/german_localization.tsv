@@ -106,7 +106,7 @@
 0x29A57C	0x29A3F8	Error loading font.	Laden der Fonts fehlgeschlagen.
 0x29A580	0x29A40C	Error loading standard settings.	Fehler beim Laden der Standardeinstellungen.
 0x29A584	0x29A430	Error initialising sound card.	Fehler beim Initialisieren der Soundkarte.
-0x29A588	0x29A450	The resolution (800x600x16) could not be initialised. Please install the latest driver for your video card and then start the "P2Setup.exe" program.	Die Grafikauflösung (800x600x16) konnte nicht initialisiert werden. Bitte installiert den aktuellen Treiber für Eure Grafikkarte und startet anschließend das Programm "P2Setup.exe".
+0x29A588	0x29A450	The resolution (800x600x16) could not be initialised. Please install the latest driver for your video card and then start the "P2Setup.exe" program.	Die Auflösung 800x600x16 konnte nicht initialisiert werden. Bitte installieren Sie den aktuellen Treiber für Ihre Grafikkarte und starten Sie anschließend das Programm "P2Setup.exe".
 0x29A58C	0x29A4E8	Please run "P2Setup.exe" to test your video card prior to starting the game.	Bitte führt vor dem Spielstart das Programm "P2Setup.exe" aus, um Eure Grafikkarte zu testen.
 0x29A590	0x29A538	The original Patrician III CD was not found.	Patrizier 3 Original CD wurde nicht gefunden.
 0x29A5B0	0x29A5A4	Campaign	Kampagne
@@ -211,6 +211,8 @@
 0x29ACAC	0x29AC70	200 load	200 Last
 0x29ACB0	0x29AC7C	300 load	300 Last
 0x29ACB4	0x29AC88	500 load	500 Last
+0x29ACB8	0x29AC94	1.000 load	1.000 Last
+0x29ACBC	0x29ACA0	2.000 load	2.000 Last
 0x29ADE8	0x29ACC0	Game resolution	Auflösung im Spiel
 0x29ADEC	0x29ACD0	Color depth	Farbtiefe
 0x29ADF8	0x29ACEC	Detail level	Details
@@ -297,6 +299,7 @@
 0x29B268	0x29B23C	Choose mission	Mission wählen
 0x29B26C	0x29B24C	Campaign	Kampagne
 0x29B270	0x29B258	Choose campaign	Kampagne wählen
+0x29B290	0x29B278	Continue	Weiter
 0x29B294	0x29B284	Start	Starten
 0x29B2AC	0x29B2A0	Back	Zurück
 0x29B318	0x29B2B0	Automatic maritime trading	Automatischer Schiffshandel
@@ -460,7 +463,7 @@
 0x29C858	0x29C408	Offer %i more gold	%i Gold mehr bieten
 0x29C85C	0x29C41C	 %s extended,	 %s ausgebaut,
 0x29C860	0x29C42C	\\f1_The ship was auctioned for %i\\C by %s %s %s.	\\f1_Das Schiff wurde für %i\\C an %s %s %s versteigert.
-0x29C864	0x29C460	\\f1_The %i-load %s "%s" went for %i\\C to %s %s %s.	\\f1_Das Schiff mit %i Last vom Typ %s, "%s", wurde für %i\\C an %s %s %s versteigert.
+0x29C864	0x29C460	\\f1_The %i-load %s "%s" went for %i\\C to %s %s %s.	\\f1_Die %i-Last %s "%s" ging für %i\\C an %s %s %s.
 0x29C868	0x29C494	The auction has ended	Die Versteigerung ist beendet
 0x29C86C	0x29C4B0	\\f1_%s %s %s %s %s from %s opened %s first trading office on %i. %s %i in %s.	\\f1_%s %s %s %s %s aus %s eröffnete %s erstes Kontor am %i. %s %i in %s.
 0x29C870	0x29C500	her	ihr
@@ -595,7 +598,7 @@
 0x29DA40	0x29D63C	you get the agreed upon premium of %u	geliefert habt, erhaltet Ihr die vereinbarte Prämie von %u
 0x29DA48	0x29D664	per	pro
 0x29DA4C	0x29D668	You have got time until the 	Ihr habt dazu noch Zeit bis zum
-0x29DA50	0x29D688	The pirates take	Die Piraten kapern
+0x29DA50	0x29D688	The pirates take	Die Piraten nehmen sich
 0x29DA54	0x29D69C	and set sail.	und stechen in See.
 0x29DA58	0x29D6AC	on which you could load weapons."	auf das Ihr Waffen laden könntet."
 0x29DA5C	0x29D6D0	on which you can hire sailors.	auf dem Matrosen anheuern könnten.
@@ -1272,7 +1275,7 @@
 0x2A3D44	0x2A3CEC	\\f0_Hanseatic trading office	\\f0_Hansekontor
 0x2A3D48	0x2A3D0C	\\f0_Hanseatic trading station	\\f0_Hansefaktorei
 0x2A3F68	0x2A3D4C	\\f1_This hospital is a donation of %s %s %s %s %s.	\\f1_Dieses Spital ist eine Spende %s %s %s %s %s
-0x2A3F6C	0x2A3D80	\\f1_\nThere are %i hospitals in this town and %i%% of the streets and paths have been extended.\nEpidemic precautions provided by hospitals and wells are %s.	\\f1_\nIn dieser Stadt gibt es %i Krankenhäuser, und %i%% der Straßen und Wege wurden ausgebaut.\nDer Seuchenschutz durch Krankenhäuser und Brunnen ist %s.
+0x2A3F6C	0x2A3D80	\\f1_\nThere are %i hospitals in this town and %i%% of the streets and paths have been extended.\nEpidemic precautions provided by hospitals and wells are %s.	\\f1_\nEs gibt %i Spitäler in dieser Stadt und %i%% der Straßen und Wege sind ausgebaut.\nDie Seuchenvorsorge in dieser Stadt durch Spitäler und Brunnen ist %s.
 0x2A3F70	0x2A3E1C	very bad	sehr schlecht
 0x2A3F74	0x2A3E28	bad	schlecht
 0x2A3F78	0x2A3E2C	satisfactory	ausreichend
@@ -1436,7 +1439,7 @@
 0x2A54E0	0x2A52BC	Order	Auftrag
 0x2A54E4	0x2A52C4	Prince	Landesfürst
 0x2A57C8	0x2A54E8	Armoury	Arsenal
-0x2A57CC	0x2A54F0	Repair Dock	Werft
+0x2A57CC	0x2A54F0	Repair Dock	Reparaturdock
 0x2A57D0	0x2A54FC	Road	Straßen
 0x2A57D4	0x2A5504	Weaponsmith	Waffenschmiede
 0x2A57D8	0x2A5510	Hunting Lodge	Jagdhütte
@@ -1772,8 +1775,8 @@
 0x2A9A04	0x2A98F8	Accept	Akzeptieren
 0x2A9A08	0x2A9900	\\l%s %s %s\n\n\\l\\dYour delivery has helped me and my troops greatly. As agreed, here are your %d\\C.\n\nThe Prince	\\l%s %s %s\n\n\\l\\dEure Warenlieferung hat mir und meiner Armee sehr geholfen. Hier sind die vereinbarten %d\\C.\n\nDer Landesfürst
 0x2A9A0C	0x2A9970	\\l%s %s %s\n\n\\l\\dI'm afraid I am only able to pay you %d\\C for your goods due to an unfortunate incident in my country.\n\nThe Prince	\\l%s %s %s\n\n\\l\\dLeider kann ich Euch für die überlassenen Waren aufgrund eines Zwischenfalls in meinem Lande nur %d\\C bezahlen.\n\nDer Landesfürst
-0x2AA178	0x2A9A10	\\c\\f3_Seizure\n\n\\l\\f1_The crew of the "%s" has plundered %s "%s" %s.	\\c\\f3_Enterkampf\n\n\\l\\f1_Die Besatzung der "%s" hat %s "%s" %s erobert.
-0x2AA17C	0x2A9A58	\\c\\f3_Seizure\n\n\\l\\f1_Your ship "%s" was plundered by %s "%s" %s.	\\c\\f3_Enterkampf\n\n\\l\\f1_Euer Schiff "%s" unterliegt im Enterkampf %s "%s" %s.
+0x2AA178	0x2A9A10	\\c\\f3_Seizure\n\n\\l\\f1_The crew of the "%s" has plundered %s "%s" %s.	\\c\\f3_Enterkampf\n\n\\l\\f1_Die Besatzung der "%s" hat %s "%s" %s geplündert.
+0x2AA17C	0x2A9A58	\\c\\f3_Seizure\n\n\\l\\f1_Your ship "%s" was plundered by %s "%s" %s.	\\c\\f3_Enterkampf\n\n\\l\\f1_Euer Schiff "%s" wurde von %s "%s" %s geplündert.
 0x2AA180	0x2A9A9C	%s %s: %d%%, plundered\n	%s %s: %d%%, geplündert\n
 0x2AA184	0x2A9AB4	%s %s %s %s %s was attacked and plundered by the pirate %s %s.	%s %s %s %s %s wurde heute von dem Piraten %s %s überfallen und ausgeplündert.
 0x2AA188	0x2A9AF8	 and plundered it. Your share of the goods and gold amounts to 	 geplündert. Euer Anteil aus Ladung und Gold beträgt 
@@ -1849,7 +1852,7 @@
 0x2AADE0	0x2AAC30	You did not protect your cart convoy from %s with enough guards. Robbers were able to steal some of your goods just outside of %s.	Da Euer aus %s kommender Wagenkonvoi von zu wenigen Wachen begleitet wurde, konnten Räuber kurz vor %s einen Teil der Waren stehlen.
 0x2AADE4	0x2AACB8	Everywhere is crawling with the Prince's troops! As we didn't know what on earth to do, we just dropped everything and ran for our lives.	Überall Armeen des Landesfürsten! Da wir weder ein noch aus wußten, haben wir alles stehen und liegen lassen und uns aus dem Staub gemacht.
 0x2AADE8	0x2AAD48	Robbers were able to steal some of your goods as you did not protect the cart convoy from %s with enough guards when it was returning to %s.	Da Euer aus %s kommender Wagenkonvoi von zu wenigen Wachen begleitet wurde, konnten Räuber kurz vor %s einen Teil der Waren stehlen.
-0x2AAFC0	0x2AADF0	,\n\nI hope you are aware of what you have let yourself in for here. You will be given a map with the approximate position of an alleged pirate hideout. Find the exact location of the hideaway and send your best ships there to decimate this den of iniquity.\n	,\n\nIch hoffe, Ihr wisst, worauf Ihr Euch eingelassen habt. Ihr erhaltet eine Karte mit der ungefähren Lage eines mutmaßlichen Piratenverstecks. Findet den genauen Ort und schickt Eure besten Schiffe dorthin, um diesem Sündenpfuhl ein Ende zu bereiten.
+0x2AAFC0	0x2AADF0	,\n\nI hope you are aware of what you have let yourself in for here. You will be given a map with the approximate position of an alleged pirate hideout. Find the exact location of the hideaway and send your best ships there to decimate this den of iniquity.\n	,\n\nIhr seid Euch hoffent_lich bewußt, worauf Ihr Euch ein_ge_las_sen habt. Ihr erhaltet eine Karte mit dem unge_fähren Ort des mög_lichen Piraten_ver_stecks. Findet die genaue Position des Verstecks heraus und schickt Eure besten Schiffe dorthin, um das Ver_steck der Gesetz_losen aus_zu_räuchern.\n
 0x2AAFC4	0x2AAEF8	The Council of the Hanseatic League request this order is completed by %u. %s %u.	Der Rat der Hanse gibt Euch für diesen Auftrag Zeit bis zum %u. %s %u.
 0x2AAFC8	0x2AAF50	\nWhatever you plunder in the course of completing this contract is yours to keep.\n\nThe Hanseatic League Council	\nAlles, was Ihr im Zuge dieses Auftrags erbeutet, dürft Ihr behalten.\n\nDer Rat der Hanse
 0x2AB238	0x2AAFCC	Today the council reached a decision that 	Heute wurde per Ratsbeschluß entschieden, daß 
@@ -1895,25 +1898,25 @@
 0x2ABAA0	0x2AB99C	to stop the pirate %s %s.	dem Piraten %s %s ein Ende zu setzen.
 0x2ABAA4	0x2AB9B8	to eliminate the pirates hideaway.	ein Piratenversteck auszulöschen.
 0x2ABAA8	0x2AB9DC	to make the town of %s prosper.	die Stadt %s in neuem Glanz erblühen zu lassen.
-0x2ABAAC	0x2ABA00	\nYou were however unable to fulfill the contract bestowed upon you. The Hanseatic League has withdrawn this offer.\n\n	\\c\\f1_Ihr konntet den Euch übertragenen Auftrag leider nicht erfüllen. Die Hanse hat Euch den Auftrag entzogen.
-0x2ABB78	0x2ABAB0	,\n\n\\lLast night our warehouses in 	,\n\n\\lIn der vergangenen Nacht wurden unsere Lagerhäuser in 
-0x2ABB7C	0x2ABAD4	 were the target of thieves.\n	 von Dieben heimgesucht.\n
-0x2ABB80	0x2ABAF4	The following goods were stolen:\n\\c	Folgende Waren wurden gestohlen:\n\\c
-0x2ABB84	0x2ABB18	\n\\lWe should employ more guards to prevent any more fiendish attacks.	\n\\lWir sollten mehr Wachen einstellen, damit sich solche heimtückischen Überfälle nicht wiederholen.
+0x2ABAAC	0x2ABA00	\nYou were however unable to fulfill the contract bestowed upon you. The Hanseatic League has withdrawn this offer.\n\n	\nIhr konntet den Euch übertragenen Auftrag leider nicht erfüllen. Die Hanse hat Euch deshalb den Auftrag entzogen.\n\n
+0x2ABB78	0x2ABAB0	,\n\n\\lLast night our warehouses in 	,\n\n\\lletzte Nacht hat in unse_ren Lager_häu_sern zu 
+0x2ABB7C	0x2ABAD4	 were the target of thieves.\n	 ein Dieb_stahl statt_ge_fun_den.\n
+0x2ABB80	0x2ABAF4	The following goods were stolen:\n\\c	Es wurden fol_gen_de Waren gestoh_len:\n\\c
+0x2ABB84	0x2ABB18	\n\\lWe should employ more guards to prevent any more fiendish attacks.	\n\\lWir sollten mehr Wachpersonal ein_stel_len, um solch heim_tücki_sche Taten zu verhindern.
 0x2ABB88	0x2ABB60	No goods were stolen.	Es wurden keine Waren gestohlen.
-0x2ABD0C	0x2ABB8C	,\n\n\\lOur warehouses in %s were broken into last night.	,\n\n\\lDiebe sind in der vergangenen Nacht in unsere Lagerhäuser in %s eingebrochen.
+0x2ABD0C	0x2ABB8C	,\n\n\\lOur warehouses in %s were broken into last night.	,\n\n\\lletzte Nacht hat in unseren Lagerhäusern zu %s ein Einbruch stattgefunden.
 0x2ABD10	0x2ABBC8	 However the ever vigilant guards were able to capture the culprit. He was immediately handed over to the townguard.	 Durch das aufmerksame Wachpersonal ist der Täter aber gefaßt worden. Er wurde sogleich der Stadtwache übergeben.
 0x2ABD14	0x2ABC40	 It has transpired that the culprit was in the employ of your opponent, %s %s %s %s %s.	 Dabei kam heraus, daß der Täter von einem Eurer Konkurrenten, %s %s %s %s %s, beauftragt wurde.
 0x2ABD18	0x2ABC98	 A charge has already been brought against this trader.	 Gegen diesen Händler wurde bereits Anklage erhoben.
 0x2ABD1C	0x2ABCD0	 The vigilant town guard managed to capture the culprit.	 Durch die aufmerksame Stadtwache ist der Täter aber gefaßt worden.
-0x2ABDB4	0x2ABD20	\n\\lOne of our warehouses has been lost in the town fire.	\n\\lEines unserer Lagerhäuser ist bei einem Stadtbrand verloren gegangen.
-0x2ABDB8	0x2ABD5C	 The following goods were engulfed by flames:\n\\c	 Folgende Waren wurden von den Flammen vernichtet:\n\\c
+0x2ABDB4	0x2ABD20	\n\\lOne of our warehouses has been lost in the town fire.	\n\\ldurch das Feuer in der Stadt haben wir eines unserer Lagerhäuser verloren.
+0x2ABDB8	0x2ABD5C	 The following goods were engulfed by flames:\n\\c	 Folgende Waren wurden Opfer der Flammen:\n\\c
 0x2ABDBC	0x2ABD90	 No goods however, were destroyed.	 Es verbrannten jedoch keine Waren.
 0x2AC490	0x2ABDC0	\\cBoycott of %s\n\n\\l	\\cBoykott von %s\n\n\\l
 0x2AC498	0x2ABDEC	\\cPirate fleet in %s\n\n\\l	\\cPiratenflotte in %s\n\n\\l
 0x2AC49C	0x2ABE08	\\dThe Hanseatic League Council has decided to instigate a blockade of the town of %s.	\\dDer Rat der Hanse hat beschlossen, eine Blockade gegen die Stadt %s durch_zu_führen.
 0x2AC4A0	0x2ABE60	 During this blockade no ship will be permitted to either leave or enter the port.	 Während der Blockade darf kein Schiff den Hafen weder betre_ten noch ver_lassen.
-0x2AC4A4	0x2ABEB4	\nYou are requested to provide one of your ships.	\nIhr sollt der Hanse eines Eurer Schiffe zur Verfügung stellen.
+0x2AC4A4	0x2ABEB4	\nYou are requested to provide one of your ships.	\nIhr werdet dazu auf_ge_for_dert, eines Eurer Schiffe zu stel_len.
 0x2AC4A8	0x2ABEE8	 Ensure your ship joins the blockade convoy by %u. %u. %u at the latest. It will be gathering shortly in the port of %s.	 Fügt Euer Schiff spä_testens bis zum %u. %u. %u dem Blockade_kon_voi zu, der in Kürze im Hafen von %s gebil_det wird.
 0x2AC4AC	0x2ABF68	\\dThe Hanseatic League Council has decided to create a fleet to hunt down the pirates.	\\dDer Rat der Hanse hat beschlossen, eine Flotte zur Piraten_jagd zu bilden.
 0x2AC4B0	0x2ABFC0	 The fleet - consisting of the best ships in the Hanseatic League - is to bring the much feared pirate %s %s to justice.\n	 Die Flotte - bestehend aus den besten Schiffen der Hanse - soll dem gefürch_teten Piraten %s %s ein gerech_tes Ende berei_ten.\n
@@ -1925,13 +1928,13 @@
 0x2AC4C8	0x2AC238	 You have been chosen to guard the port of %s, to prevent Hanseatic ships from illegally docking in the town's port and trying to trade there.	 Damit verhindert werden kann, daß Schiffe der Hanse un_recht_mäßig die Stadt an_lau_fen und Handel be_trei_ben, seid Ihr dazu aus_erwählt wor_den, den Hafen von %s zu bewachen.
 0x2AC4CC	0x2AC2C8	 Ensure your ship joins the boycott convoy by %u. %u. %u at the latest. The convoy will shortly be gathering in the port of %s.	 Fügt Euer Schiff spä_testens bis zum %u. %u. %u dem Boykott_kon_voi zu, der in Kürze im Hafen von %s gebil_det wird.
 0x2AC4D0	0x2AC348	\n\n\\lHanseatic League Council	\n\n\\lDer Rat der Hanse
-0x2AC4D4	0x2AC368	\nYou are requested to provide at least two of your ships.	\nIhr sollt der Hanse mindestens zwei Eurer Schiffe zur Verfügung stellen.
+0x2AC4D4	0x2AC368	\nYou are requested to provide at least two of your ships.	\nIhr werdet dazu auf_ge_for_dert, min_destens zwei Eurer Schiffe zu stellen.
 0x2AC4D8	0x2AC3A8	 Ensure your ship joins the blockade convoy by %u. %u. %u at the latest. The convoy will shortly be gathering in the port of %s.	 Fügt Eure Schiffe spä_testens bis zum %u. %u. %u dem Blockade_konvoi zu, der in Kürze im Hafen von %s gebil_det wird.
 0x2AC4DC	0x2AC430	\\dAs per its recent decision the Hanseatic League Council starts its boycott of the town of %s.	\\dDer Rat der Hanse beginnt den kürzlich beschlossenen Boykott der Stadt %s.
-0x2AC7C8	0x2AC4E0	\n\\dYou were requested to provide one of your ships for the boycott of %s. As you did not comply with this request, the Hanseatic League was unable to carry out its threat against %s in the desired manner.\nYou will probably have realised by now that such blatant disregard of decisions reached on a Hanse Day will have damaged your reputation in the whole of the Hanseatic region.\n\nThe Hanseatic League Council	Ihr wurdet dazu aufgefordert, für die Blockade des Hafens zu %s eines Eurer Schiffe bereitzustellen. Da Ihr dieser Entscheidung der Hanse nicht nachgekommen seid, konnte die Hanse-Vereinigung ihre Drohung gegen %s nicht in der geplanten Weise durchführen.\nEs wird Euch in den Sinn kommen, daß eine solche Mißachtung von Entscheidungen des Hansetages Eurem Ansehen in der gesamten Hanse schadet.\n\nDer Rat der Hanse
-0x2AC7CC	0x2AC680	\n\\dNone of the requested ships awaited the Hanseatic League in the port of %s.	\n\\dKeines der angeforderten Schiffe wartete im Hafen von %s auf die Hanse.
-0x2AC7D0	0x2AC6D0	\n\\dNone of your ships were anchored in the port of %s ready for the Hanseatic League.	\n\\dKeines Eurer Schiffe lag im Hafen von %s bereit, um der Hanse zur Verfügung zu stehen.
-0x2AC7D4	0x2AC728	\nWe are very surprised that you have so easily dismissed the expressed wish of the highest council of the Hanseatic League.\n\\r\n The Hanseatic League Council	Wir sind überrascht, daß Ihr Euch über den ausdrücklichen Wunsch dieses obersten Hansegremiums so ohne weiteres hinweg setzt.\n\\r\nDer Rat der Hanse
+0x2AC7C8	0x2AC4E0	\n\\dYou were requested to provide one of your ships for the boycott of %s. As you did not comply with this request, the Hanseatic League was unable to carry out its threat against %s in the desired manner.\nYou will probably have realised by now that such blatant disregard of decisions reached on a Hanse Day will have damaged your reputation in the whole of the Hanseatic region.\n\nThe Hanseatic League Council	\n\\dIhr wurdet dazu aufgefordert, für den Boykott zu %s eines Eurer Schiffe bereitzustellen. Da Ihr dieser Entscheidung der Hanse nicht nachgekommen seid, konnte die Hanse-Vereinigung ihre Drohung gegen %s nicht in der geplanten Weise durchführen.\nEs wird Euch in den Sinn kommen, daß eine solche Mißachtung von Entscheidungen des Hansetages Eurem Ansehen in der gesamten Hanse schadet.\n\nDer Rat der Hanse
+0x2AC7CC	0x2AC680	\n\\dNone of the requested ships awaited the Hanseatic League in the port of %s.	\n\\dKeines der geforderten Schiffe stand im Hafen von %s für die Hanse bereit.
+0x2AC7D0	0x2AC6D0	\n\\dNone of your ships were anchored in the port of %s ready for the Hanseatic League.	\n\\dKeines Eurer Schiffe stand im Hafen von %s für die Hanse bereit.
+0x2AC7D4	0x2AC728	\nWe are very surprised that you have so easily dismissed the expressed wish of the highest council of the Hanseatic League.\n\\r\n The Hanseatic League Council	\nWir sind überrascht, daß Ihr Euch über den ausdrücklichen Wunsch dieses obersten Hansegremiums so ohne weiteres hinweg setzt.\n\\r\nDer Rat der Hanse
 0x2ADD10	0x2AC7D8	The request for a pirate fleet was rejected by %u votes to %u.	Mit %u zu %u Stimmen wurde ein Antrag auf eine Piratenflotte abgelehnt.
 0x2ADD14	0x2AC818	It was decided with %u votes to create a pirate fleet. There were %u votes against the motion of creating a fleet to do battle with the pirates.	Es wurde mit %u Stimmen die Bildung einder Piratenflotte beschlossen. Gegen die Piratenflotte wurden %u Stimmen abgegeben.
 0x2ADD18	0x2AC8AC	The request for a blockade was defeated by %u votes to %u.	Mit %u zu %u Stimmen wurde ein Antrag auf eine Blockade abgelehnt.
@@ -2002,12 +2005,14 @@
 0x2AE61C	0x2AE248	\\dSeveral witnesses to a recent pirate attack on 	\\dBei dem kürzlich stattgefundenen Piratenangriff auf 
 0x2AE620	0x2AE27C	%s have sworn that they recognised your ship %s	%s haben mehrere Zeugen beschworen, Euer Schiff %s
 0x2AE624	0x2AE2B0	 displaying a pirate flag run up the mast, breaching the town's defences and plundering the town's coffers.	 erkannt zu haben, wie es die Piratenflagge führte, die Verteidigung durchbrach und die Stadtkasse plünderte.
-0x2AE634	0x2AE320	\n\n\\dThese monsterous allegations against you have strengthend and it has now been proved that you committed a punishable act undermining the good of the Hanseatic League.	\\dDie ungeheuerlichen Anschuldigungen gegen Euch haben sich erhärtet und es ist nun erwiesen, daß Ihr Euch mit Euren Straftat gegen das Wohl der Hanse gestellt habt.
-0x2AE638	0x2AE3D0	\n\n\\dThe evidence for your acts of grave piracy has become much more solid today and we regard your guilt as having been proven.	\\dDie Beweise zum Tatbestand der schweren Piraterie haben sich heute erhärtet und wir sehen Eure Schuld als erwiesen an.
+0x2AE634	0x2AE320	\n\n\\dThese monsterous allegations against you have strengthend and it has now been proved that you committed a punishable act undermining the good of the Hanseatic League.	\n\n\\dDie ungeheuerlichen Anschuldigungen gegen Euch haben sich erhärtet und es ist nun erwiesen, daß Ihr Euch mit Euren Straftat gegen das Wohl der Hanse gestellt habt.
+0x2AE638	0x2AE3D0	\n\n\\dThe evidence for your acts of grave piracy has become much more solid today and we regard your guilt as having been proven.	\n\n\\dDie Beweise zum Tatbestand der schweren Piraterie haben sich heute erhärtet und wir sehen Eure Schuld als erwiesen an.
 0x2AE63C	0x2AE450	\nWe therefore sentence you to humble penitence.\nAs expression of this penitence 	\nDaher werdet Ihr hiermit zu einer demütigen Reue verurteilt.\nAls Ausdruck dieser Reue 
 0x2AE640	0x2AE4A8	%u%s %s has been confiscated from your hometown's trading office.	wurden %u%s %s im Kontor Eurer Heimatstadt beschlagnahmt.
 0x2AE644	0x2AE4F0	You will not be permitted to run into the port of %s for the next %u weeks.	dürft Ihr die Stadt %s in den nächsten %u Wochen nicht mehr anlaufen.
-0x2AE648	0x2AE540	\n\n\\dIt was decided today that there is no proof that you have committed a punishable act undermining the good of the Hanseatic League.	\\dHeute wurde festgestellt, daß Euch keine Straftat gegen das Wohl der Hanse nachgewiesen werden kann.
+0x2AE648	0x2AE540	\n\n\\dIt was decided today that there is no proof that you have committed a punishable act undermining the good of the Hanseatic League.	\n\n\\dHeute wurde festgestellt, daß Euch keine Straftat gegen das Wohl der Hanse nachgewiesen werden kann.
+0x2AE920	0x2AE64C	Honourable %s %s,\n\n	Ehrenwerter %s %s,\n\n
+0x2AE924	0x2AE660	Honourable %s %s,\n\n	Ehrenwerte %s %s,\n\n
 0x2AE928	0x2AE678	We have managed to sell your building (%$2$s) at the %$1$s Guild's auction. It was sold at a price of %d00\\C to %s %s. The money has already been transferred to your account. We hope you don't object to us having withheld the small sum of %d0\\C in recompense for our services.	Euer Gebäude (%$2$s) konnten wir bei der Auktion der %$1$s-Gilde verkaufen. Es wurde für %d00\\C an %s %s versteigert. Der Erlös wurde bereits auf Euer Konto überwiesen. Wir hoffen, Ihr habt nichts dagegen, dass wir als Vergütung für unsere Dienste die geringe Summe von %d0\\C einbehalten haben.
 0x2AE92C	0x2AE790	We were unfortunately unable to sell your building (%s) at todays auction at the %s Guild.	leider konnten wir Euer Gebäude (%s) während der heutigen Versteigerung in der Gilde zu %s nicht veräußern.
 0x2AE930	0x2AE7F0	You have aquired your own building (%$2$s) at todays auction in %$1$s at a cost of %d00\\C. Trader's mood swings might be variable, but one thing that remains certain is our fee of %d0\\C.	Euer eigenes Gebäude (%$2$s): Bei der heutigen Auktion in %$1$s habt Ihr es für %d00\\C ersteigert. Die Launen der Händler mögen wechseln, doch unsere Gebühr von %d0\\C bleibt unverändert.
@@ -2075,7 +2080,7 @@
 0x2AF358	0x2AF2D4	Normal rent	normale Miete
 0x2AF35C	0x2AF2E0	High rent	hohe Miete
 0x2AF360	0x2AF2EC	Very high rent	sehr hohe Miete
-0x2AF364	0x2AF300	\\f1_\n\nDo you really want to auction this building with a reserve price of %d\\C?	\\f1_\n\nWollt Ihr dieses Gebäude mit einem Mindestgebot von %d\\C versteigern?
+0x2AF364	0x2AF300	\\f1_\n\nDo you really want to auction this building with a reserve price of %d\\C?	\\f1_\n\nMöchtet Ihr dieses Gebäude wirklich bei einem Mindestgebot von %d\\C versteigern?
 0x2AF3BC	0x2AF368	Number of Guard posts	Anzahl Wachposten
 0x2AF3C0	0x2AF380	Safety	Sicherheit
 0x2AF3C4	0x2AF388	Costs (per day)	Kosten (pro Tag)
@@ -2084,9 +2089,9 @@
 0x2AF3D0	0x2AF3A8	High	hoch
 0x2AF3D4	0x2AF3B0	Normal	normal
 0x2AF3D8	0x2AF3B8	Low	niedrig
-0x2AF4D8	0x2AF3E0	\\f0_\nNo ships can set sail from %s, as the Hanseatic League are blockading the port.	\\f0_\nAus dem Hafen von %s können keine Schiffe auslaufen, da die Hanse den Hafen blockiert.
+0x2AF4D8	0x2AF3E0	\\f0_\nNo ships can set sail from %s, as the Hanseatic League are blockading the port.	\\f0_\nKein Schiff kann aus %s auslaufen, da die Hanse den Hafen blockiert.
 0x2AF4DC	0x2AF438	\\f0_\nThe ship is not permitted to leave the Hanseatic fleet.	\\f0_\nDas Schiff darf die Hanseflotte nicht verlassen.
-0x2AF4E0	0x2AF478	\\f0_\nNo ships can leave the port of %s, as it is frozen solid.	\\f0_\nAus dem Hafen von %s können keine Schiffe auslaufen, da er vollständig zugefroren ist.
+0x2AF4E0	0x2AF478	\\f0_\nNo ships can leave the port of %s, as it is frozen solid.	\\f0_\nKein Schiff kann aus %s auslaufen, da der Hafen zugefroren ist.
 0x2AF4E4	0x2AF4B8	can not sail into river towns.	kann keine Flußstädte anlaufen.
 0x2AF4FC	0x2AF4E8	Land trade	Landhandel
 0x2AF500	0x2AF4F4	Barn	Scheune
@@ -2177,7 +2182,7 @@
 0x2B01AC	0x2B0080	The building is situated outside of the town walls.	Das Gebäude liegt außerhalb der Stadtmauern.
 0x2B01B0	0x2B00B4	The building is situated inside the town walls.	Das Gebäude liegt innerhalb der Stadtmauern.
 0x2B01B4	0x2B00E4	, a child	, ein Kind
-0x2B01B8	0x2B00F0	\\f1_%s %s was sold for %i\\C to %s %s %s.	\\f1_%s %s wurde für %i\\C an %s %s %s verkauft.
+0x2B01B8	0x2B00F0	\\f1_%s %s was sold for %i\\C to %s %s %s.	\\f1_%s %s ging für %i\\C an %s %s %s.
 0x2B01BC	0x2B011C	\\f1_Going on Expedition	\\f1_Auf Expedition
 0x2B01C0	0x2B0138	\\f1_You need a trading office in this town in order to participate in the auction of buildings.	\\f1_Ihr benötigt ein Kontor in dieser Stadt, um an der Gebäudeversteigerung teilnehmen zu können.
 0x2B0244	0x2B01C4	Convoy Ships	Konvoi-Schiffe
@@ -2200,7 +2205,7 @@
 0x2B04FC	0x2B039C	Load	Laden
 0x2B0500	0x2B03A4	Save	Sichern
 0x2B0504	0x2B03AC	\nThis file already exists, overwrite?	\nDiese Datei existiert bereits. Überschreiben?
-0x2B0508	0x2B03D4	\nDo you really want to delete this trade route?	\nWollen Sie diese Handelsroute wirklich löschen?
+0x2B0508	0x2B03D4	\nDo you really want to delete this trade route?	\nWollen Sie die Handelsroute wirklich löschen?
 0x2B050C	0x2B0404	%s's trade route is interrupted	Handelsroute %s unterbrochen
 0x2B0510	0x2B0424	%s's trade route: ship condition too poor	Handelsroute %s: Schiffzustand zu schlecht
 0x2B0514	0x2B0450	%s's trade route: no destination specified	Handelsroute %s: kein Ziel vorhanden
@@ -2286,7 +2291,7 @@
 0x2B19EC	0x2B1850	\nTherefore the hulk is now immediately available as a new ship type.\n\n\\lThe Town of %s	\nDadurch steht ab sofort der Holk als neuer Schiffs_typ zur Ver_fügung.\n\n\\lDie Stadt %s
 0x2B19F0	0x2B18A8	\\cYou are now a respected trader.\n\n\\l	\\cIhr seid nun ein anerkannter Händler\n\n\\l
 0x2B19F4	0x2B18D0	,\n\nYou have succeeded in becoming a well liked and respected trader in the town of %s.	,\n\nIhr habt es in %s zu einem gern gesehenen und an_er_kann_ten Händler gebracht.
-0x2B19F8	0x2B1928	 Because of this you have been granted the right to create businesses in our town.\nWishing you continued success in your trading,\n\n\\rThe Town 	 Dadurch wird Euch auch das Recht zuteil, in unserer Stadt Betriebe zu errichten.\nWeiterhin erfolgreichen Handel,\n\n\\rDie Stadt
+0x2B19F8	0x2B1928	 Because of this you have been granted the right to create businesses in our town.\nWishing you continued success in your trading,\n\n\\rThe Town 	 Dadurch wird Euch auch das Recht zuteil, in unserer Stadt Betriebe zu errichten.\nWeiterhin erfolgreichen Handel,\n\n\\rDie Stadt 
 0x2B19FC	0x2B19B8	Honourable %s %s %s %s	Geehrter %s %s %s %s
 0x2B1A00	0x2B19D0	Honourable %s %s %s %s	Geehrte %s %s %s %s
 0x2B1BC0	0x2B1A04	,\n\nImpounding by %s %s %s in %s was carried out. 	,\n\ndie Pfändung bei %s %s %s aus %s wurde durch_ge_führt.
@@ -2301,7 +2306,7 @@
 0x2B1D6C	0x2B1C70	A statue in honour of the %s Lord Mayor %s %s was officially dedicated today.	Zu Ehren des %s Bürgermeisters %s %s wurde heute eine Statue eingeweiht.
 0x2B1D70	0x2B1CC0	A statue in honour of the %s Lady Mayoress %s %s was officially dedicated today.	Zu Ehren der %s Bürgermeisterin %s %s wurde heute eine Statue eingeweiht.
 0x2B1D74	0x2B1D18	 It should forever remind us of one of the best Mayors the town of %s has ever had.	 Sie soll auf ewig an einen der besten Bürgermeister erinnern, den die Stadt %s jemals hatte.
-0x2B1E04	0x2B1D78	\n\\cManager gains experience\n\n\\lYour trade office manager in %s has gained much trading experience and is now paying himself %u\\C per day.	\n\\cDer Kontorsverwalter gewinnt an Erfahrung\n\n\\lEuer Kontorsverwalter in %s hat viel Handelserfahrung gesammelt und zahlt sich nun selbst %u\\C pro Tag.
+0x2B1E04	0x2B1D78	\n\\cManager gains experience\n\n\\lYour trade office manager in %s has gained much trading experience and is now paying himself %u\\C per day.	\n\\cVerwalter gewinnt an Erfahrung\n\n\\lEuer Kontors_ver_wal_ter zu %s hat an Han_dels_er_fah_rung ge_won_nen und zahlt sich nun %u\\C pro Tag aus.
 0x2B1F2C	0x2B1E28	Lisbon	Lissabon
 0x2B1F48	0x2B1E6C	Genoa	Genua
 0x2B1F50	0x2B1E7C	Rome	Rom
@@ -2387,11 +2392,24 @@
 0x2B2B48	0x2B2B2C	\\c\\f4_Contract completed	\\c\\f4_Aufgabe erfüllt
 0x2B2B7C	0x2B2B4C	\\c\\f4_Hanseatic League withdraws its contract	\\c\\f4_Hanse entzieht Aufgabe
 0x2B2BAC	0x2B2B80	\\c\\f1_Plundering masses besiege the town.	\\c\\f1_Plündernde Horden belagern die Stadt.
-0x2B2BD4	0x2B2BC4	Costs of loan	Darlehenskosten
+0x2B2BC0	0x2B2BB0	Steer manually	Manuell steuern
+0x2B2BD4	0x2B2BC4	Costs of loan	Lohnkosten
+0x2B2BE4	0x2B2BD8	Land taxes	Grundsteuern
 0x2B2BF8	0x2B2BE8	Trading Office	Kontorhandel
+0x2B2C10	0x2B2BFC	Manager (Stage %d)	Verwalter (Stufe %d)
+0x2B2C1C	0x2B2C14	Other	Sonstiges
 0x2B2C44	0x2B2C38	other goods	sonstige Waren
+0x2B2C64	0x2B2C48	on %i. %s %i in %s, age %i	am %i. %s %i in %s, Alter %i
+0x2B2C70	0x2B2C68	Total	Summe
+0x2B2C80	0x2B2C74	Next person	Nächste Person
+0x2B2C90	0x2B2C84	Traveller	Reisende
+0x2B2CA0	0x2B2C94	Side room	Nebenraum
+0x2B2CAC	0x2B2CA4	Total	Bilanz
 0x2B2CBC	0x2B2CB0	Warehouse	Lager
-0x2B2CD0	0x2B2CC0	Trading Office	Kontor
+0x2B2CD0	0x2B2CC0	Trading Office	Kontorhandel
+0x2B2D1C	0x2B2CE0	70.000 inhabitants	70.000 Einwohner
+0x2B2D20	0x2B2CF4	100.000 inhabitants	100.000 Einwohner
+0x2B2D24	0x2B2D08	200.000 inhabitants	200.000 Einwohner
 0x2B2D3C	0x2B2D28	Hanse population	Hansebevölkerung
 0x2B2D4C	0x2B2D40	World map	Weltkarte
 0x2B2DD8	0x2B2D90	Public news	Öffentliche Nachrichten
@@ -2411,7 +2429,7 @@
 0x2B31E0	0x2B3180	The captain %s %s has hired a crew today. He is leaving in %s the %s, on which he last served.	Der Kapitän %s %s hat heute abgeheuert. Er verläßt in %s die %s, auf der er zuletzt seinen Dienst tat.
 0x2B3274	0x2B31E8	%s %s %s %s has received the new title of  %s in her hometown %s	%s %s %s %s ist in ihrer Heimatstadt %s der neue Titel %s zuerkannt worden.
 0x2B3278	0x2B3230	%s %s %s %s has received the new title of  %s in his hometown %s	%s %s %s %s ist in seiner Heimatstadt %s der neue Titel %s zuerkannt worden.
-0x2B339C	0x2B327C	The %s has anchored in the harbour of %s today.\n	Das Schiff %s hat heute im Hafen von %s angelegt.\n
+0x2B339C	0x2B327C	The %s has anchored in the harbour of %s today.\n	Die %s ist heute im Hafen von %s vor Anker gegangen.\n
 0x2B33A0	0x2B32B0	Your convoy under the leadership of %s went to anchor today in the harbour of %s.\n	Euer Konvoi unter Führung der %s ist heute im Hafen von %s vor Anker gegangen.\n
 0x2B33A4	0x2B3304	The profit from the recent journeys amounted to %i\\C.	 Der Gewinn der letzten Fahrten beträgt %i\\C.
 0x2B33A8	0x2B333C	The loss from the recent journeys amounted to %i\\C.	 Der Verlust der letzten Fahrten beträgt %i\\C.
@@ -2420,8 +2438,8 @@
 0x2B35F0	0x2B3400	The farmers in %s are suffering from bad weather. Your farming facilities are producing a their usual level.	In %s leiden die Bauern unter schlechtem Wetter. Eure landwirtschaftlichen Betriebe produzieren schlechter als gewohnt.
 0x2B35F4	0x2B3470	The productivity of your farm in %s has again sunk to its normal level.	Die Erträge Eurer Landwirtschaft in %s sinken wieder auf die normalen Erntemengen ab.
 0x2B35F8	0x2B34B8	The harvest conditions in %s are returning to normal. And as a result, productivity is rising back to normal.	Die Erntebedingungen in %s normalisieren sich. Die Erträge steigen damit wieder auf ein normales Maß. 
-0x2B35FC	0x2B3528	Harvest of the century in %s.\n\nMake room in your trading office.	Jahrhunderternte in %s.\n\nSchafft Platz in Eurem Kontor.
-0x2B3600	0x2B356C	Crop failure in %s.\n\nDifficult times ahead.	Missernte in %s.\n\nSchwere Zeiten stehen bevor.
+0x2B35FC	0x2B3528	Harvest of the century in %s.\n\nMake room in your trading office.	Jahrhunderternte in %s.\n\nSchafft schon einmal Platz in Eurem Kontor.
+0x2B3600	0x2B356C	Crop failure in %s.\n\nDifficult times ahead.	Mißernte in %s.\n\nDürre Zeiten stehen bevor.
 0x2B3604	0x2B3598	Harvest in %s returning to normal.	Normalisierung der Ernte in %s.
 0x2B3608	0x2B35BC	Bad harvest in %s shows signs of improvement.	Schlechte Ernte in %s abgeklungen.
 0x2B3678	0x2B3610	Today %s %s %s %s %s was registered in the guild as a new member in the exalted society in the town %s.	%s %s %s %s %s wurde heute als neues Mitglied der erlesenen Gesellschaft in das Gildenbuch der Stadt %s eingetragen.
@@ -2429,11 +2447,11 @@
 0x2B37C4	0x2B3720	The %s %s %s %s opened a new trading office in %s today, marking the occasion with an official ceremony.  She now has %i trading offices throughout the Hanse.	Mit einer feierlichen Zeremonie eröffnete die %s %s %s %s in %s ihr %i. Kontor.
 0x2B3848	0x2B37C8	The %s %s %s %s is leaving his hometown %s and moving to %s.	Der %s %s %s %s kehrt seiner Heimatstadt %s den Rücken und verlegt seinen Wohnsitz nach %s.
 0x2B384C	0x2B3808	The %s %s %s %s is leaving her hometown %s and moving to %s.	Die %s %s %s %s kehrt ihrer Heimatstadt %s den Rücken und verlegt ihren Wohnsitz nach %s.
-0x2B38BC	0x2B3850	The wage for your sailors amounted to %u\\C.\n	Die Löhne Eurer Matrosen betrugen %u\\C.\n
+0x2B38BC	0x2B3850	The wage for your sailors amounted to %u\\C.\n	Die Heuer für Eure See_leute betrug %u\\C.\n
 0x2B38C0	0x2B3880	Wages cost of %u\\C have arisen in your trading offices.\n	In Euren Kon_to_ren sind %u\\C  Lohn_kos_ten an_ge_fal_len.\n
 0x2B394C	0x2B38C4	You received rental income of %u\\C for your houses last week.	In Euren Wohn_häu_sern wur_den letz_te Wo_che Mie_ten in Höhe von %u\\C ein_ge_nom_men. 
 0x2B3950	0x2B3908	Rent of %u\\C for additionally rented warehouses has to be paid.\n	Für zusätzlich angemieteten Lagerraum mußten %u\\C Miete bezahlt werden.\n
-0x2B39F0	0x2B3958	Taxes for your trading offices and workshops last week amounted to %u\\C.\n	Die Gewerbesteuern für Eure Kontore und Werkstätten betrugen letzte Woche %u\\C.\n
+0x2B39F0	0x2B3958	Taxes for your trading offices and workshops last week amounted to %u\\C.\n	Die Steuer für Eure Kon_to_re und Be_trie_be be_trug letzte Woche %u\\C.\n
 0x2B39F4	0x2B39A8	You received rent of %u for your houses. Property tax of %u\\C was paid.	In Euren Wohn_häu_sern wur_den Mie_ten in Höhe von %u\\C ein_ge_nom_men. Für Grundsteuern wurden %u\\C bezahlt.
 0x2B3AA0	0x2B39F8	A loan of %i\\C that you took out on %u-%u-%u is due in %s	Ein Darlehen über %i\\C vom %u. %u. %u wird heute in %s fällig
 0x2B3AA4	0x2B3A38	 today.\nThe loan has to be repaid within the next 10 days; otherwise, you run the risk of a seizure.	.\nDas Darlehen muß innerhalb der nächsten zehn Tage zurückgezahlt werden, sonst droht eine Pfändung.
@@ -2443,27 +2461,27 @@
 0x2B3D7C	0x2B3D40	\n\nHowever, your debt could not be repaid by it.	\n\nEure Schuld konnte damit aber nicht getilgt werden.
 0x2B3E94	0x2B3D80	Your order of %i. %s %i for %s in %s was cancelled.\nAfter subtraction of a small fee, %i\\C was repaid to you. Unfortunately, the now not needed raw materials cannot be returned.	Euer Auftrag vom %i. %s %i für %s in %s wurde annu_liert.\nNach Abzug einer kleinen Gebühr wurden Euch %i\\C zurückgezahlt. Die verplanten Rohstoffe können leider nicht rückerstattet werden.
 0x2B3E98	0x2B3E38	Your order of %i. %s %i for %s in %s cannot be cancelled.\nThe ship is already being built.	Euer Auftrag vom %i. %s %i für %s in %s kann nicht mehr annu_liert wer_den.\nDas Schiff befindet sich bereits im Bau.
-0x2B3F44	0x2B3EA0	Just a bit of information: The burglary at %s %s did not, unfortunately, go according to plan. However, you can sleep in peace, nobody is aware of attempt.\n\\r\\f5_X	Nur zur Information: Der Einbruch bei %s %s verlief leider nicht nach Plan. Ihr könnt jedoch beruhigt schlafen, niemand weiß von dem Versuch.\n\\r\\f5_X
+0x2B3F44	0x2B3EA0	Just a bit of information: The burglary at %s %s did not, unfortunately, go according to plan. However, you can sleep in peace, nobody is aware of attempt.\n\\r\\f5_X	Nur eine klei_ne Mit_tei_lung: Der Ein_bruch bei %s %s ist lei_der nicht ganz wie geplant verlaufen. Aber Ihr könnt be_ruhigt schlafen, denn niemand hat von dem Versuch etwas mitbekommen.\n\\r\\f5_X
 0x2B4178	0x2B3F48	The burglary at %s %s in fact went according to plan, but unfortunately there is nothing to be had there. Neither could any goods be destroyed.	Der Einbruch bei %s %s lief zwar nach Plan, aber es war leider nichts zu holen.\nAuch Waren konnten keine zer_stört werden.
 0x2B417C	0x2B3FD8	The burglary at %s %s was successful. Your share of the stolen gold amounts to %i\\C.\n\\r\\f5_X	Der Einbruch bei %s %s war ein Erfolg.\nEuer Anteil am geraubten Gold beträgt %i\\C\n\\r\\f5_X
 0x2B4180	0x2B4038	The burglary at %s %s was successful. No gold could in fact be stolen, but I still managed, at any rate, to destroy a total of %u\\B of the following goods:	Der Einbruch bei %s %s war erfolg_reich.\nEs konnte zwar kein Gold entwendet werden, aber immer_hin war es mir mög_lich, ins_ge_samt %u\\B fol_gen_der Waren zu zer_stören:
 0x2B4184	0x2B40D8	The burglary at %s %s was extremely successful. Your share of the stolen gold amounts to %i\\C. Apart from that, %u\\B of the following goods was made unusable:	Der Einbruch bei %s %s war äußerst erfolg_reich.\nEuer Anteil am ge_raub_ten Gold be_trägt %i\\C. Außer_dem konn_ten ins_gesamt %u\\B fol_gen_der Waren un_brauch_bar ge_macht wer_den:
-0x2B41F8	0x2B4188	Traveller from %s\n\n\\dTake me with your ship %s at the latest by %i. %s to %s. I will pay you %i\\C for doing so.	Reisender aus %s\n\n\\dBringt mich mit Eurem Schiff %s bis spätestens zum %i. %s nach %s. Ich zahle Euch dafür %i\\C.
+0x2B41F8	0x2B4188	Traveller from %s\n\n\\dTake me with your ship %s at the latest by %i. %s to %s. I will pay you %i\\C for doing so.	Rei_sen_der aus %s\n\n\\dBringt mich auf dem Schiff %s bis spätestens zum %i. %s nach %s. Für diesen Dienst will ich Euch %i\\C zahlen.
 0x2B43D0	0x2B4200	Traveller from %s\n\n\\dMany thanks for the quick and safe transportation. I am most obliged.\nHere is the payment of %i\\C, as promised.	Reisender aus %s\n\n\\dVielen Dank für den schnellen und sicheren Transport. Ich bin Euch zu großem Dank verpflichtet.\nHier ist die versprochene Bezahlung von %i\\C.
 0x2B43D4	0x2B4288	Traveller from %s\n\n\\dThank you for the safe transportation. Unfortunately, I have arrived too late.\nInstead of the agreed sum, I can only pay you %i\\C.	Reisender aus %s\n\n\\dDanke für den sicheren Transport. Leider bin ich aber zu spät angekommen.\nStatt der vereinbarten Summe kann ich Euch daher nur %i\\C zahlen.
 0x2B43D8	0x2B4320	Traveller from %s\n\n\\dBecause of your slowness, I have missed an important appointment. I told you I was in hurry, didn't I? I should never have relied on you.\n\nFare thee well!	Reisender aus %s\n\n\\dWegen Eurer Trödelei habe ich einen wichtigen Termin verpaßt. Ich sagte Euch doch, daß ich es eilig habe, aber ich hätte mich halt niemals auf Euch verlassen sollen.\n\nLebt wohl!
-0x2B48B8	0x2B43E0	\n\n\\dSevere charges have been made against you. The court will be provided with evidence that you met in 	\\dGegen Euch werden schwere Vorwürfe erhoben. Dem Gericht wurde angezeigt, daß Ihr Euch im 
+0x2B48B8	0x2B43E0	\n\n\\dSevere charges have been made against you. The court will be provided with evidence that you met in 	\n\n\\dGegen Euch werden schwere Vorwürfe erhoben. Dem Gericht wurde angezeigt, daß Ihr Euch im 
 0x2B48BC	0x2B444C	%s in the town of %s with lawless elements,	%s der Stadt %s mit Gesetzlosen
 0x2B48C0	0x2B4478	 and obviously made criminal plans with them.	 getroffen und offenkundig kriminelle Pläne geschmiedet habt.
-0x2B48C4	0x2B44A8	\n\n\\dYou are accused of recently committing a breach of the rules of the Hanseatic League by breaking the Boycott of 	\n\n\\dIhr werdet beschuldigt, kürzlich gegen die Regeln der Hanse verstoßen und den Boykott zu
+0x2B48C4	0x2B44A8	\n\n\\dYou are accused of recently committing a breach of the rules of the Hanseatic League by breaking the Boycott of 	\n\n\\dIhr werdet beschuldigt, kürzlich gegen die Regeln der Hanse verstoßen und den Boykott zu 
 0x2B48CC	0x2B4524	. Several traders observed you in this law-breaking deed.	 durchbrochen zu haben. Mehrere Händler haben Euch bei dieser gesetzesbrecherischen Tat beobachten können.
 0x2B48D0	0x2B4560	\\dSeveral witnesses have sworn that they recognised your ship 	\\dBei dem kürzlich stattgefundenen Piratenangriff haben mehrere Zeugen beschworen, Euer Schiff 
 0x2B48D8	0x2B45A8	 during the recent pirates attack, and that it was flying the pirate's flag.	 dabei erkannt zu haben, wie es die Piratenflagge führte.
-0x2B48DC	0x2B45F8	\n\n\\dA worthless scoundrel was taken into custody in 	\\dHeute wurde in 
+0x2B48DC	0x2B45F8	\n\n\\dA worthless scoundrel was taken into custody in 	\n\n\\dHeute wurde in 
 0x2B48E0	0x2B4630	%s today, as he was breaking into the trading office of %s %s	%s ein gedungener Schurke arretiert, als dieser das Kontor von %s %s
 0x2B48E4	0x2B4670	in pursuit of his criminal activities. Under careful questioning, he admitted the deed, and said, that you had paid him, to carry out this treacherous burglary.	 aufbrach und seine räuberischen Machenschaften auszuüben gedachte. Unter unserer sorgsamen 'Befragung' wurde der Dieb geständig und tat kund, von Euch bezahlt worden zu sein, diesen tückischen Bruch zu verüben.
-0x2B48E8	0x2B4718	\n\n\\dA capable trader recently succeeded in boarding a cowardly pirate ship and arrested the captain. At first, he did not admit anything, but couldn't hold out against our penetrating interrogation, and admitted it was your idea and with your support that he did this.	\\dEs gelang kürzlich einem tüchtigen Händler, ein feiges Piratenschiff zu entern und den Kapitän zu arretieren. Zunächst ungeständig, hielt er unserem eindringlichen Verhör nicht lange stand und tat kund, auf Euer Geheiß und mit Eurer Unterstützung gehandelt zu haben.
-0x2B48F4	0x2B4828	\nWe will investigate this atrocious charge. Expect a message in the near future, which will inform you of the results of our investigations.	Wir werden dieser ungeheuerlichen Anschuldigung nachgehen. Erwartet in Kürze eine Botschaft, die Euch über den Ausgang unserer Ermittlungen informiert.
+0x2B48E8	0x2B4718	\n\n\\dA capable trader recently succeeded in boarding a cowardly pirate ship and arrested the captain. At first, he did not admit anything, but couldn't hold out against our penetrating interrogation, and admitted it was your idea and with your support that he did this.	\n\n\\dEs gelang kürzlich einem tüchtigen Händler, ein feiges Piratenschiff zu entern und den Kapitän zu arretieren. Zunächst ungeständig, hielt er unserem eindringlichen Verhör nicht lange stand und tat kund, auf Euer Geheiß und mit Eurer Unterstützung gehandelt zu haben.
+0x2B48F4	0x2B4828	\nWe will investigate this atrocious charge. Expect a message in the near future, which will inform you of the results of our investigations.	\nWir werden dieser ungeheuerlichen Anschuldigung nachgehen. Erwartet in Kürze eine Botschaft, die Euch über den Ausgang unserer Ermittlungen informiert.
 0x2B4A18	0x2B48F8	\n\nToday, you have been charged for the following reason:\n	\n\nheute wurde eine Anklage aus folgendem Grund gegen Euch erhoben:\n
 0x2B4A1C	0x2B4938	\nWe will thoroughly examine this charge and inform you of the outcome of investigations as soon as possible.	\nWir werden diesen Verdacht gewissenhaft prüfen und Euch in Kürze eine Botschaft zukommen lassen, die Euch über den Ausgang unserer Ermittlungen informiert.
 0x2B4A20	0x2B49A8	You have been seen behaving indecently.	Ihr wurdet bei unzüchtigem Verhalten beobachtet.
@@ -2508,7 +2526,7 @@
 0x2B58D8	0x2B589C	 and %s	 und %s
 0x2B58DC	0x2B58A4	 and %s	, und %s
 0x2B58E0	0x2B58AC	, which is loaded with %u\\B goods.	, der %u\\B Waren geladen hat
-0x2B597C	0x2B58E8	A loan of %u\\C that you gave on %u. %s %u in %s was repaid today.\nYou will find a few words of thanks in a personal letter along with the money.	Ein Darlehen über %u\\C, das Ihr am %u. %s %u in %s vergeben habt, wurde heute zurückgezahlt.\nIn einem persönlichen Brief findet Ihr einige Dankesworte; das Geld liegt bei.
+0x2B597C	0x2B58E8	A loan of %u\\C that you gave on %u. %s %u in %s was repaid today.\nYou will find a few words of thanks in a personal letter along with the money.	Heute wurde ein Darlehen über %u\\C zurückgezahlt, das Ihr am %u. %s %u in %s vergeben hattet.\nIn einem persönlichen Anschreiben, das der Summe beilag, findet Ihr Zeilen des Danks.
 0x2B5A84	0x2B5980	The value of the company of %s %s has increased by %u\\C.	Der Wert des Unternehmens von %s %s ist um %u\\C gestiegen.
 0x2B5A88	0x2B59C0	 You will receive a dividend of %u\\C for your %u shares in this company.	 Für Eure %u Anteile an diesem Unternehmen erhaltet Ihr eine Dividende von %u\\C.
 0x2B5A8C	0x2B5A0C	The value of the company of %s %s has fallen by %u\\C.	Der Wert des Unternehmens von %s %s ist um %u\\C gefallen.
@@ -2518,7 +2536,7 @@
 0x2B5E80	0x2B5BB0	\\cAuction in 	\\cVersteigerung in 
 0x2B5E84	0x2B5BC0	\\lHonourable 	\\lEhrenwerter 
 0x2B5E88	0x2B5BD0	\\lHonourable Lady 	\\lEhrenwerte 
-0x2B5E8C	0x2B5BE4	\n\nAt the auction, which took place at the guildhall in 	\n\nBei der Versteigerung, die heuer in der Gilde zu 
+0x2B5E8C	0x2B5BE4	\n\nAt the auction, which took place at the guildhall in 	\n\nbei der Versteigerung, die heuer in der Gilde zu 
 0x2B5E90	0x2B5C1C	, we were able to sell your ship 	 stattgefunden hat, konnten wir Euer Schiff 
 0x2B5E94	0x2B5C40	 for 	 zum Preis von 
 0x2B5E98	0x2B5C48	\\C to 	\\C an 
@@ -2552,15 +2570,17 @@
 0x2B63B0	0x2B62B4	Congratulations!\n\\l\nYour wedding with 	\\cHerzlichen Glückwunsch!\n\\l\nEure Vermählung mit 
 0x2B63B4	0x2B62DC	%s %s will take place on %i. %s %i	%s %s findet am %i. %s %i
 0x2B63B8	0x2B6300	.\nIn order to appropriately cater for all guests of rank and name, please make sure that you have enough goods in stock for the wedding reception at your trading office in %s.	 statt.\nZur angemessenen Versorgung aller Gäste von Rang und Namen achtet bitte darauf, daß Ihr bis dahin genügend Waren für das Hochzeitsfest in Eurem Kontor in %s vorrätig habt.
-0x2B6444	0x2B63C0	%s %s sunk on the expedition to the South Seas on %u. %s %u.\nUnfortunately, all records by the helmsman went down with the ship.	%s %s ist am %u. %s %u. auf der Expedition in die Südsee gesunken.\nLeider sind sämtliche Aufzeichnungen des Steuermanns mit dem Schiff untergegangen.
+0x2B6444	0x2B63C0	%s %s sunk on the expedition to the South Seas on %u. %s %u.\nUnfortunately, all records by the helmsman went down with the ship.	%s %s ist am %u. %s %u auf der Expedition in die Südsee gesunken.\nLeider sind sämtliche Aufzeichnungen des Steuermanns mit dem Schiff untergegangen.
 0x2B64D4	0x2B6448	\\c\\f0_Famine in %s\n\\l\n\\f1_The wheat reserves have long been used up, the people are starving and hope for an early delivery of foodstuff.	\\c\\f0_Hungersnot in %s\n\\l\n\\f1_Die Weizenvorräte sind seit langem aufgebraucht, die Bürger der Stadt darben und hoffen auf baldige Versorgung durch neue Nahrungslieferungen.
+0x2B65E0	0x2B64D8	\\cTown wall extended\n\\l\n	\\cStadtmauer erweitert\n\\l\n
 0x2B65E4	0x2B64F4	Honourable %s %s	Ehrenwerter %s %s
 0x2B65E8	0x2B6508	Honourable lady %s %s	Ehrenwerte %s %s
 0x2B65EC	0x2B6520	,\n\nthe extension to our town wall was recently completed. Because you, as the Lord Mayor financed the protection of our town, we are compensating you with the sum of 	,\n\nder Neubau unserer Stadtmauer wurde kürzlich abgeschlossen. Da Ihr als Bürgermeister den Schutz unserer Stadt finanziert habt, entschädigen wir Euch mit dem Betrag von 
 0x2B65F0	0x2B65C8	%u\\C.\n\n\x0D\n The town %s	%u\\C.\n\n\x0D\nDie Stadt %s
-0x2B6750	0x2B6610	\n\nyou will certainly have noticed that our town was recently plundered. In order to speed up the rebuild and refill the town bank, 	es ist Euch bestimmt nicht entgangen, daß unsere Heimatstadt kürzlich geplündert wurde. Um den Wiederaufbau zu beschleunigen und die Stadtkasse wieder zu füllen, muß 
-0x2B6754	0x2B6698	 has to raise a special tax against all resident traders in the town.\nYour share amounts to 	 muss von allen ansässigen Händlern der Stadt eine Sondersteuer erheben.\nEuer Anteil beträgt 
-0x2B6758	0x2B66F8	\\C.\nPay the amount to the lender within the usual period of 20 days.\n\n\\l The town 	\\C.\nZahlt den Betrag innerhalb der üblichen Frist von 20 Tagen an den Darlehensgeber.\n\n\\l Die Stadt 
+0x2B674C	0x2B65F4	\\cRaise special taxes\n\n\\l	\\cSondersteuer wird erhoben\n\n\\l
+0x2B6750	0x2B6610	\n\nyou will certainly have noticed that our town was recently plundered. In order to speed up the rebuild and refill the town bank, 	\n\nes ist Euch bestimmt nicht entgangen, daß unsere Heimatstadt kürzlich geplündert wurde. Um den Wiederaufbau zu beschleunigen und die Stadtkasse wieder zu füllen, muß 
+0x2B6754	0x2B6698	 has to raise a special tax against all resident traders in the town.\nYour share amounts to 	 alle in der Stadt ansässigen Händler mit einer Sondersteuer belegen.\nEuer Anteil beträgt 
+0x2B6758	0x2B66F8	\\C.\nPay the amount to the lender within the usual period of 20 days.\n\n\\l The town 	\\C.\nDer Betrag ist innerhalb der üblichen Frist von 20 Tagen beim Darlehensgeber zu begleichen.\n\n\\lDie Stadt 
 0x2B6C30	0x2B6760	\\cThe siege army has plundered %s\n\\l\nThe enemy armies have broken through the town wall after %u days continuous siege and plundered %s. They captured %u\\C.	\\cBelagerer haben %s geplündert\n\\l\nFeindliche Armeen haben nach einer %u Tage andauernden Belagerung die Stadtmauer durchbrochen und %s geplündert. Dabei wurden %u\\C erbeutet.
 0x2B6C34	0x2B6800	\\cThe siege of %s has ended.\n\\l\nThe enemy was beaten back after the %u days continuous siege of the town. This was entirely due to the defence strength and high morale of the troops.	\\cBelagerung von %s beendet\n\\l\nNach der %u Tage andauernden Belagerung der Stadt konnten die feindlichen Armeen zurückgeschlagen werden. Dies sei einzig der guten Verteidigungsstärke und der hohen Truppenmoral zu verdanken.
 0x2B6C38	0x2B68B8	The enemy armies were beaten back after the %u days continuous siege of the town %s. This was entirely due to the defence strength and high morale of the troops. One building outside the town wall was destroyed.	Nach der %u Tage andauernden Belagerung der Stadt %s konnten die feindlichen Armeen zurückgeschlagen werden. Dies sei einzig der guten Verteidigungsstärke und der hohen Truppenmoral zu verdanken. Außerhalb der Stadtmauer wurde ein Gebäude zerstört.
@@ -2579,7 +2599,7 @@
 0x2B6E18	0x2B6DF8	Pirates plunder %s	Piraten plündern %s
 0x2B6F48	0x2B6E1C	\\cCoward %s %s	\\cFeiger %s %s
 0x2B6F4C	0x2B6E2C	\\cCoward %s %s	\\cFeige %s %s
-0x2B6F50	0x2B6E40	\n\\l\nAfter you had placed one of your ships for the defence of the harbour at our disposal, and were paid for it, we have unfortunately come to the conclusion, that you let us down in our hour of need. The trust we had placed you, is therefore a thing of the past.	\\l\n\\dNachdem Ihr uns eines Eurer Schiffe zur Verteidigung des Hafen zur Verfügung gestellt habt und dafür auch entlohnt wurdet, mußten wir leider feststellen, daß Ihr uns in der Stunde der Not im Stich gelassen habt. Das Vertrauen, daß Euch zunächst zuteil wurde, ist damit vergangen.
+0x2B6F50	0x2B6E40	\n\\l\nAfter you had placed one of your ships for the defence of the harbour at our disposal, and were paid for it, we have unfortunately come to the conclusion, that you let us down in our hour of need. The trust we had placed you, is therefore a thing of the past.	\n\\l\n\\dNachdem Ihr uns eines Eurer Schiffe zur Verteidigung des Hafen zur Verfügung gestellt habt und dafür auch entlohnt wurdet, mußten wir leider feststellen, daß Ihr uns in der Stunde der Not im Stich gelassen habt. Das Vertrauen, daß Euch zunächst zuteil wurde, ist damit vergangen.
 0x2B70E8	0x2B6F54	imposed export tax on goods	Waren mit einem Ausfuhrzoll belegt
 0x2B70EC	0x2B6F70	raised special tax for Hanseatic workshops	für hanseatische Betriebe eine Sondersteuer erhoben
 0x2B70F0	0x2B6F9C	been sent out bands of pirates against Hanseatic ships	Pira_ten_ver_bände gegen hanse_ati_sche Schiffe aus_ge_schickt
@@ -2605,48 +2625,50 @@
 0x2B7500	0x2B7388	 was nothing more than an attempt to intimidate the Hanseatic traders. We have heard that the town 	 war nichts anderes als der Versuch, die Händler der Hanse einzuschüchtern. Denn es ist uns zu Ohren gekommen, daß der Pirat von der Stadt 
 0x2B7504	0x2B73F0	 sent the pirate. It is therefore assumed that more pirates are on their way.\nThe members of the Hanseatic League herewith authorise you to put an end to this threat. For every pirate ship that you sink, you will get a bonus of 1000\\C.\n\\r\nThe town 	 selbst ausgesandt wurde. Es ist damit zu rechnen, daß noch weitere Piraten unterwegs sind.\nDie Mitglieder der Hanse erteilen Euch daher hiermit den Auftrag, dieser Bedrohung ein Ende zu setzen. Für jedes Piratenschiff, daß Ihr versenken könnt, erhaltet Ihr eine Prämie von 1000\\C.\n\\r\nDie Stadt 
 0x2B7600	0x2B7508	\\cKeep pirates away from %s\n\\l\n	\\cPiraten von %s aufgehalten\n\\l\n
+0x2B7604	0x2B7528	Honourable %s %s	Ehrenwerter %s %s
+0x2B7608	0x2B753C	Honourable %s %s	Ehrenwerte %s %s
 0x2B760C	0x2B7550	Many thanks for your help. It seems as if the pirates have been stopped and the town  has learnt its lesson.\nThe generous reward of 	vielen Dank für Eure Hilfe. Es scheint, als wäre den Piraten Einhalt geboten worden und die Stadt hat die Lektion gelernt.\nDie großzügige Belohnung von 
 0x2B7610	0x2B75D8	 was transferred to you.\n\\r\nThe town 	 wurde Euch übertragen.\n\\r\nDie Stadt 
-0x2B76F8	0x2B7618	\\cPlundering in %s.\n\\l\nYour trading office in %s was completely plundered by an angry mob in the town today. This hefty reaction was caused by the Hanseatic boycott of the town, which many citizens consider to unjustified.	\\cKontorplünderungen in %s\n\\l\nEuer Kontor zu %s wurde heute vom aufgebrachten Pöbel der Stadt restlos geplündert. Diese heftige Reaktion wurde durch den von den Bürgern als ungerecht empfundenen Boykott der Stadt durch die Hanse hervorgerufen.
+0x2B76F8	0x2B7618	\\cPlundering in %s.\n\\l\nYour trading office in %s was completely plundered by an angry mob in the town today. This hefty reaction was caused by the Hanseatic boycott of the town, which many citizens consider to unjustified.	\\cPlünderung in %s\n\\l\nEuer Kontor zu %s wurde heute vom aufgebrachten Pöbel der Stadt restlos geplündert. Diese heftige Reaktion wurde durch den von den Bürgern als ungerecht empfundenen Boykott der Stadt durch die Hanse hervorgerufen.
 0x2B77CC	0x2B76FC	\\cPayment of the town guards\n\\l\n	\\cBezahlung der Stadtwache\n\\l\n
 0x2B77D0	0x2B7720	\\dHonourable Lord Mayor	\\dEhrenwerter Bürgermeister 
 0x2B77D4	0x2B7738	\\dHonourable Lord Mayoress	\\dEhrenwerte Bürgermeisterin 
 0x2B77D8	0x2B7754	, your share of the costs for town guards last month came to 	, Euer Anteil an den Kosten für die Stadtwache betrug im letzten Monat 
 0x2B77DC	0x2B7794	\\C. The amount has already been collected.\n\n\\rThe town 	\\C. Der Betrag wurde bereits eingezogen.\n\n\\rDie Stadt 
-0x2B7CBC	0x2B77E0	\n\n\\dIt was decided today, that the accusation, you were in	\\dHeute wurde beschlossen, daß die Vorwürfe, Ihr wäret im 
-0x2B7CC0	0x2B7820	\n\n\\dIt was established today, that someone accused you of disregarding the boycott to	\\dHeute wurde festgestellt, daß man Euch die Mißachtung des Boykotts zu 
-0x2B7CC4	0x2B7878	\n\n\\dWe have today agreed, that due to a lack of evidence, the facts of the case of piracy cannot be upheld against you.	\\dMan hat sich heute darauf verständigt, daß Euch aufgrund mangelnder Beweise der Tatbestand der Piraterie nicht zur Last gelegt werden kann.
-0x2B7CC8	0x2B78F0	\n\n\\dIt was decided today, that the accusation, against you because of the burglary at 	\\dHeute wurde beschlossen, daß die Vorwürfe, die gegen Euch aufgrund des Einbruches bei 
-0x2B7CCC	0x2B7948	\n\n\\dThe charge on the basis of the suspicion, that you had hired a pirate to attack your competitor, has turned out to be without substance.	\\dDie Anklage aufgrund des Verdachts, Ihr hättet einen Piraten mit dem Überfallen Eurer Konkurrenten beauftragt, hat sich als frei erfunden herausgestellt.
-0x2B7CD0	0x2B79D8	\n\n\\dIt was decided today, that the accusation, you had behaved indecently	\\dHeute wurde beschlossen, daß die Vorwürfe, Ihr hättet Euch unzüchtig verhalten,
-0x2B7CD4	0x2B7A28	\n\n\\dIt was decided today, that the accusation, you had carried out heresy	\\dHeute wurde beschlossen, daß die Vorwürfe, Ihr hättet Ketzerei betrieben,
-0x2B7CD8	0x2B7A78	\n\n\\dIt was decided today, that the accusation, you had said that the world was round	\\dHeute wurde beschlossen, daß die Vorwürfe, Ihr hättet behauptet, die Erde sei rund,
+0x2B7CBC	0x2B77E0	\n\n\\dIt was decided today, that the accusation, you were in	\n\n\\dHeute wurde beschlossen, daß die Vorwürfe, Ihr wäret im 
+0x2B7CC0	0x2B7820	\n\n\\dIt was established today, that someone accused you of disregarding the boycott to	\n\n\\dHeute wurde festgestellt, daß man Euch die Mißachtung des Boykotts zu 
+0x2B7CC4	0x2B7878	\n\n\\dWe have today agreed, that due to a lack of evidence, the facts of the case of piracy cannot be upheld against you.	\n\n\\dMan hat sich heute darauf verständigt, daß Euch aufgrund mangelnder Beweise der Tatbestand der Piraterie nicht zur Last gelegt werden kann.
+0x2B7CC8	0x2B78F0	\n\n\\dIt was decided today, that the accusation, against you because of the burglary at 	\n\n\\dHeute wurde beschlossen, daß die Vorwürfe, die gegen Euch aufgrund des Einbruches bei 
+0x2B7CCC	0x2B7948	\n\n\\dThe charge on the basis of the suspicion, that you had hired a pirate to attack your competitor, has turned out to be without substance.	\n\n\\dDie Anklage aufgrund des Verdachts, Ihr hättet einen Piraten mit dem Überfallen Eurer Konkurrenten beauftragt, hat sich als frei erfunden herausgestellt.
+0x2B7CD0	0x2B79D8	\n\n\\dIt was decided today, that the accusation, you had behaved indecently	\n\n\\dHeute wurde beschlossen, daß die Vorwürfe, Ihr hättet Euch unzüchtig verhalten,
+0x2B7CD4	0x2B7A28	\n\n\\dIt was decided today, that the accusation, you had carried out heresy	\n\n\\dHeute wurde beschlossen, daß die Vorwürfe, Ihr hättet Ketzerei betrieben,
+0x2B7CD8	0x2B7A78	\n\n\\dIt was decided today, that the accusation, you had said that the world was round	\n\n\\dHeute wurde beschlossen, daß die Vorwürfe, Ihr hättet behauptet, die Erde sei rund,
 0x2B7CDC	0x2B7AD0	 in the town of 	 der Stadt 
 0x2B7CE0	0x2B7AE4	 in contact with law-breakers, are not tenable.	 mit Gesetzlosen in Kontakt getreten, nicht haltbar sind.
 0x2B7CE4	0x2B7B14	 cannot be sufficiently proved.	 nicht ausreichend nachweisen kann.
 0x2B7CE8	0x2B7B38	which were raised in the town, are not tenable. For some inexplicable reason, all evidence has disappeared.	 in der Stadt erhoben wurden, nicht haltbar sind. Aus unerklärlichen Gründen sind alle Beweise spurlos verschwunden.
-0x2B7CEC	0x2B7BA8	The charges have therefore been dropped and you reputation remains flawless.\nWe graciously beg your forgiveness for any disadvantageous conditions that might have occurred because of this.	\\dDie Anklage wurde daher fallengelassen und Euer Leumund ist unbefleckt.\nHuldvoll bitten wir Euch um Vergebung, sollten Euch nachteilige Umstände entstanden sein.
+0x2B7CEC	0x2B7BA8	The charges have therefore been dropped and you reputation remains flawless.\nWe graciously beg your forgiveness for any disadvantageous conditions that might have occurred because of this.	 Die Anklage wurde daher fallengelassen und Euer Leumund ist unbefleckt.\nHuldvoll bitten wir Euch um Vergebung, sollten Euch nachteilige Umstände entstanden sein.
 0x2B7CF0	0x2B7C68	not tenable. The charge was therefore dropped and your good reputation restored.	nicht haltbar sind. Die Anklage wurde daher fallengelassen und Euer guter Ruf wieder hergestellt.
-0x2B8080	0x2B7CF4	\n\n\\dThe accusation, that you were in 	\\dDie Vorwürfe, Ihr wäret im 
-0x2B8084	0x2B7D20	\n\n\\dYou were today found guilty, that you have broken the boycott to 	\\dIhr wurdet heute für schuldig befunden, den Boykott zu 
+0x2B8080	0x2B7CF4	\n\n\\dThe accusation, that you were in 	\n\n\\dDie Vorwürfe, Ihr wäret im 
+0x2B8084	0x2B7D20	\n\n\\dYou were today found guilty, that you have broken the boycott to 	\n\n\\dIhr wurdet heute für schuldig befunden, den Boykott zu 
 0x2B8088	0x2B7D68	\n\n\\dThe evidence in case of piracy have hardened today and we see the case against you as proven.	\n\n\\dDie Beweise zum Tatbestand der Piraterie haben sich heute erhärtet und wir sehen Eure Schuld als erwiesen an.
-0x2B808C	0x2B7DD0	\n\n\\dIt has turned out be true that you the devious burglary at 	\\dEs hat sich als wahr herausgestellt, daß Ihr einen hinterhältigen Einbruch bei 
+0x2B808C	0x2B7DD0	\n\n\\dIt has turned out be true that you the devious burglary at 	\n\n\\dEs hat sich als wahr herausgestellt, daß Ihr einen hinterhältigen Einbruch bei 
 0x2B8090	0x2B7E10	\n\n\\dThe monstrous accusation against you, that you hired a pirate to attack one of your competitors, has hardened and has been proven.	\n\n\\dDer ungeheuerliche Vorwurf, dass Ihr einen Piraten mit einem Angriff auf einen Eurer Konkurrenten beauftragt habt, hat sich erhärtet und gilt als erwiesen.
-0x2B8094	0x2B7E98	\n\nThe accusation that you behaved indecently	\n\nDer Vorwurf, Ihr hättet Euch unsittlich verhalten
-0x2B8098	0x2B7EC8	\n\nThe accusation that you committed heresy	\n\nDer Vorwurf, Ihr hättet Ketzerei begangen
-0x2B809C	0x2B7EF4	\n\nThe accusation, that you said that the world was round	\n\nDer Vorwurf, Ihr hättet behauptet, die Welt sei rund
+0x2B8094	0x2B7E98	\n\nThe accusation that you behaved indecently	\n\nder Vorwurf, Ihr hättet Euch unsittlich verhalten
+0x2B8098	0x2B7EC8	\n\nThe accusation that you committed heresy	\n\nder Vorwurf, Ihr hättet Ketzerei begangen
+0x2B809C	0x2B7EF4	\n\nThe accusation, that you said that the world was round	\n\nder Vorwurf, Ihr hättet behauptet, die Welt sei rund
 0x2B80A0	0x2B7F30	 in the town of 	 in der Stadt 
 0x2B80A4	0x2B7F48	 and that you had contact with law-breakers, was confirmed today.	 mit Gesetzlosen in Kontakt getreten, wurden heute bestätigt.
 0x2B80AC	0x2B7F8C	have incited.	 angestiftet habt.
 0x2B80B0	0x2B7F9C	 have hardened today and we see the case against as proven.	 hat sich heute erhärtet und wir sehen Eure Schuld als erwiesen an.
 0x2B80B4	0x2B7FD8	\nTherefore, you are herewith sentenced to a humiliating remorse.\nExpression of this remorse will be a fine of 	\nDaher werdet Ihr hiermit zu einer demütigen Reue verurteilt.\nAls Ausdruck dieser Reue wird eine Geldstrafe verhängt in Höhe von 
-0x2B80B8	0x2B8048	%u\\C, which is to be paid within 20 days to the lender.	%u\\C, die innerhalb von 20 Tagen beim Geldverleiher zu entrichten ist.
+0x2B80B8	0x2B8048	%u\\C, which is to be paid within 20 days to the lender.	%u\\C, die innerhalb von 20 Tagen beim Darlehensgeber zu entrichten ist.
 0x2B8194	0x2B80BC	\\cCaptain has gained experience\n\n\\l\\dThe captain 	\\cDer Kapitän gewinnt an Erfahrung\n\n\\l\\dDer Kapitän 
 0x2B8198	0x2B80F0	, who currently commands the 	, der derzeit die 
 0x2B819C	0x2B8110	, demands a daily wage of 	 kommandiert, verlangt ab heute einen Tageslohn von 
 0x2B81A0	0x2B8130	%u\\C. He has gained so much experience that he sees no problem in justifying the new wage demand.	%u\\C. Er hat soviel Erfahrung gewonnen, daß er den neuen Lohn allemal für gerechtfertigt hält.
 0x2B8288	0x2B81A4	\\lAble business man 	\\lGeschäftstüchtiger 
-0x2B828C	0x2B81C0	\n\n\\dThank you for your generous offer \n, however, I am very satisfied here at the moment, so that I'm not currently interested in changing over to your service.\n\n\\cGreetings!\n\\r	\\dHabt Dank für Euer generöses Angebot -\njedoch fühle ich mich sehr wohl hier, so daß ich derzeit nicht an einem Wechsel in Eure Dienste interessiert bin.\n\n\\cEs grüßt Euch\n\\r
+0x2B828C	0x2B81C0	\n\n\\dThank you for your generous offer \n, however, I am very satisfied here at the moment, so that I'm not currently interested in changing over to your service.\n\n\\cGreetings!\n\\r	\n\n\\dHabt Dank für Euer generöses Angebot -\njedoch fühle ich mich sehr wohl hier, so daß ich derzeit nicht an einem Wechsel in Eure Dienste interessiert bin.\n\n\\cEs grüßt Euch\n\\r
 0x2B8290	0x2B8274	,\nCaptain of the 	,\nKapitän der 
 0x2B8324	0x2B8294	\\lMiser 	\\lGeizender 
 0x2B8328	0x2B82A0	\n\nyou should get enough money together the next time, before you try to woo a captain of my rank and name.\n\n\\cWithout greetings\n\x0D	\n\nnächstes Mal solltet Ihr genügend Barschaft zusammengeklaubt haben, bevor Ihr versucht, einen Kapitän meines Ranges und Namens abzuwerben.\n\n\\cGrußlos\n\x0D
@@ -2654,6 +2676,7 @@
 0x2B83D4	0x2B8358	 and will be starting shortly afterwards at one of your competitors.\n\n\\rFare thee well! (And thank you for the fish).\n	 und beginne demnächst bei einem Eurer Konkurrenten.\n\n\\rLebt wohl (und danke für den Fisch),\n
 0x2B845C	0x2B83D8	\\lAuspicious 	\\lVerheißungsvoller 
 0x2B8460	0x2B83E8	\n\nI accept your generous offer with profound gratitude.\nI await you on the 	\n\nin tiefstem Dank akzeptiere ich Eurer generöses Angebot.\nIch erwarte Euch auf der 
+0x2B8468	0x2B843C	\n\n\\cWith nautical regads.\n\\r	\n\n\\cMit seemännischen Grüßen,\n\\r
 0x2B8748	0x2B846C	\\lCharitable 	\\lMildtätiger 
 0x2B874C	0x2B847C	\\lAlthough favourably 	\\lWohlwollender 
 0x2B8750	0x2B8498	\n\ndisposed towards you, I must unfortunately tell you, and this, with the deepest regret, that I am tired of life aboard ship and yearn for the well-deserved peace of retirement.\nAs soon as my beloved 	\n\nerfüllt mit tiefstem Bedauern, muß ich Euch leider mitteilen, daß ich der Tage zur See müde bin und mich nach der wohlverdienten Ruhe des Alters sehne.\nSobald meine geliebte 
@@ -2679,7 +2702,7 @@
 0x2B8D60	0x2B8D20	\nYours faithfully\n\nThe Town Council of 	\nHochachtungsvoll\n\nDer Rat der Stadt 
 0x2B8E58	0x2B8D64	Dear 	Werter 
 0x2B8E5C	0x2B8D6C	Dear 	Werte 
-0x2B8E60	0x2B8D78	\n\nWe had relied on your word of honour in respect of the supplies of 	\n\nWir hatten uns bezüglich der Warenlieferung von 
+0x2B8E60	0x2B8D78	\n\nWe had relied on your word of honour in respect of the supplies of 	\n\nwir hatten uns bezüglich der Waren_lieferung von 
 0x2B8E64	0x2B8DC0	. Unfortunately, we were very disappointed and will have to think twice about giving you such an important order in the future.\n\nThe Town Council of 	 auf Euer Ehren_wort verlassen. Leider wurden wir schwer ent_täuscht und werden uns in Zukunft zwei_mal über_legen, ob wir Euch einen solch wichtigen Auftrag erteilen werden.\n\nDer Rat der Stadt 
 0x2B8FB8	0x2B8E68	Honourable %s %s	Ehrenwerter %s %s
 0x2B8FBC	0x2B8E7C	Honourable %s %s	Ehrenwerte %s %s
@@ -2789,6 +2812,10 @@
 0x2C0CC8	0x2C0CA0	Crayer	Kraier
 0x2C0CCC	0x2C0CA8	Cog	Kogge
 0x2C0CD0	0x2C0CAC	Hulk	Holk
+0x2C0D0C	0x2C0CDC	Mar	Mär
+0x2C0D14	0x2C0CE4	May	Mai
+0x2C0D28	0x2C0CF8	Oct	Okt
+0x2C0D30	0x2C0D00	Dec	Dez
 0x2C0DA0	0x2C0D34	January	Januar
 0x2C0DA4	0x2C0D3C	February	Februar
 0x2C0DA8	0x2C0D48	March	März
@@ -3031,6 +3058,8 @@
 0x2C2244	0x2C2230	on %i. %s %i	am %i. %s %i
 0x2C2250	0x2C2248	imp.	Imp.
 0x2C225C	0x2C2254	exp.	Exp.
+0x2C2268	0x2C2260	max.	max
+0x2C2274	0x2C226C	min.	min
 0x2C2280	0x2C2278	back	Zurück
 0x2C2298	0x2C2284	build piece of wall	Mauerteil bauen
 0x2C22AC	0x2C229C	build street	Straße bauen

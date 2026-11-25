@@ -116,6 +116,8 @@
 0x29ACAC	200 load	200 laster
 0x29ACB0	300 load	300 laster
 0x29ACB4	500 load	500 laster
+0x29ACB8	1.000 load	1 000 laster
+0x29ACBC	2.000 load	2 000 laster
 0x29ADE8	Game resolution	Spillopploesning
 0x29ADEC	Color depth	Fargedybde
 0x29ADF8	Detail level	Detaljnivaa
@@ -546,7 +548,7 @@
 0x2A5800	Iron smelter	Jernsmelteverk
 0x2A5804	Sheep farm	Sauegaard
 0x2A5808	Vineyard	Vingaard
-0x2A580C	Pottery	Pottemaker
+0x2A580C	Pottery	Pottemakeri
 0x2A5814	Pitchmaker	Bekbrenneri
 0x2A5818	Hemp farm	Hampaaker
 0x2A581C	Merchant's House	Kjoepmannsgaard
@@ -686,6 +688,8 @@
 0x2AAB80	Town rebuilt	By gjenoppbygd
 0x2ABB88	No goods were stolen.	Ingen varer ble stjaalet.
 0x2ADD70	\\cExtraordinary Hanse Day	\\cEkstraordinaer hansadag
+0x2AE920	Honourable %s %s,\n\n	Aerede %s %s,\n\n
+0x2AE924	Honourable %s %s,\n\n	Aerede frue %s %s,\n\n
 0x2AEF18	Choose Map	Velg kart
 0x2AEF28	Standard Map	Standardkart
 0x2AEF2C	Random Map	Tilfeldig kart
@@ -833,15 +837,20 @@
 0x2B2B48	\\c\\f4_Contract completed	\\c\\f4_Kontrakt fullfoert
 0x2B2B7C	\\c\\f4_Hanseatic League withdraws its contract	\\c\\f4_Hansaen trekker tilbake kontrakten
 0x2B2BC0	Steer manually	Styr for haand
-0x2B2BD4	Costs of loan	Laanekostnader
+0x2B2BD4	Costs of loan	Loennskostnader
 0x2B2BE4	Land taxes	Grunnskatt
+0x2B2C10	Manager (Stage %d)	Forvalter (nivaa %d)
 0x2B2C1C	Other	Diverse
+0x2B2C64	on %i. %s %i in %s, age %i	den %i. %s %i i %s, %i aar gammel
 0x2B2C70	Total	Sum
 0x2B2C80	Next person	Neste person
 0x2B2C90	Traveller	Reisende
 0x2B2CA0	Side room	Sidekammer
 0x2B2CAC	Total	Sum
 0x2B2CDC	Details	Detaljer
+0x2B2D1C	70.000 inhabitants	70 000 innbyggere
+0x2B2D20	100.000 inhabitants	100 000 innbyggere
+0x2B2D24	200.000 inhabitants	200 000 innbyggere
 0x2B2D3C	Hanse population	Hansaens folketall
 0x2B2D4C	World map	Verdenskart
 0x2B2DD8	Public news	Offentlige nyheter
@@ -852,6 +861,11 @@
 0x2B502C	Reject offer	Avslaa tilbud
 0x2B503C	Take back	Ta tilbake
 0x2B52A0	Accept offer	Godta tilbud
+0x2B65E0	\\cTown wall extended\n\\l\n	\\cBymuren utvidet\n\\l\n
+0x2B674C	\\cRaise special taxes\n\n\\l	\\cEkstraskatt skrives ut\n\n\\l
+0x2B7604	Honourable %s %s	Aerede %s %s
+0x2B7608	Honourable %s %s	Aerede frue %s %s
+0x2B8468	\n\n\\cWith nautical regads.\n\\r	\n\n\\cMed sjoemannshilsen,\n\\r
 0x2C0840	harbour town	havneby
 0x2C0844	trading post	handelsstasjon
 0x2C0848	indian tribe	indianerstamme
@@ -914,6 +928,18 @@
 0x2C0CC8	Crayer	Kraier
 0x2C0CCC	Cog	Kogge
 0x2C0CD0	Hulk	Holk
+0x2C0D04	Jan	jan
+0x2C0D08	Feb	feb
+0x2C0D0C	Mar	mar
+0x2C0D10	Apr	apr
+0x2C0D14	May	mai
+0x2C0D18	Jun	jun
+0x2C0D1C	Jul	jul
+0x2C0D20	Aug	aug
+0x2C0D24	Sep	sep
+0x2C0D28	Oct	okt
+0x2C0D2C	Nov	nov
+0x2C0D30	Dec	des
 0x2C0DA0	January	januar
 0x2C0DA4	February	februar
 0x2C0DA8	March	mars
@@ -1073,6 +1099,8 @@
 0x2C2210	Total (income - expenditure)	Sum (inntekter - utgifter)
 0x2C2250	imp.	imp.
 0x2C225C	exp.	eksp.
+0x2C2268	max.	maks
+0x2C2274	min.	min
 0x2C2280	back	tilbake
 0x2C2298	build piece of wall	bygg et murstykke
 0x2C22AC	build street	bygg vei
@@ -3129,7 +3157,7 @@ frag	day_many	{n} dager
 0x2B2A8C	He	Han
 0x2B2BF8	Trading Office	Kontorhandel
 0x2B2CBC	Warehouse	Lagerhus
-0x2B2CD0	Trading Office	Kontor
+0x2B2CD0	Trading Office	Kontorhandel
 0x2B2DF0	 and 	 og 
 0x2B30DC	A new	Et nytt
 0x2B30E0	A new	En ny

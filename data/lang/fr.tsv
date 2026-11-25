@@ -116,6 +116,8 @@
 0x29ACAC	200 load	200 lasts
 0x29ACB0	300 load	300 lasts
 0x29ACB4	500 load	500 lasts
+0x29ACB8	1.000 load	1 000 lasts
+0x29ACBC	2.000 load	2 000 lasts
 0x29ADE8	Game resolution	Résolution du jeu
 0x29ADEC	Color depth	Profondeur de couleur
 0x29ADF8	Detail level	Niveau de détail
@@ -546,7 +548,7 @@
 0x2A5800	Iron smelter	Fonderie de fer
 0x2A5804	Sheep farm	Elevage de moutons
 0x2A5808	Vineyard	Vignoble
-0x2A580C	Pottery	Poterie
+0x2A580C	Pottery	Atelier de potier
 0x2A5814	Pitchmaker	Poissier
 0x2A5818	Hemp farm	Culture du chanvre
 0x2A581C	Merchant's House	Maison de marchand
@@ -686,6 +688,8 @@
 0x2AAB80	Town rebuilt	Ville reconstruite
 0x2ABB88	No goods were stolen.	Aucune marchandise n'a été volée.
 0x2ADD70	\\cExtraordinary Hanse Day	\\cDiète hanséatique extraordinaire
+0x2AE920	Honourable %s %s,\n\n	Honorable %s %s,\n\n
+0x2AE924	Honourable %s %s,\n\n	Honorable dame %s %s,\n\n
 0x2AEF18	Choose Map	Choisir la carte
 0x2AEF28	Standard Map	Carte standard
 0x2AEF2C	Random Map	Carte aléatoire
@@ -734,7 +738,7 @@
 0x2AFDB8	Iron smelters	Fonderies de fer
 0x2AFDBC	Sheep farms	Elevages de moutons
 0x2AFDC0	Vineyards	Vignobles
-0x2AFDC4	Potteries	Poteries
+0x2AFDC4	Potteries	Ateliers de potier
 0x2AFDCC	Pitchmakers	Poissiers
 0x2AFDD0	Hemp farms	Cultures de chanvre
 0x2AFDD4	Merchant's Houses	Maisons de marchands
@@ -833,15 +837,20 @@
 0x2B2B48	\\c\\f4_Contract completed	\\c\\f4_Mission accomplie
 0x2B2B7C	\\c\\f4_Hanseatic League withdraws its contract	\\c\\f4_La Hanse retire sa mission
 0x2B2BC0	Steer manually	Piloter manuellement
-0x2B2BD4	Costs of loan	Coût du prêt
+0x2B2BD4	Costs of loan	Coût des salaires
 0x2B2BE4	Land taxes	Impôts fonciers
+0x2B2C10	Manager (Stage %d)	Administrateur (degré %d)
 0x2B2C1C	Other	Divers
+0x2B2C64	on %i. %s %i in %s, age %i	le %i %s %i à %s, âgé de %i ans
 0x2B2C70	Total	Total
 0x2B2C80	Next person	Personne suivante
 0x2B2C90	Traveller	Voyageur
 0x2B2CA0	Side room	Salle annexe
 0x2B2CAC	Total	Total
 0x2B2CDC	Details	Détails
+0x2B2D1C	70.000 inhabitants	70 000 habitants
+0x2B2D20	100.000 inhabitants	100 000 habitants
+0x2B2D24	200.000 inhabitants	200 000 habitants
 0x2B2D3C	Hanse population	Population de la Hanse
 0x2B2D4C	World map	Carte du monde
 0x2B2DD8	Public news	Nouvelles publiques
@@ -852,6 +861,11 @@
 0x2B502C	Reject offer	Refuser l'offre
 0x2B503C	Take back	Reprendre
 0x2B52A0	Accept offer	Accepter l'offre
+0x2B65E0	\\cTown wall extended\n\\l\n	\\cRemparts agrandis\n\\l\n
+0x2B674C	\\cRaise special taxes\n\n\\l	\\cLevée d'un impôt exceptionnel\n\n\\l
+0x2B7604	Honourable %s %s	Honorable %s %s
+0x2B7608	Honourable %s %s	Honorable dame %s %s
+0x2B8468	\n\n\\cWith nautical regads.\n\\r	\n\n\\cAvec mes salutations de marin,\n\\r
 0x2C0840	harbour town	ville portuaire
 0x2C0844	trading post	comptoir secondaire
 0x2C0848	indian tribe	tribu indienne
@@ -914,6 +928,18 @@
 0x2C0CC8	Crayer	Kraier
 0x2C0CCC	Cog	Cogue
 0x2C0CD0	Hulk	Hourque
+0x2C0D04	Jan	janv.
+0x2C0D08	Feb	févr.
+0x2C0D0C	Mar	mars
+0x2C0D10	Apr	avr.
+0x2C0D14	May	mai
+0x2C0D18	Jun	juin
+0x2C0D1C	Jul	juil.
+0x2C0D20	Aug	août
+0x2C0D24	Sep	sept.
+0x2C0D28	Oct	oct.
+0x2C0D2C	Nov	nov.
+0x2C0D30	Dec	déc.
 0x2C0DA0	January	janvier
 0x2C0DA4	February	février
 0x2C0DA8	March	mars
@@ -1073,6 +1099,8 @@
 0x2C2210	Total (income - expenditure)	Total [ recettes - dépenses ]
 0x2C2250	imp.	imp.
 0x2C225C	exp.	exp.
+0x2C2268	max.	max
+0x2C2274	min.	min
 0x2C2280	back	retour
 0x2C2298	build piece of wall	construire un pan de mur
 0x2C22AC	build street	construire une rue
@@ -3129,7 +3157,7 @@ frag	day_many	{n} jours
 0x2B2A8C	He	Il
 0x2B2BF8	Trading Office	Commerce du comptoir
 0x2B2CBC	Warehouse	Entrepôt
-0x2B2CD0	Trading Office	Comptoir
+0x2B2CD0	Trading Office	Commerce du comptoir
 0x2B2DF0	 and 	 et 
 0x2B30DC	A new	Un nouveau
 0x2B30E0	A new	Une nouvelle

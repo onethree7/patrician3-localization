@@ -1,6 +1,6 @@
 # Scope	English	German
 render	Guild	Gilde
-render	Town information	Stadtinformationen
+render	Town information	Stadtinformation
 render	Statistics	Statistik
 render	Goods Supply	Warenversorgung
 render	Ships in port	Schiffe im Hafen
@@ -19,12 +19,9 @@ render	Only city businesses taken into consideration.	Nur städtische Betriebe w
 render	Goods for sale	Warenangebot
 render	No ships available	Keine Schiffe verfügbar
 render	Autosave	Automatisches Speichern
-render	Fast forward	Vorspulen
+render	Fast forward	Vorlauf
 render	Configure letter files	Briefablage konfigurieren
 render	Costs (per day)	Kosten (pro Tag)
-render	Steer manually	Manuell steuern
-render	Land taxes	Grundsteuer
-render	Side room	Nebenraum
 render	amtliche Nachricht: Elections	Amtliche Nachricht: Wahlen
 render	amtliche Nachricht: Hanse Day	Amtliche Nachricht: Hansetag
 render	He demands 50% of the loot.	Er verlangt 50 % der Beute.
@@ -34,7 +31,6 @@ render	Construction menu	Baumenü
 render	Demolish building	Gebäude abreißen
 render	End turn	Zug beenden
 render	Personal settings	Persönliche Einstellungen
-render	Other	Sonstiges
 render	Public notices	Öffentliche Nachrichten
 render	Delete letters	Brief löschen
 render	City data	Stadtdaten
@@ -66,16 +62,14 @@ render	Coalmine	Bergwerk
 render	Coining	Münze
 render	Raw materials	Rohstoffe
 render	Condition	Zustand
-render	Create convoy	Konvoi erstellen
+render	Create convoy	Konvoi bilden
 render	Leave town	Stadt verlassen
 render	Own buildings	Eigene Gebäude
-render	City buildings	Stadtgebäude
+render	City buildings	Städtische Gebäude
 render	Crew	Besatzung
 render	pro load	pro Ladung
-render	1.000 load	1.000 Last
-render	2.000 load	2.000 Last
 render	Chronicle	Chronik
-render	Money lender	Geldverleiher
+render	Money lender	Darlehensgeber
 render	Harbourmaster	Hafenmeister
 render	Tooltips	Hinweise
 render	Utilization Markup	Auslastungszuschlag
@@ -160,6 +154,112 @@ render	IronGoods	Eisenwaren
 render	WhaleOil	Tran
 render	PigIron	Eisenerz
 addon	Pottery	Keramik
+# String resources by ID (tooltips, buttons); German text as in Patrizier 2 Gold
+resource:20000	Options	Optionen
+resource:20001	Fast forward	Vorlauf
+resource:20002	Construction menu	Baumenü
+resource:20003	End turn	Zug beenden
+resource:20004	Ships in port	Schiffe im Hafen
+resource:20005	Ships at sea	Schiffe auf See
+resource:20006	Convoys in port	Konvois im Hafen
+resource:20007	Convoys at sea	Konvois auf See
+resource:20008	News	Nachrichten
+resource:20009	Public notices	Öffentliche Nachrichten
+resource:20010	Official letters	Amtliche Schreiben
+resource:20011	Personal letters	Persönliche Briefe
+resource:20012	Trading information	Handelsinfos
+resource:20013	Configure letter files	Briefablage konfigurieren
+resource:20014	Delete letters	Brief löschen
+resource:20015	City data	Stadtdaten
+resource:20016	Municipal comparison	Städtevergleich
+resource:20017	Own company	Eigenes Unternehmen
+resource:20018	Competition	Konkurrenz
+resource:20019	Trading office	Kontor
+resource:20020	City buildings	Städtische Gebäude
+resource:20021	Raw materials	Rohstoffe
+resource:20022	Finishing	Veredelung
+resource:20023	Change map	Karte wechseln
+resource:20024	Population	Einwohner
+resource:20025	Own buildings	Eigene Gebäude
+resource:20026	Leave town	Stadt verlassen
+resource:20027	Ship overview	Schiffsliste
+resource:20028	Goods	Waren
+resource:20029	Crew	Besatzung
+resource:20031	Create convoy	Konvoi bilden
+resource:20032	Disband convoy	Konvoi auflösen
+resource:20033	Convoy view	Konvoiansicht
+resource:20034	Auto trade	Handelsroute
+resource:20035	Small catapult	kleine Blide
+resource:20036	Small ballista	kleines Werk
+resource:20037	Selling to the town	Verkaufe an Stadt
+resource:20038	Transfer to office	Transfer in Kontor
+resource:20039	Buying from town	Kaufe von Stadt
+resource:20040	Transfer from office	Transfer von Kontor
+resource:20041	Fortification	Befestigung
+resource:20042	Continue	Weiter
+resource:20043	Back	Zurück
+resource:20044	Demolish building	Gebäude abreißen
+resource:20045	Statistics	Geld & Statistik
+resource:20046	Chronicle	Zeit & Chronik
+resource:20048	Select all	Alle selektieren
+resource:20049	Capture	Kapern
+resource:20050	Plunder	Plündern
+resource:20051	Flee	Fliehen
+resource:20053	Auction	Versteigern
+resource:20054	Quit	Beenden
+resource:20055	Load or Save Auto Trade	Handelsroute laden oder sichern
+resource:20056	Dock in town	Stadt anlaufen
+resource:20057	Don't dock in town	Stadt nicht anlaufen
+resource:20058	Use town for repairs	Stadt für Reparatur nutzen
+resource:20059	Lock min. store quantity for auto trade ships	Mindestbestand für Schiffe sperren
+resource:20060	Quantity, to remain in trading office	Bestand, der im Kontor verbleiben soll
+resource:20061	Quantity, purchase maximum	Bestand, bis zu dem eingekauft wird
+resource:20062	Quantity, to remain unsold	Bestand, bis zu dem verkauft wird
+resource:30000	Market hall	Markthalle
+resource:30001	Shipyard	Werft
+resource:30002	Tavern	Kneipe
+resource:30003	Town Hall	Rathaus
+resource:30004	Church	Kirche
+resource:30005	Money lender	Darlehensgeber
+resource:30006	Market	Marktstand
+resource:30007	Guild	Gilde
+resource:30008	Weapon smith	Waffenschmiede
+resource:30009	Bath house	Badhaus
+resource:30010	Town information	Stadtinformation
+resource:30021	Harbourmaster	Hafenmeister
+resource:30022	Trade	Handeln
+resource:30027	Repair dock	Reparaturdock
+resource:30042	Half-timbered house	Fachwerkhaus
+resource:30044	Trading office	Kontor
+resource:30045	Competition	Konkurrenz
+resource:30047	Town gate	Stadttor
+resource:30051	Barn	Scheune
+resource:30080	Gabled house	Giebelhaus
+resource:30081	Merchant's House	Kaufmannshaus
+resource:30082	Well	Brunnen
+resource:30083	Grain farm	Getreidehof
+resource:30084	Hemp farm	Hanfanbau
+resource:30085	Sheep farm	Schafzucht
+resource:30086	Cattle farm	Viehzucht
+resource:30087	Fisherman's house	Fischer
+resource:30088	Brewery	Brauhaus
+resource:30089	Apiary	Imker
+resource:30090	Weaving mill	Weberei
+resource:30091	Workshop	Werkstatt
+resource:30092	Vineyard	Weingut
+resource:30093	Hunting lodge	Jagdhütte
+resource:30094	Salt maker	Salzsiede
+resource:30095	Coalmine	Bergwerk
+resource:30096	Iron smelter	Eisenschmelze
+resource:30097	Pitchmaker	Pechkocher
+resource:30098	Brickworks	Ziegelei
+resource:30099	Pottery	Töpferei
+resource:30100	Sawmill	Sägewerk
+resource:30101	Hospital	Spital
+resource:30102	Warehouse	Lagerhaus
+resource:30103	Coining	Münze
+resource:30104	School	Schule
+resource:30105	Chapel	Kapelle
 # Fragments for the render-time pattern translators (scope frag, key, template)
 frag	month.Jan	Jan
 frag	month.Feb	Feb
