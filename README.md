@@ -104,7 +104,7 @@ cargo test --locked --target i686-pc-windows-msvc
 
 ## License
 
-The mod code and our own contributions to the translation tables are licensed under the [Apache License 2.0](LICENSE). Game texts and the pictures under `data/gfx/` (made from the game's own pictures) are not covered by it; rights of third parties remain unaffected.
+The mod code and our own contributions to the translation tables are licensed under the [Apache License 2.0](LICENSE). No graphics from the original game are included in this release.
 
 ## Credits and origin
 
